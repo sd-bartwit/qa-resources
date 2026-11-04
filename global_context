@@ -29,3 +29,10 @@ This repo is where we do QA for the **mysdworx app** (SD Worx's employee and man
 - **Appium server:** its needed for UI automation on the android phone, start with `npm run appium:start` (port 4723) before running automation.
 - **Azure DevOps access:** to read the wiki (org `sdworx`, project Digital Channels) its either a script type access that uses PAT (requires additional steps in Azure) or AzureDevOps MCP for the AI.
 
+## Local device setup (required after pulling)
+- The device ID is no longer in the repo. Each person sets their own in a git-ignored `.env` file.
+- Run `adb devices` to get your device ID.
+- Copy `.env.example` to `.env` in this folder and set `DEVICE_UDID=<your id>`.
+- Do not commit `.env`. If you previously set `DEVICE_UDID` with `setx`, that still works, and it takes precedence over `.env`.
+- If you had local edits to `tools/device/claims-helper.js` or `.vscode/mcp.json` that touched the device ID or user paths, discard them and pull again.
+

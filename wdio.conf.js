@@ -2,8 +2,9 @@
  * WebdriverIO config for the mysdworx Android app (Appium + UiAutomator2).
  *
  * Appium is expected on port 4723 (`npm run appium:start`); the appium service
- * below can also start it. Override the target device with DEVICE_UDID.
+ * below can also start it. Override the target device with DEVICE_UDID (or .env).
  */
+require('./tools/load-env');
 
 const capabilities = {
     platformName: 'Android',
