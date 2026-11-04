@@ -24,7 +24,7 @@ Read first. Purpose: QA of the mysdworx mobile app (SD Worx), Flutter, Android p
 - Root: package.json, wdio.conf.js (WebdriverIO config, Appium, uiautomator2), RESTORE.md removed.
 
 ## Tools and environment
-- Device: Android, id `RZCX11MXGXT`, traffic via HTTP Toolkit proxy (port 8000).
+- Device: Android, id from `adb devices` (set as `DEVICE_UDID` for the helper), traffic via HTTP Toolkit proxy (port 8000).
 - HTTP Toolkit MCP is READ-ONLY: list events, read bodies. Mock/Modify rules must be created manually in the UI. To force a 4xx/5xx the rule must set the HTTP status. Event list resets per session/day: fetch the newest matching event.
 - Screenshots: `adb shell screencap -p /sdcard/_sc.png` -> `adb pull /sdcard/_sc.png ".\<name>.png"` -> `adb shell rm /sdcard/_sc.png`. Never use PowerShell `>` (corrupts PNG). Long screens: `adb shell input swipe <x> <y1> <y2> 1000`, save `_p1.png`, `_p2.png`, ...
 - Appium: `npm run appium:start` (port 4723). UiAutomator2 driver 5.0.3, Android 15 caps.

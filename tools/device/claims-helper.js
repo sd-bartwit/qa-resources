@@ -12,13 +12,15 @@
  *   node tools/device/claims-helper.js tap "<label part>" # tap first element whose content-desc contains the text
  *   node tools/device/claims-helper.js shot <name>        # save a screenshot PNG (output/device/)
  *
- * Env: DEVICE_UDID (default RZCX11MXGXT).
+ * Env: DEVICE_UDID (required; set in .env, see .env.example).
  */
 const { remote } = require('webdriverio');
 const fs = require('fs');
 const path = require('path');
+require('../load-env');
 
-const UDID = process.env.DEVICE_UDID || 'RZCX11MXGXT';
+const UDID = process.env.DEVICE_UDID;
+if (!UDID) throw new Error('Set DEVICE_UDID in .env (see adb devices)');
 const OUT = path.join(__dirname, '..', '..', 'output', 'device');
 fs.mkdirSync(OUT, { recursive: true });
 
