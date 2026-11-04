@@ -1,0 +1,137 @@
+﻿FIREBASE ANALYTICS CAPTURE REPORT
+============================================================
+Log file : analytics_20261102_120758.log
+Window   : 11-02 12:03:03.096 -> 11-02 12:07:54.983 (device time)
+App      : be.sdworx.sdwa.inhouse 5.5.0.1713408 | SM-A546B | Android 16
+Debug    : partial (32 of 66 events) - app was not restarted at the start
+
+RESULT
+------------------------------------------------------------
+Uploads  : 28 batch(es): 28 accepted, 0 FAILED, 0 without result
+Events   : 66 uploaded (47 app, 15 screen, 4 auto, 0 sdk-error)
+All good: every event was accepted by Firebase.
+
+EVENT SUMMARY
+------------------------------------------------------------
+Event                       Kind   Count Uploaded Failed Pending
+-----                       ----   ----- -------- ------ -------
+App_Install_Success         App        1        1      0       0
+auth_success                App        1        1      0       0
+clockin_completed_v2        App        1        1      0       0
+clockin_started_v2          App        2        2      0       0
+clockin_unsuccessful_v2     App        1        1      0       0
+clockout_completed_v2       App        1        1      0       0
+clockout_started_v2         App        2        2      0       0
+clockout_unsuccessful_v2    App        1        1      0       0
+confirm_input               App        1        1      0       0
+end_break_completed_v2      App        2        2      0       0
+end_break_started_v2        App        3        3      0       0
+end_break_unsuccessful_v2   App        1        1      0       0
+form_view                   App        2        2      0       0
+home_open_settings          App        2        2      0       0
+landing_login               App        1        1      0       0
+screenview                  App       14       14      0       0
+see_more_tapped_v2          App        2        2      0       0
+start_break_completed_v2    App        2        2      0       0
+start_break_started_v2      App        4        4      0       0
+start_break_unsuccessful_v2 App        2        2      0       0
+token_success               App        1        1      0       0
+app_update                  Auto       1        1      0       0
+session_start               Auto       1        1      0       0
+user_engagement             Auto       2        2      0       0
+screen_view                 Screen    15       15      0       0
+
+SCREENS (in order)
+------------------------------------------------------------
+Time         Screen            Details                Upload  
+----         ------            -------                ------  
+11:54:53.487                                          OK (204)
+11:54:53.910 loading                                  OK (204)
+11:54:55.100 landing           from=loading           OK (204)
+11:56:24.199 landing           from=landing           OK (204)
+11:57:50.092 enter_pin         from=landing           OK (204)
+11:57:53.071 landing           from=enter_pin         OK (204)
+11:57:55.689 home              from=landing           OK (204)
+12:01:15.484 home              from=home              OK (204)
+12:01:18.436 settings_overview from=home              OK (204)
+12:01:18.991 home              from=settings_overview OK (204)
+12:01:43.704 settings_overview from=home              OK (204)
+12:01:44.679 home              from=settings_overview OK (204)
+12:03:25.785 home              from=home              OK (204)
+12:04:29.786 home              from=home              OK (204)
+12:05:34.121 home              from=home              OK (204)
+
+APP EVENTS (in order; auto events omitted, see events.csv)
+------------------------------------------------------------
+Time         Event                       Screen            Details                      Upload  
+----         -----                       ------            -------                      ------  
+11:54:26.835 App_Install_Success                                                        OK (204)
+11:54:53.911 screenview                  loading           screenname=loading           OK (204)
+11:54:55.101 screenview                  landing           screenname=landing           OK (204)
+11:56:24.201 screenview                  landing           screenname=landing           OK (204)
+11:57:49.383 landing_login               landing           login_method=nextAuth        OK (204)
+11:57:50.096 screenview                  enter_pin         screenname=enter_pin         OK (204)
+11:57:52.016 confirm_input               enter_pin                                      OK (204)
+11:57:53.068 auth_success                enter_pin                                      OK (204)
+11:57:53.072 screenview                  landing           screenname=landing           OK (204)
+11:57:54.167 token_success               landing                                        OK (204)
+11:57:55.689 screenview                  home              screenname=home              OK (204)
+12:01:15.485 screenview                  home              screenname=home              OK (204)
+12:01:18.421 home_open_settings          home                                           OK (204)
+12:01:18.433 screenview                  home              screenname=settings_overview OK (204)
+12:01:18.994 screenview                  home              screenname=home              OK (204)
+12:01:43.701 home_open_settings          home                                           OK (204)
+12:01:43.709 screenview                  settings_overview screenname=settings_overview OK (204)
+12:01:44.676 screenview                  settings_overview screenname=home              OK (204)
+12:03:03.068 clockin_started_v2          home                                           OK (204)
+12:03:04.054 clockin_completed_v2        home                                           OK (204)
+12:03:16.655 start_break_started_v2      home                                           OK (204)
+12:03:18.098 start_break_unsuccessful_v2 home                                           OK (204)
+12:03:19.527 clockout_started_v2         home                                           OK (204)
+12:03:20.053 clockout_unsuccessful_v2    home                                           OK (204)
+12:03:22.367 see_more_tapped_v2          home                                           OK (204)
+12:03:22.956 form_view                   home              view_mode=view_only          OK (204)
+12:03:25.785 screenview                  home              screenname=home              OK (204)
+12:04:00.917 start_break_started_v2      home                                           OK (204)
+12:04:01.262 start_break_unsuccessful_v2 home                                           OK (204)
+12:04:15.027 start_break_started_v2      home                                           OK (204)
+12:04:15.592 start_break_completed_v2    home                                           OK (204)
+12:04:27.758 see_more_tapped_v2          home                                           OK (204)
+12:04:28.328 form_view                   home              view_mode=view_only          OK (204)
+12:04:29.788 screenview                  home              screenname=home              OK (204)
+12:05:34.119 screenview                  home              screenname=home              OK (204)
+12:05:49.535 end_break_started_v2        home                                           OK (204)
+12:05:50.418 end_break_completed_v2      home                                           OK (204)
+12:05:56.391 start_break_started_v2      home                                           OK (204)
+12:05:56.984 start_break_completed_v2    home                                           OK (204)
+12:05:58.316 end_break_started_v2        home                                           OK (204)
+12:05:58.630 end_break_unsuccessful_v2   home                                           OK (204)
+12:07:02.886 end_break_started_v2        home                                           OK (204)
+12:07:03.518 end_break_completed_v2      home                                           OK (204)
+12:07:46.774 clockout_started_v2         home                                           OK (204)
+12:07:47.773 clockout_completed_v2       home                                           OK (204)
+12:07:49.281 clockin_started_v2          home                                           OK (204)
+12:07:49.919 clockin_unsuccessful_v2     home                                           OK (204)
+
+REJECTED BY THE SDK
+------------------------------------------------------------
+  (none)
+
+OTHER SDK ERRORS / WARNINGS
+------------------------------------------------------------
+  (none)
+
+USER PROPERTIES SET BY THE APP
+------------------------------------------------------------
+Name                Value             Times
+----                -----             -----
+accessibility_specs 1:0,8:1,10:0,13:0     1
+module_absences     false                 9
+module_approvals    false                 9
+module_expenses     none                  9
+module_newsfeed     false                 9
+module_salary       none                  9
+pixel_ratio         2.81                  1
+text_scale_factor   1.0                   1
+viewport_size       384 x 832             1
+
