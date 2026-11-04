@@ -1,0 +1,200 @@
+﻿11-02 12:03:03.143 V/FA-SVC  ( 2388): Logging event: origin=app,name=clockin_started_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956672, ga_screen(_sn)=home}]
+11-02 12:03:03.689 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:03:03.723 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:03:03.735 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:03:03.745 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:03:03.759 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:03:03.770 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:03:03.781 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:03:03.790 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:03:03.805 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: dev.firebase.appdistribution, 1846, 
+11-02 12:03:04.063 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:03:04.067 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:03:04.078 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 13641, 
+11-02 12:03:04.082 V/FA-SVC  ( 2388): Logging event: origin=app,name=clockin_completed_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956672, ga_screen(_sn)=home}]
+11-02 12:03:04.224 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:03:04.226 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:03:04.235 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:03:04.248 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1074, 
+11-02 12:03:04.314 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:03:04.318 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:03:16.724 V/FA-SVC  ( 2388): Logging event: origin=app,name=start_break_started_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956672, ga_screen(_sn)=home}]
+11-02 12:03:17.265 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:03:17.307 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1076, 
+11-02 12:03:17.409 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:03:17.428 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:03:18.149 V/FA-SVC  ( 2388): Logging event: origin=app,name=start_break_unsuccessful_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956672, ga_screen(_sn)=home}]
+11-02 12:03:18.348 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:03:18.363 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1081, 
+11-02 12:03:18.485 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:03:18.498 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:03:19.560 V/FA-SVC  ( 2388): Logging event: origin=app,name=clockout_started_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956672, ga_screen(_sn)=home}]
+11-02 12:03:20.108 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:03:20.148 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1073, 
+11-02 12:03:20.164 V/FA-SVC  ( 2388): Logging event: origin=app,name=clockout_unsuccessful_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956672, ga_screen(_sn)=home}]
+11-02 12:03:20.249 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:03:20.251 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:03:20.263 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:03:20.280 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1078, 
+11-02 12:03:20.342 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:03:20.344 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:03:22.432 V/FA-SVC  ( 2388): Logging event: origin=app,name=see_more_tapped_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956672, ga_screen(_sn)=home}]
+11-02 12:03:22.945 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:03:22.961 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1072, 
+11-02 12:03:23.033 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:03:23.037 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:03:23.133 V/FA-SVC  ( 2388): Logging event: origin=app,name=form_view,params=Bundle[{view_mode=view_only, ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956672, ga_screen(_sn)=home}]
+11-02 12:03:24.041 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:03:24.052 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1093, 
+11-02 12:03:24.176 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:03:24.179 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:03:25.908 V/FA-SVC  ( 2388): Logging event: origin=app,name=screenview,params=Bundle[{screenname=home, ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956672, ga_screen(_sn)=home}]
+11-02 12:03:26.130 V/FA-SVC  ( 2388): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=101078, ga_previous_class(_pc)=MainActivity, ga_previous_id(_pi)=-291998126099956672, ga_previous_screen(_pn)=home, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956671, ga_screen(_sn)=home}]
+11-02 12:03:26.268 V/FA-SVC  ( 2388): Setting user property: module_expenses, none
+11-02 12:03:26.346 V/FA-SVC  ( 2388): Setting user property: module_absences, false
+11-02 12:03:26.353 V/FA-SVC  ( 2388): Setting user property: module_approvals, false
+11-02 12:03:26.362 V/FA-SVC  ( 2388): Setting user property: module_salary, none
+11-02 12:03:26.370 V/FA-SVC  ( 2388): Setting user property: module_newsfeed, false
+11-02 12:03:26.379 V/FA-SVC  ( 2388): Setting user property: module_absences, false
+11-02 12:03:26.386 V/FA-SVC  ( 2388): Setting user property: module_approvals, false
+11-02 12:03:26.396 V/FA-SVC  ( 2388): Setting user property: module_salary, none
+11-02 12:03:26.405 V/FA-SVC  ( 2388): Setting user property: module_expenses, none
+11-02 12:03:26.414 V/FA-SVC  ( 2388): Setting user property: module_newsfeed, false
+11-02 12:03:26.443 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:03:26.456 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1265, 
+11-02 12:03:26.541 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:03:26.547 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:03:26.785 V/FA-SVC  ( 2388): Setting user property: module_expenses, none
+11-02 12:03:26.805 V/FA-SVC  ( 2388): Setting user property: module_absences, false
+11-02 12:03:26.819 V/FA-SVC  ( 2388): Setting user property: module_approvals, false
+11-02 12:03:26.840 V/FA-SVC  ( 2388): Setting user property: module_newsfeed, false
+11-02 12:03:26.857 V/FA-SVC  ( 2388): Setting user property: module_salary, none
+11-02 12:04:00.973 V/FA-SVC  ( 2388): Logging event: origin=app,name=start_break_started_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956671, ga_screen(_sn)=home}]
+11-02 12:04:01.330 V/FA-SVC  ( 2388): Logging event: origin=app,name=start_break_unsuccessful_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956671, ga_screen(_sn)=home}]
+11-02 12:04:01.500 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:04:01.517 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1209, 
+11-02 12:04:01.736 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:04:01.740 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:04:15.099 V/FA-SVC  ( 2388): Logging event: origin=app,name=start_break_started_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956671, ga_screen(_sn)=home}]
+11-02 12:04:15.616 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:04:15.632 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1081, 
+11-02 12:04:15.639 V/FA-SVC  ( 2388): Logging event: origin=app,name=start_break_completed_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956671, ga_screen(_sn)=home}]
+11-02 12:04:15.726 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:04:15.730 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:04:15.751 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:04:15.775 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1078, 
+11-02 12:04:15.842 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:04:15.848 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:04:27.860 V/FA-SVC  ( 2388): Logging event: origin=app,name=see_more_tapped_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956671, ga_screen(_sn)=home}]
+11-02 12:04:28.385 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:04:28.402 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1077, 
+11-02 12:04:28.409 V/FA-SVC  ( 2388): Logging event: origin=app,name=form_view,params=Bundle[{view_mode=view_only, ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956671, ga_screen(_sn)=home}]
+11-02 12:04:28.506 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:04:28.510 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:04:28.524 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:04:28.537 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1093, 
+11-02 12:04:28.628 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:04:28.634 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:04:29.879 V/FA-SVC  ( 2388): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=63992, ga_previous_class(_pc)=MainActivity, ga_previous_id(_pi)=-291998126099956671, ga_previous_screen(_pn)=home, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956670, ga_screen(_sn)=home}]
+11-02 12:04:30.025 V/FA-SVC  ( 2388): Logging event: origin=app,name=screenview,params=Bundle[{screenname=home, ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956670, ga_screen(_sn)=home}]
+11-02 12:04:30.046 V/FA-SVC  ( 2388): Setting user property: module_absences, false
+11-02 12:04:30.052 V/FA-SVC  ( 2388): Setting user property: module_approvals, false
+11-02 12:04:30.065 V/FA-SVC  ( 2388): Setting user property: module_expenses, none
+11-02 12:04:30.078 V/FA-SVC  ( 2388): Setting user property: module_newsfeed, false
+11-02 12:04:30.096 V/FA-SVC  ( 2388): Setting user property: module_salary, none
+11-02 12:04:30.161 V/FA-SVC  ( 2388): Setting user property: module_absences, false
+11-02 12:04:30.170 V/FA-SVC  ( 2388): Setting user property: module_approvals, false
+11-02 12:04:30.181 V/FA-SVC  ( 2388): Setting user property: module_expenses, none
+11-02 12:04:30.191 V/FA-SVC  ( 2388): Setting user property: module_newsfeed, false
+11-02 12:04:30.201 V/FA-SVC  ( 2388): Setting user property: module_salary, none
+11-02 12:04:30.415 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:04:30.438 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1265, 
+11-02 12:04:30.541 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:04:30.560 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:04:30.663 V/FA-SVC  ( 2388): Setting user property: module_absences, false
+11-02 12:04:30.677 V/FA-SVC  ( 2388): Setting user property: module_approvals, false
+11-02 12:04:30.694 V/FA-SVC  ( 2388): Setting user property: module_expenses, none
+11-02 12:04:30.713 V/FA-SVC  ( 2388): Setting user property: module_newsfeed, false
+11-02 12:04:30.730 V/FA-SVC  ( 2388): Setting user property: module_salary, none
+11-02 12:05:34.897 V/FA-SVC  ( 2388): Setting user property: accessibility_specs, 1:0,8:1,10:0,13:0
+11-02 12:05:34.905 V/FA-SVC  ( 2388): Setting user property: viewport_size, 384 x 832
+11-02 12:05:34.917 V/FA-SVC  ( 2388): Setting user property: text_scale_factor, 1.0
+11-02 12:05:34.926 V/FA-SVC  ( 2388): Logging event: origin=app,name=screenview,params=Bundle[{screenname=home, ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956670, ga_screen(_sn)=home}]
+11-02 12:05:34.937 V/FA-SVC  ( 2388): Setting user property: pixel_ratio, 2.81
+11-02 12:05:34.944 V/FA-SVC  ( 2388): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=64367, ga_previous_class(_pc)=MainActivity, ga_previous_id(_pi)=-291998126099956670, ga_previous_screen(_pn)=home, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956669, ga_screen(_sn)=home}]
+11-02 12:05:34.951 V/FA-SVC  ( 2388): Setting user property: module_absences, false
+11-02 12:05:34.953 V/FA-SVC  ( 2388): Setting user property: module_approvals, false
+11-02 12:05:34.954 V/FA-SVC  ( 2388): Setting user property: module_expenses, none
+11-02 12:05:34.960 V/FA-SVC  ( 2388): Setting user property: module_newsfeed, false
+11-02 12:05:34.965 V/FA-SVC  ( 2388): Setting user property: module_salary, none
+11-02 12:05:34.984 V/FA-SVC  ( 2388): Setting user property: module_absences, false
+11-02 12:05:34.999 V/FA-SVC  ( 2388): Setting user property: module_approvals, false
+11-02 12:05:35.014 V/FA-SVC  ( 2388): Setting user property: module_expenses, none
+11-02 12:05:35.030 V/FA-SVC  ( 2388): Setting user property: module_salary, none
+11-02 12:05:35.048 V/FA-SVC  ( 2388): Setting user property: module_newsfeed, false
+11-02 12:05:35.440 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:05:35.464 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:05:35.475 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 2223, 
+11-02 12:05:35.479 V/FA-SVC  ( 2388): Setting user property: module_absences, false
+11-02 12:05:35.504 V/FA-SVC  ( 2388): Setting user property: module_expenses, none
+11-02 12:05:35.522 V/FA-SVC  ( 2388): Setting user property: module_salary, none
+11-02 12:05:35.543 V/FA-SVC  ( 2388): Setting user property: module_approvals, false
+11-02 12:05:35.564 V/FA-SVC  ( 2388): Setting user property: module_newsfeed, false
+11-02 12:05:35.687 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:05:35.702 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:05:49.659 V/FA-SVC  ( 2388): Logging event: origin=app,name=end_break_started_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956669, ga_screen(_sn)=home}]
+11-02 12:05:50.188 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:05:50.212 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1074, 
+11-02 12:05:50.316 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:05:50.330 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:05:50.485 V/FA-SVC  ( 2388): Logging event: origin=app,name=end_break_completed_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956669, ga_screen(_sn)=home}]
+11-02 12:05:51.328 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:05:51.339 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1076, 
+11-02 12:05:51.409 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:05:51.415 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:05:56.448 V/FA-SVC  ( 2388): Logging event: origin=app,name=start_break_started_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956669, ga_screen(_sn)=home}]
+11-02 12:05:56.998 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:05:57.023 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1081, 
+11-02 12:05:57.030 V/FA-SVC  ( 2388): Logging event: origin=app,name=start_break_completed_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956669, ga_screen(_sn)=home}]
+11-02 12:05:57.112 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:05:57.114 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:05:57.136 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:05:57.162 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1083, 
+11-02 12:05:57.245 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:05:57.254 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:05:58.371 V/FA-SVC  ( 2388): Logging event: origin=app,name=end_break_started_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956669, ga_screen(_sn)=home}]
+11-02 12:05:58.687 V/FA-SVC  ( 2388): Logging event: origin=app,name=end_break_unsuccessful_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956669, ga_screen(_sn)=home}]
+11-02 12:05:58.903 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:05:58.932 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1200, 
+11-02 12:05:59.028 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:05:59.035 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:07:02.956 V/FA-SVC  ( 2388): Logging event: origin=app,name=end_break_started_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956669, ga_screen(_sn)=home}]
+11-02 12:07:03.489 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:07:03.519 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1079, 
+11-02 12:07:03.562 V/FA-SVC  ( 2388): Logging event: origin=app,name=end_break_completed_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956669, ga_screen(_sn)=home}]
+11-02 12:07:03.698 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:07:03.699 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:07:03.704 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:07:03.710 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1081, 
+11-02 12:07:03.770 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:07:03.772 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:07:46.857 V/FA-SVC  ( 2388): Logging event: origin=app,name=clockout_started_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956669, ga_screen(_sn)=home}]
+11-02 12:07:47.403 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:07:47.440 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1078, 
+11-02 12:07:47.651 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:07:47.655 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:07:47.802 V/FA-SVC  ( 2388): Logging event: origin=app,name=clockout_completed_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956669, ga_screen(_sn)=home}]
+11-02 12:07:48.657 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:07:48.666 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1075, 
+11-02 12:07:48.751 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:07:48.754 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:07:49.331 V/FA-SVC  ( 2388): Logging event: origin=app,name=clockin_started_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956669, ga_screen(_sn)=home}]
+11-02 12:07:49.779 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:07:49.811 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1077, 
+11-02 12:07:49.925 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:07:49.937 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
+11-02 12:07:49.995 V/FA-SVC  ( 2388): Logging event: origin=app,name=clockin_unsuccessful_v2,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-291998126099956669, ga_screen(_sn)=home}]
+11-02 12:07:50.945 V/FA-SVC  ( 2388): Setting user property: non_personalized_ads(_npa), 1
+11-02 12:07:50.984 V/FA-SVC  ( 2388): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1077, 
+11-02 12:07:51.111 V/FA-SVC  ( 2388): Network upload successful with code, uploadAttempted: 204, true
+11-02 12:07:51.124 V/FA-SVC  ( 2388): Successful upload. Got network response. code, size: 204, 0
