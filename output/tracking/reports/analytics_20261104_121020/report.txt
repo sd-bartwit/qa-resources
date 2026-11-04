@@ -1,0 +1,152 @@
+﻿FIREBASE ANALYTICS CAPTURE REPORT
+============================================================
+Log file : analytics_20261104_121020.log
+Window   : 11-04 12:08:33.087 -> 11-04 12:10:16.924 (device time)
+App      : be.sdworx.sdwa.inhouse 5.5.0.1717494 | SM-G991B | Android 15
+Debug    : partial (67 of 88 events) - app was not restarted at the start
+
+RESULT
+------------------------------------------------------------
+Uploads  : 37 batch(es): 37 accepted, 0 FAILED, 0 without result
+Events   : 88 uploaded (51 app, 33 screen, 4 auto, 0 sdk-error)
+All good: every event was accepted by Firebase.
+
+EVENT SUMMARY
+------------------------------------------------------------
+Event                             Kind   Count Uploaded Failed Pending
+-----                             ----   ----- -------- ------ -------
+App_Install_Success               App        1        1      0       0
+auth_success                      App        2        2      0       0
+confirm_input                     App        2        2      0       0
+form_view                         App        3        3      0       0
+generic_approvals_approve         App        1        1      0       0
+generic_approvals_reject          App        2        2      0       0
+generic_approvals_tap             App        3        3      0       0
+home_tile                         App        1        1      0       0
+landing_login                     App        2        2      0       0
+pending_approvals_expenses_screen App        1        1      0       0
+screenview                        App       31       31      0       0
+token_success                     App        2        2      0       0
+app_update                        Auto       2        2      0       0
+user_engagement                   Auto       2        2      0       0
+screen_view                       Screen    33       33      0       0
+
+SCREENS (in order)
+------------------------------------------------------------
+Time         Screen                             Details                                 Upload  
+----         ------                             -------                                 ------  
+12:08:01.047                                                                            OK (204)
+12:08:01.444 loading                                                                    OK (204)
+12:08:01.924 landing                            from=loading                            OK (204)
+12:08:03.673 enter_pin                          from=landing                            OK (204)
+12:08:04.939 enter_pin                          from=enter_pin                          OK (204)
+12:08:05.846 landing                            from=enter_pin                          OK (204)
+12:08:08.153 home                               from=landing                            OK (204)
+12:08:42.713                                                                            OK (204)
+12:08:43.184 loading                                                                    OK (204)
+12:08:43.622 landing                            from=loading                            OK (204)
+12:08:45.412 enter_pin                          from=landing                            OK (204)
+12:08:46.601 enter_pin                          from=enter_pin                          OK (204)
+12:08:47.399 landing                            from=enter_pin                          OK (204)
+12:08:49.815 home                               from=landing                            OK (204)
+12:08:56.101 pending_approvals                  from=home                               OK (204)
+12:08:59.140 generic_pending_approvals_requests from=pending_approvals                  OK (204)
+12:09:01.831 generic_pending_approvals_requests from=generic_pending_approvals_requests OK (204)
+12:09:05.630 generic_pending_approvals_requests from=generic_pending_approvals_requests OK (204)
+12:09:10.300 generic_pending_approvals_requests from=generic_pending_approvals_requests OK (204)
+12:09:14.264 generic_pending_approvals_requests from=generic_pending_approvals_requests OK (204)
+12:09:25.241 generic_pending_approvals_requests from=generic_pending_approvals_requests OK (204)
+12:09:28.169 generic_pending_approvals_requests from=generic_pending_approvals_requests OK (204)
+12:09:31.110 pending_approvals                  from=generic_pending_approvals_requests OK (204)
+12:09:32.397 generic_pending_approvals_requests from=pending_approvals                  OK (204)
+12:09:37.331 pending_approvals                  from=generic_pending_approvals_requests OK (204)
+12:09:39.228 pending_approvals_expenses         from=pending_approvals                  OK (204)
+12:09:42.850 pending_approvals                  from=pending_approvals_expenses         OK (204)
+12:09:44.068 generic_pending_approvals_requests from=pending_approvals                  OK (204)
+12:09:45.540 pending_approvals                  from=generic_pending_approvals_requests OK (204)
+12:09:47.208 generic_pending_approvals_requests from=pending_approvals                  OK (204)
+12:09:54.671 generic_pending_approvals_requests from=generic_pending_approvals_requests OK (204)
+12:10:02.709 generic_pending_approvals_requests from=generic_pending_approvals_requests OK (204)
+12:10:06.993 pending_approvals                  from=generic_pending_approvals_requests OK (204)
+
+APP EVENTS (in order; auto events omitted, see events.csv)
+------------------------------------------------------------
+Time         Event                             Screen                             Details                                                       Upload  
+----         -----                             ------                             -------                                                       ------  
+12:07:57.384 App_Install_Success                                                                                                                OK (204)
+12:08:01.436 screenview                                                           screenname=loading                                            OK (204)
+12:08:01.925 screenview                        landing                            screenname=landing                                            OK (204)
+12:08:03.235 landing_login                     landing                            login_method=nextAuth                                         OK (204)
+12:08:03.673 screenview                        landing                            screenname=enter_pin                                          OK (204)
+12:08:03.958 confirm_input                     enter_pin                                                                                        OK (204)
+12:08:04.938 screenview                        enter_pin                          screenname=enter_pin                                          OK (204)
+12:08:05.845 auth_success                      enter_pin                                                                                        OK (204)
+12:08:05.845 screenview                        enter_pin                          screenname=landing                                            OK (204)
+12:08:06.796 token_success                     landing                                                                                          OK (204)
+12:08:08.154 screenview                        home                               screenname=home                                               OK (204)
+12:08:43.185 screenview                        loading                            screenname=loading                                            OK (204)
+12:08:43.622 screenview                        landing                            screenname=landing                                            OK (204)
+12:08:44.948 landing_login                     landing                            login_method=nextAuth                                         OK (204)
+12:08:45.409 screenview                        landing                            screenname=enter_pin                                          OK (204)
+12:08:45.685 confirm_input                     enter_pin                                                                                        OK (204)
+12:08:46.601 screenview                        enter_pin                          screenname=enter_pin                                          OK (204)
+12:08:47.397 auth_success                      enter_pin                                                                                        OK (204)
+12:08:47.405 screenview                        landing                            screenname=landing                                            OK (204)
+12:08:48.117 token_success                     landing                                                                                          OK (204)
+12:08:49.815 screenview                        home                               screenname=home                                               OK (204)
+12:08:56.096 home_tile                         home                               tile_type=pendingApprovals; endpoint=sdwa://pending_approvals OK (204)
+12:08:56.098 screenview                        home                               screenname=pending_approvals                                  OK (204)
+12:08:59.140 screenview                        pending_approvals                  screenname=generic_pending_approvals_requests                 OK (204)
+12:09:00.372 generic_approvals_tap             generic_pending_approvals_requests category=Absences                                             OK (204)
+12:09:00.988 form_view                         generic_pending_approvals_requests view_mode=editable                                            OK (204)
+12:09:01.833 screenview                        generic_pending_approvals_requests screenname=generic_pending_approvals_requests                 OK (204)
+12:09:05.622 screenview                        generic_pending_approvals_requests screenname=generic_pending_approvals_requests                 OK (204)
+12:09:05.625 generic_approvals_reject          generic_pending_approvals_requests category=Absences                                             OK (204)
+12:09:08.661 generic_approvals_tap             generic_pending_approvals_requests category=Absences                                             OK (204)
+12:09:09.117 form_view                         generic_pending_approvals_requests view_mode=editable                                            OK (204)
+12:09:10.300 screenview                        generic_pending_approvals_requests screenname=generic_pending_approvals_requests                 OK (204)
+12:09:14.264 screenview                        generic_pending_approvals_requests screenname=generic_pending_approvals_requests                 OK (204)
+12:09:23.112 generic_approvals_tap             generic_pending_approvals_requests category=Absences                                             OK (204)
+12:09:23.609 form_view                         generic_pending_approvals_requests view_mode=editable                                            OK (204)
+12:09:25.242 screenview                        generic_pending_approvals_requests screenname=generic_pending_approvals_requests                 OK (204)
+12:09:28.169 screenview                        generic_pending_approvals_requests screenname=generic_pending_approvals_requests                 OK (204)
+12:09:31.110 screenview                        generic_pending_approvals_requests screenname=pending_approvals                                  OK (204)
+12:09:32.397 screenview                        pending_approvals                  screenname=generic_pending_approvals_requests                 OK (204)
+12:09:37.331 screenview                        generic_pending_approvals_requests screenname=pending_approvals                                  OK (204)
+12:09:39.106 pending_approvals_expenses_screen pending_approvals                                                                                OK (204)
+12:09:39.240 screenview                        pending_approvals_expenses         screenname=pending_approvals_expenses                         OK (204)
+12:09:42.857 screenview                        pending_approvals                  screenname=pending_approvals                                  OK (204)
+12:09:44.068 screenview                        generic_pending_approvals_requests screenname=generic_pending_approvals_requests                 OK (204)
+12:09:45.538 screenview                        generic_pending_approvals_requests screenname=pending_approvals                                  OK (204)
+12:09:47.208 screenview                        generic_pending_approvals_requests screenname=generic_pending_approvals_requests                 OK (204)
+12:09:54.667 screenview                        generic_pending_approvals_requests screenname=generic_pending_approvals_requests                 OK (204)
+12:09:54.683 generic_approvals_reject          generic_pending_approvals_requests category=Expenses                                             OK (204)
+12:10:02.709 screenview                        generic_pending_approvals_requests screenname=generic_pending_approvals_requests                 OK (204)
+12:10:02.721 generic_approvals_approve         generic_pending_approvals_requests category=Expenses                                             OK (204)
+12:10:06.996 screenview                        pending_approvals                  screenname=pending_approvals                                  OK (204)
+
+REJECTED BY THE SDK
+------------------------------------------------------------
+  (none)
+
+OTHER SDK ERRORS / WARNINGS
+------------------------------------------------------------
+Times Message                                
+----- -------                                
+    6 Failed to retrieve Firebase Instance Id
+
+USER PROPERTIES SET BY THE APP
+------------------------------------------------------------
+Name                Value             Times
+----                -----             -----
+accessibility_specs 1:0,8:0,10:0,13:0     1
+module_absences     false                 3
+module_approvals    true                  3
+module_expenses     ungrouped             3
+module_newsfeed     false                 3
+module_salary       none                  3
+online              true                  1
+pixel_ratio         3.00                  1
+text_scale_factor   1.0                   1
+viewport_size       360 x 800             1
+
