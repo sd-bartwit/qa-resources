@@ -21,7 +21,7 @@ Manual + automated **QA of the mysdworx mobile app** (SD Worx). Work here includ
 | **Context7** | Up-to-date library/framework docs on demand. | |
 
 ### 2.2 Android device (ADB)
-- Physical device id: **`RZCX11MXGXT`**, connected and intercepted via ADB through the HTTP Toolkit proxy.
+- Physical device id: from `adb devices` (per machine, not committed), connected and intercepted via ADB through the HTTP Toolkit proxy.
 - **Screenshot pipeline (binary-safe — do NOT use PowerShell `>` redirection, it corrupts PNGs):**
   ```
   adb shell screencap -p /sdcard/_sc.png

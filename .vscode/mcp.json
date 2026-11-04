@@ -2,7 +2,7 @@
   "servers": {
     "http-toolkit": {
       "type": "stdio",
-      "command": "C:\\Users\\SD497928\\AppData\\Local\\Programs\\HTTP Toolkit\\resources\\httptoolkit-mcp.cmd"
+      "command": "${env:LOCALAPPDATA}\\Programs\\HTTP Toolkit\\resources\\httptoolkit-mcp.cmd"
     }
   }
 }
