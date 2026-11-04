@@ -1,0 +1,236 @@
+# Expense Claims — Acceptance Test Cases (User Journeys)
+
+> Scope: functional / acceptance testing of the **Expense Claims** feature (mysdworx app), requester + approver perspectives, with an emphasis on **cross-role end-to-end journeys** (a requester action changes what the approver sees, and vice versa).
+> Sources: `Claim_FunctionalDoc_Requester`, `Claim_FunctionalDoc_Approver`, `Claim_APIdoc`, `Claim_APIrequests.json`, and `../../.github/copilot-instructions.md`.
+> Execution: manual-assisted; deterministic variants forced via **HTTP Toolkit** response mocking; evidence via the **adb** screenshot pipeline (see `.github/copilot-instructions.md`).
+
+---
+
+## Legend & conventions
+- **Priority:** P1 = critical happy path / core rule, P2 = important variant, P3 = edge/negative.
+- **[MOCK]** = requires an HTTP Toolkit Modify rule to force a backend response/flag/error.
+- **[2-ROLE]** = needs switching between requester and approver account (both available).
+- **(gap)** = behaviour not fully specified in the wiki — verify empirically and record the actual result.
+- State names: **Draft**, **Rejected**, **Pending** (submitted/awaiting approval), **Approved**.
+
+## Test accounts & data
+| Role | Account | Notes |
+|--|--|--|
+| Requester | employee test account | Can create claims/expenses, link/unlink, submit. |
+| Approver | manager test account | Has approval rights for expense claims; is the requester's approver. |
+
+Recommended baseline data before a run:
+- At least **2 unassigned expenses** available to the requester.
+- At least **1 Draft claim** (empty) and **1 Draft claim with ≥2 expenses**.
+- Approver inbox reachable (Pending Approvals tile visible).
+
+## Variant matrix (apply to journeys as noted)
+| Dimension | Values |
+|--|--|
+| Claim state | Draft / Rejected / Pending / Approved |
+| # expenses on claim | 0 / 1 / many |
+| Currency | single / multi-currency / foreign-converted |
+| Approve comment config (`approveCommentUse`) | Mandatory / Optional / Prohibited |
+| Reject comment config (`rejectionCommentUse`) | Mandatory / Optional / Prohibited |
+| Approver entry point | Overview inline / Notification / App inbox / Claim detail |
+| Reject scope | Full (overview/notif/inbox) / Partial (detail only) |
+| Backend flags | `canEdit`, `canDelete`, `canUnlinkExpenses`, `canLinkExpenses`, `canViewDetails`, `supportsExpenseLinking` |
+| Error injection | backend error / network / HTTP 4xx / HTTP 5xx |
+
+---
+
+# Layer A — Requester journeys
+
+### REQ-01 — Create a new claim (Draft)
+- **Priority:** P1
+- **Preconditions:** Requester logged in; create-claim Quick Action available (valid `endpointUri`).
+- **Steps:**
+  1. Open the Claims tile → Claims overview (Open tab).
+  2. Tap FAB / Quick Action → "Create a new claim".
+  3. Fill the required Form fields; observe the Save button appears only after a change.
+  4. Tap Save.
+- **Expected:** Claim created in **Draft**; user redirected to Draft claim detail; new claim appears in the Draft claims list under Open.
+- **Variants:** Back/Cancel before Save → nothing persisted. [MOCK] invalid `endpointUri` → "action unavailable"; Form fails to load → "cannot be displayed"; submit error → stays on Form, retry possible.
+
+### REQ-02 — Link an unassigned expense to a claim (all 4 entry points)
+- **Priority:** P1
+- **Preconditions:** ≥1 unassigned expense; ≥1 eligible (Draft/Rejected) claim.
+- **Steps (repeat per entry point):**
+  1. Start linking from: (a) unassigned expense **detail** → "Add to claim"; (b) unassigned **list** multi-select → bottom sheet "Add to claim"; (c) **claim detail** → "Add unassigned expenses"; (d) **expense creation** flow → "Add to claim".
+  2. On the Select-claim screen, pick a claim (radio, single-select) → confirm ("Add to this claim").
+- **Expected:** Expense linked; removed from Unassigned list; user lands on the claim detail showing the expense; claim total updates.
+- **Variants:** [MOCK] backend error → remains unassigned; permission error → no change; network/timeout → retry available.
+
+### REQ-03 — Linking eligibility filtering
+- **Priority:** P1
+- **Preconditions:** Claims in Draft, Rejected, Pending, Approved states exist; vary `supportsExpenseLinking`.
+- **Steps:** Enter the Select-claim (selection mode) screen during a link.
+- **Expected:** Only claims with `supportsExpenseLinking=true` **and** in Draft/Rejected/Pending(provider) are shown; **Approved never shown**; ineligible claims hidden/unselectable; selection is single (radio); "Cancel" appears only when a claim is selected.
+- **Variants:** [MOCK] toggle `supportsExpenseLinking=false` for a Draft claim → it disappears from the list. (gap) Pending-claim linkability depends on provider.
+
+### REQ-04 — Unlink an assigned expense ("Remove from claim")
+- **Priority:** P1
+- **Preconditions:** Claim with ≥1 expense; `canUnlinkExpenses=true`.
+- **Steps:** Open assigned expense (or claim detail kebab) → "Remove from claim" → confirm modal → confirm.
+- **Expected:** Expense unlinked, **returns to Unassigned list**; navigates away; claim total decreases.
+- **Variants:** [MOCK] `canUnlinkExpenses=false` → action hidden (verify kebab visibility matrix). Backend error → remains linked.
+
+### REQ-05 — Assigned-expense kebab visibility matrix [MOCK]
+- **Priority:** P2
+- **Steps:** For each combination of `canUnlinkExpenses` × `canDelete`, open the assigned expense.
+- **Expected:** both true → both actions; unlink-only; delete-only; both false → **kebab hidden**.
+
+### REQ-06 — Delete a claim (Draft / Rejected)
+- **Priority:** P1
+- **Preconditions:** Claim in Draft or Rejected; `canDelete=true`.
+- **Steps:** Claim detail → kebab → Delete → confirmation modal (warns **irreversible**) → confirm.
+- **Expected:** Claim permanently removed; navigate to the appropriate list; list updates immediately.
+- **Variants:** Cancel on modal → no deletion. [MOCK] `canDelete=false` → Delete not offered. Backend error → not deleted, stays on detail.
+
+### REQ-07 — Submit-readiness gating
+- **Priority:** P1
+- **Steps / Expected (Submit for approval disabled unless ALL true):**
+  1. Claim **not** Draft/Rejected → Submit hidden/disabled.
+  2. Claim with **0 expenses** → empty state, cannot submit.
+  3. Missing required claim info → disabled.
+  4. Any linked expense in invalid state → disabled.
+  5. All satisfied → Submit enabled.
+
+### REQ-08 — Submit a claim for approval
+- **Priority:** P1
+- **Preconditions:** Draft/Rejected claim, ≥1 expense, readiness met; requester is owner.
+- **Steps:** Claim detail → "Submit for approval".
+- **Expected:** Claim → **Pending**; moves from **Open** to **Sent** tab; user stays on claim detail; toast shown.
+- **Variants:** (gap) confirm-dialog inconsistency — record whether a confirmation dialog appears. [MOCK] backend error → claim stays editable, not submitted; network → retry.
+
+### REQ-09 — Claims overview structure & counters
+- **Priority:** P2
+- **Steps:** Open Claims overview with varying data.
+- **Expected:** **Open** tab = rejected + draft claims + unassigned expenses; **Sent** = pending + approved; last-selected tab persisted; Rejected section shown only when `rejectedClaimsCount>0`; full vs partial empty states render correctly.
+
+### REQ-10 — View claim details per state
+- **Priority:** P2
+- **Steps:** Open a Draft, a Pending, an Approved, and a Rejected claim.
+- **Expected:** State label correct; Submit only on Draft/Rejected; description hidden when empty; details link hidden when `canViewDetails=false`; **Rejected** shows rejection message + rejected-expenses list with `approverComment`.
+
+---
+
+# Layer B — Approver journeys
+
+### APP-01 — Approve inline from overview
+- **Priority:** P1 · **[2-ROLE]**
+- **Preconditions:** A claim is Pending approval for this approver.
+- **Steps:** Pending Approvals tile → Claims approvals overview → tap **Approve** on the claim card → complete comment step per config → confirm.
+- **Expected:** Entire claim approved; **removed from the approver inbox**; success toast.
+
+### APP-02 — Approve from claim detail
+- **Priority:** P1
+- **Steps:** Overview → tap card body → claim detail (approval context: header has no actions, bottom bar shows Approve/Reject) → Approve → comment per config → confirm.
+- **Expected:** Same as APP-01; approving is always **full-claim** (no partial approve path).
+
+### APP-03 — Reject full claim from overview / notification / inbox
+- **Priority:** P1 · **[2-ROLE]**
+- **Steps:** From overview card (or notification / app inbox) → **Reject** → comment screen → enter reason → confirm.
+- **Expected:** Whole claim rejected & **returned to employee**; removed from inbox. Verify the **partial-selection screen is NOT reachable** from these entry points.
+
+### APP-04 — Reject partial from claim detail (selection screen)
+- **Priority:** P1
+- **Preconditions:** Claim with ≥2 expenses, Pending.
+- **Steps:** Claim detail → Reject → **Assigned expense rejection selection** screen → select a subset → continue → comment (reason) → confirm.
+- **Expected:** Selection is explicit; **≥1 must be selected** (0 blocks continue); selected = rejected, unselected = approved; claim returned to employee. Cancel/Back at any step → no changes, claim stays Pending.
+
+### APP-05 — Approver comment config matrix [MOCK]
+- **Priority:** P2
+- **Steps:** For **approve** and **reject**, set config to Mandatory / Optional / Prohibited.
+- **Expected:** Mandatory → cannot continue until reason entered (confirm disabled); Optional → may continue with/without; Prohibited → comment screen skipped (approve) — for reject, verify against the documented inconsistency (User Action says reason always required). (gap) Confirm 300-char limit + counter if present.
+
+### APP-06 — Empty approval inbox
+- **Priority:** P3
+- **Steps:** Approver with no pending claims opens Claims approvals overview.
+- **Expected:** Empty state shown instead of the card list.
+
+### APP-07 — Multi-currency claim card
+- **Priority:** P2
+- **Steps:** Approver opens overview containing a multi-currency claim.
+- **Expected:** Card total renders one or multiple currencies correctly; detail shows totals correctly.
+
+### APP-08 — Approver error / network handling [MOCK]
+- **Priority:** P2
+- **Steps:** Trigger backend/network error during approve and reject.
+- **Expected:** Error shown; **claim remains Pending**; from detail a failed action keeps the approver on-screen (gap — confirm for Claims); retry available.
+
+---
+
+# Layer C — Cross-role end-to-end journeys (core)
+
+### E2E-01 — Happy path: submit → approve
+- **Priority:** P1 · **[2-ROLE]**
+- **Steps:**
+  1. **Requester:** create Draft claim → link 1 expense → Submit for approval.
+  2. Verify requester: claim moves Open → **Sent (Pending)**.
+  3. **Approver:** open Claims approvals overview → claim is present → open detail → Approve (comment per config).
+  4. Verify approver: claim **removed from inbox**.
+  5. **Requester:** reopen Sent → claim shows **Approved**.
+- **Expected:** State propagates end-to-end; no orphaned/duplicated claim; totals consistent on both sides.
+
+### E2E-02 — Full reject → correct → resubmit → approve
+- **Priority:** P1 · **[2-ROLE]**
+- **Steps:**
+  1. Requester submits a claim (from E2E-01 setup).
+  2. Approver **rejects the full claim** with a reason.
+  3. Requester: claim **returns as Rejected** (Open tab, Rejected banner + `approverComment`).
+  4. Requester edits/relinks expenses to address the reason → **Submit** again.
+  5. Approver approves.
+- **Expected:** Rejected → Pending transition works; approver comment visible to requester; resubmission returns claim to approver inbox; final Approved reflected on requester side.
+
+### E2E-03 — Partial rejection round-trip
+- **Priority:** P1 · **[2-ROLE]**
+- **Steps:**
+  1. Requester submits a claim with **≥2 expenses**.
+  2. Approver rejects **from detail**, selecting only a subset.
+  3. Requester views returned claim.
+- **Expected:** Requester sees which expenses were rejected (with per-expense `approverComment`) and which were accepted; requester can fix **only the rejected** ones and resubmit. **(gap)** Record the resulting claim/expense state precisely — whether unselected (approved) expenses are finalized immediately vs whole claim reverts.
+
+### E2E-04 — Comment-config variants end-to-end [MOCK]
+- **Priority:** P2 · **[2-ROLE]**
+- **Steps:** Run E2E-01 (approve) and E2E-02 (reject) under Mandatory / Optional / Prohibited comment configs.
+- **Expected:** Gating matches APP-05; downstream requester result unchanged by comment config.
+
+### E2E-05 — Reject reason required [MOCK]
+- **Priority:** P2 · **[2-ROLE]**
+- **Steps:** Approver rejects with an **empty** reason (mandatory config).
+- **Expected:** Blocked; rejection not submitted; claim stays Pending. With reason → proceeds. (Validates doc inconsistency.)
+
+### E2E-06 — Multi-currency claim end-to-end
+- **Priority:** P2 · **[2-ROLE]**
+- **Steps:** Requester builds a claim spanning ≥2 currencies → submit → approver reviews → approve.
+- **Expected:** Totals render correctly on requester detail, approver card, and approver detail; approval succeeds.
+
+### E2E-07 — Notification / inbox-driven approval
+- **Priority:** P2 · **[2-ROLE]**
+- **Steps:** Requester submits → approver acts via **push notification** (or app inbox card) directly.
+- **Expected:** Approve/Reject work from notification; reject from here is **full-claim only** (no partial selection screen); requester downstream state correct.
+
+
+---
+
+# Negative / error injection quick list [MOCK]
+| ID | Scenario | Expected |
+|--|--|--|
+| ERR-01 | Create-claim `endpointUri` invalid | "action unavailable" |
+| ERR-02 | Create Form fails to load | "cannot be displayed" |
+| ERR-03 | Submit backend error | Claim stays editable, not sent |
+| ERR-04 | Link expense backend/permission error | Expense stays unassigned |
+| ERR-05 | Delete claim/expense backend error | Not deleted, stays on detail |
+| ERR-06 | Approve/Reject backend or network error | Claim stays Pending, retry |
+| ERR-07 | Reject with empty mandatory reason | Blocked, not submitted |
+
+---
+
+## Open items to confirm during execution (from doc gaps)
+- Submit confirmation dialog: present or not?
+- Reject comment: always required vs config-driven (inconsistency).
+- Partial rejection: exact resulting state of approved vs rejected expenses.
+- Approver comment character limit (300?) for Claims.
+- Requester-side notification content/channel for approved/returned claims.
+- Idempotency when a claim is actioned from two entry points.

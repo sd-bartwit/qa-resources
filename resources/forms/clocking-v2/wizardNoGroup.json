@@ -1,0 +1,87 @@
+{
+  "result": {
+    "type": "Wizard",
+    "badge": { "type": "Information", "title": "Early clock out", "visible": true },
+    "title": "Day overview",
+    "description": "",
+    "changesOnly": false,
+    "steps": [
+      {
+        "step": "Shift",
+        "description": "",
+        "visible": true,
+        "groups": [],
+        "items": [
+          {
+            "type": "Text",
+            "value": "09:00 - 16:00",
+            "id": "shift",
+            "name": "Today’s shift",
+            "required": false,
+            "readOnly": true,
+            "visible": true
+          },
+          {
+            "type": "Text",
+            "value": "7h",
+            "id": "hoursWorked",
+            "name": "Hours worked today",
+            "required": false,
+            "readOnly": true,
+            "visible": true
+          }
+        ]
+      },
+      {
+        "step": "Clocking",
+        "description": "",
+        "visible": true,
+        "groups": [],
+        "items": [
+          {
+            "type": "Text",
+            "value": "9:00",
+            "id": "clockedIn",
+            "name": "Clocked in",
+            "required": false,
+            "readOnly": true,
+            "visible": true
+          },
+          {
+            "type": "Text",
+            "value": "12:00 - 13:00",
+            "id": "break",
+            "name": "Break",
+            "required": false,
+            "readOnly": true,
+            "visible": true
+          },
+          {
+            "type": "Text",
+            "value": "16:00",
+            "id": "clockedOut",
+            "name": "Clocked out",
+            "required": false,
+            "readOnly": true,
+            "visible": true
+          },
+          {
+            "type": "Navigation",
+            "name": "Open time & attendence",
+            "deepLink": {
+              "type": "Functionality",
+              "functionality": "sd://time/1.0.0/clocking",
+              "id": "time-and-attendance",
+              "displayMode": "Default",
+              "icon": "Default"
+            },
+            "visible": true
+          }
+        ]
+      }
+    ],
+    "valueSets": {},
+    "viewOnly": true
+  },
+  "state": "Success"
+}

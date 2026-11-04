@@ -1,0 +1,22 @@
+{
+  "request": {
+    "url": "https://api.acc.sdworx.com/mysdworxappgateway/functionalities/api/1.0/currencyconversion/3723497/convert",
+    "body": {
+      "conversionDateTimeOffset": "2026-09-23T00:00:00.000",
+      "amount": 10.0,
+      "currencyIsoCode": "USD",
+      "destinationCurrencyIsoCode": "EUR"
+    }
+  },
+  "response": {
+    "status": 200,
+    "body": {
+      "result": {
+        "conversionDateTimeOffset": "2026-09-23T00:00:00+00:00",
+        "conversionRate": 0.925,
+        "amount": 9.25
+      },
+      "state": "Success"
+    }
+  }
+}

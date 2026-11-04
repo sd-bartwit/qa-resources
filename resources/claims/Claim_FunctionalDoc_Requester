@@ -1,0 +1,175 @@
+# Expense Claims — Requester (Employee) Functional Context
+
+> Source: Azure DevOps wiki "Digital Channels" → *Channels App / mysdworx app / Functional documentation / Expense Claims*.
+> Scope: employee/requester perspective. Companion to `Claim_APIdoc` and `Claim_APIrequests.json`.
+
+## 1. Overview & purpose
+The Expense Claim feature (mysdworx app) lets an employee/requester:
+- Create expenses
+- Add (link) expenses to a claim
+- View existing claims, create new claims, and submit them for approval
+
+Accessed from a dedicated **Claims tile** on the app home screen. Claim creation **hosts a provider-defined Form**; the app does not modify field structure or validation.
+
+## 2. Core concepts
+
+| Concept | Meaning |
+|--|--|
+| **Claim** | Container for one or more expenses, submitted for approval. Has a title, date (single or period), optional description, total amount(s), status. |
+| **Assigned expense** | An expense linked to a claim. |
+| **Unassigned expense** | An expense not yet linked to any claim. Shown in the Unassigned expenses list. |
+| **Linking** | Attaching an unassigned expense to an eligible claim. On link, the expense leaves the unassigned list and becomes part of the claim. |
+| **Unlinking** | Removing an assigned expense from its claim; it returns to the unassigned list. |
+
+Claim totals come from `totalAmounts` (a list — multiple currencies possible; only top two shown). Amounts formatted `0.000,00 EUR` (`value` + `symbol`); dates `DD/MM/YYYY` from `startDateTimeOffset` / `endDateTimeOffset` (or `claimDateTimeOffset` in list views).
+
+## 3. Claim lifecycle & states
+Claims (and their assigned expenses) exist in **four** states:
+
+| State | Description | Where surfaced |
+|--|--|--|
+| **Draft** | Created but not yet submitted. | Open tab → Draft claims list |
+| **Rejected** | Approver returned the claim for corrections. | Open tab → Rejected banner/list |
+| **Pending** | Submitted, awaiting approval. | Sent tab |
+| **Approved** | Reviewed and approved. | Sent tab |
+
+Assigned-expense states mirror the claim: **Draft / Rejected / Pending / Approved expense**.
+
+**Transitions:**
+- Draft → Pending (Submit for approval)
+- Rejected → Pending (Submit for approval)
+- Pending → Approved or Pending → Rejected (approver-driven; requester only observes result)
+- Delete removes a claim entirely (from Draft/Rejected)
+
+> Approved claims are terminal from the requester's perspective (not editable, not eligible for linking). No requester-initiated transition out of Pending or Approved is documented.
+
+## 4. User actions
+
+### Claim actions
+
+**Create expense claim**
+- **Trigger:** "Create a new claim" via FAB / Quick Action on Claims overview.
+- **Availability:** Backend returns a valid `endpointUri` embedded Quick Action; otherwise not shown.
+- **Preconditions:** Permission to create claims; valid creation endpoint available.
+- **Flow:** Opens provider Form → fill required data → **Save** (visible only when a change is recognised) → claim created in **Draft** → redirected to Draft claim detail.
+- **Validation:** Entirely provider/Form-defined; inline messages.
+- **Cancel/Back:** Nothing persisted.
+- **Errors:** Invalid `endpointUri` → "action unavailable"; Form can't load → "cannot be displayed"; submission error → stays on Form, can retry.
+
+**Edit expense claim**
+- Shown in claim-detail kebab when `canEdit = true`. *(Dedicated action page empty — behavior beyond the visibility flag is undocumented.)*
+
+**Delete expense claim**
+- **Availability:** `canDelete = true`; else not shown.
+- **Preconditions:** Viewing claim detail; claim exists; delete permission.
+- **Flow:** Delete → confirmation modal (deletion is **irreversible**) → Confirm/Cancel.
+- **On success:** Claim permanently removed; navigate to appropriate list (Draft/Returned); list updates immediately.
+- **On error:** Not deleted; error shown; stays on detail.
+
+**Submit expense claim**
+- **Availability / disabled unless:** Claim in **Draft or Rejected** AND contains **≥1 expense**.
+- **Preconditions:** User is claim owner; claim exists and is editable; submission-readiness satisfied.
+- **Flow:** **Submit for approval** → toast → user **stays on claim detail**. (One flow page mentions a confirmation dialog before submit — see gaps.)
+- **On success:** Claim → **Pending**; appears in **Sent** list.
+- **On error:** Error shown; claim remains editable; no partial submission.
+
+### Expense actions (expense-level — claim-relevant only)
+
+> Standalone expense create / edit / view / delete / submit behaviour is provider-Form driven and **not specific to claims** — out of scope here (see the *Expenses* functional docs). For claim testing, only the claim-touching aspect below matters; the key claim operations are **linking** and **unlinking** (see the assigned / unassigned sections).
+
+**Add expense and link to claim**
+- Reuses the standard expense creation screen; when started from **Claims context**, extra bottom actions appear:
+  - **Add to claim** (primary) → **Select claim** screen (claim-selection flow).
+  - **Save** (secondary) → creates the expense as **unassigned** (no link).
+- Presence of **Add to claim** depends on **entry context, not permissions**; expense validation & submission behaviour are unchanged.
+
+### Assigned expense actions (on a claim's expense)
+
+| Action | Availability flag | Behavior | Errors |
+|--|--|--|--|
+| **Edit** | `canEdit = true` (pencil in header) | Navigate to expense edit screen → update → Save/Cancel → back to detail. | Backend error → not updated; validation error → inline feedback. |
+| **Unlink ("Remove from claim")** | `canUnlinkExpenses = true` | Kebab → Remove from claim → confirm modal → on confirm: expense unlinked, returns to **Unassigned** list, navigates away. | Backend error → remains linked. |
+| **Delete** | `canDelete = true` | Kebab → Delete → confirm modal (permanent) → on confirm: expense permanently removed & unlinked. | Backend error → not deleted. |
+
+**Kebab menu visibility (assigned expense):**
+
+| canUnlinkExpenses | canDelete | Kebab behavior |
+|--|--|--|
+| true | true | Both actions shown |
+| true | false | "Remove from claim" only |
+| false | true | "Delete expense" only |
+| false | false | Kebab **hidden** |
+
+### Unassigned expense actions
+
+| Action | Availability | Behavior |
+|--|--|--|
+| **Edit** | `canEdit = true` | Same edit-screen flow; back to unassigned detail. |
+| **Delete** | `canDelete = true` (kebab) | Confirm modal → permanent delete → navigate away. |
+| **Link to claim ("Add to claim")** | **Always available** | Select claim from eligible list → confirm → expense linked, removed from unassigned list, navigate to claim detail. |
+
+**Link details:**
+- Entry points: unassigned expense detail, unassigned selection view, expense creation flow, claim detail screen.
+- Preconditions: expense not currently linked; permission to manage claims.
+- Errors: backend error → remains unassigned; permission error → no change; network/timeout → retry.
+- Multi-select: Unassigned list supports multi-select ("Select all"); bottom-sheet "Add to claim" enabled only when ≥1 selected (greyed otherwise); "Delete" also available in selection.
+
+## 5. Submission readiness & linking eligibility
+
+**Claim submission readiness — all must hold:**
+- Claim in **Draft** or **Rejected**
+- Claim contains **≥1 expense**
+- All required claim information provided
+- All linked expenses in a valid state
+- UI: **Submit for approval** disabled until all met.
+- **Empty-claim:** empty state shown; user prompted to add expenses; submission not possible.
+
+**Claim eligibility for linking expenses:**
+- Eligible claim states: **Draft**, **Rejected**, **Pending (if supported by provider)**.
+- **Approved** claims are **not eligible**.
+- Only claims with `supportsExpenseLinking = true` are shown in selection screens; ineligible claims hidden/unselectable.
+- Same eligibility across all linking entry points. Selection uses **radio buttons — one claim at a time**.
+
+## 6. Travel allowance specifics
+None documented — page states *"Coming soon…"*.
+
+## 7. Key screens (brief)
+
+| Screen | Purpose / notes |
+|--|--|
+| **Claims entrypoint** | Home-screen tile → Claims overview. |
+| **Claims overview** | Two tabs: **Open** (rejected + draft claims + unassigned expenses) and **Sent** (pending + approved). Last-selected tab persisted. Rejected shown only when `rejectedClaimsCount > 0`. Empty states: full or partial (per section). FAB Quick Actions. |
+| **Create claim screen** | Full-screen provider Form; Save creates Draft; Back exits without creating. |
+| **Draft claims list** | Draft-state claims; tap → detail. |
+| **Rejected claims list** | Rejected-state claims (via red banner); tap → detail. |
+| **Claim detail** | Header (name; "Add unassigned expenses" when `canLinkExpenses=true`); kebab (Edit if `canEdit`, Delete if `canDelete`); total(s); claim date; description (if not empty); details link (if `canViewDetails`); expense items; state labels; **Submit for approval** only in Draft/Rejected. Rejected adds Rejected label, general rejection message, and rejected-expenses list with `approverComment`. |
+| **Claim overview (pending/approved)** | Sent-tab detail; shows Pending/Approved label. |
+| **Assigned expense detail** | Standard expense detail + Edit/Unlink/Delete per flags. |
+| **Unassigned expense detail** | Standard expense detail + Edit (if `canEdit`), Delete (if `canDelete`), "Add to claim" always. |
+| **Unassigned expenses list** | List + multi-select; bottom sheet Add to claim / Delete. |
+| **Open claims list (selection mode)** | Entered only during linking; shows only linkable claims; radio single-select; always-visible bottom sheet "Add to this claim" + count; "Cancel" only when a claim is selected. |
+
+## 8. Notable rules, edge cases & validations (QA-relevant)
+- **Submit disabled** when: not Draft/Rejected, OR no expenses, OR missing required info, OR any linked expense invalid.
+- **Empty claim** → empty state + cannot submit.
+- **Only Draft/Rejected/Pending(provider) claims linkable**; Approved never linkable; verify `supportsExpenseLinking` filtering across all entry points.
+- **Delete claim / delete expense / unlink** all require explicit confirmation; delete claim warns it's irreversible.
+- **Kebab hidden entirely** when no actions available; single-action sheet when only one flag true.
+- **Actions gated by flags:** `canEdit`, `canDelete`, `canUnlinkExpenses`, `canLinkExpenses`, `canViewDetails`.
+- **Link to claim always available** even when other actions are restricted.
+- **Unlinked expense returns to Unassigned**; deleted expense removed from all views.
+- **Save button on Create Form** appears only when a change is recognised.
+- **Amounts:** `totalAmounts` is a list; only top two shown when >2; multi-currency possible.
+- **Description** hidden when empty/null; **Details link** hidden when `canViewDetails=false`.
+- **Rejected claim** shows `approverComment` per rejected expense.
+- **Tab state persistence** on Claims overview.
+- **Overview counters** drive visibility: rejected hidden when count 0; full vs partial empty states.
+- **Multi-select bottom sheet** button greyed with 0 selected.
+- **Error/retry paths:** create Form (stay & retry), submit (remains editable), link (retry on network/timeout), delete/unlink/edit (no change on backend error).
+
+## Open questions / gaps
+- **Empty wiki pages:** *Rules & Behavior/Expense Claims*, *General claim rules*, *Travel allowance specifics*, *Edit expense claim* (User Action), *View draft/pending-approved/rejected claim details* flows. Edit-claim behavior beyond `canEdit` is undocumented.
+- **Submit confirmation inconsistency:** Submit User Action = tap Submit → toast → stay (no dialog); the Submit **User Flow** describes a **confirmation dialog**. Verify actual behavior.
+- **State transitions** only partially specified requester-side; no requester-initiated exit from Pending/Approved documented.
+- **Field-level validation** for create/edit is delegated to the provider Form — required fields, formats, thresholds not enumerated here (see Forms spec / API data requirements).
+- **"Pending (if supported by provider)"** linking eligibility — provider set unspecified.

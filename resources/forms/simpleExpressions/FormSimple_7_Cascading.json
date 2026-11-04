@@ -1,0 +1,15 @@
+{
+  "result": {
+    "type": "Simple",
+    "items": [
+      { "type": "Boolean", "value": true, "id": "chain-a", "name": "Chain A (driver toggle)", "required": false, "readOnly": false, "visible": true },
+      { "type": "Text", "value": "B value", "id": "chain-b", "name": "SE-701 B visible = #chain-a", "required": "#chain-a", "readOnly": false, "visible": "#chain-a" },
+      { "type": "Text", "value": "C value", "id": "chain-c", "name": "SE-702 C visible = not( empty( #chain-b ) )", "required": "not( empty( #chain-b ) )", "readOnly": false, "visible": "not( empty( #chain-b ) )" }
+    ],
+    "changesOnly": false,
+    "title": "7. Cascading dependencies",
+    "description": "SE-701..SE-702 – chained references (A -> B -> C)",
+    "viewOnly": false
+  },
+  "state": "Success"
+}

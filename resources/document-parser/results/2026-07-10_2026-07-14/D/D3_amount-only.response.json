@@ -1,0 +1,11 @@
+{
+  "result": {
+    "amount": { "value": 10.05, "confidence": 0.988 },
+    "taxDetails": [],
+    "customFields": [],
+    "customFieldMap": [
+      { "knownType": "Total", "value": "10.05", "confidence": 0.988, "isCurrency": true }
+    ]
+  },
+  "state": "Success"
+}

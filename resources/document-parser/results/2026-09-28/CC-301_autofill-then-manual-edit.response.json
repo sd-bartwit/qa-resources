@@ -1,0 +1,31 @@
+{
+  "convert": [
+    {
+      "request": {
+        "conversionDateTimeOffset": "2026-03-28T00:00:00.000",
+        "amount": 10.05,
+        "currencyIsoCode": "USD",
+        "destinationCurrencyIsoCode": "EUR"
+      },
+      "response": {
+        "result": { "conversionDateTimeOffset": "2026-03-28T00:00:00+00:00", "conversionRate": 0.92, "amount": 9.25 },
+        "state": "Success"
+      },
+      "note": "Initial autofill trigger, fired automatically after parsedocument, using the receipt date."
+    },
+    {
+      "request": {
+        "conversionDateTimeOffset": "2026-09-23T00:00:00.000",
+        "amount": 10.05,
+        "currencyIsoCode": "USD",
+        "destinationCurrencyIsoCode": "EUR"
+      },
+      "response": {
+        "result": { "conversionDateTimeOffset": "2026-09-23T00:00:00+00:00", "conversionRate": 0.925, "amount": 9.30 },
+        "state": "Success"
+      },
+      "note": "Re-triggered by manually changing the date to 23/9/2026, ~14s after the initial call. Amount is still 10.05 here — the date edit happened before the amount edit below."
+    }
+  ],
+  "manual_amount_edit_note": "After the date change, amount was manually edited (to 44.122). No further `convert` call fired for this — the banner recalculated client-side using the cached rate (0.925): 44.122 × 0.925 ≈ 40.81 EUR, matching what was displayed."
+}

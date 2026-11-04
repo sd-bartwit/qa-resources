@@ -1,0 +1,47 @@
+= interfield dependencies
+
+We want to support interfield dependencies within forms through simple expressions.
+
+Using either boolean values (constants) or simple expressions in the following properties:
+- required, 
+- readOnly
+- visible 
+These simple expressions allow the states of these fields to be dynamic, based on the values of other fields.
+
+Constants (strings, numbers, booleans) can be used in these expressions. When referring to other fields, you can do the following:
+- either assign the GenericInputItem to a new SimpleExpression
+- manually use string representation by prefixing the field id with the # character.
+
+More documentation about simple expressions: https://api.sdworx.com/functionalities-doc/Documentation/Integration/Domains/forms.html?tabs=currency#expressions
+
+##📈TECHNICAL
+The logic of simple expressions is based on the following github: https://github.com/StevenThuriot/simple-expressions. Suggestion of Steven: past it into ChatGPT and see what it does.. 
+
+## 📽️ FIGMA SCREENS | JIRA LINK
+
+We use the default inline validation to show the user the client validation triggered by the simple expressions:
+
+<IMG  src="https://sdworx.visualstudio.com/85efff39-1902-4b26-b667-6853ef5a8806/_apis/wit/attachments/67f728f6-9fb4-4a8f-a125-113a259203f8?fileName=image.png"  alt="Image"/>
+https://www.figma.com/design/DZvjfS6kvvCxTGBhnnfP8l/mysdworx-app?node-id=26170-51505&t=P4qtnQPd7yCSBa9T-4
+
+## Validation & error messages
+### Operators and methods
+The following operators are available, which are also available as static methods:
+
+|Operator|Method Variant|Description|Example|Error message|
+|--|--|--|--|--|
+|!|Not|Not|||
+|&|And|And|||
+||Or|Or|||
+|>|GreaterThan|Greater than|||
+|>=|GreaterThanOrEqual|Greater than or equal to|||
+|<|LessThan|Less than|||
+|<=|LessThanOrEqual|Less than or equal to|||
+
+A few others are available as static methods:
+
+|Method|Description|Example|Error message|
+|--|--|--|--|
+|AreEqual|Check if two fields are equal| ||
+|IsEmpty|Check if the field is empty| ||
+|Contains|Check if the field contains a certain value| ||

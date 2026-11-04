@@ -1,0 +1,7 @@
+{
+  "error": {
+    "code": "BadRequest",
+    "message": "The uploaded document could not be processed."
+  },
+  "state": "Error"
+}

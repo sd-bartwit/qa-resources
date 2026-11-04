@@ -1,0 +1,30 @@
+{
+  "result": {
+    "type": "Simple",
+    "badge": { "type": "Information", "title": "Approved", "visible": true },
+    "items": [
+      {
+        "type": "Grouping",
+        "group": "Remarks",
+        "items": [
+          {
+            "type": "TextArea",
+            "value": "Line 1\nLine 2\nLine 3\nLine 4\nLine 5\nLine 6",
+            "id": "remarks",
+            "name": "Remarks (TextArea)",
+            "required": false,
+            "readOnly": true,
+            "visible": true
+          }
+        ],
+        "isExpanded": true,
+        "visible": true
+      }
+    ],
+    "changesOnly": false,
+    "title": "Simple form with group",
+    "submitText": "Submit",
+    "viewOnly": true
+  },
+  "state": "Success"
+}

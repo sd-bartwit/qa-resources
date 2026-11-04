@@ -1,0 +1,690 @@
+﻿{
+    "type":  "Simple",
+    "items":  [
+                  {
+                      "type":  "Text",
+                      "allowedValues":  [
+                                            {
+                                                "id":  "02i9O00000evaJ3QAI",
+                                                "value":  "Asset 2"
+                                            },
+                                            {
+                                                "id":  "02i9O00000emAMEQA2",
+                                                "value":  "Asset 3"
+                                            },
+                                            {
+                                                "id":  "02i9O000009VZNhQAO",
+                                                "value":  "Asset: Gert Service"
+                                            },
+                                            {
+                                                "id":  "02i9O00000eXLxtQAG",
+                                                "value":  "Asset: Gert Service 1"
+                                            },
+                                            {
+                                                "id":  "02i9O00000eXGLgQAO",
+                                                "value":  "Asset: Gert Service 2"
+                                            },
+                                            {
+                                                "id":  "02i9O000009PwwbQAC",
+                                                "value":  "BE -sh1234 - Full ondernemerpack"
+                                            },
+                                            {
+                                                "id":  "02i9O00000jRbw1QAC",
+                                                "value":  "Merc-Benz 1"
+                                            },
+                                            {
+                                                "id":  "02i9O00000jRbzFQAS",
+                                                "value":  "Merc-Benz 2"
+                                            },
+                                            {
+                                                "id":  "02i9O00000jRZDZQA4",
+                                                "value":  "Merc-Benz 3"
+                                            },
+                                            {
+                                                "id":  "02i9O00000jRc8vQAC",
+                                                "value":  "Merc-Benz 4"
+                                            },
+                                            {
+                                                "id":  "02i9O00000jR6gEQAS",
+                                                "value":  "Porsche A1"
+                                            },
+                                            {
+                                                "id":  "02i9O00000jRKLhQAO",
+                                                "value":  "Porsche A2"
+                                            },
+                                            {
+                                                "id":  "02i9O00000jRHoxQAG",
+                                                "value":  "Porsche A3"
+                                            },
+                                            {
+                                                "id":  "02i9O00000jqFInQAM",
+                                                "value":  "Porsche A4"
+                                            },
+                                            {
+                                                "id":  "02i9O00000jRNOPQA4",
+                                                "value":  "Porsche A4"
+                                            },
+                                            {
+                                                "id":  "02i9O00000jqEMkQAM",
+                                                "value":  "Porsche A5"
+                                            },
+                                            {
+                                                "id":  "02i9O00000jqFSTQA2",
+                                                "value":  "Porsche A5"
+                                            },
+                                            {
+                                                "id":  "02i9O00000k9DjVQAU",
+                                                "value":  "Porsche A5"
+                                            },
+                                            {
+                                                "id":  "02i9O00000jVDofQAG",
+                                                "value":  "Tesla 1"
+                                            },
+                                            {
+                                                "id":  "02i9O00000jVDqHQAW",
+                                                "value":  "Tesla 2"
+                                            },
+                                            {
+                                                "id":  "02i9O000004XT8zQAG",
+                                                "value":  "andere brol"
+                                            },
+                                            {
+                                                "id":  "02i9O000009PwwcQAC",
+                                                "value":  "test inez asset"
+                                            }
+                                        ],
+                      "properties":  {
+                                         "type":  "Select",
+                                         "orientation":  "Horizontal"
+                                     },
+                      "id":  "ticketAsset",
+                      "name":  "What is your question about?",
+                      "required":  true,
+                      "readOnly":  false,
+                      "visible":  true
+                  },
+                  {
+                      "type":  "Text",
+                      "allowedValues":  [
+                                            {
+                                                "id":  "a1u1l000000ZSCXAA4",
+                                                "value":  "Affiliate_Name"
+                                            },
+                                            {
+                                                "id":  "a1u1l000000hVwuAAE",
+                                                "value":  "1BB4321"
+                                            },
+                                            {
+                                                "id":  "a1u1l000000hVyRAAU",
+                                                "value":  "1CC4321"
+                                            },
+                                            {
+                                                "id":  "a1u1l000000j6MqAAI",
+                                                "value":  "MORGEN"
+                                            },
+                                            {
+                                                "id":  "a1u9O00000W1jgbQAB",
+                                                "value":  "Payroll BE"
+                                            },
+                                            {
+                                                "id":  "a1u9O00000V0EAnQAN",
+                                                "value":  "Merc Benz BE"
+                                            },
+                                            {
+                                                "id":  "a1u9O00000V3VLZQA3",
+                                                "value":  "Tesla London"
+                                            }
+                                        ],
+                      "properties":  {
+                                         "type":  "Select",
+                                         "orientation":  "Horizontal"
+                                     },
+                      "id":  "ticketAffiliate_02i9O00000evaJ3QAI|02i9O000009VZNhQAO|02i9O000009PwwbQAC|02i9O00000jRbw1QAC|02i9O00000jR6gEQAS|02i9O00000jRKLhQAO|02i9O00000jqFInQAM|02i9O00000jRNOPQA4|02i9O00000jqEMkQAM|02i9O00000jqFSTQA2|02i9O000004XT8zQAG",
+                      "name":  "Affiliate",
+                      "required":  false,
+                      "readOnly":  false,
+                      "visible":  "or( or( or( or( or( or( or( or( or( or( eq( #ticketAsset, \u002702i9O00000evaJ3QAI\u0027 ), eq( #ticketAsset, \u002702i9O000009VZNhQAO\u0027 ) ), eq( #ticketAsset, \u002702i9O000009PwwbQAC\u0027 ) ), eq( #ticketAsset, \u002702i9O00000jRbw1QAC\u0027 ) ), eq( #ticketAsset, \u002702i9O00000jR6gEQAS\u0027 ) ), eq( #ticketAsset, \u002702i9O00000jRKLhQAO\u0027 ) ), eq( #ticketAsset, \u002702i9O00000jqFInQAM\u0027 ) ), eq( #ticketAsset, \u002702i9O00000jRNOPQA4\u0027 ) ), eq( #ticketAsset, \u002702i9O00000jqEMkQAM\u0027 ) ), eq( #ticketAsset, \u002702i9O00000jqFSTQA2\u0027 ) ), eq( #ticketAsset, \u002702i9O000004XT8zQAG\u0027 ) )"
+                  },
+                  {
+                      "type":  "Text",
+                      "id":  "ticketSubject",
+                      "name":  "What is the subject/title of your request?",
+                      "required":  true,
+                      "readOnly":  false,
+                      "visible":  true
+                  },
+                  {
+                      "type":  "TextArea",
+                      "id":  "ticketDescription",
+                      "name":  "Give us a detailed description of your request",
+                      "required":  true,
+                      "readOnly":  false,
+                      "visible":  true
+                  },
+                  {
+                      "type":  "Text",
+                      "allowedValues":  [
+                                            {
+                                                "id":  "0121l0000008e8SAAQ",
+                                                "value":  "Query: For general questions"
+                                            }
+                                        ],
+                      "properties":  {
+                                         "type":  "Radio",
+                                         "orientation":  "Vertical"
+                                     },
+                      "id":  "ticketRequestType",
+                      "name":  "Choose type of request",
+                      "required":  true,
+                      "readOnly":  false,
+                      "visible":  true
+                  },
+                  {
+                      "type":  "Text",
+                      "allowedValues":  [
+                                            {
+                                                "id":  "1",
+                                                "value":  "1"
+                                            },
+                                            {
+                                                "id":  "2",
+                                                "value":  "2"
+                                            },
+                                            {
+                                                "id":  "3",
+                                                "value":  "3"
+                                            },
+                                            {
+                                                "id":  "4",
+                                                "value":  "4"
+                                            },
+                                            {
+                                                "id":  "5",
+                                                "value":  "5"
+                                            }
+                                        ],
+                      "properties":  {
+                                         "type":  "Radio",
+                                         "orientation":  "Horizontal"
+                                     },
+                      "id":  "ticketPriority_a1u1l000000hVwuAAE",
+                      "name":  "Priority",
+                      "required":  false,
+                      "readOnly":  false,
+                      "visible":  "eq( #ticketAffiliate_02i9O00000evaJ3QAI|02i9O000009VZNhQAO|02i9O000009PwwbQAC|02i9O00000jRbw1QAC|02i9O00000jR6gEQAS|02i9O00000jRKLhQAO|02i9O00000jqFInQAM|02i9O00000jRNOPQA4|02i9O00000jqEMkQAM|02i9O00000jqFSTQA2|02i9O000004XT8zQAG, \u0027a1u1l000000hVwuAAE\u0027 )"
+                  },
+                  {
+                      "type":  "Boolean",
+                      "value":  false,
+                      "id":  "ticketFinancialImpact_a1u1l000000ZSCXAA4",
+                      "name":  "Financial impact",
+                      "required":  false,
+                      "readOnly":  false,
+                      "visible":  "eq( #ticketAffiliate_02i9O00000evaJ3QAI|02i9O000009VZNhQAO|02i9O000009PwwbQAC|02i9O00000jRbw1QAC|02i9O00000jR6gEQAS|02i9O00000jRKLhQAO|02i9O00000jqFInQAM|02i9O00000jRNOPQA4|02i9O00000jqEMkQAM|02i9O00000jqFSTQA2|02i9O000004XT8zQAG, \u0027a1u1l000000ZSCXAA4\u0027 )"
+                  },
+                  {
+                      "type":  "Boolean",
+                      "value":  false,
+                      "id":  "ticketFinancialImpact_a1u1l000000hVyRAAU",
+                      "name":  "Financial impact",
+                      "required":  false,
+                      "readOnly":  false,
+                      "visible":  "eq( #ticketAffiliate_02i9O00000evaJ3QAI|02i9O000009VZNhQAO|02i9O000009PwwbQAC|02i9O00000jRbw1QAC|02i9O00000jR6gEQAS|02i9O00000jRKLhQAO|02i9O00000jqFInQAM|02i9O00000jRNOPQA4|02i9O00000jqEMkQAM|02i9O00000jqFSTQA2|02i9O000004XT8zQAG, \u0027a1u1l000000hVyRAAU\u0027 )"
+                  },
+                  {
+                      "type":  "Boolean",
+                      "value":  false,
+                      "id":  "ticketFinancialImpact_a1u1l000000j6MqAAI",
+                      "name":  "Financial impact",
+                      "required":  false,
+                      "readOnly":  false,
+                      "visible":  "eq( #ticketAffiliate_02i9O00000evaJ3QAI|02i9O000009VZNhQAO|02i9O000009PwwbQAC|02i9O00000jRbw1QAC|02i9O00000jR6gEQAS|02i9O00000jRKLhQAO|02i9O00000jqFInQAM|02i9O00000jRNOPQA4|02i9O00000jqEMkQAM|02i9O00000jqFSTQA2|02i9O000004XT8zQAG, \u0027a1u1l000000j6MqAAI\u0027 )"
+                  },
+                  {
+                      "type":  "Boolean",
+                      "value":  false,
+                      "id":  "ticketFinancialImpact_a1u9O00000W1jgbQAB",
+                      "name":  "Financial impact",
+                      "required":  false,
+                      "readOnly":  false,
+                      "visible":  "eq( #ticketAffiliate_02i9O00000evaJ3QAI|02i9O000009VZNhQAO|02i9O000009PwwbQAC|02i9O00000jRbw1QAC|02i9O00000jR6gEQAS|02i9O00000jRKLhQAO|02i9O00000jqFInQAM|02i9O00000jRNOPQA4|02i9O00000jqEMkQAM|02i9O00000jqFSTQA2|02i9O000004XT8zQAG, \u0027a1u9O00000W1jgbQAB\u0027 )"
+                  },
+                  {
+                      "type":  "Boolean",
+                      "value":  false,
+                      "id":  "ticketFinancialImpact_a1u9O00000V0EAnQAN",
+                      "name":  "Financial impact",
+                      "required":  false,
+                      "readOnly":  false,
+                      "visible":  "eq( #ticketAffiliate_02i9O00000evaJ3QAI|02i9O000009VZNhQAO|02i9O000009PwwbQAC|02i9O00000jRbw1QAC|02i9O00000jR6gEQAS|02i9O00000jRKLhQAO|02i9O00000jqFInQAM|02i9O00000jRNOPQA4|02i9O00000jqEMkQAM|02i9O00000jqFSTQA2|02i9O000004XT8zQAG, \u0027a1u9O00000V0EAnQAN\u0027 )"
+                  },
+                  {
+                      "type":  "Boolean",
+                      "value":  false,
+                      "id":  "ticketFinancialImpact_a1u9O00000V3VLZQA3",
+                      "name":  "Financial impact",
+                      "required":  false,
+                      "readOnly":  false,
+                      "visible":  "eq( #ticketAffiliate_02i9O00000evaJ3QAI|02i9O000009VZNhQAO|02i9O000009PwwbQAC|02i9O00000jRbw1QAC|02i9O00000jR6gEQAS|02i9O00000jRKLhQAO|02i9O00000jqFInQAM|02i9O00000jRNOPQA4|02i9O00000jqEMkQAM|02i9O00000jqFSTQA2|02i9O000004XT8zQAG, \u0027a1u9O00000V3VLZQA3\u0027 )"
+                  },
+                  {
+                      "type":  "Text",
+                      "allowedValues":  [
+                                            {
+                                                "id":  "A",
+                                                "value":  "\u003c20%"
+                                            },
+                                            {
+                                                "id":  "B",
+                                                "value":  "20% - 30%"
+                                            },
+                                            {
+                                                "id":  "C",
+                                                "value":  "30% - 50%"
+                                            },
+                                            {
+                                                "id":  "D",
+                                                "value":  "\u003e50%"
+                                            }
+                                        ],
+                      "properties":  {
+                                         "type":  "Select",
+                                         "orientation":  "Horizontal"
+                                     },
+                      "id":  "ticketImpactedEmployees_a1u1l000000ZSCXAA4",
+                      "name":  "Number of employees impacted",
+                      "required":  "and( eq( #ticketAffiliate_02i9O00000evaJ3QAI|02i9O000009VZNhQAO|02i9O000009PwwbQAC|02i9O00000jRbw1QAC|02i9O00000jR6gEQAS|02i9O00000jRKLhQAO|02i9O00000jqFInQAM|02i9O00000jRNOPQA4|02i9O00000jqEMkQAM|02i9O00000jqFSTQA2|02i9O000004XT8zQAG, \u0027a1u1l000000ZSCXAA4\u0027 ), #ticketFinancialImpact_a1u1l000000ZSCXAA4 )",
+                      "readOnly":  false,
+                      "visible":  "and( eq( #ticketAffiliate_02i9O00000evaJ3QAI|02i9O000009VZNhQAO|02i9O000009PwwbQAC|02i9O00000jRbw1QAC|02i9O00000jR6gEQAS|02i9O00000jRKLhQAO|02i9O00000jqFInQAM|02i9O00000jRNOPQA4|02i9O00000jqEMkQAM|02i9O00000jqFSTQA2|02i9O000004XT8zQAG, \u0027a1u1l000000ZSCXAA4\u0027 ), #ticketFinancialImpact_a1u1l000000ZSCXAA4 )"
+                  },
+                  {
+                      "type":  "Text",
+                      "allowedValues":  [
+                                            {
+                                                "id":  "A",
+                                                "value":  "\u003c20%"
+                                            },
+                                            {
+                                                "id":  "B",
+                                                "value":  "20% - 30%"
+                                            },
+                                            {
+                                                "id":  "C",
+                                                "value":  "30% - 50%"
+                                            },
+                                            {
+                                                "id":  "D",
+                                                "value":  "\u003e50%"
+                                            }
+                                        ],
+                      "properties":  {
+                                         "type":  "Select",
+                                         "orientation":  "Horizontal"
+                                     },
+                      "id":  "ticketImpactedEmployees_a1u1l000000hVyRAAU",
+                      "name":  "Number of employees impacted",
+                      "required":  "and( eq( #ticketAffiliate_02i9O00000evaJ3QAI|02i9O000009VZNhQAO|02i9O000009PwwbQAC|02i9O00000jRbw1QAC|02i9O00000jR6gEQAS|02i9O00000jRKLhQAO|02i9O00000jqFInQAM|02i9O00000jRNOPQA4|02i9O00000jqEMkQAM|02i9O00000jqFSTQA2|02i9O000004XT8zQAG, \u0027a1u1l000000hVyRAAU\u0027 ), #ticketFinancialImpact_a1u1l000000hVyRAAU )",
+                      "readOnly":  false,
+                      "visible":  "and( eq( #ticketAffiliate_02i9O00000evaJ3QAI|02i9O000009VZNhQAO|02i9O000009PwwbQAC|02i9O00000jRbw1QAC|02i9O00000jR6gEQAS|02i9O00000jRKLhQAO|02i9O00000jqFInQAM|02i9O00000jRNOPQA4|02i9O00000jqEMkQAM|02i9O00000jqFSTQA2|02i9O000004XT8zQAG, \u0027a1u1l000000hVyRAAU\u0027 ), #ticketFinancialImpact_a1u1l000000hVyRAAU )"
+                  },
+                  {
+                      "type":  "Text",
+                      "allowedValues":  [
+                                            {
+                                                "id":  "A",
+                                                "value":  "\u003c20%"
+                                            },
+                                            {
+                                                "id":  "B",
+                                                "value":  "20% - 30%"
+                                            },
+                                            {
+                                                "id":  "C",
+                                                "value":  "30% - 50%"
+                                            },
+                                            {
+                                                "id":  "D",
+                                                "value":  "\u003e50%"
+                                            }
+                                        ],
+                      "properties":  {
+                                         "type":  "Select",
+                                         "orientation":  "Horizontal"
+                                     },
+                      "id":  "ticketImpactedEmployees_a1u1l000000j6MqAAI",
+                      "name":  "Number of employees impacted",
+                      "required":  "and( eq( #ticketAffiliate_02i9O00000evaJ3QAI|02i9O000009VZNhQAO|02i9O000009PwwbQAC|02i9O00000jRbw1QAC|02i9O00000jR6gEQAS|02i9O00000jRKLhQAO|02i9O00000jqFInQAM|02i9O00000jRNOPQA4|02i9O00000jqEMkQAM|02i9O00000jqFSTQA2|02i9O000004XT8zQAG, \u0027a1u1l000000j6MqAAI\u0027 ), #ticketFinancialImpact_a1u1l000000j6MqAAI )",
+                      "readOnly":  false,
+                      "visible":  "and( eq( #ticketAffiliate_02i9O00000evaJ3QAI|02i9O000009VZNhQAO|02i9O000009PwwbQAC|02i9O00000jRbw1QAC|02i9O00000jR6gEQAS|02i9O00000jRKLhQAO|02i9O00000jqFInQAM|02i9O00000jRNOPQA4|02i9O00000jqEMkQAM|02i9O00000jqFSTQA2|02i9O000004XT8zQAG, \u0027a1u1l000000j6MqAAI\u0027 ), #ticketFinancialImpact_a1u1l000000j6MqAAI )"
+                  },
+                  {
+                      "type":  "Text",
+                      "allowedValues":  [
+                                            {
+                                                "id":  "A",
+                                                "value":  "\u003c20%"
+                                            },
+                                            {
+                                                "id":  "B",
+                                                "value":  "20% - 30%"
+                                            },
+                                            {
+                                                "id":  "C",
+                                                "value":  "30% - 50%"
+                                            },
+                                            {
+                                                "id":  "D",
+                                                "value":  "\u003e50%"
+                                            }
+                                        ],
+                      "properties":  {
+                                         "type":  "Select",
+                                         "orientation":  "Horizontal"
+                                     },
+                      "id":  "ticketImpactedEmployees_a1u9O00000W1jgbQAB",
+                      "name":  "Number of employees impacted",
+                      "required":  "and( eq( #ticketAffiliate_02i9O00000evaJ3QAI|02i9O000009VZNhQAO|02i9O000009PwwbQAC|02i9O00000jRbw1QAC|02i9O00000jR6gEQAS|02i9O00000jRKLhQAO|02i9O00000jqFInQAM|02i9O00000jRNOPQA4|02i9O00000jqEMkQAM|02i9O00000jqFSTQA2|02i9O000004XT8zQAG, \u0027a1u9O00000W1jgbQAB\u0027 ), #ticketFinancialImpact_a1u9O00000W1jgbQAB )",
+                      "readOnly":  false,
+                      "visible":  "and( eq( #ticketAffiliate_02i9O00000evaJ3QAI|02i9O000009VZNhQAO|02i9O000009PwwbQAC|02i9O00000jRbw1QAC|02i9O00000jR6gEQAS|02i9O00000jRKLhQAO|02i9O00000jqFInQAM|02i9O00000jRNOPQA4|02i9O00000jqEMkQAM|02i9O00000jqFSTQA2|02i9O000004XT8zQAG, \u0027a1u9O00000W1jgbQAB\u0027 ), #ticketFinancialImpact_a1u9O00000W1jgbQAB )"
+                  },
+                  {
+                      "type":  "Text",
+                      "allowedValues":  [
+                                            {
+                                                "id":  "A",
+                                                "value":  "\u003c20%"
+                                            },
+                                            {
+                                                "id":  "B",
+                                                "value":  "20% - 30%"
+                                            },
+                                            {
+                                                "id":  "C",
+                                                "value":  "30% - 50%"
+                                            },
+                                            {
+                                                "id":  "D",
+                                                "value":  "\u003e50%"
+                                            }
+                                        ],
+                      "properties":  {
+                                         "type":  "Select",
+                                         "orientation":  "Horizontal"
+                                     },
+                      "id":  "ticketImpactedEmployees_a1u9O00000V0EAnQAN",
+                      "name":  "Number of employees impacted",
+                      "required":  "and( eq( #ticketAffiliate_02i9O00000evaJ3QAI|02i9O000009VZNhQAO|02i9O000009PwwbQAC|02i9O00000jRbw1QAC|02i9O00000jR6gEQAS|02i9O00000jRKLhQAO|02i9O00000jqFInQAM|02i9O00000jRNOPQA4|02i9O00000jqEMkQAM|02i9O00000jqFSTQA2|02i9O000004XT8zQAG, \u0027a1u9O00000V0EAnQAN\u0027 ), #ticketFinancialImpact_a1u9O00000V0EAnQAN )",
+                      "readOnly":  false,
+                      "visible":  "and( eq( #ticketAffiliate_02i9O00000evaJ3QAI|02i9O000009VZNhQAO|02i9O000009PwwbQAC|02i9O00000jRbw1QAC|02i9O00000jR6gEQAS|02i9O00000jRKLhQAO|02i9O00000jqFInQAM|02i9O00000jRNOPQA4|02i9O00000jqEMkQAM|02i9O00000jqFSTQA2|02i9O000004XT8zQAG, \u0027a1u9O00000V0EAnQAN\u0027 ), #ticketFinancialImpact_a1u9O00000V0EAnQAN )"
+                  },
+                  {
+                      "type":  "Text",
+                      "allowedValues":  [
+                                            {
+                                                "id":  "A",
+                                                "value":  "\u003c20%"
+                                            },
+                                            {
+                                                "id":  "B",
+                                                "value":  "20% - 30%"
+                                            },
+                                            {
+                                                "id":  "C",
+                                                "value":  "30% - 50%"
+                                            },
+                                            {
+                                                "id":  "D",
+                                                "value":  "\u003e50%"
+                                            }
+                                        ],
+                      "properties":  {
+                                         "type":  "Select",
+                                         "orientation":  "Horizontal"
+                                     },
+                      "id":  "ticketImpactedEmployees_a1u9O00000V3VLZQA3",
+                      "name":  "Number of employees impacted",
+                      "required":  "and( eq( #ticketAffiliate_02i9O00000evaJ3QAI|02i9O000009VZNhQAO|02i9O000009PwwbQAC|02i9O00000jRbw1QAC|02i9O00000jR6gEQAS|02i9O00000jRKLhQAO|02i9O00000jqFInQAM|02i9O00000jRNOPQA4|02i9O00000jqEMkQAM|02i9O00000jqFSTQA2|02i9O000004XT8zQAG, \u0027a1u9O00000V3VLZQA3\u0027 ), #ticketFinancialImpact_a1u9O00000V3VLZQA3 )",
+                      "readOnly":  false,
+                      "visible":  "and( eq( #ticketAffiliate_02i9O00000evaJ3QAI|02i9O000009VZNhQAO|02i9O000009PwwbQAC|02i9O00000jRbw1QAC|02i9O00000jR6gEQAS|02i9O00000jRKLhQAO|02i9O00000jqFInQAM|02i9O00000jRNOPQA4|02i9O00000jqEMkQAM|02i9O00000jqFSTQA2|02i9O000004XT8zQAG, \u0027a1u9O00000V3VLZQA3\u0027 ), #ticketFinancialImpact_a1u9O00000V3VLZQA3 )"
+                  },
+                  {
+                      "type":  "Attachment",
+                      "properties":  {
+                                         "maxAmount":  3,
+                                         "maxSize":  25,
+                                         "supportedFileTypes":  [
+                                                                    "conf",
+                                                                    "def",
+                                                                    "in",
+                                                                    "ini",
+                                                                    "list",
+                                                                    "log",
+                                                                    "text",
+                                                                    "txt",
+                                                                    "jpe",
+                                                                    "jpeg",
+                                                                    "jpg",
+                                                                    "png",
+                                                                    "pdf",
+                                                                    "xla",
+                                                                    "xlc",
+                                                                    "xlm",
+                                                                    "xls",
+                                                                    "xlt",
+                                                                    "xlw",
+                                                                    "doc",
+                                                                    "dot",
+                                                                    "docx",
+                                                                    "xlsx"
+                                                                ]
+                                     },
+                      "id":  "ticketAttachmentConfig",
+                      "name":  "Add an attachment.",
+                      "required":  false,
+                      "readOnly":  false,
+                      "visible":  true
+                  },
+                  {
+                      "type":  "Text",
+                      "value":  [
+
+                                ],
+                      "allowedValues":  [
+                                            {
+                                                "id":  "0051l000001wTWWAA2",
+                                                "value":  "Yuvraj Customer"
+                                            },
+                                            {
+                                                "id":  "0059O00000BY7GrQAL",
+                                                "value":  "MRU Contact"
+                                            },
+                                            {
+                                                "id":  "0051l0000034CN6AAM",
+                                                "value":  "Test Test"
+                                            },
+                                            {
+                                                "id":  "0051l000004kCTjAAM",
+                                                "value":  "Shottam Rowjee Mru"
+                                            },
+                                            {
+                                                "id":  "0051l000004kDdaAAE",
+                                                "value":  "Tommy Hilfiger"
+                                            },
+                                            {
+                                                "id":  "0051l000007b3txAAA",
+                                                "value":  "Pranaye Umrit Test"
+                                            },
+                                            {
+                                                "id":  "0059O00000JCiIrQAL",
+                                                "value":  "Denise Verhelst"
+                                            },
+                                            {
+                                                "id":  "0059O00000JCrNOQA1",
+                                                "value":  "Diederik Verhaegen"
+                                            },
+                                            {
+                                                "id":  "0059O00000JCkngQAD",
+                                                "value":  "Ronny Hendriks"
+                                            },
+                                            {
+                                                "id":  "0051l000009JLL3AAO",
+                                                "value":  "Hermione Grange"
+                                            },
+                                            {
+                                                "id":  "0059O00000DLnE2QAL",
+                                                "value":  "Singapore Contact"
+                                            },
+                                            {
+                                                "id":  "0059O00000DUVYhQAP",
+                                                "value":  "Diksha Jogee Acceptance"
+                                            },
+                                            {
+                                                "id":  "0059O00000DbXNJQA3",
+                                                "value":  "humairaa hossenally ACC"
+                                            },
+                                            {
+                                                "id":  "0059O00000DbXLhQAN",
+                                                "value":  "Pranaye Umrit"
+                                            },
+                                            {
+                                                "id":  "0059O00000TQnngQAD",
+                                                "value":  "Wiola Golec"
+                                            },
+                                            {
+                                                "id":  "0059O00000Vx7ziQAB",
+                                                "value":  "Charles Ray"
+                                            },
+                                            {
+                                                "id":  "0059O00000W46vlQAB",
+                                                "value":  "Annelies Meysmans"
+                                            },
+                                            {
+                                                "id":  "0059O00000ixHy2QAE",
+                                                "value":  "Yuvraj Customer 07OCT"
+                                            },
+                                            {
+                                                "id":  "0059O00000ixEuAQAU",
+                                                "value":  "Wio01 Golec"
+                                            },
+                                            {
+                                                "id":  "0059O00000rC0fVQAS",
+                                                "value":  "Z Zidane"
+                                            },
+                                            {
+                                                "id":  "0059O00000rC3NWQA0",
+                                                "value":  "W Rooney"
+                                            },
+                                            {
+                                                "id":  "0059O00000rBtvzQAC",
+                                                "value":  "A Hakimi"
+                                            },
+                                            {
+                                                "id":  "0059O00000zKsfRQAS",
+                                                "value":  "John Test"
+                                            },
+                                            {
+                                                "id":  "0059O00000zMdh7QAC",
+                                                "value":  "Daniel Carter"
+                                            },
+                                            {
+                                                "id":  "0059O00000zMdijQAC",
+                                                "value":  "Lucas Ferreira"
+                                            },
+                                            {
+                                                "id":  "0059O00000zMdfVQAS",
+                                                "value":  "Hugo Martins"
+                                            },
+                                            {
+                                                "id":  "0059O00000zSz3pQAC",
+                                                "value":  "Regina Fillange"
+                                            },
+                                            {
+                                                "id":  "0059O00000zSycuQAC",
+                                                "value":  "Mathis Verhaegen"
+                                            },
+                                            {
+                                                "id":  "0059O00000zMm7hQAC",
+                                                "value":  "Lucia Fernandez"
+                                            },
+                                            {
+                                                "id":  "0059O00000zQYVxQAO",
+                                                "value":  "Drake Ramoray"
+                                            },
+                                            {
+                                                "id":  "0059O00000zOOpJQAW",
+                                                "value":  "monkey dluffy"
+                                            },
+                                            {
+                                                "id":  "0059O00000zUNVVQA4",
+                                                "value":  "Anna Muller"
+                                            },
+                                            {
+                                                "id":  "0059O00000zUNk1QAG",
+                                                "value":  "Lukas Schneider"
+                                            },
+                                            {
+                                                "id":  "0059O000012WqLwQAK",
+                                                "value":  "Elena Vargas"
+                                            },
+                                            {
+                                                "id":  "0059O00000zUrIHQA0",
+                                                "value":  "Amelia Laurent"
+                                            },
+                                            {
+                                                "id":  "0059O000010bCzQQAU",
+                                                "value":  "Penta Customer Squirrel 02"
+                                            },
+                                            {
+                                                "id":  "0059O000010bCrNQAU",
+                                                "value":  "penta Customer Squirrel 01"
+                                            },
+                                            {
+                                                "id":  "0059O000011GPnrQAG",
+                                                "value":  "MySD User"
+                                            },
+                                            {
+                                                "id":  "0059O000011bIIJQA2",
+                                                "value":  "customer mru 0706"
+                                            }
+                                        ],
+                      "properties":  {
+                                         "type":  "MultiSelect"
+                                     },
+                      "id":  "ticketContactConfig",
+                      "name":  "Case is shared with",
+                      "required":  false,
+                      "readOnly":  false,
+                      "visible":  true
+                  }
+              ],
+    "changesOnly":  false,
+    "title":  "Log a ticket",
+    "description":  "",
+    "metadata":  {
+                     "MySpContactId":  "0039O00002d7V1ZQAU",
+                     "AccountId_02i9O00000evaJ3QAI":  "0011l00001Na1AHAAZ",
+                     "AccountId_02i9O00000emAMEQA2":  "0011l00001Na1AHAAZ",
+                     "AccountId_02i9O000009VZNhQAO":  "0011l0000091Xb5AAE",
+                     "AccountId_02i9O00000eXLxtQAG":  "0011l0000091Xb5AAE",
+                     "AccountId_02i9O00000eXGLgQAO":  "0011l0000091Xb5AAE",
+                     "AccountId_02i9O000009PwwbQAC":  "0011l0000091Xb5AAE",
+                     "AccountId_02i9O00000jRbw1QAC":  "0019O00001e5xT2QAI",
+                     "AccountId_02i9O00000jRbzFQAS":  "0019O00001e5xT2QAI",
+                     "AccountId_02i9O00000jRZDZQA4":  "0019O00001e5xT2QAI",
+                     "AccountId_02i9O00000jRc8vQAC":  "0019O00001e5xT2QAI",
+                     "AccountId_02i9O00000jR6gEQAS":  "0019O00001e6HgDQAU",
+                     "AccountId_02i9O00000jRKLhQAO":  "0019O00001e6HgDQAU",
+                     "AccountId_02i9O00000jRHoxQAG":  "0019O00001e6HgDQAU",
+                     "AccountId_02i9O00000jqFInQAM":  "0019O00001e6HgDQAU",
+                     "AccountId_02i9O00000jRNOPQA4":  "0019O00001e6HgDQAU",
+                     "AccountId_02i9O00000jqEMkQAM":  "0019O00001e6HgDQAU",
+                     "AccountId_02i9O00000jqFSTQA2":  "0019O00001e6HgDQAU",
+                     "AccountId_02i9O00000k9DjVQAU":  "0019O00001e6HgDQAU",
+                     "AccountId_02i9O00000jVDofQAG":  "0019O00001eDgoOQAS",
+                     "AccountId_02i9O00000jVDqHQAW":  "0019O00001eDgoOQAS",
+                     "AccountId_02i9O000004XT8zQAG":  "0011l00001Na1AHAAZ",
+                     "AccountId_02i9O000009PwwcQAC":  "0011l0000091Xb5AAE"
+                 },
+    "submitText":  "Log a ticket",
+    "viewOnly":  false
+}

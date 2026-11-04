@@ -1,0 +1,42 @@
+{
+  "note": "CC-102 manual entry, preferred currency (EUR) selected — no `convert` call observed in captured traffic, as expected (no conversion needed when currency = preferred).",
+  "additional_manual_switch_evidence": [
+    {
+      "currency": "USD",
+      "request": { "conversionDateTimeOffset": "2026-09-22T00:00:00.000", "amount": 10.0, "currencyIsoCode": "USD", "destinationCurrencyIsoCode": "EUR" },
+      "response": { "result": { "conversionDateTimeOffset": "2026-09-22T00:00:00+00:00", "conversionRate": 0.925, "amount": 9.25 }, "state": "Success" }
+    },
+    {
+      "currency": "GBP",
+      "request": { "conversionDateTimeOffset": "2026-09-23T00:00:00.000", "amount": 10.0, "currencyIsoCode": "GBP", "destinationCurrencyIsoCode": "EUR" },
+      "response": { "result": { "conversionDateTimeOffset": "2026-09-23T00:00:00+00:00", "conversionRate": 1.185, "amount": 11.85 }, "state": "Success" }
+    },
+    {
+      "currency": "GBP",
+      "request": { "conversionDateTimeOffset": "2026-09-23T00:00:00.000", "amount": 10.0, "currencyIsoCode": "GBP", "destinationCurrencyIsoCode": "EUR" },
+      "response": { "result": { "conversionDateTimeOffset": "2026-09-23T00:00:00+00:00", "conversionRate": 1.185, "amount": 11.85 }, "state": "Success" },
+      "note": "repeated call, same result as above — likely re-selected GBP a second time"
+    },
+    {
+      "currency": "USD",
+      "request": { "conversionDateTimeOffset": "2026-09-23T00:00:00.000", "amount": 10.0, "currencyIsoCode": "USD", "destinationCurrencyIsoCode": "EUR" },
+      "response": { "result": { "conversionDateTimeOffset": "2026-09-23T00:00:00+00:00", "conversionRate": 0.925, "amount": 9.25 }, "state": "Success" }
+    },
+    {
+      "currency": "CHF",
+      "request": { "conversionDateTimeOffset": "2026-09-24T00:00:00.000", "amount": 142.0, "currencyIsoCode": "CHF", "destinationCurrencyIsoCode": "EUR" },
+      "response": { "state": "ProviderError", "error": { "message": "No rates for CHF->EUR" } },
+      "note": "⚠️ FINDING: CHF is a valid unit in this ExpenseType's config but the conversion provider has no CHF->EUR rate — same class of issue as old C5 (JPY)."
+    },
+    {
+      "currency": "GBP",
+      "request": { "conversionDateTimeOffset": "2026-09-24T00:00:00.000", "amount": 142.0, "currencyIsoCode": "GBP", "destinationCurrencyIsoCode": "EUR" },
+      "response": { "result": { "conversionDateTimeOffset": "2026-09-24T00:00:00+00:00", "conversionRate": 1.185, "amount": 168.27 }, "state": "Success" }
+    },
+    {
+      "currency": "USD",
+      "request": { "conversionDateTimeOffset": "2026-09-24T00:00:00.000", "amount": 142.0, "currencyIsoCode": "USD", "destinationCurrencyIsoCode": "EUR" },
+      "response": { "result": { "conversionDateTimeOffset": "2026-09-24T00:00:00+00:00", "conversionRate": 0.925, "amount": 131.35 }, "state": "Success" }
+    }
+  ]
+}

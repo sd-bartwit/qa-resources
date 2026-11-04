@@ -1,0 +1,15 @@
+{
+  "convert": {
+    "request": {
+      "conversionDateTimeOffset": "2026-09-23T00:00:00.000",
+      "amount": 44.122,
+      "currencyIsoCode": "GBP",
+      "destinationCurrencyIsoCode": "EUR"
+    },
+    "response": {
+      "result": { "conversionDateTimeOffset": "2026-09-23T00:00:00+00:00", "conversionRate": 1.185, "amount": 52.28 },
+      "state": "Success"
+    },
+    "note": "Re-triggered by switching the currency dropdown from USD to GBP (continuing from CC-301's state: amount 44.122, date 23/9/2026)."
+  }
+}

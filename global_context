@@ -1,0 +1,31 @@
+# QA Work
+
+This repo is where we do QA for the **mysdworx app** (SD Worx's employee and manager mobile app).
+
+## What we do here
+- Keep reference material for the mysdworx app: functional docs, API specs, mock responses, and sample forms.
+- Keep results and evidence from past checks, organised by topic.
+
+## Where to find things
+- **Requirements and behaviour:** the Azure DevOps wiki, project Digital Channels, under "mysdworx app > Functional documentation".
+- **Our published QA pages:** the wiki under "Test Documentation > QA Hub".
+- **Local docs by topic:**
+  - `Claims/`: the Claims API and expense claim docs and test cases.
+  - `Document Parser/`: receipt auto-fill findings and mock responses.
+  - `Forms/`: sample forms and expression test cases.
+  - `Payslips/`: payslip wrapping examples and results.
+  - `Unwanted VAT item bug/`: a VAT bug with sample receipts.
+- **Scripts:** `tools/device/` (adb screenshot capture and the Claims Appium helper `claims-helper.js`) and `tools/tracking/` (Firebase Analytics capture). Generated output goes to `output/` (git-ignored).
+
+## Environment
+- The app talks to the acceptance environment, not production.
+
+## Tools needed
+- **Windows with PowerShell 5.1:** runs the `.ps1` scripts. Chain commands with `;`, not `&&`.
+- **Node.js and npm:** run `npm install` in this folder once. This installs WebdriverIO and Appium.
+- **Android platform-tools (adb):** must be on PATH. Check the device with `npm run device:check`.
+- **Android phone:** USB debugging on, connected over ADB, with the app installed.
+- **HTTP Toolkit:** optional, to watch app traffic through its proxy on port 8000. Mock rules are set up by hand in its UI.
+- **Appium server:** its needed for UI automation on the android phone, start with `npm run appium:start` (port 4723) before running automation.
+- **Azure DevOps access:** to read the wiki (org `sdworx`, project Digital Channels) its either a script type access that uses PAT (requires additional steps in Azure) or AzureDevOps MCP for the AI.
+

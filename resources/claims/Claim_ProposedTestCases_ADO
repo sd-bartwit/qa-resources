@@ -1,0 +1,239 @@
+# Expense Claims — Proposed Test Cases (Azure DevOps convention)
+
+> Proposal for new test cases in test plan **Release testing: mysdworx app master** (ID 1132029).
+> Format mirrors the existing convention observed in suites **7 - Expenses** (requester) and
+> **9.2 - Expenses / 9.2.1 Standard** (approver): `Code - Category: As a <role> I can <action>
+> [payrollEngine][platform]`, steps as **Action → Expected** with `-`-bulleted UI checks.
+> Grounded in `Claim_FunctionalDoc_Requester`, `Claim_FunctionalDoc_Approver`, `Claim_APIdoc`.
+
+## Suite placement (proposed)
+- **Requester:** add under **7 - Expenses** using the existing `[Claims]` prefix (there are already
+  two: *[Claims] As a user I can open expense tile (overview)* [1336230] and *[Claims] As a user I
+  can check claims which were rejected* [1336246]). Optionally group into a child suite **7.1 - Expense Claims**.
+- **Approver:** add a new child suite under **9 - Pending Approvals**, e.g. **9.5 - Expense Claims**
+  (mirrors 9.2 - Expenses with 9.5.1 Standard / 9.5.2 Notifications / 9.5.3 Newsfeed items).
+
+## Markers (from the Claims test-case notes)
+- **[MOCK]** — needs an HTTP Toolkit Modify rule to force a flag/state/error.
+- **[2-ROLE]** — needs both requester and approver accounts.
+- **(gap)** — behaviour not fully specified in the wiki; verify empirically.
+- Payroll tags `[eBloxHR,HRSS]`; platform tags `[Android,iOS]` where UI-interaction differs.
+
+---
+
+# Requester — `[Claims]` (under 7 - Expenses)
+
+### [Claims] As a user I can browse claim lists (Draft/Rejected/Pending/Approved) and open a claim's details [eBloxHR,HRSS]
+**Priority:** P1
+> All four status lists reuse the **same screen/card template**, so they are grouped here. Each list
+> shows claim cards, and tapping a card navigates to that claim's **detail** — detail verification per
+> state is therefore covered as part of this case.
+
+| # | Action | Expected |
+|--|--|--|
+| 1 | User opens the **Claims** tile on the home screen. *Make sure to test for both HRSS & eBloxHR* | - Claims overview opens<br>- two tabs: **Open** and **Sent**<br>- last-selected tab is persisted between visits |
+| 2 | User views the **Open** tab | - shows **Rejected** claims (only when `rejectedClaimsCount > 0`), **Draft** claims, and **Unassigned expenses**<br>- correct empty state (full or per-section) when a section is empty |
+| 3 | User views the **Sent** tab | - shows **Pending** and **Approved** claims |
+| 4 | User inspects a claim **card** (any status — same template) | - card shows title/employee name, total(s) and date<br>- **[MOCK]** multi-currency: totals from `totalAmounts` render; when >2 currencies only the **top two** are shown, formatted `0.000,00 EUR` |
+| 5 | From the **Draft** claims list, user taps a card | - navigates to the **Draft claim detail**<br>- **Draft** state label; **Submit for approval** present (Draft/Rejected only) |
+| 6 | From the **Rejected** list (red banner), user taps a card | - navigates to the **Rejected claim detail**<br>- **Rejected** label + general rejection message; rejected-expenses list shows each expense's **`approverComment`**; **Submit for approval** present |
+| 7 | From the **Pending** list (Sent tab), user taps a card | - navigates to the **Pending claim detail**<br>- **Pending** label; **no Submit** action (terminal for requester until approver acts) |
+| 8 | From the **Approved** list (Sent tab), user taps a card | - navigates to the **Approved claim detail**<br>- **Approved** label; not editable, not eligible for linking |
+| 9 | User reviews common detail elements across states | - correct **state label**; total(s) and claim date shown; **description hidden when empty/null**; **details link hidden when `canViewDetails=false`**; expense items listed |
+
+### [Claims] As a user I can create a new expense claim (Draft) [eBloxHR,HRSS]
+**Priority:** P1
+| # | Action | Expected |
+|--|--|--|
+| 1 | User taps the **FAB / Quick Action → "Create a new claim"** on Claims overview | - provider **Form** opens full-screen<br>- (availability) action shown only when a valid `endpointUri` is returned |
+| 2 | User fills the required Form fields | - inline provider validation applies<br>- **Save** button appears **only after a change** is recognised |
+| 3 | User taps **Save** | - claim created in **Draft**<br>- user redirected to the **Draft claim detail**<br>- new claim appears in the Draft list under **Open** |
+| 4 | User repeats but taps **Back/Cancel** before Save | - nothing is persisted; no claim created |
+| 5 | Invalid `endpointUri` / Form fails to load **[MOCK]** | - "action unavailable" / "cannot be displayed" message; on submit error the user stays on the Form and can retry |
+
+### [Claims] As a user I can add an expense and link it to a claim [eBloxHR,HRSS]
+**Priority:** P1
+| # | Action | Expected |
+|--|--|--|
+| 1 | From **Claims context**, user starts **Add expense** and fills the expense | - standard expense creation screen; when opened from Claims, extra bottom actions appear: **Add to claim** (primary) and **Save** (secondary) |
+| 2 | User taps **Save** (secondary) | - expense created as **unassigned** (no link); appears in the Unassigned expenses list |
+| 3 | User taps **Add to claim** (primary) | - **Select claim** screen opens (radio, single-select) |
+| 4 | User selects a claim and confirms (**Add to this claim**) | - expense **linked**; removed from Unassigned; user lands on the **claim detail** showing the expense; claim total updates |
+
+### [Claims] As a user I can link an unassigned expense from all entry points [eBloxHR,HRSS]
+**Priority:** P1
+| # | Action | Expected |
+|--|--|--|
+| 1 | Link from **unassigned expense detail → "Add to claim"** | - Select-claim screen opens; on confirm the expense links and is removed from Unassigned |
+| 2 | Link from **Unassigned list** multi-select → bottom sheet **"Add to claim"** | - bottom-sheet action enabled only when **≥1** selected (greyed at 0); on confirm all selected expenses link |
+| 3 | Link from **claim detail → "Add unassigned expenses"** (`canLinkExpenses=true`) | - selection screen shows linkable expenses; on confirm they attach to that claim |
+| 4 | Link from the **expense creation** flow → "Add to claim" | - behaves as the create+link path; expense ends linked |
+| 5 | Backend / network error during link **[MOCK]** | - expense **remains unassigned**; retry available on network/timeout |
+
+### [Claims] As a user I see only eligible claims when linking [eBloxHR,HRSS]
+**Priority:** P1
+| # | Action | Expected |
+|--|--|--|
+| 1 | With claims in Draft/Rejected/Pending/Approved, user enters the **Select-claim** screen **[MOCK]** | - only **Draft**, **Rejected**, and **Pending (if provider-supported)** claims with `supportsExpenseLinking=true` are listed |
+| 2 | User checks that **Approved** claims are absent | - **Approved** claims are never shown/selectable |
+| 3 | Toggle `supportsExpenseLinking=false` for a Draft claim **[MOCK]** | - that claim disappears from the selection list |
+| 4 | User observes selection controls | - single-select **radio** (one claim at a time); **Cancel** appears only once a claim is selected; bottom sheet "Add to this claim" always visible |
+
+### [Claims] As a user I can unlink an expense from a claim [eBloxHR,HRSS]
+**Priority:** P1
+| # | Action | Expected |
+|--|--|--|
+| 1 | Open an assigned expense (or claim-detail kebab) with `canUnlinkExpenses=true` | - **"Remove from claim"** action is available |
+| 2 | User taps **Remove from claim** | - confirmation modal is shown |
+| 3 | User confirms | - expense **unlinked**, returns to the **Unassigned** list; navigates away; claim total decreases |
+| 4 | Backend error on unlink **[MOCK]** | - expense **remains linked**; error shown |
+
+### [Claims] As a user I see the correct kebab actions on an assigned expense [eBloxHR,HRSS]
+**Priority:** P2 — flag matrix **[MOCK]**
+| # | Action | Expected |
+|--|--|--|
+| 1 | `canUnlinkExpenses=true`, `canDelete=true` | - kebab shows **both** "Remove from claim" and "Delete expense" |
+| 2 | `canUnlinkExpenses=true`, `canDelete=false` | - kebab shows **"Remove from claim" only** |
+| 3 | `canUnlinkExpenses=false`, `canDelete=true` | - kebab shows **"Delete expense" only** |
+| 4 | `canUnlinkExpenses=false`, `canDelete=false` | - **kebab is hidden entirely** |
+
+### [Claims] As a user I can delete a Draft/Rejected claim [eBloxHR,HRSS]
+**Priority:** P1
+| # | Action | Expected |
+|--|--|--|
+| 1 | On a Draft/Rejected claim with `canDelete=true`, open kebab → **Delete** | - confirmation modal warns the delete is **irreversible**; claim details darkened behind |
+| 2 | User taps **Cancel** | - modal closes; nothing deleted |
+| 3 | User taps **Delete/Confirm** | - claim **permanently removed**; navigate to the appropriate list (Draft/Rejected); list updates immediately |
+| 4 | `canDelete=false` **[MOCK]** | - **Delete** is not offered |
+| 5 | Backend error on delete **[MOCK]** | - claim **not deleted**; stays on detail with an error |
+
+### [Claims] As a user I cannot submit an empty or invalid claim [eBloxHR,HRSS]
+**Priority:** P1 — submit gating
+| # | Action | Expected |
+|--|--|--|
+| 1 | Open a claim that is **not** Draft/Rejected | - **Submit for approval** is hidden/disabled |
+| 2 | Open a Draft claim with **0 expenses** | - empty state shown; user prompted to add expenses; **cannot submit** |
+| 3 | Draft claim missing required claim info **[MOCK]** | - Submit **disabled** |
+| 4 | Draft claim with an expense in an **invalid state** **[MOCK]** | - Submit **disabled** |
+| 5 | Draft/Rejected claim, ≥1 valid expense, all required info | - **Submit for approval** is **enabled** |
+
+### [Claims] As a user I can submit a claim for approval [eBloxHR,HRSS] [2-ROLE]
+**Priority:** P1
+| # | Action | Expected |
+|--|--|--|
+| 1 | On a ready Draft/Rejected claim (owner), tap **Submit for approval** | - toast confirms submission; **(gap)** record whether a confirmation dialog appears first |
+| 2 | User observes the claim's location | - claim → **Pending**; moves from **Open** to the **Sent** tab; user stays on claim detail |
+| 3 | Approver checks their inbox **[2-ROLE]** | - the submitted claim appears in the approver's **Pending Approvals → Claims** |
+| 4 | Backend error / network on submit **[MOCK]** | - claim **stays editable**, not submitted; retry on network |
+
+### [Claims] As a user I can view a Rejected claim with approver comments [eBloxHR,HRSS] [2-ROLE]
+**Priority:** P2
+| # | Action | Expected |
+|--|--|--|
+| 1 | After the approver rejects, requester opens the **Rejected** claim from the Open tab | - **Rejected** label + general rejection message shown |
+| 2 | User views the rejected expenses | - rejected-expenses list shows each expense's **`approverComment`** |
+| 3 | User re-submits after correction | - claim returns **Rejected → Pending**; moves back to **Sent** |
+
+### [Claims] As a user I receive a notification about my claim [eBloxHR,HRSS] [2-ROLE]
+**Priority:** P2 — (partly gap)
+| # | Action | Expected |
+|--|--|--|
+| 1 | Approver approves the requester's claim **[2-ROLE]** | - requester receives a notification; claim state reflects **Approved** in **Sent** |
+| 2 | Approver rejects the claim **[2-ROLE]** | - requester receives a notification; claim shown as **Rejected/Returned** in **Open** |
+
+---
+
+# Approver — proposed suite **9.5 - Expense Claims**
+
+### 9.5A - As a manager user I can open the Claims approvals overview [eBloxHR,HRSS]
+**Priority:** P1
+| # | Action | Expected |
+|--|--|--|
+| 1 | User taps **Pending Approvals**. *Test with a single approval category and with multiple categories* | - single category → **Claims approvals overview** directly; multiple → categories overview first, then select **Claims** |
+| 2 | User views the overview | - list of approval cards (one per submitted claim), scrollable; each card shows **employee name**, **total amount** (one/multiple currencies), **claim date**, and inline **Approve/Reject** |
+| 3 | No claims awaiting approval | - **empty state** shown |
+
+### 9.5B - As a manager user I can approve a claim inline from the overview [eBloxHR,HRSS][Android,iOS]
+**Priority:** P1
+| # | Action | Expected |
+|--|--|--|
+| 1 | On a pending claim card, user taps **Approve** | - approver-comment step appears per config (see 9.5F); approve is always **full-claim** |
+| 2 | User confirms | - entire claim **approved**; claim **removed** from pending approvals; success toast at top of list |
+| 3 | Requester side **[2-ROLE]** | - claim state updates to **Approved** on the requester UI |
+
+### 9.5C - As a manager user I can reject a claim inline from the overview (full-claim) [eBloxHR,HRSS][Android,iOS]
+**Priority:** P1
+| # | Action | Expected |
+|--|--|--|
+| 1 | On a pending claim card, user taps **Reject** | - **approver comment** screen opens; scope is **full-claim** (no expense selection from overview) |
+| 2 | User enters a reason and confirms | - claim **rejected/returned** to employee; removed from pending approvals; success toast |
+| 3 | User verifies the selection screen is **not** reachable here | - partial-reject expense selection is **only** available from claim detail (see 9.5E) |
+
+### 9.5D - As a manager user I can approve a claim from the detail screen [eBloxHR,HRSS]
+**Priority:** P2
+| # | Action | Expected |
+|--|--|--|
+| 1 | User taps a claim card body → **claim detail (approval context)** | - reuses the employee claim-detail layout; **header shows no actions**; bottom bar shows **Approve** / **Reject** while Pending |
+| 2 | User taps **Approve** → confirms (comment per config) | - entire claim approved; on success returns to the list; claim removed from pending |
+| 3 | Backend/network failure from detail **[MOCK]** | - manager stays on the detail screen; fail toast; claim **remains pending** |
+
+### 9.5E - As a manager user I can reject a claim partially from detail [eBloxHR,HRSS]
+**Priority:** P1
+| # | Action | Expected |
+|--|--|--|
+| 1 | From claim **detail**, user taps **Reject** | - **assigned-expense rejection selection** screen opens (only reachable from detail) |
+| 2 | User selects invalid expenses | - multiple selectable; selection **visually explicit**; **selected = rejected, unselected = approved** |
+| 3 | User tries to continue with **zero** selected | - cannot proceed; must select **≥1** |
+| 4 | User taps **Cancel/Back** | - abandons; returns to detail with **no changes** |
+| 5 | User continues → enters reason → confirms | - selected expenses **rejected**; claim **returned** to employee with partial selection; removed from pending |
+
+### 9.5F - As a manager user I handle the approver-comment config on approve [eBloxHR,HRSS] [MOCK]
+**Priority:** P2 — `approveCommentUse`
+| # | Action | Expected |
+|--|--|--|
+| 1 | `approveCommentUse = Mandatory` | - comment screen shown; **Confirm disabled until a comment is entered** |
+| 2 | `approveCommentUse = Optional` | - comment screen shown; may confirm **with or without** a comment |
+| 3 | `approveCommentUse = Prohibited` | - comment screen **skipped** → straight to confirmation |
+| 4 | (gap) character limit | - verify whether Claims shares Generic Approvals' **300-char** cap + live counter |
+
+### 9.5G - As a manager user I must provide a reason on reject [eBloxHR,HRSS] [MOCK]
+**Priority:** P2 — `rejectionCommentUse`
+| # | Action | Expected |
+|--|--|--|
+| 1 | User rejects a claim (any entry point) | - a rejection **comment screen is always shown** |
+| 2 | User leaves the reason empty | - **cannot submit** the rejection (reason required per User Action page) — **(gap)**: overview UI text says only "when optional/mandatory"; record actual behaviour |
+| 3 | User enters a reason and confirms | - rejection proceeds; claim returned to employee |
+
+### 9.5H - As a manager user I can act on a claim from a notification / app inbox [eBloxHR,HRSS]
+**Priority:** P2
+| # | Action | Expected |
+|--|--|--|
+| 1 | User opens a claim via **notification** (tap / "Review") | - lands on **claim detail (approval context)**; Approve/Reject available; behaviour identical to other entry points |
+| 2 | User opens a claim via the **app inbox** submission card | - lands on claim detail; same actions |
+| 3 | Reject scope from notification/inbox | - **full-claim only** (no partial-selection screen) |
+
+### 9.5I - As a manager user I see multi-currency claim totals correctly [eBloxHR,HRSS]
+**Priority:** P3 **[MOCK]**
+| # | Action | Expected |
+|--|--|--|
+| 1 | Open a claim card with a **single currency** | - total renders `0.000,00 EUR` |
+| 2 | Open a claim with **multiple currencies** **[MOCK]** | - card total renders one or multiple currencies correctly (top two when >2) |
+
+### 9.5J - As a manager user, error / already-actioned handling keeps the claim consistent [eBloxHR,HRSS] [MOCK]
+**Priority:** P3 — (partly gap)
+| # | Action | Expected |
+|--|--|--|
+| 1 | Backend error on approve/reject **[MOCK]** | - error shown; claim **remains Pending** |
+| 2 | Network error | - error shown; **retry** available |
+| 3 | Claim already actioned elsewhere (e.g. approved from notification while overview open) **[2-ROLE]** (gap) | - record actual behaviour: card should resolve/disappear without a crash or duplicate action |
+
+---
+
+## Notes for creation in Azure DevOps
+- Titles above are ready to paste as work-item titles; keep the `[Claims]` prefix (requester) or the
+  `9.5x -` code (approver) to match the existing numbering scheme.
+- Each table row = one **Shared Steps / Test Step** (Action → Expected). When creating via the API,
+  map the **Action** column to the step action and **Expected** to the expected result.
+- Add the standard **[eBloxHR,HRSS]** payroll tags and **[Android,iOS]** platform tags per the
+  existing suite convention; attach evidence screenshots at approve/reject/submit confirmation points.
+- Cross-reference the deeper end-to-end journeys already captured in `Claim_TestCases`.

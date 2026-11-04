@@ -1,0 +1,48 @@
+{
+    "result": {
+        "type": "Simple",
+        "items": [
+            {
+                "type": "Numeric",
+                "value": 30,
+                "id": "age",
+                "name": "Driver: Age",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "num-gt",
+                "name": "SE-301 visible = gt( #age, 18 )",
+                "required": false,
+                "readOnly": false,
+                "visible": "gt( #age, 18 )"
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "num-lt",
+                "name": "SE-302 visible = lt( #age, 65 )",
+                "required": false,
+                "readOnly": false,
+                "visible": "lt( #age, 65 )"
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "num-eq",
+                "name": "SE-303 visible = eq( #age, 30 )",
+                "required": false,
+                "readOnly": false,
+                "visible": "eq( #age, 30 )"
+            }
+        ],
+        "changesOnly": false,
+        "title": "3. Numeric comparison",
+        "description": "SE-301..SE-303 – gt/lt/eq",
+        "viewOnly": false
+    },
+    "state": "Success"
+}

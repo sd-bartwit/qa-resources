@@ -1,0 +1,15 @@
+{
+  "convert": {
+    "request": {
+      "conversionDateTimeOffset": "2026-03-28T00:00:00.000",
+      "amount": 10.05,
+      "currencyIsoCode": "GBP",
+      "destinationCurrencyIsoCode": "EUR"
+    },
+    "response": {
+      "result": { "conversionDateTimeOffset": "2026-03-28T00:00:00+00:00", "conversionRate": 1.18, "amount": 11.86 },
+      "state": "Success"
+    },
+    "note": "Fired automatically ~143ms after the parsedocument response, no user action."
+  }
+}

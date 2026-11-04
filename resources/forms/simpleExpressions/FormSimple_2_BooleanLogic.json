@@ -1,0 +1,102 @@
+{
+    "result": {
+        "type": "Simple",
+        "items": [
+            {
+                "type": "Boolean",
+                "value": true,
+                "id": "toggle-a",
+                "name": "Driver A (toggle)",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+            },
+            {
+                "type": "Boolean",
+                "value": false,
+                "id": "toggle-b",
+                "name": "Driver B (toggle)",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "ref-visible",
+                "name": "SE-201 visible = #toggle-a",
+                "required": false,
+                "readOnly": false,
+                "visible": "#toggle-a"
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "ref-required",
+                "name": "SE-202 required = #toggle-a",
+                "required": "#toggle-a",
+                "readOnly": false,
+                "visible": true
+            },
+            {
+                "type": "Text",
+                "value": "Try to edit me",
+                "id": "ref-readonly",
+                "name": "SE-203 readOnly = #toggle-a",
+                "required": false,
+                "readOnly": "#toggle-a",
+                "visible": true
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "ref-not",
+                "name": "SE-204 visible = not( #toggle-a )",
+                "required": false,
+                "readOnly": false,
+                "visible": "not( #toggle-a )"
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "logic-and",
+                "name": "SE-205 visible = and( #toggle-a, #toggle-b )",
+                "required": false,
+                "readOnly": false,
+                "visible": "and( #toggle-a, #toggle-b )"
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "logic-or",
+                "name": "SE-206 visible = or( #toggle-a, #toggle-b )",
+                "required": false,
+                "readOnly": false,
+                "visible": "or( #toggle-a, #toggle-b )"
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "logic-not-and",
+                "name": "SE-207 visible = not( and( #toggle-a, #toggle-b ) )",
+                "required": false,
+                "readOnly": false,
+                "visible": "not( and( #toggle-a, #toggle-b ) )"
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "logic-and-notb",
+                "name": "SE-208 visible = and( #toggle-a, not( #toggle-b ) )",
+                "required": false,
+                "readOnly": false,
+                "visible": "and( #toggle-a, not( #toggle-b ) )"
+            }
+        ],
+        "changesOnly": false,
+        "title": "2. Single ref & boolean logic",
+        "description": "SE-201..SE-208 – toggle drivers and and/or/not",
+        "viewOnly": false
+    },
+    "state": "Success"
+}

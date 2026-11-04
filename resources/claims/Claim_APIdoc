@@ -1,0 +1,73 @@
+Claims
+Expenses in the expense system can also be categorized into claims.
+
+Relevant functionalities for claims:
+
+sd://expenses/1.0.0/claimoverview
+sd://expenses/1.0.0/claimmanage
+sd://expenses/1.0.0/claimapproval (not implemented yet)
+Overview
+sd://expenses/1.0.0/claimoverview
+
+Open tab
+Screenshots	Info
+
+Open tab
+GET /expenses/claims/summary
+
+Breakdown of components:
+Rejected claims
+Shown when rejectedClaimsCount > 0
+
+Draft claims
+draftClaimsCount is shown on the right
+
+Unassigned expenses unassignedExpensesCount is shown on the right
+Rejected claims
+Displays all the claims that are in a rejected state.
+
+Screenshots	Info
+
+From top to bottom, left and right:
+- Title: rejected value of title
+- 0.000,00 EUR: rejected value of totalAmounts.value and totalAmounts.symbol
+- 24/02/2026: rejected value of claimDateTimeOffset in format DD/MM/YYYY
+- Rejected: rejected from status and indicated the status of the claim.
+
+Tapping a rejected claim navigates the user to the claim detail screen.
+Draft claims
+Displays all the claims that are in the draft state.
+
+Screenshots	Info
+
+From top to bottom, left and right:
+- Title: returned value of title
+- 0.000,00 EUR: returned value of totalAmounts.value and totalAmounts.symbol
+- 24/02/2026: returned value of claimDateTimeOffset in format DD/MM/YYYY
+- Draft: returned from status and indicated the status of the claim
+
+Tapping a draft claim navigates the user to the details of the claim.
+Unassigned expenses
+Displays all expenses that are not yet assigned to a claim.
+
+
+
+
+Sent tab
+Screenshots	Info
+
+Sent tab
+GET /expenses/claims?approvalStatus=Approved&approvalStatus=Pending
+Quick actions
+Create expense
+sd://expenses/1.0.0/claimsmanage
+
+Create expense in claims, works in the same way as single expenses (see above).
+
+Create claim
+To add the option to create a claim, we use embedded deeplinks. The provider is responsible for adding the action to the list behind the + button.
+
+For details, see: Deeplinks
+
+Approvals
+🚧 This section is in development

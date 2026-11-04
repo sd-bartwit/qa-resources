@@ -1,0 +1,52 @@
+# AI context: QA Work
+
+Read first. Purpose: QA of the mysdworx mobile app (SD Worx), Flutter, Android package `be.sdworx.sdwa.inhouse`, acceptance backend `https://api.acc.sdworx.com/mysdworxappgateway`.
+
+## Scope
+- Focus: Expenses and Expense Claims (requester + approver perspectives).
+- Other domains in the app (not current focus): Absences, Overtime, Pending Approvals (Absences/Generic), Forms (WIP).
+- Deliverables: functional context docs, test permutations, mock catalogs, automation specs, test results.
+
+## Source of truth
+- Functional docs (canonical): Azure DevOps wiki `Digital-Channels.wiki` (id c18f6113-3cba-4571-998b-640f412cb281), path `/Channels App/mysdworx app/Functional documentation/...`
+  - Requester: `Expense Claims/...`; Approver: `Pending Approvals/Claims/...`; core expenses: `Expenses/...`
+- Our QA space: wiki path `/Channels App/Test Documentation/QA Hub` (Testware, How To's, Points of Contact, Copy-Pastes). Publish self-contained `.md` as a new subpage.
+- ADO: org `sdworx`, project `Digital Channels`, area path `Digital Channels`. Master test plan: "Release testing: mysdworx app master" (ID 1132029). Board lanes = release version (e.g. 4.27.0).
+
+## Local files (folder -> purpose)
+- `Claims/`: Claim_APIdoc (API doc), Claim_APIrequests.json (OpenAPI 3.0.4, Expenses tag only), Claim_APIrequests.backup.json (full original), Claim_FunctionalDoc_Requester, Claim_FunctionalDoc_Approver, Claim_TestCases, Claim_ProposedTestCases_ADO.
+- `Document Parser/`: receipt AI autofill findings. context.md, open-questions.md, response-variants.md, PARSER_CURRENCY_MATRIX.md, CurrencyConversion_TestPermutations.md, mocks/ (response variants, README.md), results/.
+- `Forms/`: sample form JSON, simple-expression permutations (Simple Expressions - Test Permutations.md), Results.md, clocking v2/, simpleExpressions/, others/, ticketing/, viewOnly/.
+- `Payslips/`: wrapping_variants.json, wrapping_variants_backend.json, example/, results/.
+- `Unwanted VAT item bug/`: nordic-receipt.json, levis-receipt (bug reproduction).
+- `tools/`: capture-screens.ps1 (screenshot scroll capture), claims-helper.js (Appium helper), _out/ (generated output).
+- `tests/parsedocument.spec.js`: WebdriverIO spec.
+- Root: package.json, wdio.conf.js (WebdriverIO config, Appium, uiautomator2), RESTORE.md removed.
+
+## Tools and environment
+- Device: Android, id `RZCX11MXGXT`, traffic via HTTP Toolkit proxy (port 8000).
+- HTTP Toolkit MCP is READ-ONLY: list events, read bodies. Mock/Modify rules must be created manually in the UI. To force a 4xx/5xx the rule must set the HTTP status. Event list resets per session/day: fetch the newest matching event.
+- Screenshots: `adb shell screencap -p /sdcard/_sc.png` -> `adb pull /sdcard/_sc.png ".\<name>.png"` -> `adb shell rm /sdcard/_sc.png`. Never use PowerShell `>` (corrupts PNG). Long screens: `adb shell input swipe <x> <y1> <y2> 1000`, save `_p1.png`, `_p2.png`, ...
+- Appium: `npm run appium:start` (port 4723). UiAutomator2 driver 5.0.3, Android 15 caps.
+- Flutter: no usable `text`/`resource-id`. Use accessibility `content-desc` selectors with partial (`contains`) matching. Counts are embedded in labels (e.g. `Draft claims\n2`).
+- Shell: PowerShell 5.1. Chain with `;`, not `&&`. For non-trivial JS, write a temp `.js` file, run it, delete it.
+- MCP servers: HTTP Toolkit, Azure DevOps (wiki, work items, test plans, pipelines, repos), Playwright (web), Azure (azmcp, rare), Context7 (library docs).
+
+## App behaviour
+- Auth: bearer token, ~30 min expiry. Idle sessions fall back to login; re-login before capturing.
+- Forms are provider-driven: the app does not own field structure or validation.
+- Behaviour gated by backend flags: canEdit, canDelete, canUnlinkExpenses, canLinkExpenses, supportsExpenseLinking, processingType.
+
+## Conventions
+- Start every flow from a fresh screen. Reused forms leave stale values that look like bugs.
+- Do not create markdown files documenting changes unless asked. Edit the relevant file directly.
+- Re-read a file before editing: the user may hand-edit it.
+- Filenames often have no extension. Match the convention for sibling docs.
+- Put reference docs and manual-test evidence in the feature folder. Scripts go in `tools/`, generated output in `tools/_out/`.
+
+## Task checklist
+1. Identify domain (Expenses / Claims / Approvals) and perspective (requester / approver).
+2. Pull behaviour from the wiki; cross-check `Claims/Claim_APIrequests.json`.
+3. For live checks: device logged in, traffic via HTTP Toolkit, evidence via adb pipeline.
+4. For mocks: user creates the Modify rule in HTTP Toolkit, then re-scan from a fresh form.
+5. Record findings in the existing feature doc. Raise bugs/test cases in ADO only when asked.

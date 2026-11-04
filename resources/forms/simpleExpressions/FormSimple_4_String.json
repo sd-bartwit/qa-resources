@@ -1,0 +1,107 @@
+{
+    "result": {
+        "type": "Simple",
+        "items": [
+            {
+                "type": "Text",
+                "value": "Anna",
+                "id": "name",
+                "name": "Driver: Name",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+            },
+            {
+                "type": "Text",
+                "value": "test@test.com",
+                "id": "email",
+                "name": "Driver: Email",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+            },
+            {
+                "type": "Text",
+                "value": "2",
+                "allowedValues": [
+                    {
+                        "id": "1",
+                        "value": "Red"
+                    },
+                    {
+                        "id": "2",
+                        "value": "Green"
+                    },
+                    {
+                        "id": "3",
+                        "value": "Blue"
+                    }
+                ],
+                "id": "color",
+                "name": "Driver: Color (select)",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "str-empty",
+                "name": "SE-401 visible = empty( #name )",
+                "required": false,
+                "readOnly": false,
+                "visible": "empty( #name )"
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "str-not-empty-req",
+                "name": "SE-402 required = not( empty( #name ) )",
+                "required": "not( empty( #name ) )",
+                "readOnly": false,
+                "visible": true
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "str-eq-select",
+                "name": "SE-403 visible = eq( #color, \"2\" )",
+                "required": false,
+                "readOnly": false,
+                "visible": "eq( #color, \"2\" )"
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "str-contains",
+                "name": "SE-404 visible = contains( #name, \"nn\" )",
+                "required": false,
+                "readOnly": false,
+                "visible": "contains( #name, \"nn\" )"
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "str-not-eq",
+                "name": "SE-406 visible = not( eq( #color, \"3\" ) )",
+                "required": false,
+                "readOnly": false,
+                "visible": "not( eq( #color, \"3\" ) )"
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "str-email-empty",
+                "name": "SE-407 visible = empty( #email )",
+                "required": false,
+                "readOnly": false,
+                "visible": "empty( #email )"
+            }
+        ],
+        "changesOnly": false,
+        "title": "4. String / empty / contains",
+        "description": "SE-401..SE-407",
+        "viewOnly": false
+    },
+    "state": "Success"
+}

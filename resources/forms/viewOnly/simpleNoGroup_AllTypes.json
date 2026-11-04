@@ -1,0 +1,148 @@
+{
+  "result": {
+    "type": "Simple",
+    "badge": { "type": "Information", "title": "Approved", "visible": true },
+    "items": [
+      {
+        "type": "Text",
+        "value": "Jane Doe",
+        "id": "employeeName",
+        "name": "Employee (Text)",
+        "required": false,
+        "readOnly": true,
+        "visible": true
+      },
+      {
+        "type": "TextArea",
+        "value": "Line 1\nLine 2\nLine 3\nLine 4\nLine 5\nLine 6",
+        "id": "remarks",
+        "name": "Remarks (TextArea)",
+        "required": false,
+        "readOnly": true,
+        "visible": true
+      },
+      {
+        "type": "Numeric",
+        "value": 42,
+        "id": "hoursOvertime",
+        "name": "Overtime hours (Numeric)",
+        "required": false,
+        "readOnly": true,
+        "visible": true
+      },
+      {
+        "type": "Boolean",
+        "value": true,
+        "id": "isApproved",
+        "name": "Approved (Boolean)",
+        "required": false,
+        "readOnly": true,
+        "visible": true
+      },
+      {
+        "type": "DateTime",
+        "value": "2026-10-05",
+        "id": "requestDate",
+        "name": "Request date (DateTime)",
+        "required": false,
+        "readOnly": true,
+        "visible": true
+      },
+      {
+        "type": "Text",
+        "value": "dept-hr",
+        "allowedValues": [
+          { "id": "dept-hr", "value": "Human Resources" },
+          { "id": "dept-it", "value": "IT" },
+          { "id": "dept-fin", "value": "Finance" }
+        ],
+        "properties": { "type": "Select", "orientation": "Horizontal" },
+        "id": "department",
+        "name": "Department (Select)",
+        "required": false,
+        "readOnly": true,
+        "visible": true
+      },
+      {
+        "type": "Text",
+        "value": "prio-2",
+        "allowedValues": [
+          { "id": "prio-1", "value": "Low" },
+          { "id": "prio-2", "value": "Medium" },
+          { "id": "prio-3", "value": "High" }
+        ],
+        "properties": { "type": "Radio", "orientation": "Vertical" },
+        "id": "priority",
+        "name": "Priority (Radio)",
+        "required": false,
+        "readOnly": true,
+        "visible": true
+      },
+      {
+        "type": "Text",
+        "value": ["tag-a", "tag-c"],
+        "allowedValues": [
+          { "id": "tag-a", "value": "Tag A" },
+          { "id": "tag-b", "value": "Tag B" },
+          { "id": "tag-c", "value": "Tag C" }
+        ],
+        "properties": { "type": "MultiSelect" },
+        "id": "tags",
+        "name": "Tags (MultiSelect)",
+        "required": false,
+        "readOnly": true,
+        "visible": true
+      },
+      {
+        "type": "Attachment",
+        "properties": {
+          "maxAmount": 3,
+          "maxSize": 25,
+          "supportedFileTypes": ["pdf", "png", "jpg", "docx", "xlsx"]
+        },
+        "id": "attachment",
+        "name": "Attachment (Attachment)",
+        "required": false,
+        "readOnly": true,
+        "visible": true
+      },
+      {
+        "type": "Comment",
+        "commentType": "Success",
+        "message": "Success comment",
+        "id": "commentSuccess",
+        "name": "Comment (Success)",
+        "required": false,
+        "readOnly": true,
+        "visible": true
+      },
+      {
+        "type": "Comment",
+        "commentType": "Error",
+        "message": "Error comment",
+        "id": "commentError",
+        "name": "Comment (Error)",
+        "required": false,
+        "readOnly": true,
+        "visible": true
+      },
+      {
+        "type": "Navigation",
+        "name": "Open time & attendence",
+        "deepLink": {
+          "type": "Functionality",
+          "functionality": "sd://time/1.0.0/clocking",
+          "id": "time-and-attendance",
+          "displayMode": "Default",
+          "icon": "Default"
+        },
+        "visible": true
+      }
+    ],
+    "changesOnly": false,
+    "title": "All field types overview",
+    "submitText": "Submit",
+    "viewOnly": true
+  },
+  "state": "Success"
+}

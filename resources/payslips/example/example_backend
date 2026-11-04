@@ -1,0 +1,254 @@
+{
+  "$type": "Wage",
+  "wages": [
+    {
+      "document": {
+        "id": "102",
+        "type": "DocumentType2",
+        "paymentPeriodFromDateUtc": "2024-02-01T00:00:00Z",
+        "paymentPeriodUntilDateUtc": "2024-02-29T00:00:00Z",
+        "creationDateUtc": "2024-02-29T00:00:00Z",
+        "calculationDateUtc": "2024-03-01T00:00:00Z",
+        "title": "TestDocumentTitle2",
+        "paidAmount": 12345.67,
+        "paidAmountCurrency": "EUR",
+        "supportedDetailTypes": [
+          "Collapsable"
+        ]
+      },
+      "collapsableDocument": {
+        "label": "Monthly Payslip - November",
+        "currency": {
+          "value": 9876.54,
+          "isoCode": "EUR"
+        },
+        "bankAccount": "BE85 7775 9431 2015",
+        "period": {
+          "fromUtc": "2024-02-01T00:00:00Z",
+          "toUtc": "2024-02-29T00:00:00Z",
+          "periodType": "Monthly"
+        },
+        "metadataSections": [
+          {
+            "title": "Salary bonuses",
+            "description": "Details about your bonuses",
+            "items": [
+              {
+                "description": "Performance bonus for outstanding contributions",
+                "title": "Performance bonus",
+                "label": "Not taxable",
+                "currency": {
+                  "value": 6000,
+                  "isoCode": "EUR"
+                }
+              },
+              {
+                "description": "Holiday bonus for festive season",
+                "title": "Holiday Bonus",
+                "label": "Not taxable",
+                "currency": {
+                  "value": 1250,
+                  "isoCode": "EUR"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Balance and Totals to Date",
+            "description": "Summary of your year-to-date balance",
+            "items": [
+              {
+                "description": "Your total earnings this year",
+                "title": "Total Earnings for Current Year",
+                "label": "Non deductible",
+                "currency": {
+                  "value": 32027.97,
+                  "isoCode": "EUR"
+                }
+              }
+            ]
+          }
+        ],
+        "paymentSections": [
+          {
+            "currency": {
+              "value": 4232.42,
+              "isoCode": "EUR"
+            },
+            "title": "Earnings and Allowances",
+            "description": "Total earnings for this month",
+            "items": [
+              {
+                "description": "Your base salary for the month",
+                "title": "Gross Salary",
+                "label": "Non deductible",
+                "currency": {
+                  "value": 3800.65,
+                  "isoCode": "EUR"
+                }
+              }
+            ]
+          },
+          {
+            "currency": {
+              "value": -1121.14,
+              "isoCode": "EUR"
+            },
+            "title": "Deductions",
+            "description": "Deductions for this month",
+            "items": []
+          },
+          {
+            "currency": {
+              "value": -398.76,
+              "isoCode": "EUR"
+            },
+            "title": "Other Deductions",
+            "description": "Additional deductions",
+            "items": []
+          }
+        ],
+        "additionalInfoOnSpecificItems": true
+      }
+    },
+    {
+      "document": {
+        "id": "101",
+        "type": "DocumentType1",
+        "paymentPeriodFromDateUtc": "2024-01-01T00:00:00Z",
+        "paymentPeriodUntilDateUtc": "2024-01-31T00:00:00Z",
+        "creationDateUtc": "2024-01-31T00:00:00Z",
+        "calculationDateUtc": "2024-02-01T00:00:00Z",
+        "title": "TestDocumentTitle1",
+        "paidAmount": 3000,
+        "paidAmountCurrency": "EUR",
+        "supportedDetailTypes": [
+          "Collapsable",
+          "PDF"
+        ]
+      },
+      "collapsableDocument": {
+        "label": "Monthly Payslip - November",
+        "currency": {
+          "value": 12345.67,
+          "isoCode": "EUR"
+        },
+        "bankAccount": "BE85 7775 9431 2015",
+        "period": {
+          "fromUtc": "2024-01-01T00:00:00Z",
+          "toUtc": "2024-01-31T00:00:00Z",
+          "periodType": "Monthly"
+        },
+        "metadataSections": [
+          {
+            "title": "Salary bonuses",
+            "description": "Details about your bonuses",
+            "items": [
+              {
+                "description": "Performance bonus for outstanding contributions",
+                "title": "Performance bonus",
+                "label": "Not taxable",
+                "value": "MetadataSection itme value"
+              },
+              {
+                "description": "Retention bonus for loyalty",
+                "title": "Retention Bonus",
+                "label": "Not taxable",
+                "currency": {
+                  "value": 2500,
+                  "isoCode": "EUR"
+                }
+              },
+              {
+                "description": "Holiday bonus for festive season",
+                "title": "Holiday Bonus",
+                "label": "Not taxable",
+                "currency": {
+                  "value": 1000,
+                  "isoCode": "EUR"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Balance and Totals to Date",
+            "description": "Summary of your year-to-date balance",
+            "items": [
+              {
+                "description": "Your total earnings this year",
+                "title": "Total Earnings for Current Year",
+                "label": "Non deductible",
+                "currency": {
+                  "value": 32027.97,
+                  "isoCode": "EUR"
+                }
+              },
+              {
+                "description": "Your total tax this year",
+                "title": "Total tax for Current Year",
+                "label": "Non deductible",
+                "currency": {
+                  "value": 13579.75,
+                  "isoCode": "EUR"
+                }
+              }
+            ]
+          }
+        ],
+        "paymentSections": [
+          {
+            "currency": {
+              "value": 4232.42,
+              "isoCode": "EUR"
+            },
+            "title": "Earnings and Allowances",
+            "description": "Total earnings for this month",
+            "items": [
+              {
+                "description": "Your base salary for the month",
+                "title": "Gross Salary",
+                "label": "Non deductible",
+                "value": "PaymentSection item value"
+              }
+            ]
+          },
+          {
+            "currency": {
+              "value": -1121.14,
+              "isoCode": "EUR"
+            },
+            "title": "Deductions",
+            "description": "Deductions for this month",
+            "items": []
+          },
+          {
+            "currency": {
+              "value": -398.76,
+              "isoCode": "EUR"
+            },
+            "title": "Other Deductions",
+            "description": "Additional deductions",
+            "items": []
+          }
+        ],
+        "additionalInfoOnSpecificItems": false
+      }
+    },
+    {
+      "document": {
+        "id": "100",
+        "type": "DocumentType0",
+        "paymentPeriodFromDateUtc": "2023-12-01T00:00:00Z",
+        "paymentPeriodUntilDateUtc": "2023-12-31T00:00:00Z",
+        "creationDateUtc": "2023-12-31T00:00:00Z",
+        "calculationDateUtc": "2024-01-01T00:00:00Z",
+        "title": "TestDocumentTitle0",
+        "paidAmount": 3000,
+        "paidAmountCurrency": "EUR",
+        "supportedDetailTypes": [
+          "PDF"
+        ]
+      }
+    }
+  ]
+}

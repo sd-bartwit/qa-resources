@@ -1,0 +1,358 @@
+{
+  "$type": "Wage",
+  "wages": [
+    {
+      "document": {
+        "id": "200",
+        "type": "DocumentType1",
+        "paymentPeriodFromDateUtc": "2026-05-01T00:00:00Z",
+        "paymentPeriodUntilDateUtc": "2026-05-31T00:00:00Z",
+        "creationDateUtc": "2026-05-25T00:00:00Z",
+        "calculationDateUtc": "2026-05-25T00:00:00Z",
+        "title": "Wrapping variants",
+        "paidAmount": 57997.51,
+        "paidAmountCurrency": "SEK",
+        "supportedDetailTypes": [
+          "Collapsable",
+          "PDF"
+        ]
+      },
+      "collapsableDocument": {
+        "label": "Payslip",
+        "currency": { "value": 57997.51, "isoCode": "SEK" },
+        "bankAccount": "3300-890101028 / SE0001231834909",
+        "period": {
+          "fromUtc": "2026-05-01T00:00:00Z",
+          "toUtc": "2026-05-31T00:00:00Z",
+          "periodType": "Monthly"
+        },
+        "metadataSections": [
+          {
+            "title": "Wrapping",
+            "description": "MORE TAB | Long title / Short value, Short title / Long value, Unbreakable value",
+            "items": [
+              { "title": "Number of accumulated compensatory leave hours carried over from previous year", "value": "6.13" },
+              { "title": "Title", "value": "Senior Consultant Quality Assurance and Test Automation Engineer, Digital Channels Department" },
+              { "title": "Reference number of the employment contract amendment signed by both parties", "value": "2026-05-0001-AMENDMENT-RENEWAL-EXTENDED-VERSION-3" },
+              { "title": "Unbreakable", "value": "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ" },
+              { "title": "Short" }
+            ]
+          }
+        ],
+        "paymentSections": [
+          {
+            "currency": { "value": 150, "isoCode": "SEK" },
+            "title": "Unsocial hours supplement",
+            "description": "S1 | Long title / Short amount | fits on 1 line",
+            "items": [
+              { "title": "Code", "value": "  350" },
+              { "title": "From", "value": "2026-04-03" },
+              { "title": "To", "value": "2026-04-03" }
+            ]
+          },
+          {
+            "currency": { "value": 2500, "isoCode": "SEK" },
+            "title": "Bonus (vacation accrual)",
+            "description": "S1 | Long title / Short amount | fits on 1 line",
+            "items": [
+              { "title": "Code", "value": "  150" },
+              { "title": "Note", "value": "Great job" }
+            ]
+          },
+          {
+            "currency": { "value": 1234567.89, "isoCode": "SEK" },
+            "title": "Bonus",
+            "description": "S2 | Short title / Long amount | fits on 1 line",
+            "items": [
+              { "title": "Code", "value": "  150" },
+              { "title": "Quantity", "value": "1.00" },
+              { "title": "Unit price", "value": "1234567.89" }
+            ]
+          },
+          {
+            "currency": { "value": 98765432.1, "isoCode": "SEK" },
+            "title": "Tax",
+            "description": "S2 | Short title / Long amount | fits on 1 line",
+            "items": [
+              { "title": "Code", "value": " 9001" }
+            ]
+          },
+          {
+            "currency": { "value": 5, "isoCode": "SEK" },
+            "title": "Compensation for unsocial working hours during public holidays, weekends and evenings",
+            "description": "S3 | Long title / Short amount | title wraps by word, amount 1 line",
+            "items": [
+              { "title": "Code", "value": "  351" },
+              { "title": "From", "value": "2026-04-03" },
+              { "title": "To", "value": "2026-04-03" }
+            ]
+          },
+          {
+            "currency": { "value": 0, "isoCode": "SEK" },
+            "title": "Representation, internally, deductible, not deductible for VAT purposes",
+            "description": "S3 | Long title / Short amount (zero) | title wraps by word, amount 1 line",
+            "items": [
+              { "title": "Code", "value": " K540" }
+            ]
+          },
+          {
+            "currency": { "value": 1234567890.12, "isoCode": "SEK" },
+            "title": "Bonus",
+            "description": "S4 | Short title / Long amount (10 digits) | amount 1 line, title takes the rest",
+            "items": [
+              { "title": "Code", "value": "  150" }
+            ]
+          },
+          {
+            "currency": { "value": -1234567890.12, "isoCode": "SEK" },
+            "title": "Refund",
+            "description": "S4 | Short title / Long amount (negative, 10 digits) | amount 1 line, title takes the rest",
+            "items": [
+              { "title": "Code", "value": "  151" }
+            ]
+          },
+          {
+            "currency": { "value": 123456789012.34, "isoCode": "SEK" },
+            "title": "Net",
+            "description": "S4 | Short title / Long amount (12 digits) | amount 1 line, title takes the rest",
+            "items": [
+              { "title": "Code", "value": "  152" }
+            ]
+          },
+          {
+            "currency": { "value": 1234567.89, "isoCode": "SEK" },
+            "title": "Bonus (vacation accrual, ITP Mobile wage parts) paid out as a one-off lump sum",
+            "description": "S5 | Long title / Long amount (7 digits) | amount 1 line, title wraps",
+            "items": [
+              { "title": "Code", "value": "  150" }
+            ]
+          },
+          {
+            "currency": { "value": 987654321098.76, "isoCode": "SEK" },
+            "title": "Retroactive salary adjustment for the period January to April including holiday pay and social security",
+            "description": "S5 | Long title / Long amount (12 digits) | amount 1 line, title wraps",
+            "items": [
+              { "title": "Code", "value": "  153" }
+            ]
+          },
+          {
+            "currency": { "value": -987654321098.76, "isoCode": "SEK" },
+            "title": "Repayment of overpaid salary from previous periods incl. employer contributions",
+            "description": "S5 | Long title / Long amount (negative, 12 digits) | amount 1 line, title wraps",
+            "items": [
+              { "title": "Code", "value": "  154" }
+            ]
+          },
+          {
+            "currency": { "value": 99999999999999.99, "isoCode": "SEK" },
+            "title": "Retroactive payment of accumulated overtime, on-call and travel allowances for the whole previous year",
+            "description": "S5 | Long title / Max amount (14 digits) | amount may move below title and subtitle",
+            "items": [
+              { "title": "Code", "value": "  155" }
+            ]
+          },
+          {
+            "currency": { "value": 123456789.12, "isoCode": "SEK" },
+            "title": "Ab Cd Ef Gh Ij Kl Mn Op Qr St Uv Wx",
+            "description": "S5 | Long title of short words / Long amount | title min width 120pt",
+            "items": [
+              { "title": "Code", "value": "  156" }
+            ]
+          },
+          {
+            "currency": { "value": 300, "isoCode": "SEK" },
+            "title": "Flerspråkiga ersättningar, övertidsersättning för helgdagar och kvällar",
+            "description": "EDGE | Swedish characters | Long title / Short amount | title wraps",
+            "items": [
+              { "title": "Code", "value": "  157" }
+            ]
+          },
+          {
+            "currency": { "value": 450, "isoCode": "SEK" },
+            "title": "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ",
+            "description": "EDGE | Unbreakable title / Short amount | character-break fallback",
+            "items": [
+              { "title": "Code", "value": "  158" }
+            ]
+          },
+          {
+            "currency": { "value": 450, "isoCode": "SEK" },
+            "title": "Supercalifragilistic-expialidocious-compensation-allowance-for-all-employees",
+            "description": "EDGE | Hyphenated title / Short amount | break at hyphens",
+            "items": [
+              { "title": "Code", "value": "  159" }
+            ]
+          },
+          {
+            "currency": { "value": 1234567.89, "isoCode": "SEK" },
+            "title": "AbcdefghijklmnopqrstuvwxyzAbcdefghijklmnopqrstuvwxyz",
+            "description": "EDGE | Unbreakable title / Long amount | character-break fallback",
+            "items": [
+              { "title": "Code", "value": "  160" }
+            ]
+          },
+          {
+            "currency": { "value": 1.5, "isoCode": "SEK" },
+            "title": "A",
+            "description": "EDGE | 1-character title / Short amount",
+            "items": [
+              { "title": "Code", "value": "  161" }
+            ]
+          },
+          {
+            "currency": { "value": 0.01, "isoCode": "SEK" },
+            "title": "Rounding",
+            "description": "EDGE | Short title / Short amount (0.01)",
+            "items": [
+              { "title": "Code", "value": "  162" }
+            ]
+          },
+          {
+            "currency": { "value": 1500.5, "isoCode": "EUR" },
+            "title": "Foreign currency allowance paid out in euro for business trips abroad",
+            "description": "S3 | Long title / Short amount (EUR) | title wraps by word, amount 1 line",
+            "items": [
+              { "title": "Code", "value": "  163" }
+            ]
+          },
+          {
+            "currency": { "value": 12345678.9, "isoCode": "EUR" },
+            "title": "Euro",
+            "description": "S4 | Short title / Long amount (EUR, 8 digits) | amount 1 line, title takes the rest",
+            "items": [
+              { "title": "Code", "value": "  164" }
+            ]
+          },
+          {
+            "currency": { "value": 3665.84, "isoCode": "SEK" },
+            "title": "Car allowance",
+            "description": "EXPANDED | S1/S3 rows: Long item title / Short value",
+            "items": [
+              { "title": "Code", "value": "  170" },
+              { "title": "Number of kilometres driven with a private car in the service of the employer", "value": "916" },
+              { "title": "Total accumulated leave balance carried over from the previous calendar year", "value": "6.13" },
+              { "title": "Reference number of the expense claim that was approved by the manager", "value": "9005017" }
+            ]
+          },
+          {
+            "currency": { "value": 3665.84, "isoCode": "SEK" },
+            "title": "Travel allowance",
+            "description": "EXPANDED | S2/S4 rows: Short item title / Long value",
+            "items": [
+              { "title": "Code", "value": "  171" },
+              { "title": "Note", "value": "Approved by the department manager after review of all supporting documents and receipts" },
+              { "title": "Unit", "value": "Kilometres driven with a private car for the benefit of the employer" },
+              { "title": "To", "value": "2026-04-30" },
+              { "title": "Quantity", "value": "1234567890123.45" }
+            ]
+          },
+          {
+            "currency": { "value": 3665.84, "isoCode": "SEK" },
+            "title": "Overtime compensation",
+            "description": "EXPANDED | S5 rows: Long item title / Long value",
+            "items": [
+              { "title": "Description of the reason for the deviation from the agreed monthly salary", "value": "Retroactive correction following the collective agreement renewal valid from the first of January" },
+              { "title": "Name of the project where the overtime hours have been registered by the employee", "value": "Digital Channels - MySDWorx App - Payslip Collapsible Text Wrapping Improvement" },
+              { "title": "Unit price", "value": "12345678901.23" },
+              { "title": "Amount of the compensation that was transferred to the bank account of the employee", "value": "99999999999.99" }
+            ]
+          },
+          {
+            "currency": { "value": 3665.84, "isoCode": "SEK" },
+            "title": "Adjustment",
+            "description": "EXPANDED | EDGE rows: Unbreakable item title / value, Swedish characters",
+            "items": [
+              { "title": "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ", "value": "1" },
+              { "title": "Note", "value": "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ" },
+              { "title": "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ", "value": "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ" },
+              { "title": "Åäö", "value": "Överenskommen ersättning för övertidsarbete under helgdagar och kvällar" }
+            ]
+          },
+          {
+            "currency": { "value": 12000, "isoCode": "SEK" },
+            "title": "Salary",
+            "description": "EXPANDED | Mixed rows: many items, one without value",
+            "items": [
+              { "title": "Code", "value": "  180" },
+              { "title": "From", "value": "2026-04-01" },
+              { "title": "To", "value": "2026-04-30" },
+              { "title": "Quantity", "value": "160.00" },
+              { "title": "Percent", "value": "100.00" },
+              { "title": "Unit price", "value": "75.00" },
+              { "title": "Empty value" },
+              { "title": "Note", "value": "Short" }
+            ]
+          },
+          {
+            "currency": { "value": 3665.84, "isoCode": "SEK" },
+            "title": "Allowances",
+            "description": "EXPANDED | Items with currency amount, subtitle and label | S1-S5 at item level",
+            "items": [
+              {
+                "title": "Gross Salary",
+                "description": "S1 | Long title / Short amount | your base salary",
+                "label": "Non deductible",
+                "currency": { "value": 150, "isoCode": "SEK" }
+              },
+              {
+                "title": "Bonus",
+                "description": "S2 | Short title / Long amount",
+                "label": "Not taxable",
+                "currency": { "value": 1234567.89, "isoCode": "SEK" }
+              },
+              {
+                "title": "Compensation for unsocial working hours during public holidays, weekends and evenings",
+                "description": "S3 | Long title / Short amount | title wraps",
+                "label": "Not taxable",
+                "currency": { "value": 5, "isoCode": "SEK" }
+              },
+              {
+                "title": "Refund",
+                "description": "S4 | Short title / Long amount (negative, 12 digits)",
+                "label": "Non deductible",
+                "currency": { "value": -123456789012.34, "isoCode": "SEK" }
+              },
+              {
+                "title": "Retroactive salary adjustment for the period January to April including holiday pay and social security",
+                "description": "S5 | Long title / Long amount | amount 1 line, title wraps",
+                "label": "Not taxable",
+                "currency": { "value": 987654321098.76, "isoCode": "SEK" }
+              },
+              {
+                "title": "Retroactive payment of accumulated overtime, on-call and travel allowances for the whole previous year",
+                "description": "S5 | Long title / Max amount (14 digits) | amount may move below title and subtitle, long subtitle that needs to wrap on several lines as well",
+                "label": "A very long label that needs to wrap as well",
+                "currency": { "value": 99999999999999.99, "isoCode": "SEK" }
+              },
+              {
+                "title": "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                "description": "EDGE | Unbreakable title / Long amount",
+                "currency": { "value": 1234567.89, "isoCode": "SEK" }
+              }
+            ]
+          },
+          {
+            "currency": { "value": 10, "isoCode": "SEK" },
+            "title": "Rounding adjustment",
+            "description": "EDGE | No items | no chevron expected",
+            "items": []
+          },
+          {
+            "title": "Building better worlds, one payslip at a time, together with all colleagues across every country",
+            "description": "EDGE | Long title / No amount | title wraps",
+            "items": []
+          },
+          {
+            "title": "For questions regarding your payslip",
+            "items": [
+              { "title": "web", "value": "www.testföretaget.se" },
+              { "title": "email", "value": "löneavdelningen.support.international@testföretaget-concern-group.com" },
+              { "title": "Opening hours of the payroll department for employee questions", "value": "Monday to Friday 08:00-16:30" }
+            ]
+          }
+        ],
+        "additionalInfoOnSpecificItems": true
+      }
+    }
+  ]
+}

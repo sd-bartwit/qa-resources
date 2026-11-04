@@ -1,0 +1,1684 @@
+{
+  "result": {
+    "label": "Payslip",
+    "currency": {
+      "value": 57997.51,
+      "isoCode": "SEK"
+    },
+    "bankAccount": "3300-890101028 / SE0001231834909",
+    "amountInfo": "Payment Date 25 May 2026",
+    "period": {
+      "fromUtc": "2026-05-01T00:00:00Z",
+      "toUtc": "2026-05-31T00:00:00Z",
+      "periodType": "Monthly"
+    },
+    "metadataSections": [
+      {
+        "title": "Vacation",
+        "items": [
+          {
+            "title": "Vacation",
+            "value": "25.00"
+          },
+          {
+            "title": "Paid",
+            "value": "24.00"
+          },
+          {
+            "title": "Unpaid "
+          },
+          {
+            "title": "Saved "
+          },
+          {
+            "title": "Vac in adv"
+          },
+          {
+            "title": "Dept in adv."
+          }
+        ]
+      },
+      {
+        "title": "Tax information",
+        "items": [
+          {
+            "title": "Tax table",
+            "value": "35.00"
+          },
+          {
+            "title": "Gross salary period",
+            "value": "55008.95"
+          },
+          {
+            "title": "Basis tax calc. table",
+            "value": "52874.95"
+          },
+          {
+            "title": "Basis tax calc. lumpsum",
+            "value": "2500.00"
+          },
+          {
+            "title": "Benefit period",
+            "value": "366.00"
+          },
+          {
+            "title": "Benefit year",
+            "value": "366.00"
+          },
+          {
+            "title": "Car benefit year"
+          }
+        ]
+      },
+      {
+        "title": "Other information",
+        "items": [
+          {
+            "title": "Gross salary year"
+          },
+          {
+            "title": "BKAT",
+            "value": "1.00"
+          },
+          {
+            "title": "Title",
+            "value": "Consultant"
+          }
+        ]
+      },
+      {
+        "title": "Balances",
+        "items": [
+          {
+            "title": "Flex balance",
+            "value": "6.13"
+          },
+          {
+            "title": "Compensatory balance",
+            "value": "10.00"
+          }
+        ]
+      },
+      {
+        "title": "Time",
+        "items": [
+          {
+            "title": "Över/Mertid året fast på engelska",
+            "value": "54.50"
+          },
+          {
+            "title": "Work time in period",
+            "value": "147.50"
+          }
+        ]
+      },
+      {
+        "title": "Benefits",
+        "items": [
+          {
+            "title": "Car benefit period"
+          }
+        ]
+      }
+    ],
+    "paymentSections": [
+      {
+        "currency": {
+          "value": 45000,
+          "isoCode": "SEK"
+        },
+        "title": "Monthly wage",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  070"
+          },
+          {
+            "title": "From",
+            "value": "2026-05-01"
+          },
+          {
+            "title": "To",
+            "value": "2026-05-31"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 2500,
+          "isoCode": "SEK"
+        },
+        "title": "Bonus (vacation accrual, ITP Mobile wage parts)",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  150"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-01"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-30"
+          },
+          {
+            "title": "Note",
+            "value": "Great job"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 2000,
+          "isoCode": "SEK"
+        },
+        "title": "Fixed compensation 1",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  200"
+          },
+          {
+            "title": "From",
+            "value": "2026-05-01"
+          },
+          {
+            "title": "To",
+            "value": "2026-05-31"
+          },
+          {
+            "title": "Percent",
+            "value": "100.00"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 2872.34,
+          "isoCode": "SEK"
+        },
+        "title": "Overtime",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  301"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-03"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-10"
+          },
+          {
+            "title": "Quantity",
+            "value": "6.00"
+          },
+          {
+            "title": "Percent",
+            "value": "100.00"
+          },
+          {
+            "title": "Unit price",
+            "value": "478.72"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 1562.5,
+          "isoCode": "SEK"
+        },
+        "title": "Overtime, qualified",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  302"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-04"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-04"
+          },
+          {
+            "title": "Quantity",
+            "value": "2.50"
+          },
+          {
+            "title": "Unit price",
+            "value": "625.00"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 1875,
+          "isoCode": "SEK"
+        },
+        "title": "Overtime, qualified",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  302"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-11"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-11"
+          },
+          {
+            "title": "Quantity",
+            "value": "3.00"
+          },
+          {
+            "title": "Unit price",
+            "value": "625.00"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 150,
+          "isoCode": "SEK"
+        },
+        "title": "Unsocial hours supplement",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  350"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-03"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-03"
+          },
+          {
+            "title": "Quantity",
+            "value": "2.00"
+          },
+          {
+            "title": "Percent",
+            "value": "100.00"
+          },
+          {
+            "title": "Unit price",
+            "value": "75.00"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 150,
+          "isoCode": "SEK"
+        },
+        "title": "Unsocial hours supplement",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  350"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-02"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-02"
+          },
+          {
+            "title": "Quantity",
+            "value": "2.00"
+          },
+          {
+            "title": "Percent",
+            "value": "100.00"
+          },
+          {
+            "title": "Unit price",
+            "value": "75.00"
+          },
+          {
+            "title": "Note",
+            "value": "askdhkajshdkjahsdkjahdkjhasdfkjhahsöfkjhasdkfjbhnaskjfhaoiwuerhak<jsdhbfkjAHBSDIFHAWOJKFHksjahfKAJUSHF OUSDKFUJHASOIFUHASDÅOIKUFHAKSLHF ASIOUJDHFIKAUJSH FASDOJFH ASKDJHFAKSJDHFK UJASHFÖKAJHSDKFHASDFUJHASDOIUHJFRIAWUJREHIKJUAHSDCKJAN IASIODUFRH AKSDJHF AK"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 150,
+          "isoCode": "SEK"
+        },
+        "title": "Unsocial hours supplement",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  350"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-01"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-01"
+          },
+          {
+            "title": "Quantity",
+            "value": "2.00"
+          },
+          {
+            "title": "Percent",
+            "value": "100.00"
+          },
+          {
+            "title": "Unit price",
+            "value": "75.00"
+          },
+          {
+            "title": "Note",
+            "value": "Kommentar"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 257.14,
+          "isoCode": "SEK"
+        },
+        "title": "Readiness B weekdays",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  370"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-14"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-14"
+          },
+          {
+            "title": "Quantity",
+            "value": "8.00"
+          },
+          {
+            "title": "Unit price",
+            "value": "32.14"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 257.14,
+          "isoCode": "SEK"
+        },
+        "title": "Readiness B weekdays",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  370"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-15"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-15"
+          },
+          {
+            "title": "Quantity",
+            "value": "8.00"
+          },
+          {
+            "title": "Unit price",
+            "value": "32.14"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 257.14,
+          "isoCode": "SEK"
+        },
+        "title": "Readiness B weekdays",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  370"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-16"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-16"
+          },
+          {
+            "title": "Quantity",
+            "value": "8.00"
+          },
+          {
+            "title": "Unit price",
+            "value": "32.14"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 400,
+          "isoCode": "SEK"
+        },
+        "title": "Readiness B night",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  371"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-16"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-16"
+          },
+          {
+            "title": "Quantity",
+            "value": "8.00"
+          },
+          {
+            "title": "Unit price",
+            "value": "50.00"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 400,
+          "isoCode": "SEK"
+        },
+        "title": "Readiness B night",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  371"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-17"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-17"
+          },
+          {
+            "title": "Quantity",
+            "value": "8.00"
+          },
+          {
+            "title": "Unit price",
+            "value": "50.00"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 200,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign travel allowance taxable",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  514"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-04"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-04"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 200,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign travel allowance taxable",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  514"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-08"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-08"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": -30,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign travel allowance taxable",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  514"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-05"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-05"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": -30,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign travel allowance taxable",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  514"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-07"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-07"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 200,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign travel allowance taxable",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  514"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-06"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-06"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 200,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign travel allowance taxable",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  514"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-02"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-02"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 200,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign travel allowance taxable",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  514"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-05"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-05"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": -100,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign travel allowance taxable",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  514"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-06"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-06"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 200,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign travel allowance taxable",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  514"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-09"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-09"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": -100,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign travel allowance taxable",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  514"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-04"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-04"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 200,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign travel allowance taxable",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  514"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-03"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-03"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 200,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign travel allowance taxable",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  514"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-10"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-10"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": -30,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign travel allowance taxable",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  514"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-10"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-10"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": -100,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign travel allowance taxable",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  514"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-03"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-03"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 200,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign travel allowance taxable",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  514"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-07"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-07"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": -2076.92,
+          "isoCode": "SEK"
+        },
+        "title": "Sick leave qualifying day",
+        "items": [
+          {
+            "title": "Code",
+            "value": "80001"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-13"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-13"
+          },
+          {
+            "title": "Quantity",
+            "value": "8.00"
+          },
+          {
+            "title": "Percent",
+            "value": "100.00"
+          },
+          {
+            "title": "Unit price",
+            "value": "-259,62"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": -830.76,
+          "isoCode": "SEK"
+        },
+        "title": "Sick leave day 2-14",
+        "items": [
+          {
+            "title": "Code",
+            "value": "80002"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-14"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-15"
+          },
+          {
+            "title": "Quantity",
+            "value": "16.00"
+          },
+          {
+            "title": "Percent",
+            "value": "100.00"
+          },
+          {
+            "title": "Unit price",
+            "value": "-51,92"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 360,
+          "isoCode": "SEK"
+        },
+        "title": "Vacation premium",
+        "items": [
+          {
+            "title": "Code",
+            "value": "70001"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-29"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-29"
+          },
+          {
+            "title": "Quantity",
+            "value": "1.00"
+          },
+          {
+            "title": "Percent",
+            "value": "100.00"
+          },
+          {
+            "title": "Unit price",
+            "value": "360.00"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": -2142.86,
+          "isoCode": "SEK"
+        },
+        "title": "Leave of absence, short",
+        "items": [
+          {
+            "title": "Code",
+            "value": "83002"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-30"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-30"
+          },
+          {
+            "title": "Quantity",
+            "value": "1.00"
+          },
+          {
+            "title": "Percent",
+            "value": "100.00"
+          },
+          {
+            "title": "Unit price",
+            "value": "-2142,86"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": -13453,
+          "isoCode": "SEK"
+        },
+        "title": "Tax according to tax table",
+        "items": [
+          {
+            "title": "Code",
+            "value": " 9001"
+          },
+          {
+            "title": "From",
+            "value": "2026-05-25"
+          },
+          {
+            "title": "To",
+            "value": "2026-05-25"
+          },
+          {
+            "title": "Percent",
+            "value": "100.00"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": -850,
+          "isoCode": "SEK"
+        },
+        "title": "One-off tax",
+        "items": [
+          {
+            "title": "Code",
+            "value": " 9002"
+          },
+          {
+            "title": "From",
+            "value": "2026-05-25"
+          },
+          {
+            "title": "To",
+            "value": "2026-05-25"
+          },
+          {
+            "title": "Percent",
+            "value": "100.00"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 122,
+          "isoCode": "SEK"
+        },
+        "title": "Lunch- or dinner benefit",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  602"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 122,
+          "isoCode": "SEK"
+        },
+        "title": "Lunch- or dinner benefit",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  602"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 122,
+          "isoCode": "SEK"
+        },
+        "title": "Lunch- or dinner benefit",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  602"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 1773.5,
+          "isoCode": "SEK"
+        },
+        "title": "Private accommodation / Night per-diem",
+        "items": [
+          {
+            "title": "Code",
+            "value": " K501"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-09"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-09"
+          },
+          {
+            "title": "Note",
+            "value": "9005017"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 1773.5,
+          "isoCode": "SEK"
+        },
+        "title": "Private accommodation / Night per-diem",
+        "items": [
+          {
+            "title": "Code",
+            "value": " K501"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-08"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-08"
+          },
+          {
+            "title": "Note",
+            "value": "9005017"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 1049,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign per diem exempt",
+        "items": [
+          {
+            "title": "Code",
+            "value": " K512"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-04"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-04"
+          },
+          {
+            "title": "Note",
+            "value": "9005017"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 300,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign per diem exempt",
+        "items": [
+          {
+            "title": "Code",
+            "value": " K512"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-02"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-02"
+          },
+          {
+            "title": "Note",
+            "value": "9005017"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 1049,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign per diem exempt",
+        "items": [
+          {
+            "title": "Code",
+            "value": " K512"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-06"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-06"
+          },
+          {
+            "title": "Note",
+            "value": "9005017"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": -157.35,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign per diem exempt",
+        "items": [
+          {
+            "title": "Code",
+            "value": " K512"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-07"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-07"
+          },
+          {
+            "title": "Note",
+            "value": "9005017"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": -524.5,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign per diem exempt",
+        "items": [
+          {
+            "title": "Code",
+            "value": " K512"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-04"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-04"
+          },
+          {
+            "title": "Note",
+            "value": "9005017"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 1049,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign per diem exempt",
+        "items": [
+          {
+            "title": "Code",
+            "value": " K512"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-10"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-10"
+          },
+          {
+            "title": "Note",
+            "value": "9005017"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": -524.5,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign per diem exempt",
+        "items": [
+          {
+            "title": "Code",
+            "value": " K512"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-06"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-06"
+          },
+          {
+            "title": "Note",
+            "value": "9005017"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 1049,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign per diem exempt",
+        "items": [
+          {
+            "title": "Code",
+            "value": " K512"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-09"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-09"
+          },
+          {
+            "title": "Note",
+            "value": "9005017"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": -157.35,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign per diem exempt",
+        "items": [
+          {
+            "title": "Code",
+            "value": " K512"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-10"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-10"
+          },
+          {
+            "title": "Note",
+            "value": "9005017"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": -157.35,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign per diem exempt",
+        "items": [
+          {
+            "title": "Code",
+            "value": " K512"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-05"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-05"
+          },
+          {
+            "title": "Note",
+            "value": "9005017"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 1049,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign per diem exempt",
+        "items": [
+          {
+            "title": "Code",
+            "value": " K512"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-07"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-07"
+          },
+          {
+            "title": "Note",
+            "value": "9005017"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": -524.5,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign per diem exempt",
+        "items": [
+          {
+            "title": "Code",
+            "value": " K512"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-03"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-03"
+          },
+          {
+            "title": "Note",
+            "value": "9005017"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 1049,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign per diem exempt",
+        "items": [
+          {
+            "title": "Code",
+            "value": " K512"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-08"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-08"
+          },
+          {
+            "title": "Note",
+            "value": "9005017"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 1049,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign per diem exempt",
+        "items": [
+          {
+            "title": "Code",
+            "value": " K512"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-03"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-03"
+          },
+          {
+            "title": "Note",
+            "value": "9005017"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 1049,
+          "isoCode": "SEK"
+        },
+        "title": "Foreign per diem exempt",
+        "items": [
+          {
+            "title": "Code",
+            "value": " K512"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-05"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-05"
+          },
+          {
+            "title": "Note",
+            "value": "9005017"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 1495.77,
+          "isoCode": "SEK"
+        },
+        "title": "Transportation ticket / taxi",
+        "items": [
+          {
+            "title": "Code",
+            "value": " K524"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-07"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-07"
+          },
+          {
+            "title": "Note",
+            "value": "9005017"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 0,
+          "isoCode": "SEK"
+        },
+        "title": "Representation, internally, deductible.",
+        "items": [
+          {
+            "title": "Code",
+            "value": " K540"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-08"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-08"
+          },
+          {
+            "title": "Note",
+            "value": "9005017"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 2436.5,
+          "isoCode": "SEK"
+        },
+        "title": "Representation, internal, not deductible",
+        "items": [
+          {
+            "title": "Code",
+            "value": " K541"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-08"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-08"
+          },
+          {
+            "title": "Note",
+            "value": "9005017"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 3665.84,
+          "isoCode": "SEK"
+        },
+        "title": "Car allowance tax-free, private car",
+        "items": [
+          {
+            "title": "Code",
+            "value": " K562"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-01"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-01"
+          },
+          {
+            "title": "Quantity",
+            "value": "916.46"
+          },
+          {
+            "title": "Unit price",
+            "value": "4.00"
+          },
+          {
+            "title": "Unit",
+            "value": "Km"
+          },
+          {
+            "title": "Note",
+            "value": "9005017"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": 458.23,
+          "isoCode": "SEK"
+        },
+        "title": "Bilersättning skpl",
+        "items": [
+          {
+            "title": "Code",
+            "value": " K563"
+          },
+          {
+            "title": "From",
+            "value": "2026-04-01"
+          },
+          {
+            "title": "To",
+            "value": "2026-04-01"
+          },
+          {
+            "title": "Quantity",
+            "value": "916.46"
+          },
+          {
+            "title": "Unit price",
+            "value": "0.50"
+          },
+          {
+            "title": "Unit",
+            "value": "Km"
+          },
+          {
+            "title": "Note",
+            "value": "9005017"
+          }
+        ]
+      },
+      {
+        "currency": {
+          "value": -500,
+          "isoCode": "SEK"
+        },
+        "title": "Voluntary tax deduction",
+        "items": [
+          {
+            "title": "Code",
+            "value": "  902"
+          }
+        ]
+      },
+      {
+        "title": "Building better worlds",
+        "items": []
+      },
+      {
+        "title": "For questions regarding your payslip",
+        "items": [
+          {
+            "title": "web",
+            "value": "www.testföretaget.se"
+          },
+          {
+            "title": "email",
+            "value": "lön@testföretaget.com"
+          }
+        ]
+      }
+    ],
+    "additionalInfoOnSpecificItems": true
+  },
+  "state": "Success",
+  "error": {}
+}

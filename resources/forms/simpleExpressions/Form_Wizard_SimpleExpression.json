@@ -1,0 +1,694 @@
+{
+  "result": {
+    "type": "Wizard",
+    "title": "Simple Expressions – Regression Test Form",
+    "description": "Complementary test instruction is available on Wiki: 'Simple Expressions – Regression' page",
+    "changesOnly": true,
+    "steps": [
+      {
+        "step": "1. Constants",
+        "description": "SE-001..SE-007 – constant (non-expression) property values",
+        "visible": true,
+        "groups": [
+          {
+            "group": "Constant values",
+            "description": "Boolean literals in required/readOnly/visible",
+            "items": [
+              {
+                "type": "Text",
+                "value": "",
+                "id": "const-visible-true",
+                "name": "SE-001 visible=true (should show)",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Text",
+                "value": "",
+                "id": "const-visible-false",
+                "name": "SE-002 visible=false (should be hidden)",
+                "required": false,
+                "readOnly": false,
+                "visible": false
+              },
+              {
+                "type": "Text",
+                "value": "",
+                "id": "const-required-true",
+                "name": "SE-003 required=true (leave empty -> error)",
+                "required": true,
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Text",
+                "value": "",
+                "id": "const-required-false",
+                "name": "SE-004 required=false",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Text",
+                "value": "Locked value",
+                "id": "const-readonly-true",
+                "name": "SE-005 readOnly=true (not editable)",
+                "required": false,
+                "readOnly": true,
+                "visible": true
+              },
+              {
+                "type": "Text",
+                "value": "Editable value",
+                "id": "const-readonly-false",
+                "name": "SE-006 readOnly=false (editable)",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Text",
+                "value": "Prefilled",
+                "id": "const-required-readonly",
+                "name": "SE-007 required=true + readOnly=true (edge case)",
+                "required": true,
+                "readOnly": true,
+                "visible": true
+              }
+            ],
+            "isExpanded": false,
+            "visible": true
+          }
+        ]
+      },
+      {
+        "step": "2. Single ref & boolean logic",
+        "description": "SE-201..SE-208 – toggle drivers and and/or/not",
+        "visible": true,
+        "groups": [
+          {
+            "group": "Drivers (toggles)",
+            "description": "Flip these to drive dependent fields below",
+            "items": [
+              {
+                "type": "Boolean",
+                "value": true,
+                "id": "toggle-a",
+                "name": "Driver A (toggle)",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Boolean",
+                "value": false,
+                "id": "toggle-b",
+                "name": "Driver B (toggle)",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              }
+            ],
+            "isExpanded": false,
+            "visible": true
+          },
+          {
+            "group": "Single reference",
+            "description": "Depend on Driver A",
+            "items": [
+              {
+                "type": "Text",
+                "value": "",
+                "id": "ref-visible",
+                "name": "SE-201 visible = #toggle-a",
+                "required": false,
+                "readOnly": false,
+                "visible": "#toggle-a"
+              },
+              {
+                "type": "Text",
+                "value": "",
+                "id": "ref-required",
+                "name": "SE-202 required = #toggle-a",
+                "required": "#toggle-a",
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Text",
+                "value": "Try to edit me",
+                "id": "ref-readonly",
+                "name": "SE-203 readOnly = #toggle-a",
+                "required": false,
+                "readOnly": "#toggle-a",
+                "visible": true
+              },
+              {
+                "type": "Text",
+                "value": "",
+                "id": "ref-not",
+                "name": "SE-204 visible = not( #toggle-a )",
+                "required": false,
+                "readOnly": false,
+                "visible": "not( #toggle-a )"
+              }
+            ],
+            "isExpanded": false,
+            "visible": true
+          },
+          {
+            "group": "Boolean logic",
+            "description": "and / or / not with A and B",
+            "items": [
+              {
+                "type": "Text",
+                "value": "",
+                "id": "logic-and",
+                "name": "SE-205 visible = and( #toggle-a, #toggle-b )",
+                "required": false,
+                "readOnly": false,
+                "visible": "and( #toggle-a, #toggle-b )"
+              },
+              {
+                "type": "Text",
+                "value": "",
+                "id": "logic-or",
+                "name": "SE-206 visible = or( #toggle-a, #toggle-b )",
+                "required": false,
+                "readOnly": false,
+                "visible": "or( #toggle-a, #toggle-b )"
+              },
+              {
+                "type": "Text",
+                "value": "",
+                "id": "logic-not-and",
+                "name": "SE-207 visible = not( and( #toggle-a, #toggle-b ) )",
+                "required": false,
+                "readOnly": false,
+                "visible": "not( and( #toggle-a, #toggle-b ) )"
+              },
+              {
+                "type": "Text",
+                "value": "",
+                "id": "logic-and-notb",
+                "name": "SE-208 visible = and( #toggle-a, not( #toggle-b ) )",
+                "required": false,
+                "readOnly": false,
+                "visible": "and( #toggle-a, not( #toggle-b ) )"
+              }
+            ],
+            "isExpanded": false,
+            "visible": true
+          }
+        ]
+      },
+      {
+        "step": "3. Numeric comparison",
+        "description": "SE-301..SE-303 – gt/lt/eq",
+        "visible": true,
+        "groups": [
+          {
+            "group": "Driver",
+            "description": "Change the age value",
+            "items": [
+              {
+                "type": "Numeric",
+                "value": 30,
+                "id": "age",
+                "name": "Driver: Age",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              }
+            ],
+            "isExpanded": false,
+            "visible": true
+          },
+          {
+            "group": "Comparisons",
+            "description": "Dependent on Age",
+            "items": [
+              {
+                "type": "Text",
+                "value": "",
+                "id": "num-gt",
+                "name": "SE-301 visible = gt( #age, 18 )",
+                "required": false,
+                "readOnly": false,
+                "visible": "gt( #age, 18 )"
+              },
+              {
+                "type": "Text",
+                "value": "",
+                "id": "num-lt",
+                "name": "SE-302 visible = lt( #age, 65 )",
+                "required": false,
+                "readOnly": false,
+                "visible": "lt( #age, 65 )"
+              },
+              {
+                "type": "Text",
+                "value": "",
+                "id": "num-eq",
+                "name": "SE-303 visible = eq( #age, 30 )",
+                "required": false,
+                "readOnly": false,
+                "visible": "eq( #age, 30 )"
+              }
+            ],
+            "isExpanded": false,
+            "visible": true
+          }
+        ]
+      },
+      {
+        "step": "4. String / empty / contains",
+        "description": "SE-401..SE-407",
+        "visible": true,
+        "groups": [
+          {
+            "group": "Drivers (text & select)",
+            "description": "Text and select drivers",
+            "items": [
+              {
+                "type": "Text",
+                "value": "Anna",
+                "id": "name",
+                "name": "Driver: Name",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Text",
+                "value": "test@test.com",
+                "id": "email",
+                "name": "Driver: Email",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Text",
+                "value": "2",
+                "allowedValues": [
+                  {
+                    "id": "1",
+                    "value": "Red"
+                  },
+                  {
+                    "id": "2",
+                    "value": "Green"
+                  },
+                  {
+                    "id": "3",
+                    "value": "Blue"
+                  }
+                ],
+                "id": "color",
+                "name": "Driver: Color (select)",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              }
+            ],
+            "isExpanded": false,
+            "visible": true
+          },
+          {
+            "group": "String expressions",
+            "description": "empty / contains / eq",
+            "items": [
+              {
+                "type": "Text",
+                "value": "",
+                "id": "str-empty",
+                "name": "SE-401 visible = empty( #name )",
+                "required": false,
+                "readOnly": false,
+                "visible": "empty( #name )"
+              },
+              {
+                "type": "Text",
+                "value": "",
+                "id": "str-not-empty-req",
+                "name": "SE-402 required = not( empty( #name ) )",
+                "required": "not( empty( #name ) )",
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Text",
+                "value": "",
+                "id": "str-eq-select",
+                "name": "SE-403 visible = eq( #color, \"2\" )",
+                "required": false,
+                "readOnly": false,
+                "visible": "eq( #color, \"2\" )"
+              },
+              {
+                "type": "Text",
+                "value": "",
+                "id": "str-contains",
+                "name": "SE-404 visible = contains( #name, \"nn\" )",
+                "required": false,
+                "readOnly": false,
+                "visible": "contains( #name, \"nn\" )"
+              },
+              {
+                "type": "Text",
+                "value": "",
+                "id": "str-not-eq",
+                "name": "SE-406 visible = not( eq( #color, \"3\" ) )",
+                "required": false,
+                "readOnly": false,
+                "visible": "not( eq( #color, \"3\" ) )"
+              },
+              {
+                "type": "Text",
+                "value": "",
+                "id": "str-email-empty",
+                "name": "SE-407 visible = empty( #email )",
+                "required": false,
+                "readOnly": false,
+                "visible": "empty( #email )"
+              }
+            ],
+            "isExpanded": false,
+            "visible": true
+          }
+        ]
+      },
+      {
+        "step": "5. Field type coverage",
+        "description": "SE-501..SE-507 – all field types + visible/required/readOnly",
+        "visible": true,
+        "groups": [
+          {
+            "group": "Type coverage",
+            "description": "All field types as drivers/targets; visible, required, readOnly",
+            "items": [
+              {
+                "type": "Boolean",
+                "value": true,
+                "id": "type-bool-driver",
+                "name": "Driver: Boolean",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Numeric",
+                "value": 5,
+                "id": "type-num-driver",
+                "name": "Driver: Numeric",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "DateTime",
+                "value": "2026-01-01",
+                "id": "type-date-driver",
+                "name": "Driver: Date",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Text",
+                "value": "opt-1",
+                "allowedValues": [
+                  { "id": "opt-1", "value": "Option 1" },
+                  { "id": "opt-2", "value": "Option 2" }
+                ],
+                "id": "type-select-driver",
+                "name": "Driver: Select",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "TextArea",
+                "value": "Anna\nSecond line",
+                "id": "type-textarea-driver",
+                "name": "Driver: TextArea",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Text",
+                "value": "",
+                "id": "type-text-target",
+                "name": "SE-501 Text visible = #type-bool-driver",
+                "required": false,
+                "readOnly": false,
+                "visible": "#type-bool-driver"
+              },
+              {
+                "type": "TextArea",
+                "value": "Line 1\nLine 2",
+                "id": "type-multiline-target",
+                "name": "SE-502 TextArea readOnly = #type-bool-driver",
+                "required": false,
+                "readOnly": "#type-bool-driver",
+                "visible": true
+              },
+              {
+                "type": "Numeric",
+                "value": 0,
+                "id": "type-numeric-target",
+                "name": "SE-503 Numeric visible = gt( #type-num-driver, 3 )",
+                "required": false,
+                "readOnly": false,
+                "visible": "gt( #type-num-driver, 3 )"
+              },
+              {
+                "type": "Boolean",
+                "value": false,
+                "id": "type-bool-target",
+                "name": "SE-504 Boolean visible = #type-bool-driver",
+                "required": false,
+                "readOnly": false,
+                "visible": "#type-bool-driver"
+              },
+              {
+                "type": "Text",
+                "value": "tgt-1",
+                "allowedValues": [
+                  { "id": "tgt-1", "value": "Target 1" },
+                  { "id": "tgt-2", "value": "Target 2" }
+                ],
+                "id": "type-select-target",
+                "name": "SE-505 Select readOnly = eq( #type-select-driver, \"opt-1\" )",
+                "required": false,
+                "readOnly": "eq( #type-select-driver, \"opt-1\" )",
+                "visible": true
+              },
+              {
+                "type": "DateTime",
+                "value": "",
+                "id": "type-date-target",
+                "name": "SE-506 DateTime required = not( empty( #type-date-driver ) )",
+                "required": "not( empty( #type-date-driver ) )",
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Comment",
+                "commentType": "Success",
+                "message": "Shown because text contains 'nn'",
+                "id": "type-comment",
+                "name": "SE-507 Comment visible = contains( #type-textarea-driver, \"nn\" )",
+                "required": false,
+                "readOnly": false,
+                "visible": "contains( #type-textarea-driver, \"nn\" )"
+              }
+            ],
+            "isExpanded": false,
+            "visible": true
+          }
+        ]
+      },
+      {
+        "step": "6. Complex nested",
+        "description": "SE-601..SE-604 – deep nested expressions (and / or)",
+        "visible": true,
+        "groups": [
+          {
+            "group": "Nested drivers",
+            "description": "Person attributes",
+            "items": [
+              {
+                "type": "Text",
+                "value": "Anna Nowak",
+                "id": "person-name",
+                "name": "Driver: Person name",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Numeric",
+                "value": 30,
+                "id": "person-age",
+                "name": "Driver: Person age",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Text",
+                "value": "sex-2",
+                "allowedValues": [
+                  {
+                    "id": "sex-1",
+                    "value": "Man"
+                  },
+                  {
+                    "id": "sex-2",
+                    "value": "Woman"
+                  },
+                  {
+                    "id": "sex-3",
+                    "value": "Prefer not to say"
+                  }
+                ],
+                "id": "person-sex",
+                "name": "Driver: Person sex",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              }
+            ],
+            "isExpanded": false,
+            "visible": true
+          },
+          {
+            "group": "Nested result",
+            "description": "same nested expr on required / visible / readOnly, plus an or-based expr",
+            "items": [
+              {
+                "type": "Text",
+                "value": "",
+                "id": "nested-required",
+                "name": "SE-601 required = nested and/not/gt/eq",
+                "required": "and( not( empty( #person-name ) ), and( gt( #person-age, 18 ), eq( #person-sex, \"sex-2\" ) ) )",
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Text",
+                "value": "",
+                "id": "nested-visible",
+                "name": "SE-602 visible = nested and/not/gt/eq",
+                "required": false,
+                "readOnly": false,
+                "visible": "and( not( empty( #person-name ) ), and( gt( #person-age, 18 ), eq( #person-sex, \"sex-2\" ) ) )"
+              },
+              {
+                "type": "Text",
+                "value": "Locked when expression true",
+                "id": "nested-readonly",
+                "name": "SE-603 readOnly = nested and/not/gt/eq",
+                "required": false,
+                "readOnly": "and( not( empty( #person-name ) ), and( gt( #person-age, 18 ), eq( #person-sex, \"sex-2\" ) ) )",
+                "visible": true
+              },
+              {
+                "type": "Text",
+                "value": "",
+                "id": "nested-or",
+                "name": "SE-604 visible = or( eq( #person-sex, \"sex-1\" ), gt( #person-age, 18 ) )",
+                "required": false,
+                "readOnly": false,
+                "visible": "or( eq( #person-sex, \"sex-1\" ), gt( #person-age, 18 ) )"
+              }
+            ],
+            "isExpanded": false,
+            "visible": true
+          }
+        ]
+      },
+      {
+        "step": "7. Cascading dependencies",
+        "description": "SE-701..SE-702 – chained references (circular SE-704 removed: caused infinite load)",
+        "visible": true,
+        "groups": [
+          {
+            "group": "Cascade chain A -> B -> C",
+            "description": "Observe how hiding A affects B and C",
+            "items": [
+              {
+                "type": "Boolean",
+                "value": true,
+                "id": "chain-a",
+                "name": "Chain A (driver toggle)",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Text",
+                "value": "B value",
+                "id": "chain-b",
+                "name": "SE-701 B visible = #chain-a",
+                "required": "#chain-a",
+                "readOnly": false,
+                "visible": "#chain-a"
+              },
+              {
+                "type": "Text",
+                "value": "C value",
+                "id": "chain-c",
+                "name": "SE-702 C visible = not( empty( #chain-b ) )",
+                "required": "not( empty( #chain-b ) )",
+                "readOnly": false,
+                "visible": "not( empty( #chain-b ) )"
+              }
+            ],
+            "isExpanded": false,
+            "visible": true
+          }
+        ]
+      },
+      {
+        "step": "8. Negative / error handling",
+        "description": "SE-801",
+        "visible": true,
+        "groups": [
+          {
+            "group": "Negative / error handling",
+            "description": "must not crash",
+            "items": [
+              {
+                "type": "Text",
+                "value": "",
+                "id": "ghost-ref",
+                "name": "SE-801 visible = not( empty( #ghost ) ) (unknown field -> HIDDEN)",
+                "required": false,
+                "readOnly": false,
+                "visible": "not( empty( #ghost ) )"
+              }
+            ],
+            "isExpanded": false,
+            "visible": true
+          }
+        ]
+      }
+    ],
+    "comment": {
+      "type": "Information",
+      "message": "Manipulate 'driver' fields and observe the dependent 'target' fields. Each 'target' field is labelled with its adequate test case ID (SE-xxx)."
+    },
+    "valueSets": {},
+    "metadata": {
+      "optimistic_locking": "locking_field_value"
+    },
+    "viewOnly": false
+  },
+  "state": "Success"
+}

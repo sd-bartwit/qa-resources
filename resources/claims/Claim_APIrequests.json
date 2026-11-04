@@ -1,0 +1,4623 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Functionalities",
+    "version": "v1"
+  },
+  "servers": [
+    {
+      "url": "https://api.acc.sdworx.com/mysdworxappgateway/functionalities"
+    }
+  ],
+  "paths": {
+    "/api/1.0/expenses/{accessRightId}/groups/overview": {
+      "get": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Returns the groups with expenses that are either in draft or rejected state",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          },
+          {
+            "name": "count",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExpenseGroupOverviewPagedResponseApiResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/groups": {
+      "get": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Get expense groups/sheets, optionally by ApprovalStatus",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "approvalStatus",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "$ref": "#/components/schemas/ApprovalStatus"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          },
+          {
+            "name": "count",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          },
+          {
+            "name": "asApprover",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExpenseGroupSummaryPagedResponseApiResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/groups/{expenseGroupId}": {
+      "get": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Get details of a specific expense group/sheet.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseGroupId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "approvalStatus",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "$ref": "#/components/schemas/ApprovalStatus"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExpenseGroupDetailApiResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/groups/{expenseGroupId}/reject": {
+      "put": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Reject an expense group",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseGroupId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RejectGroupRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ApiResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ApiResult`1"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/groups/{expenseGroupId}/rejectByForm": {
+      "put": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Reject an expense group/sheet by form",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseGroupId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FormValues"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ApiResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ApiResult`1"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/groups/{expenseGroupId}/approve": {
+      "put": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Approve an expense group/sheet",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseGroupId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/ApproveRejectRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/RejectGroupRequest"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ApiResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ApiResult`1"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/groups/{expenseGroupId}/approveByForm": {
+      "put": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Approve an expense group/sheet by form",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseGroupId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FormValues"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ApiResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ApiResult`1"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/groups/{expenseGroupId}/submit": {
+      "put": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Submit an expense group for approval",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseGroupId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubmitExpenseGroup"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ApiResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ApiResult`1"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/expenses": {
+      "get": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Get expenses optionally by groupId or approvalStatus",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "groupId",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "approvalStatus",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "$ref": "#/components/schemas/ApprovalStatus"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          },
+          {
+            "name": "count",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          },
+          {
+            "name": "asApprover",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExpenseSummaryPagedResponseApiResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Create a new expense.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateExpense"
+              }
+            },
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "attachment": {
+                    "type": "string",
+                    "description": "",
+                    "format": "binary"
+                  },
+                  "createExpense": {
+                    "$ref": "#/components/schemas/CreateExpense"
+                  }
+                }
+              },
+              "encoding": {
+                "attachment": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExpenseDetailApiResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/expenses/{expenseId}": {
+      "get": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Get the details of a specific expense.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExpenseDetailApiResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Delete an expense.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ApiResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ApiResult`1"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Update an expense.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateExpense"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ApiResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ApiResult`1"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/expenses/{expenseId}/reject": {
+      "put": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Reject an individual expense.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProcessExpense"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ApiResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ApiResult`1"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/expenses/{expenseId}/rejectByForm": {
+      "put": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Reject an individual expense by form",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FormValues"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ApiResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ApiResult`1"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/expenses/approvals": {
+      "get": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Get pending approvals of expenses.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          },
+          {
+            "name": "count",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExpensePendingApprovalPagedResponseApiResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/expenses/approvals/{requestId}": {
+      "get": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Get pending approval of expenses by id.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "requestId",
+            "in": "path",
+            "description": "expenseId or expenseGroupId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExpensePendingApprovalApiResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/expenses/{expenseId}/approve": {
+      "put": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Approve an individual expense.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProcessExpense"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ApiResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ApiResult`1"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/expenses/bulkapprove": {
+      "put": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Approve expenses in bulk",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BulkApproveExpenseRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ApiResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ApiResult`1"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/expenses/bulkreject": {
+      "put": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Rejects expenses in bulk",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BulkRejectExpenseRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ApiResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ApiResult`1"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/expenses/{expenseId}/approveByForm": {
+      "put": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Approve an individual expense by form",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FormValues"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ApiResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ApiResult`1"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/expenses/{expenseId}/attachments/{attachmentId}": {
+      "get": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Manage specific expense attachments.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "attachmentId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Manage specific expense attachments.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "attachmentId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "formFile"
+                ],
+                "type": "object",
+                "properties": {
+                  "formFile": {
+                    "type": "string",
+                    "description": "",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "formFile": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ApiResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ApiResult`1"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Manage specific expense attachments.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "attachmentId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ApiResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ApiResult`1"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/expenses/{expenseId}/attachments": {
+      "post": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Add a new attachment to an expense.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "formFile"
+                ],
+                "type": "object",
+                "properties": {
+                  "formFile": {
+                    "type": "string",
+                    "description": "",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "formFile": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ApiResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ApiResult`1"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/config": {
+      "get": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Get configuration for expenses (e.g., expense types, units ...).",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "date",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExpenseConfigApiResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/deeplinks": {
+      "get": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Get all deep links embedded.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DeepLinkEmbeddedIEnumerableApiResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/claims/summary": {
+      "get": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Get a summary of the user's expense claims.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExpenseClaimsSummaryApiResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/claims": {
+      "get": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Get expense claims with optional filter by approval status and supportsExpenseLinking.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "The access right identifier for which to retrieve expense claims.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "approvalStatus",
+            "in": "query",
+            "description": "Optional filter for approval status of the claims.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/ApprovalStatus"
+              }
+            }
+          },
+          {
+            "name": "supportsExpenseLinking",
+            "in": "query",
+            "description": "Optional filter to indicate if expense linking is supported.",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "The page number for paginated results (default is 0).",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          },
+          {
+            "name": "count",
+            "in": "query",
+            "description": "The number of items per page (default is 10).",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExpenseClaimSummaryPagedResponseApiResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/claims/{expenseClaimId}": {
+      "get": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Get expense claim details by claim id.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseClaimId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExpenseClaimDetailApiResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Delete an expense claim.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseClaimId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ApiResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ApiResult`1"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/claims/unassigned-expenses": {
+      "get": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Get expenses that are not yet assigned to any claim.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          },
+          {
+            "name": "count",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 50
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExpenseSummaryPagedResponseApiResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/claims/{expenseClaimId}/link-expenses": {
+      "put": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Link expenses to a claim.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseClaimId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExpenseClaimLinkExpensesRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ApiResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ApiResult`1"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/claims/{expenseClaimId}/unlink-expenses": {
+      "put": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Unlink expenses from a claim.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseClaimId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExpenseClaimUnlinkExpensesRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ApiResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ApiResult`1"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/claims/{expenseClaimId}/submit": {
+      "put": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Submit an expense claim for approval.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseClaimId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubmitExpenseClaimRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ApiResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ApiResult`1"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/claims/approvals": {
+      "get": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Gets a list of all the expense claims the calling user can approve.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          },
+          {
+            "name": "count",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExpenseClaimPendingApprovalPagedResponseApiResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/claims/approvals/{expenseClaimId}": {
+      "get": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Get pending approval of expense claim by id.",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseClaimId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExpenseClaimPendingApprovalApiResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/claims/{expenseClaimId}/reject": {
+      "put": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Reject an expense claim",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseClaimId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExpenseClaimRejectRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ApiResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ApiResult`1"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    },
+    "/api/1.0/expenses/{accessRightId}/claims/{expenseClaimId}/approve": {
+      "put": {
+        "tags": [
+          "Expenses"
+        ],
+        "summary": "Approve an expense claim",
+        "parameters": [
+          {
+            "name": "accessRightId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "expenseClaimId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExpenseClaimApproveRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ApiResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ApiResult`1"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": [],
+            "oauth2-cia": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AbsencesContext": {
+        "required": [
+          "type"
+        ],
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/DeepLinkEmbeddedContext"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "scope": {
+                "$ref": "#/components/schemas/AbsencesScope"
+              }
+            },
+            "additionalProperties": false
+          }
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "TypeDiscriminator = AbsencesContext"
+          }
+        }
+      },
+      "AbsencesScope": {
+        "enum": [
+          "Unknown",
+          "AddAbsence"
+        ],
+        "type": "string"
+      },
+      "ApiResult": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "$ref": "#/components/schemas/ResponseState"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorResult"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ApiResult`1": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/ApiResult"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "result": {
+                "$ref": "#/components/schemas/T"
+              }
+            },
+            "additionalProperties": false
+          }
+        ]
+      },
+      "ApprovalStatus": {
+        "enum": [
+          "Approved",
+          "Rejected",
+          "Pending",
+          "Draft"
+        ],
+        "type": "string"
+      },
+      "ApproveRejectRequest": {
+        "type": "object",
+        "properties": {
+          "acceptedExpenseIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "comment": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AttachmentType": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "extension": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "maxSizeBytes": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "BulkApproveExpenseRequest": {
+        "type": "object",
+        "properties": {
+          "requestIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "approverComment": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BulkRejectExpenseRequest": {
+        "type": "object",
+        "properties": {
+          "requestIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "approverComment": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Categories": {
+        "enum": [
+          "None",
+          "Time",
+          "Absences",
+          "Salary",
+          "Expenses",
+          "PersonalData",
+          "MyTeam",
+          "Other",
+          "TalentDevelopment"
+        ],
+        "type": "string"
+      },
+      "Channel": {
+        "enum": [
+          "None",
+          "All",
+          "App",
+          "Portal",
+          "Chat",
+          "PortalMobile"
+        ],
+        "type": "string"
+      },
+      "CreateExpense": {
+        "type": "object",
+        "properties": {
+          "expenseTypeId": {
+            "type": "string",
+            "nullable": true
+          },
+          "expenseDateTimeOffset": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "expenseDateTimeUtc": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true,
+            "deprecated": true
+          },
+          "amount": {
+            "type": "number",
+            "format": "double"
+          },
+          "unitId": {
+            "type": "string",
+            "nullable": true
+          },
+          "comment": {
+            "type": "string",
+            "nullable": true
+          },
+          "approverComment": {
+            "type": "string",
+            "nullable": true
+          },
+          "customFields": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CustomFieldInstance"
+            },
+            "nullable": true
+          },
+          "customTypes": {
+            "type": "array",
+            "items": {
+              "required": [
+                "type"
+              ],
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/CurrencyConversionTypeInstance"
+                },
+                {
+                  "$ref": "#/components/schemas/RouteTypeInstance"
+                },
+                {
+                  "$ref": "#/components/schemas/VatTypeInstance"
+                }
+              ],
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "description": "|TypeDiscriminator|Type|\r\n|-|-|\r\n|RouteTypeInstance|RouteTypeInstance|\r\n|VatTypeInstance|VatTypeInstance|\r\n|CurrencyConversionTypeInstance|CurrencyConversionTypeInstance|"
+                }
+              }
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CurrencyConversionTypeDefinition": {
+        "required": [
+          "type"
+        ],
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/CustomTypeDefinition"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "preferredCurrencyIsoCode": {
+                "type": "string",
+                "nullable": true
+              }
+            },
+            "additionalProperties": false
+          }
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "TypeDiscriminator = CurrencyConversionTypeDefinition"
+          }
+        }
+      },
+      "CurrencyConversionTypeInstance": {
+        "required": [
+          "type"
+        ],
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/CustomTypeInstance"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "originAmount": {
+                "type": "number",
+                "format": "double"
+              },
+              "originCurrencyIsoCode": {
+                "type": "string",
+                "nullable": true
+              },
+              "conversionDateTimeOffset": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "conversionRate": {
+                "type": "number",
+                "format": "double"
+              },
+              "destinationAmount": {
+                "type": "number",
+                "format": "double"
+              },
+              "destinationCurrencyIsoCode": {
+                "type": "string",
+                "nullable": true
+              }
+            },
+            "additionalProperties": false
+          }
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "TypeDiscriminator = CurrencyConversionTypeInstance"
+          }
+        }
+      },
+      "CustomFieldDefinition": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "customFieldTypeDefinition": {
+            "$ref": "#/components/schemas/CustomFieldTypeDefinition"
+          },
+          "label": {
+            "type": "string",
+            "nullable": true
+          },
+          "isMandatory": {
+            "type": "boolean"
+          },
+          "maxLength": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "hintValue": {
+            "type": "string",
+            "nullable": true
+          },
+          "values": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CustomFieldValueDefinition"
+            },
+            "nullable": true
+          },
+          "knownType": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CustomFieldInstance": {
+        "type": "object",
+        "properties": {
+          "customFieldDefinitionId": {
+            "type": "string",
+            "nullable": true
+          },
+          "value": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CustomFieldTypeDefinition": {
+        "enum": [
+          "Dropdown",
+          "Textbox",
+          "Checkbox",
+          "MultilineTextbox",
+          "Numeric",
+          "NumericDecimal"
+        ],
+        "type": "string"
+      },
+      "CustomFieldValueDefinition": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CustomTypeDefinition": {
+        "required": [
+          "type"
+        ],
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "|TypeDiscriminator|Type|\r\n|-|-|\r\n|RouteTypeDefinition|RouteTypeDefinition|\r\n|VatTypeDefinition|VatTypeDefinition|\r\n|CurrencyConversionTypeDefinition|CurrencyConversionTypeDefinition|"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CustomTypeInstance": {
+        "required": [
+          "type"
+        ],
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "|TypeDiscriminator|Type|\r\n|-|-|\r\n|RouteTypeInstance|RouteTypeInstance|\r\n|VatTypeInstance|VatTypeInstance|\r\n|CurrencyConversionTypeInstance|CurrencyConversionTypeInstance|"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeepLink": {
+        "required": [
+          "$type"
+        ],
+        "type": "object",
+        "properties": {
+          "$type": {
+            "type": "string",
+            "description": "|TypeDiscriminator|Type|\r\n|-|-|\r\n|Functionality|FunctionalityDeepLink|\r\n|Web|WebDeepLink|\r\n|External|ExternalDeeplink|\r\n|Portal|PortalDeeplink|"
+          },
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "audience": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Channel"
+            },
+            "nullable": true
+          },
+          "category": {
+            "$ref": "#/components/schemas/Categories"
+          },
+          "professionalCategory": {
+            "$ref": "#/components/schemas/ProfessionalCategories"
+          },
+          "displayMode": {
+            "$ref": "#/components/schemas/DisplayMode"
+          },
+          "icon": {
+            "$ref": "#/components/schemas/Icon"
+          },
+          "canFavorite": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeepLinkEmbedded": {
+        "type": "object",
+        "properties": {
+          "context": {
+            "required": [
+              "type"
+            ],
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/AbsencesContext"
+              },
+              {
+                "$ref": "#/components/schemas/ExpensesContext"
+              }
+            ],
+            "properties": {
+              "type": {
+                "type": "string",
+                "description": "|TypeDiscriminator|Type|\r\n|-|-|\r\n|AbsencesContext|AbsencesContext|\r\n|ExpensesContext|ExpensesContext|"
+              }
+            },
+            "nullable": true
+          },
+          "deepLink": {
+            "required": [
+              "$type"
+            ],
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/ExternalDeeplink"
+              },
+              {
+                "$ref": "#/components/schemas/FunctionalityDeepLink"
+              },
+              {
+                "$ref": "#/components/schemas/PortalDeeplink"
+              },
+              {
+                "$ref": "#/components/schemas/WebDeepLink"
+              }
+            ],
+            "properties": {
+              "$type": {
+                "type": "string",
+                "description": "|TypeDiscriminator|Type|\r\n|-|-|\r\n|Functionality|FunctionalityDeepLink|\r\n|Web|WebDeepLink|\r\n|External|ExternalDeeplink|\r\n|Portal|PortalDeeplink|"
+              }
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeepLinkEmbeddedContext": {
+        "required": [
+          "type"
+        ],
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "|TypeDiscriminator|Type|\r\n|-|-|\r\n|AbsencesContext|AbsencesContext|\r\n|ExpensesContext|ExpensesContext|"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeepLinkEmbeddedIEnumerableApiResult": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "$ref": "#/components/schemas/ResponseState"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorResult"
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DeepLinkEmbedded"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DisplayMode": {
+        "enum": [
+          "Default",
+          "External",
+          "Inline"
+        ],
+        "type": "string"
+      },
+      "DistanceUnit": {
+        "enum": [
+          "Unknown",
+          "Kilometers",
+          "Miles"
+        ],
+        "type": "string"
+      },
+      "ErrorResult": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "optionalDetails": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ErrorResultDetail"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ErrorResultDetail": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseAttachmentSummary": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseAttachmentUse": {
+        "enum": [
+          "Optional",
+          "Mandatory",
+          "Prohibited"
+        ],
+        "type": "string"
+      },
+      "ExpenseClaimApproveRequest": {
+        "type": "object",
+        "properties": {
+          "comment": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseClaimDetail": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/ExpenseClaimSummary"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "canEdit": {
+                "type": "boolean",
+                "readOnly": true
+              },
+              "canViewDetails": {
+                "type": "boolean",
+                "readOnly": true
+              },
+              "canDelete": {
+                "type": "boolean"
+              },
+              "canLinkExpenses": {
+                "type": "boolean"
+              },
+              "canUnlinkExpenses": {
+                "type": "boolean"
+              },
+              "detailsEndpointUri": {
+                "type": "string",
+                "format": "uri",
+                "nullable": true
+              },
+              "editEndpointUri": {
+                "type": "string",
+                "format": "uri",
+                "nullable": true
+              },
+              "expenses": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ExpenseSummary"
+                },
+                "nullable": true
+              }
+            },
+            "additionalProperties": false
+          }
+        ]
+      },
+      "ExpenseClaimDetailApiResult": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "$ref": "#/components/schemas/ResponseState"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorResult"
+          },
+          "result": {
+            "$ref": "#/components/schemas/ExpenseClaimDetail"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseClaimLinkExpensesRequest": {
+        "type": "object",
+        "properties": {
+          "expenseIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseClaimPendingApproval": {
+        "type": "object",
+        "properties": {
+          "requesterName": {
+            "type": "string",
+            "nullable": true
+          },
+          "approvalCommentUse": {
+            "$ref": "#/components/schemas/ExpenseCommentUse"
+          },
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "totalExpensesCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalAmounts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExpensesAmount"
+            },
+            "nullable": true
+          },
+          "startDateTimeOffset": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDateTimeOffset": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseClaimPendingApprovalApiResult": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "$ref": "#/components/schemas/ResponseState"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorResult"
+          },
+          "result": {
+            "$ref": "#/components/schemas/ExpenseClaimPendingApproval"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseClaimPendingApprovalPagedResponse": {
+        "type": "object",
+        "properties": {
+          "hasMore": {
+            "type": "boolean"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExpenseClaimPendingApproval"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseClaimPendingApprovalPagedResponseApiResult": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "$ref": "#/components/schemas/ResponseState"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorResult"
+          },
+          "result": {
+            "$ref": "#/components/schemas/ExpenseClaimPendingApprovalPagedResponse"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseClaimRejectRequest": {
+        "type": "object",
+        "properties": {
+          "rejectedExpenseIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "comment": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseClaimSummary": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "totalExpensesCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rejectedExpensesCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalAmounts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExpensesAmount"
+            },
+            "nullable": true
+          },
+          "status": {
+            "$ref": "#/components/schemas/ApprovalStatus"
+          },
+          "startDateTimeOffset": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDateTimeOffset": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseClaimSummaryPagedResponse": {
+        "type": "object",
+        "properties": {
+          "hasMore": {
+            "type": "boolean"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/ExpenseClaimSummary"
+                },
+                {
+                  "$ref": "#/components/schemas/ExpenseClaimDetail"
+                }
+              ]
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseClaimSummaryPagedResponseApiResult": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "$ref": "#/components/schemas/ResponseState"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorResult"
+          },
+          "result": {
+            "$ref": "#/components/schemas/ExpenseClaimSummaryPagedResponse"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseClaimUnlinkExpensesRequest": {
+        "type": "object",
+        "properties": {
+          "expenseIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseClaimsSummary": {
+        "type": "object",
+        "properties": {
+          "rejectedClaimsCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "draftClaimsCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "unassignedExpensesCount": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseClaimsSummaryApiResult": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "$ref": "#/components/schemas/ResponseState"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorResult"
+          },
+          "result": {
+            "$ref": "#/components/schemas/ExpenseClaimsSummary"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseCommentUse": {
+        "enum": [
+          "Optional",
+          "Mandatory",
+          "Prohibited"
+        ],
+        "type": "string"
+      },
+      "ExpenseConfig": {
+        "type": "object",
+        "properties": {
+          "expenseTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExpenseType"
+            },
+            "nullable": true
+          },
+          "units": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Unit"
+            },
+            "nullable": true
+          },
+          "approveRejectOnGroupLevel": {
+            "type": "boolean",
+            "deprecated": true
+          },
+          "processingType": {
+            "$ref": "#/components/schemas/ProcessingType"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseConfigApiResult": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "$ref": "#/components/schemas/ResponseState"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorResult"
+          },
+          "result": {
+            "$ref": "#/components/schemas/ExpenseConfig"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseDetail": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "expenseTypeId": {
+            "type": "string",
+            "nullable": true
+          },
+          "unitId": {
+            "type": "string",
+            "nullable": true
+          },
+          "expenseTypeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "$ref": "#/components/schemas/ApprovalStatus"
+          },
+          "expenseDateTimeOffset": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "expenseDateTimeUtc": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true,
+            "deprecated": true
+          },
+          "amount": {
+            "$ref": "#/components/schemas/ExpensesAmount"
+          },
+          "unitAmount": {
+            "$ref": "#/components/schemas/ExpensesAmount"
+          },
+          "totalAmount": {
+            "$ref": "#/components/schemas/ExpensesAmount"
+          },
+          "comment": {
+            "type": "string",
+            "nullable": true
+          },
+          "approverComment": {
+            "type": "string",
+            "nullable": true
+          },
+          "canEdit": {
+            "type": "boolean"
+          },
+          "canDelete": {
+            "type": "boolean"
+          },
+          "attachments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExpenseAttachmentSummary"
+            },
+            "nullable": true
+          },
+          "customFields": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CustomFieldInstance"
+            },
+            "nullable": true
+          },
+          "customTypes": {
+            "type": "array",
+            "items": {
+              "required": [
+                "type"
+              ],
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/CurrencyConversionTypeInstance"
+                },
+                {
+                  "$ref": "#/components/schemas/RouteTypeInstance"
+                },
+                {
+                  "$ref": "#/components/schemas/VatTypeInstance"
+                }
+              ],
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "description": "|TypeDiscriminator|Type|\r\n|-|-|\r\n|RouteTypeInstance|RouteTypeInstance|\r\n|VatTypeInstance|VatTypeInstance|\r\n|CurrencyConversionTypeInstance|CurrencyConversionTypeInstance|"
+                }
+              }
+            },
+            "nullable": true
+          },
+          "icon": {
+            "$ref": "#/components/schemas/ExpenseIcons"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseDetailApiResult": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "$ref": "#/components/schemas/ResponseState"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorResult"
+          },
+          "result": {
+            "$ref": "#/components/schemas/ExpenseDetail"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseGroupDetail": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/ExpenseGroupSummary"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "expenses": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ExpenseSummary"
+                },
+                "nullable": true
+              }
+            },
+            "additionalProperties": false
+          }
+        ]
+      },
+      "ExpenseGroupDetailApiResult": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "$ref": "#/components/schemas/ResponseState"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorResult"
+          },
+          "result": {
+            "$ref": "#/components/schemas/ExpenseGroupDetail"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseGroupOverview": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/ExpenseGroupSummary"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "approverComment": {
+                "type": "string",
+                "nullable": true
+              },
+              "expenses": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ExpenseSummary"
+                },
+                "nullable": true
+              }
+            },
+            "additionalProperties": false
+          }
+        ]
+      },
+      "ExpenseGroupOverviewPagedResponse": {
+        "type": "object",
+        "properties": {
+          "hasMore": {
+            "type": "boolean"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExpenseGroupOverview"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseGroupOverviewPagedResponseApiResult": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "$ref": "#/components/schemas/ResponseState"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorResult"
+          },
+          "result": {
+            "$ref": "#/components/schemas/ExpenseGroupOverviewPagedResponse"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseGroupSummary": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "totalAmounts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExpensesAmount"
+            },
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "$ref": "#/components/schemas/ApprovalStatus"
+          },
+          "startDateTimeOffset": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "startUtc": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true,
+            "deprecated": true
+          },
+          "endDateTimeOffset": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "endUtc": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true,
+            "deprecated": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseGroupSummaryPagedResponse": {
+        "type": "object",
+        "properties": {
+          "hasMore": {
+            "type": "boolean"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/ExpenseGroupSummary"
+                },
+                {
+                  "$ref": "#/components/schemas/ExpenseGroupDetail"
+                },
+                {
+                  "$ref": "#/components/schemas/ExpenseGroupOverview"
+                }
+              ]
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseGroupSummaryPagedResponseApiResult": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "$ref": "#/components/schemas/ResponseState"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorResult"
+          },
+          "result": {
+            "$ref": "#/components/schemas/ExpenseGroupSummaryPagedResponse"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseIcons": {
+        "enum": [
+          "Other",
+          "Mileage",
+          "PublicTransport",
+          "Taxi",
+          "Bicycle",
+          "Fuel",
+          "Accommodation",
+          "Restaurant",
+          "PerDiem",
+          "Coffee",
+          "Parking"
+        ],
+        "type": "string"
+      },
+      "ExpensePendingApproval": {
+        "type": "object",
+        "properties": {
+          "requestId": {
+            "type": "string",
+            "nullable": true
+          },
+          "comment": {
+            "type": "string",
+            "nullable": true
+          },
+          "expenseDateTimeOffset": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dateTimeUtc": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true,
+            "deprecated": true
+          },
+          "amount": {
+            "$ref": "#/components/schemas/ExpensesAmount"
+          },
+          "amounts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExpensesAmount"
+            },
+            "nullable": true
+          },
+          "unitId": {
+            "type": "string",
+            "nullable": true
+          },
+          "requesterName": {
+            "type": "string",
+            "nullable": true
+          },
+          "expenseTypeId": {
+            "type": "string",
+            "nullable": true
+          },
+          "approverCommentUse": {
+            "$ref": "#/components/schemas/ExpenseCommentUse"
+          },
+          "icon": {
+            "$ref": "#/components/schemas/ExpenseIcons"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpensePendingApprovalApiResult": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "$ref": "#/components/schemas/ResponseState"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorResult"
+          },
+          "result": {
+            "$ref": "#/components/schemas/ExpensePendingApproval"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpensePendingApprovalPagedResponse": {
+        "type": "object",
+        "properties": {
+          "hasMore": {
+            "type": "boolean"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExpensePendingApproval"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpensePendingApprovalPagedResponseApiResult": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "$ref": "#/components/schemas/ResponseState"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorResult"
+          },
+          "result": {
+            "$ref": "#/components/schemas/ExpensePendingApprovalPagedResponse"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseSummary": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "expenseTypeId": {
+            "type": "string",
+            "nullable": true
+          },
+          "unitId": {
+            "type": "string",
+            "nullable": true
+          },
+          "expenseTypeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "$ref": "#/components/schemas/ApprovalStatus"
+          },
+          "expenseDateTimeOffset": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "expenseDateTimeUtc": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true,
+            "deprecated": true
+          },
+          "amount": {
+            "$ref": "#/components/schemas/ExpensesAmount"
+          },
+          "unitAmount": {
+            "$ref": "#/components/schemas/ExpensesAmount"
+          },
+          "totalAmount": {
+            "$ref": "#/components/schemas/ExpensesAmount"
+          },
+          "label": {
+            "type": "string",
+            "nullable": true
+          },
+          "hasAttachments": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "approverComment": {
+            "type": "string",
+            "nullable": true
+          },
+          "icon": {
+            "$ref": "#/components/schemas/ExpenseIcons"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseSummaryPagedResponse": {
+        "type": "object",
+        "properties": {
+          "hasMore": {
+            "type": "boolean"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExpenseSummary"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseSummaryPagedResponseApiResult": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "$ref": "#/components/schemas/ResponseState"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorResult"
+          },
+          "result": {
+            "$ref": "#/components/schemas/ExpenseSummaryPagedResponse"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseType": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "hasComment": {
+            "type": "boolean"
+          },
+          "isCommentMandatory": {
+            "type": "boolean"
+          },
+          "maxLengthComment": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "warningText": {
+            "type": "string",
+            "nullable": true
+          },
+          "bookingPeriod": {
+            "$ref": "#/components/schemas/ExpenseTypePeriod"
+          },
+          "unitIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "supportedAttachments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AttachmentType"
+            },
+            "nullable": true
+          },
+          "attachmentUse": {
+            "$ref": "#/components/schemas/ExpenseAttachmentUse"
+          },
+          "customFields": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CustomFieldDefinition"
+            },
+            "nullable": true
+          },
+          "customTypes": {
+            "type": "array",
+            "items": {
+              "required": [
+                "type"
+              ],
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/CurrencyConversionTypeDefinition"
+                },
+                {
+                  "$ref": "#/components/schemas/RouteTypeDefinition"
+                },
+                {
+                  "$ref": "#/components/schemas/VatTypeDefinition"
+                }
+              ],
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "description": "|TypeDiscriminator|Type|\r\n|-|-|\r\n|RouteTypeDefinition|RouteTypeDefinition|\r\n|VatTypeDefinition|VatTypeDefinition|\r\n|CurrencyConversionTypeDefinition|CurrencyConversionTypeDefinition|"
+                }
+              }
+            },
+            "nullable": true
+          },
+          "icon": {
+            "$ref": "#/components/schemas/ExpenseIcons"
+          },
+          "isAmountHidden": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpenseTypePeriod": {
+        "type": "object",
+        "properties": {
+          "startDateTimeOffset": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "startDateTimeUtc": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true,
+            "deprecated": true
+          },
+          "endDateTimeOffset": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "endDateTimeUtc": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true,
+            "deprecated": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpensesAmount": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "number",
+            "format": "double"
+          },
+          "symbol": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExpensesContext": {
+        "required": [
+          "type"
+        ],
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/DeepLinkEmbeddedContext"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "scope": {
+                "$ref": "#/components/schemas/ExpensesScope"
+              }
+            },
+            "additionalProperties": false
+          }
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "TypeDiscriminator = ExpensesContext"
+          }
+        }
+      },
+      "ExpensesScope": {
+        "enum": [
+          "Unknown",
+          "AddExpense",
+          "AddClaim"
+        ],
+        "type": "string"
+      },
+      "ExternalDeeplink": {
+        "required": [
+          "$type"
+        ],
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/DeepLink"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "link": {
+                "type": "string",
+                "format": "uri",
+                "nullable": true
+              }
+            },
+            "additionalProperties": false
+          }
+        ],
+        "properties": {
+          "$type": {
+            "type": "string",
+            "description": "TypeDiscriminator = External"
+          }
+        }
+      },
+      "FormValue": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "value": {
+            "nullable": true
+          },
+          "changeType": {
+            "$ref": "#/components/schemas/FormValueChangeType"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FormValueChangeType": {
+        "enum": [
+          "Updated",
+          "Added",
+          "Removed"
+        ],
+        "type": "string"
+      },
+      "FormValues": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FormValue"
+            },
+            "nullable": true
+          },
+          "metadata": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FunctionalityDeepLink": {
+        "required": [
+          "$type"
+        ],
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/DeepLink"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "functionality": {
+                "type": "string",
+                "format": "uri",
+                "nullable": true
+              }
+            },
+            "additionalProperties": false
+          }
+        ],
+        "properties": {
+          "$type": {
+            "type": "string",
+            "description": "TypeDiscriminator = Functionality"
+          }
+        }
+      },
+      "Icon": {
+        "enum": [
+          "Default",
+          "Requests",
+          "Vouchers",
+          "SickNote",
+          "Clock",
+          "Profile",
+          "Sheet",
+          "Wallet",
+          "Calendar",
+          "Inbox",
+          "Benefits",
+          "Time",
+          "Expertise"
+        ],
+        "type": "string"
+      },
+      "PlaceDetails": {
+        "type": "object",
+        "properties": {
+          "placeId": {
+            "type": "string",
+            "nullable": true
+          },
+          "fullAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "latitude": {
+            "type": "number",
+            "format": "double"
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PortalDeeplink": {
+        "required": [
+          "$type"
+        ],
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/DeepLink"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "relativeLink": {
+                "type": "string",
+                "format": "uri",
+                "nullable": true
+              }
+            },
+            "additionalProperties": false
+          }
+        ],
+        "properties": {
+          "$type": {
+            "type": "string",
+            "description": "TypeDiscriminator = Portal"
+          }
+        }
+      },
+      "PredefinedAmount": {
+        "type": "object",
+        "properties": {
+          "amount": {
+            "type": "number",
+            "format": "double"
+          },
+          "canUpdate": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProcessExpense": {
+        "type": "object",
+        "properties": {
+          "comment": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProcessingType": {
+        "enum": [
+          "Auto",
+          "Submit",
+          "Send"
+        ],
+        "type": "string"
+      },
+      "ProfessionalCategories": {
+        "enum": [
+          "None",
+          "Payroll",
+          "PeopleAndDevelopment",
+          "ReportingAndBudget",
+          "Reward",
+          "TaxAndLegal",
+          "MyTeam",
+          "Other",
+          "ExpertiseAndLearning",
+          "Integration"
+        ],
+        "type": "string"
+      },
+      "RejectGroupRequest": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/ApproveRejectRequest"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "rejectedExpenseIds": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            },
+            "additionalProperties": false
+          }
+        ]
+      },
+      "ResponseState": {
+        "enum": [
+          "Success",
+          "ProviderWarning",
+          "ProviderError",
+          "ProviderCritical",
+          "ProviderForbidden",
+          "Error"
+        ],
+        "type": "string"
+      },
+      "Route": {
+        "type": "object",
+        "properties": {
+          "places": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PlaceDetails"
+            },
+            "nullable": true
+          },
+          "distanceUnit": {
+            "$ref": "#/components/schemas/DistanceUnit"
+          },
+          "distance": {
+            "type": "number",
+            "format": "double"
+          },
+          "transportType": {
+            "$ref": "#/components/schemas/TransportType"
+          },
+          "isRoundTrip": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RouteTypeDefinition": {
+        "required": [
+          "type"
+        ],
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/CustomTypeDefinition"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "maxNumberOfWayPoints": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "distanceUnit": {
+                "$ref": "#/components/schemas/DistanceUnit"
+              },
+              "transportTypes": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/TransportType"
+                },
+                "nullable": true
+              },
+              "defaultTransportType": {
+                "$ref": "#/components/schemas/TransportType"
+              },
+              "supportsRoundTrips": {
+                "type": "boolean"
+              }
+            },
+            "additionalProperties": false
+          }
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "TypeDiscriminator = RouteTypeDefinition"
+          }
+        }
+      },
+      "RouteTypeInstance": {
+        "required": [
+          "type"
+        ],
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/CustomTypeInstance"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "route": {
+                "$ref": "#/components/schemas/Route"
+              }
+            },
+            "additionalProperties": false
+          }
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "TypeDiscriminator = RouteTypeInstance"
+          }
+        }
+      },
+      "SubmitExpenseClaimRequest": {
+        "type": "object",
+        "properties": {
+          "comment": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SubmitExpenseGroup": {
+        "type": "object",
+        "properties": {
+          "comment": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "T": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "TaxDetail": {
+        "type": "object",
+        "properties": {
+          "netAmount": {
+            "type": "number",
+            "format": "double"
+          },
+          "rate": {
+            "type": "number",
+            "format": "double"
+          },
+          "tax": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TransportType": {
+        "enum": [
+          "Unknown",
+          "Car",
+          "Truck",
+          "Bicycle",
+          "Pedestrian",
+          "Motorcycle",
+          "Scooter",
+          "Bus",
+          "Van"
+        ],
+        "type": "string"
+      },
+      "Unit": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "unitType": {
+            "$ref": "#/components/schemas/UnitType"
+          },
+          "amountSymbol": {
+            "type": "string",
+            "nullable": true
+          },
+          "amountISOCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "unitAmountSymbol": {
+            "type": "string",
+            "nullable": true
+          },
+          "totalAmountSymbol": {
+            "type": "string",
+            "nullable": true
+          },
+          "unitAmount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "minimum": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "maximum": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "predefinedAmount": {
+            "$ref": "#/components/schemas/PredefinedAmount"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UnitType": {
+        "enum": [
+          "Currency",
+          "Milage"
+        ],
+        "type": "string"
+      },
+      "VatTypeDefinition": {
+        "required": [
+          "type"
+        ],
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/CustomTypeDefinition"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "maxNumberOfExpenseLines": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "taxRates": {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "format": "double"
+                },
+                "nullable": true
+              }
+            },
+            "additionalProperties": false
+          }
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "TypeDiscriminator = VatTypeDefinition"
+          }
+        }
+      },
+      "VatTypeInstance": {
+        "required": [
+          "type"
+        ],
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/CustomTypeInstance"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "currencyIsoCode": {
+                "type": "string",
+                "nullable": true
+              },
+              "subTotal": {
+                "type": "number",
+                "format": "double"
+              },
+              "totalTax": {
+                "type": "number",
+                "format": "double"
+              },
+              "total": {
+                "type": "number",
+                "format": "double"
+              },
+              "taxDetails": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/TaxDetail"
+                },
+                "nullable": true
+              }
+            },
+            "additionalProperties": false
+          }
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "TypeDiscriminator = VatTypeInstance"
+          }
+        }
+      },
+      "WebDeepLink": {
+        "required": [
+          "$type"
+        ],
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/DeepLink"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "relativeLink": {
+                "type": "string",
+                "format": "uri",
+                "nullable": true
+              },
+              "queryParameter": {
+                "type": "string",
+                "nullable": true
+              }
+            },
+            "additionalProperties": false
+          }
+        ],
+        "properties": {
+          "$type": {
+            "type": "string",
+            "description": "TypeDiscriminator = Web"
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "oauth2-cia": {
+        "type": "oauth2",
+        "flows": {
+          "implicit": {
+            "authorizationUrl": "https://auth.acc.sdworx.com/idhub/oidc/v1/authorize",
+            "scopes": {
+              "profile email sdwaapi applicationuser culture": "Required scopes"
+            }
+          }
+        }
+      },
+      "Bearer": {
+        "type": "http",
+        "description": "Please insert API JWT",
+        "scheme": "bearer"
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Calendar"
+    },
+    {
+      "name": "CurrencyConversion"
+    },
+    {
+      "name": "DeepLinks"
+    },
+    {
+      "name": "Expenses"
+    },
+    {
+      "name": "Forms"
+    },
+    {
+      "name": "GenericApprovals"
+    },
+    {
+      "name": "Leaves"
+    },
+    {
+      "name": "MySalaryQuickView"
+    },
+    {
+      "name": "Overtime"
+    },
+    {
+      "name": "PersonalData"
+    },
+    {
+      "name": "Routing"
+    },
+    {
+      "name": "Tickets"
+    },
+    {
+      "name": "Time"
+    },
+    {
+      "name": "Vouchers"
+    },
+    {
+      "name": "Wage"
+    },
+    {
+      "name": "WageSaml"
+    },
+    {
+      "name": "Widgets"
+    }
+  ]
+}

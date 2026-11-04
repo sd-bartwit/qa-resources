@@ -1,0 +1,7 @@
+{
+  "error": {
+    "code": "InternalServerError",
+    "message": "An unexpected error occurred while parsing the document."
+  },
+  "state": "Error"
+}

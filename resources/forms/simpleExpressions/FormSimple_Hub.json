@@ -1,0 +1,112 @@
+{
+    "result": {
+        "type": "Simple",
+        "items": [
+            {
+                "type": "Navigation",
+                "name": "1. Constants",
+                "deepLink": {
+                    "type": "Functionality",
+                    "functionality": "sd://forms/1.0.0/overview?id=se-1-constants",
+                    "id": "se-1-constants",
+                    "displayMode": "Default",
+                    "icon": "Default"
+                },
+                "visible": true
+            },
+            {
+                "type": "Navigation",
+                "name": "2. Single ref & boolean logic",
+                "deepLink": {
+                    "type": "Functionality",
+                    "functionality": "sd://forms/1.0.0/overview?id=se-2-boolean",
+                    "id": "se-2-boolean",
+                    "displayMode": "Default",
+                    "icon": "Default"
+                },
+                "visible": true
+            },
+            {
+                "type": "Navigation",
+                "name": "3. Numeric comparison",
+                "deepLink": {
+                    "type": "Functionality",
+                    "functionality": "sd://forms/1.0.0/overview?id=se-3-numeric",
+                    "id": "se-3-numeric",
+                    "displayMode": "Default",
+                    "icon": "Default"
+                },
+                "visible": true
+            },
+            {
+                "type": "Navigation",
+                "name": "4. String / empty / contains",
+                "deepLink": {
+                    "type": "Functionality",
+                    "functionality": "sd://forms/1.0.0/overview?id=se-4-string",
+                    "id": "se-4-string",
+                    "displayMode": "Default",
+                    "icon": "Default"
+                },
+                "visible": true
+            },
+            {
+                "type": "Navigation",
+                "name": "5. Field type coverage",
+                "deepLink": {
+                    "type": "Functionality",
+                    "functionality": "sd://forms/1.0.0/overview?id=se-5-types",
+                    "id": "se-5-types",
+                    "displayMode": "Default",
+                    "icon": "Default"
+                },
+                "visible": true
+            },
+            {
+                "type": "Navigation",
+                "name": "6. Complex nested",
+                "deepLink": {
+                    "type": "Functionality",
+                    "functionality": "sd://forms/1.0.0/overview?id=se-6-nested",
+                    "id": "se-6-nested",
+                    "displayMode": "Default",
+                    "icon": "Default"
+                },
+                "visible": true
+            },
+            {
+                "type": "Navigation",
+                "name": "7. Cascading dependencies",
+                "deepLink": {
+                    "type": "Functionality",
+                    "functionality": "sd://forms/1.0.0/overview?id=se-7-cascading",
+                    "id": "se-7-cascading",
+                    "displayMode": "Default",
+                    "icon": "Default"
+                },
+                "visible": true
+            },
+            {
+                "type": "Navigation",
+                "name": "8. Negative / error handling",
+                "deepLink": {
+                    "type": "Functionality",
+                    "functionality": "sd://forms/1.0.0/overview?id=se-8-negative",
+                    "id": "se-8-negative",
+                    "displayMode": "Default",
+                    "icon": "Default"
+                },
+                "visible": true
+            }
+        ],
+        "changesOnly": false,
+        "title": "Simple Expressions – Regression Test Hub",
+        "description": "Manipulate 'driver' fields and observe the dependent 'target' fields.",
+        "comment": {
+            "type": "Information",
+            "message": "Complementary test instruction is available on Wiki: 'Simple Expressions – Regression' page"
+        },
+        "viewOnly": false
+    },
+    "state": "Success"
+}

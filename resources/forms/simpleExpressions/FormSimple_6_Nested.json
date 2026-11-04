@@ -1,0 +1,134 @@
+{
+    "result": {
+        "type": "Simple",
+        "items": [
+            {
+                "type": "Text",
+                "value": "Anna Nowak",
+                "id": "person-name",
+                "name": "Driver: Person name",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+            },
+            {
+                "type": "Numeric",
+                "value": 30,
+                "id": "person-age",
+                "name": "Driver: Person age",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+            },
+            {
+                "type": "Text",
+                "value": "sex-2",
+                "allowedValues": [
+                    {
+                        "id": "sex-1",
+                        "value": "Man"
+                    },
+                    {
+                        "id": "sex-2",
+                        "value": "Woman"
+                    },
+                    {
+                        "id": "sex-3",
+                        "value": "Prefer not to say"
+                    }
+                ],
+                "id": "person-sex",
+                "name": "Driver: Person sex",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "nested-required",
+                "name": "SE-601 required = nested and/not/gt/eq",
+                "required": "and( not( empty( #person-name ) ), and( gt( #person-age, 18 ), eq( #person-sex, \"sex-2\" ) ) )",
+                "readOnly": false,
+                "visible": true
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "nested-visible",
+                "name": "SE-602 visible = nested and/not/gt/eq",
+                "required": false,
+                "readOnly": false,
+                "visible": "and( not( empty( #person-name ) ), and( gt( #person-age, 18 ), eq( #person-sex, \"sex-2\" ) ) )"
+            },
+            {
+                "type": "Text",
+                "value": "Locked when expression true",
+                "id": "nested-readonly",
+                "name": "SE-603 readOnly = nested and/not/gt/eq",
+                "required": false,
+                "readOnly": "and( not( empty( #person-name ) ), and( gt( #person-age, 18 ), eq( #person-sex, \"sex-2\" ) ) )",
+                "visible": true
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "nested-or",
+                "name": "SE-604 visible = or( eq( #person-sex, \"sex-1\" ), gt( #person-age, 18 ) )",
+                "required": false,
+                "readOnly": false,
+                "visible": "or( eq( #person-sex, \"sex-1\" ), gt( #person-age, 18 ) )"
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "nested-or-invalid",
+                "name": "SE-604b visible = or( or( eq sex-1, eq sex-2 ), gt age 18 ) — expect crash",
+                "required": false,
+                "readOnly": false,
+                "visible": "or( or( eq( #person-sex, \"sex-1\" ), eq( #person-sex, \"sex-2\" ) ), gt( #person-age, 18 ) )"
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "nested-or-and-invalid",
+                "name": "SE-604c visible = or( and(...), eq(...) ) — predicted crash, untested",
+                "required": false,
+                "readOnly": false,
+                "visible": "or( and( gt( #person-age, 18 ), not( empty( #person-name ) ) ), eq( #person-sex, \"sex-1\" ) )"
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "nested-or-not-invalid",
+                "name": "SE-604d visible = or( not( eq(...) ), gt(...) ) — predicted crash, untested",
+                "required": false,
+                "readOnly": false,
+                "visible": "or( not( eq( #person-sex, \"sex-1\" ) ), gt( #person-age, 18 ) )"
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "nested-and-and",
+                "name": "SE-605 visible = and( and(...), eq(...) ) — should work",
+                "required": false,
+                "readOnly": false,
+                "visible": "and( and( gt( #person-age, 18 ), not( empty( #person-name ) ) ), eq( #person-sex, \"sex-2\" ) )"
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "nested-not-not",
+                "name": "SE-606 visible = not( not( eq(...) ) ) — double negation should work",
+                "required": false,
+                "readOnly": false,
+                "visible": "not( not( eq( #person-sex, \"sex-1\" ) ) )"
+            }
+        ],
+        "changesOnly": false,
+        "title": "6. Complex nested",
+        "description": "SE-601..SE-604 – deep nested expressions (and / or)",
+        "viewOnly": false
+    },
+    "state": "Success"
+}

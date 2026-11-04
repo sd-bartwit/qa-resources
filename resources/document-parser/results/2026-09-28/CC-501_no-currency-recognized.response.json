@@ -1,0 +1,4 @@
+{
+  "convert": null,
+  "note": "Parser detected amount (10.05) but failed to recognize any currency (no currencyIsoCode, no unitId). No conversion possible. User must manually select currency."
+}

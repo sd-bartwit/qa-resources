@@ -1,0 +1,141 @@
+{
+    "result": {
+        "type": "Simple",
+        "items": [
+            {
+                "type": "Boolean",
+                "value": true,
+                "id": "type-bool-driver",
+                "name": "Driver: Boolean",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+            },
+            {
+                "type": "Numeric",
+                "value": 5,
+                "id": "type-num-driver",
+                "name": "Driver: Numeric",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+            },
+            {
+                "type": "DateTime",
+                "value": "2026-01-01",
+                "id": "type-date-driver",
+                "name": "Driver: Date",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+            },
+            {
+                "type": "Text",
+                "value": "opt-1",
+                "allowedValues": [
+                    {
+                        "id": "opt-1",
+                        "value": "Option 1"
+                    },
+                    {
+                        "id": "opt-2",
+                        "value": "Option 2"
+                    }
+                ],
+                "id": "type-select-driver",
+                "name": "Driver: Select",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+            },
+            {
+                "type": "TextArea",
+                "value": "Anna\nSecond line",
+                "id": "type-textarea-driver",
+                "name": "Driver: TextArea",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "type-text-target",
+                "name": "SE-501 Text visible = #type-bool-driver",
+                "required": false,
+                "readOnly": false,
+                "visible": "#type-bool-driver"
+            },
+            {
+                "type": "TextArea",
+                "value": "Line 1\nLine 2",
+                "id": "type-multiline-target",
+                "name": "SE-502 TextArea readOnly = #type-bool-driver",
+                "required": false,
+                "readOnly": "#type-bool-driver",
+                "visible": true
+            },
+            {
+                "type": "Numeric",
+                "value": 0,
+                "id": "type-numeric-target",
+                "name": "SE-503 Numeric visible = gt( #type-num-driver, 3 )",
+                "required": false,
+                "readOnly": false,
+                "visible": "gt( #type-num-driver, 3 )"
+            },
+            {
+                "type": "Boolean",
+                "value": false,
+                "id": "type-bool-target",
+                "name": "SE-504 Boolean visible = #type-bool-driver",
+                "required": false,
+                "readOnly": false,
+                "visible": "#type-bool-driver"
+            },
+            {
+                "type": "Text",
+                "value": "tgt-1",
+                "allowedValues": [
+                    {
+                        "id": "tgt-1",
+                        "value": "Target 1"
+                    },
+                    {
+                        "id": "tgt-2",
+                        "value": "Target 2"
+                    }
+                ],
+                "id": "type-select-target",
+                "name": "SE-505 Select readOnly = eq( #type-select-driver, \"opt-1\" )",
+                "required": false,
+                "readOnly": "eq( #type-select-driver, \"opt-1\" )",
+                "visible": true
+            },
+            {
+                "type": "DateTime",
+                "value": "",
+                "id": "type-date-target",
+                "name": "SE-506 DateTime required = not( empty( #type-date-driver ) )",
+                "required": "not( empty( #type-date-driver ) )",
+                "readOnly": false,
+                "visible": true
+            },
+            {
+                "type": "Comment",
+                "commentType": "Success",
+                "message": "Shown because text contains 'nn'",
+                "id": "type-comment",
+                "name": "SE-507 Comment visible = contains( #type-textarea-driver, \"nn\" )",
+                "required": false,
+                "readOnly": false,
+                "visible": "contains( #type-textarea-driver, \"nn\" )"
+            }
+        ],
+        "changesOnly": false,
+        "title": "5. Field type coverage",
+        "description": "SE-501..SE-507 – all field types + visible/required/readOnly",
+        "viewOnly": false
+    },
+    "state": "Success"
+}

@@ -1,0 +1,144 @@
+# Expense Claims — Approver (Manager) Functional Context
+
+> Source: Azure DevOps wiki "Digital Channels" → *Channels App / mysdworx app / Functional documentation / Pending Approvals / Claims* (plus shared *Generic approvals* UX patterns, flagged where used). The Claims root page returned no content.
+> Scope: manager/approver perspective. Companion to `Claim_FunctionalDoc_Requester`.
+
+## 1. Overview & purpose (approver role)
+- Lets a user in a **manager / approver** role review expense claim submissions and **approve or reject** them.
+- Available only to users with **approval rights for expense claims**.
+- Actions can be taken **inline from the overview** or after **opening claim detail** for a fuller review.
+- Approve and reject may require an **approver comment**, depending on configuration.
+- Out of scope of the UI pages (stated to live in User Actions / Rules & Behavior): decision logic, validation rules, data loading, permissions, post-decision processing.
+
+## 2. Approvals inbox / Claims approval overview
+
+**Entry points**
+- **Pending Approvals tile** on home:
+  - Single approval category → **directly to Claims approvals overview**.
+  - Multiple categories → **approval categories overview** first; approver selects **Claims**.
+- Direct to claim detail from a **notification** (tap / "Review") or the **app inbox** (tap submission card).
+
+**Overview structure**
+- Header: page title (e.g. "Expense claims"); back navigation.
+- **List of approval cards**, vertically stacked & scrollable — one card per submitted claim (layout similar to grouped expenses / overtime).
+
+**Claim approval card content**
+| Field | Notes |
+|--|--|
+| Employee name | Primary info |
+| Total claim amount | Supports **one or multiple currencies** |
+| Date of the claim | |
+
+**Card actions**
+- Inline **Approve / Reject** on each card (no navigation required).
+- Tapping the **card body** opens the **claim detail (approval context)**.
+- **Empty state** when no claims await approval.
+- Filters / grouping / sorting: not described in the Claims pages.
+
+## 3. Claim detail in approval context
+- **Reuses the employee-facing Claim detail screen** — same layout for all claim/expense info.
+- Approval-specific differences:
+  - **Header shows no actions.**
+  - **Bottom action bar** shows **Approve** and **Reject**, always visible while the claim is **Pending approval**.
+- Field inventory (individual expenses, amounts, attachments, VAT, dates, net/tax) is inherited from the base employee claim detail and **not re-enumerated** in the approval pages (see gaps).
+
+## 4. Approve action
+**Preconditions:** Claim **Pending approval**; approval rights; approver role; claim data retrievable.
+
+**Entry points:** Overview, Notification, App inbox, Claim detail. Behavior is **identical across all entry points** and always approves the **entire claim** (no partial approve).
+
+**Approver comment step (config-driven):**
+| Config | Behavior |
+|--|--|
+| Comment **mandatory** | Must enter a comment to continue |
+| Comment **optional** | May enter or continue without |
+| Comments **prohibited** | Comment screen skipped → straight to confirmation |
+
+- Comment screen is **free-text**; it does not execute the approval by itself.
+
+**On confirmation (success):**
+1. Entire claim approved.
+2. Claim **state updated**.
+3. Claim **removed from pending approvals**.
+4. Requester-side UI reflects updated state.
+
+**On cancel:** no approval; stay on current screen.
+
+**Error handling:**
+| Failure | Behavior |
+|--|--|
+| Backend error | Error shown; claim **remains pending** |
+| Network error | Error shown; **retry** available |
+
+## 5. Reject action (incl. partial rejection)
+**Preconditions:** Claim **Pending approval**; approval rights; claim contains **≥1 expense**.
+
+**Scope by entry point:**
+| Entry point | Reject scope |
+|--|--|
+| Overview / Notification / App inbox | **Full-claim rejection only** |
+| Claim detail screen | **Partial or full** via expense selection |
+
+**Reject from overview / notification / inbox:** Reject → **approver comment screen** → comment (per config) → confirm/cancel. Always **full-claim**.
+
+**Reject from claim detail → Assigned expense rejection selection screen** (shown **only** from detail):
+- Open detail → Reject → **expense rejection selection** → select invalid expenses → continue to comment/confirmation.
+- Rules:
+  - **Multiple expenses selectable.**
+  - **At least one expense must be selected to proceed.**
+  - Selection state must be **visually explicit**.
+  - **Selected = rejected; unselected = (implicitly) approved.**
+  - No action executes here; rejection **not final** yet (intent only).
+  - **Cancel / Back** abandons, returns to detail, **no changes**.
+
+**Approver comment step (rejection):**
+- Comment screen is **always shown** for rejection (all entry points).
+- Manager **must provide a rejection reason to continue** (required per the User Action page).
+- Free-text; does not execute rejection by itself.
+- *Inconsistency:* the Reject overview UI page says the comment screen appears only "when comments are optional or mandatory," while the User Action page says it is *always* shown and a reason is *mandatory* — see gaps.
+
+**On confirmation (success):**
+- Selected expenses **rejected**.
+- Claim **returned to the employee**.
+- Claim **removed from pending approvals**.
+- Overview/Notification/Inbox → entire claim rejected; Detail → claim rejected with partial selection.
+
+**On cancel (any step):** no rejection; return to previous screen; **claim remains pending**.
+
+**Error handling:**
+| Failure | Behavior |
+|--|--|
+| Backend error | Error shown; claim remains pending |
+| Comment validation error | Feedback shown; rejection **not submitted** |
+| Network error | Error shown; retry |
+
+## 6. Notifications & downstream effects on the requester
+- **Approve:** claim state updated; requester UI reflects it; claim leaves pending approvals.
+- **Reject:** claim **returned to the employee** (with rejected expenses); leaves pending approvals.
+- The Claims pages do **not** detail requester-side push/email notification content or what the requester can then do with a returned claim (see gaps).
+
+## 7. Notable rules, edge cases & validations (QA-relevant)
+- **Config-driven comment behavior:** test Mandatory (block until entered), Optional (with/without), Prohibited (screen skipped). Verify Approve/confirm disabled until reason entered when mandatory.
+- **Partial rejection selection:** cannot proceed with **zero** selected; multi-select works; unselected become approved; Cancel/Back applies no changes.
+- **Approve is always full-claim** — no partial approve path.
+- **Reject scope depends on entry point** — overview/notification/inbox force full-claim; only detail allows partial. Verify the selection screen is **not** reachable from the overview.
+- **Multi-currency claims:** card total must render one or multiple currencies correctly.
+- **State transitions:** Pending → Approved (removed from pending); Pending → Rejected/Returned (removed from pending). On any error, claim **stays Pending**.
+- **Error/network paths:** backend error keeps claim pending; from detail, a failed action should keep the manager on-screen with a fail toast (per Generic Approvals; confirm for Claims).
+- **Empty state** on overview when no pending claims.
+- **Idempotency / already-actioned:** behavior if a claim was already approved/rejected elsewhere (e.g. from notification while overview open) is not specified — worth testing.
+- **Character limits:** Generic Approvals comment fields cap at **300 chars** with a live counter — confirm whether Claims shares this.
+
+### Generic Approvals patterns (shared UX — may not apply verbatim to Claims)
+- Approve from overview uses **checkbox multi-select** → bottom action bar; `approveCommentUse = Mandatory` shows reason modal (max 300 chars, button disabled until entered); `Optional`/`Prohibited` skip it.
+- Reject always shows a **rejection reason modal**; reject button disabled only when `rejectionCommentUse = mandatory` and empty.
+- Success/fail **toasts** at top of list; from **detail**, a failed action keeps the user on the detail screen (success returns to list).
+- Category screen uses `hasPendingApprovals` flag and an "Action required" tag; endpoints `genericapprovals/.../approve` and `.../reject`.
+
+## Open questions / gaps
+- **Claim detail field inventory** (expense rows, amounts, **attachments**, **VAT**, dates, net/tax): not enumerated in approval pages — inherited from the employee claim detail screen (not in this scope).
+- **Approver comment character limit for Claims:** unspecified; Generic Approvals uses 300.
+- **Reject comment necessity — inconsistency:** User Action = comment screen *always* shown, reason *mandatory*; Reject flow / overview UI = shown only "when optional or mandatory." Needs clarification.
+- **Requester-side notifications:** content, channel (push/email/inbox), and what the requester can do with a returned/rejected claim (resubmit? edit rejected expenses only?) not described.
+- **Partial-rejection resulting claim state:** whether unselected (approved) expenses are finalized immediately while the claim returns to the employee, or the whole claim reverts, is not stated.
+- **Claims root page** and a "Rules & Behavior (Approval process)" page returned no content — likely hold canonical state-machine and validation rules.

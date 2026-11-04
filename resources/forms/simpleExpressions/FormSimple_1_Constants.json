@@ -1,0 +1,75 @@
+{
+    "result": {
+        "type": "Simple",
+        "items": [
+            {
+                "type": "Text",
+                "value": "",
+                "id": "const-visible-true",
+                "name": "SE-001 visible=true (should show)",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "const-visible-false",
+                "name": "SE-002 visible=false (should be hidden)",
+                "required": false,
+                "readOnly": false,
+                "visible": false
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "const-required-true",
+                "name": "SE-003 required=true (leave empty -> error)",
+                "required": true,
+                "readOnly": false,
+                "visible": true
+            },
+            {
+                "type": "Text",
+                "value": "",
+                "id": "const-required-false",
+                "name": "SE-004 required=false",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+            },
+            {
+                "type": "Text",
+                "value": "Locked value",
+                "id": "const-readonly-true",
+                "name": "SE-005 readOnly=true (not editable)",
+                "required": false,
+                "readOnly": true,
+                "visible": true
+            },
+            {
+                "type": "Text",
+                "value": "Editable value",
+                "id": "const-readonly-false",
+                "name": "SE-006 readOnly=false (editable)",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+            },
+            {
+                "type": "Text",
+                "value": "Prefilled",
+                "id": "const-required-readonly",
+                "name": "SE-007 required=true + readOnly=true (edge case)",
+                "required": true,
+                "readOnly": true,
+                "visible": true
+            }
+        ],
+        "changesOnly": false,
+        "title": "1. Constants",
+        "description": "SE-001..SE-007 – constant (non-expression) property values",
+        "viewOnly": false
+    },
+    "state": "Success"
+}

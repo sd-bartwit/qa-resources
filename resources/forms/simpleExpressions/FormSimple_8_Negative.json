@@ -1,0 +1,31 @@
+{
+  "result": {
+    "type": "Simple",
+    "items": [
+      {
+        "type": "Text",
+        "value": "",
+        "id": "ghost-ref",
+        "name": "SE-801 visible = not( empty( #ghost ) ) (unknown field -> HIDDEN)",
+        "required": false,
+        "readOnly": false,
+        "visible": "not( empty( #ghost ) )"
+      },
+       {
+                "type": "Comment",
+                "commentType": "Error",
+                "message": "There is a hidden text field in this form. Its visibility depends on value of a field that does not exist",
+                "id": "error-comment",
+                "name": "error comment",
+                "required": false,
+                "readOnly": false,
+                "visible": "true"
+            }
+    ],
+    "changesOnly": false,
+    "title": "8. Negative / error handling",
+    "description": "SE-801 – unknown field reference must not crash",
+    "viewOnly": false
+  },
+  "state": "Success"
+}

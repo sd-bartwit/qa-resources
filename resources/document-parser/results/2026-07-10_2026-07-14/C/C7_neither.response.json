@@ -1,0 +1,12 @@
+{
+  "result": {
+    "amount": { "value": 10.05, "confidence": 0.988 },
+    "expenseDateTimeUtc": { "value": "2026-03-28T00:00:00+00:00", "confidence": 0.995 },
+    "expenseDateTimeOffset": { "value": "2026-03-28T00:00:00+00:00", "confidence": 0.995 },
+    "customFields": [],
+    "customFieldMap": [
+      { "knownType": "Total", "value": "10.05", "confidence": 0.988, "isCurrency": true }
+    ]
+  },
+  "state": "Success"
+}
