@@ -1,0 +1,70 @@
+{
+  "result": {
+    "type": "Simple",
+    "title": "formSimple_badges",
+    "badge": {
+      "type": "Information",
+      "title": "Missing data",
+      "visible": true
+    },
+    "changesOnly": false,
+    "viewOnly": false,
+    "submitText": "Submit",
+    "items": [
+      {
+        "type": "Grouping",
+        "group": "Group one",
+        "items": [
+          {
+            "type": "Text",
+            "value": "",
+            "id": "simple-group-text",
+            "name": "Field inside group",
+            "required": false,
+            "readOnly": false,
+            "visible": true
+          }
+        ],
+        "badge": {
+          "type": "Warning",
+          "title": "Update",
+          "visible": true
+        },
+        "isExpanded": true,
+        "visible": true
+      },
+      {
+        "type": "Text",
+        "value": "",
+        "id": "simple-outside-text",
+        "name": "Field outside group",
+        "required": false,
+        "readOnly": false,
+        "visible": true
+      },
+      {
+        "type": "Grouping",
+        "group": "Group two",
+        "items": [
+          {
+            "type": "Text",
+            "value": "",
+            "id": "simple-group2-text",
+            "name": "Field inside group two",
+            "required": false,
+            "readOnly": false,
+            "visible": true
+          }
+        ],
+        "badge": {
+          "type": "Success",
+          "title": "Ok",
+          "visible": true
+        },
+        "isExpanded": true,
+        "visible": true
+      }
+    ]
+  },
+  "state": "Success"
+}

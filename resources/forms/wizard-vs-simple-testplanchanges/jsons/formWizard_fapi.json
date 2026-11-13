@@ -1,0 +1,248 @@
+{
+  "result": {
+    "type": "Wizard",
+    "steps": [
+      {
+        "step": "Personal Info",
+        "description": "All your personal info",
+        "badge": {
+          "type": "Warning",
+          "title": "Pending",
+          "visible": true
+        },
+        "visible": true,
+        "groups": [
+          {
+            "type": "Grouping",
+            "group": "Info",
+            "description": "My personal info",
+            "items": [
+              {
+                "type": "Text",
+                "value": "Steven",
+                "id": "givenname",
+                "name": "Given name",
+                "required": true,
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Text",
+                "value": "Thuriot",
+                "id": "surname",
+                "name": "Surname",
+                "required": true,
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Numeric",
+                "id": "age",
+                "name": "Age",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              }
+            ],
+            "badge": {
+              "type": "Warning",
+              "title": "Update",
+              "visible": true
+            },
+            "visible": true
+          },
+          {
+            "type": "Grouping",
+            "group": "Address",
+            "description": "My address info",
+            "items": [
+              {
+                "type": "Text",
+                "value": "DocumentationStreet",
+                "id": "street",
+                "name": "Street",
+                "required": true,
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Text",
+                "value": "42 C52",
+                "id": "housenr",
+                "name": "House Number",
+                "required": true,
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Numeric",
+                "value": "2",
+                "allowedValues": [
+                  {
+                    "id": "1",
+                    "value": "2660"
+                  },
+                  {
+                    "id": "2",
+                    "value": "1930"
+                  },
+                  {
+                    "id": "3",
+                    "value": "1000"
+                  }
+                ],
+                "properties": {
+                  "type": "Select",
+                  "orientation": "Horizontal"
+                },
+                "id": "postal",
+                "name": "Postal Code",
+                "required": true,
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Numeric",
+                "value": "1",
+                "valueSetId": "postal",
+                "id": "another_postal",
+                "name": "Another Postal Code",
+                "required": true,
+                "readOnly": false,
+                "visible": true
+              }
+            ],
+            "badge": {
+              "type": "Error",
+              "title": "Failure",
+              "visible": true
+            },
+            "visible": true
+          },
+          {
+            "type": "Grouping",
+            "group": "Account",
+            "description": "Main account",
+            "items": [
+              {
+                "type": "Numeric",
+                "value": 123456.78,
+                "mask": {
+                  "alias": "Currency",
+                  "properties": {
+                    "thousandsSeparator": ",",
+                    "prefix": "$"
+                  }
+                },
+                "id": "account-value",
+                "name": "Value",
+                "required": true,
+                "readOnly": false,
+                "visible": true
+              }
+            ],
+            "badge": {
+              "type": "Success",
+              "title": "Ok",
+              "visible": true
+            },
+            "visible": true
+          }
+        ]
+      },
+      {
+        "step": "Attachments",
+        "description": "Attachment management",
+        "badge": {
+          "type": "Success",
+          "title": "Ok",
+          "visible": true
+        },
+        "visible": true,
+        "groups": [
+          {
+            "type": "Grouping",
+            "group": "Profile Picture",
+            "description": "Manage your picture here",
+            "items": [
+              {
+                "type": "Image",
+                "source": "https://my.sdworx.com/style/assets/images/logo/mysdworx.svg",
+                "properties": {
+                  "width": 100,
+                  "height": 100
+                },
+                "id": "profile-picture",
+                "name": "Profile Picture",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Comment",
+                "commentType": "Warning",
+                "message": "This will be visible everywhere",
+                "id": "comment",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              },
+              {
+                "type": "Attachment",
+                "properties": {
+                  "maxAmount": 1,
+                  "maxSize": 1024,
+                  "supportedFileTypes": [
+                    "image/jpeg",
+                    "image/png",
+                    ".svg"
+                  ]
+                },
+                "id": "profile-picture-attachment",
+                "name": "Profile Picture Attachment",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              }
+            ],
+            "visible": true
+          }
+        ]
+      }
+    ],
+    "badge": {
+      "type": "Information",
+      "title": "Missing data",
+      "visible": true
+    },
+    "changesOnly": true,
+    "viewOnly": false,
+    "submitUri": "sd://forms/1.0.0/overview?formId=next-form",
+    "title": "My Generic Form",
+    "description": "This is an overview of my generic form",
+    "comment": {
+      "type": "Information",
+      "message": "Please fill in the form carefully."
+    },
+    "valueSets": {
+      "postal": [
+        {
+          "id": "1",
+          "value": "2660"
+        },
+        {
+          "id": "2",
+          "value": "1930"
+        },
+        {
+          "id": "3",
+          "value": "1000"
+        }
+      ]
+    },
+    "metadata": {
+      "optimistic_locking": "locking_field_value"
+    }
+  },
+  "state": "Success"
+}

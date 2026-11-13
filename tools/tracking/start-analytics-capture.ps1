@@ -5,14 +5,11 @@
     App id to put into Firebase debug mode.
 .PARAMETER Serial
     Device serial (adb devices). Required only when several devices are connected.
-.PARAMETER RestartApp
-    Force-stops and relaunches the app so debug mode applies immediately.
 #>
 [CmdletBinding()]
 param(
     [string]$Package = 'be.sdworx.sdwa.inhouse',
-    [string]$Serial,
-    [switch]$RestartApp
+    [string]$Serial
 )
 
 $ErrorActionPreference = 'Stop'
@@ -60,13 +57,6 @@ $proc = Start-Process -FilePath $adb `
     startedAt = (Get-Date).ToString('s')
 } | ConvertTo-Json | Set-Content $statePath
 
-if ($RestartApp) {
-    & $adb @a shell am force-stop $Package
-    & $adb @a shell monkey -p $Package -c android.intent.category.LAUNCHER 1 | Out-Null
-}
-
 Write-Host "Capture started for $Package (logcat pid $($proc.Id))."
-if (-not $RestartApp) {
-    Write-Host 'Fully close and reopen the app now - debug mode is only read at app start.'
-}
+Write-Host 'Close the app from the recents screen and reopen it now - debug mode is only read at app start.'
 Write-Host 'When finished run: .\stop-analytics-capture.ps1'

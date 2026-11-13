@@ -11,7 +11,7 @@ Read first. Purpose: QA of the mysdworx mobile app (SD Worx), Flutter, Android p
 - Functional docs (canonical): Azure DevOps wiki `Digital-Channels.wiki` (id c18f6113-3cba-4571-998b-640f412cb281), path `/Channels App/mysdworx app/Functional documentation/...`
   - Requester: `Expense Claims/...`; Approver: `Pending Approvals/Claims/...`; core expenses: `Expenses/...`
 - Our QA space: wiki path `/Channels App/Test Documentation/QA Hub` (Testware, How To's, Points of Contact, Copy-Pastes). Publish self-contained `.md` as a new subpage.
-- ADO: org `sdworx`, project `Digital Channels`, area path `Digital Channels`. Master test plan: "Release testing: mysdworx app master" (ID 1132029). Board lanes = release version (e.g. 4.27.0).
+- ADO: org `sdworx`, project `Digital Channels`, area path `Digital Channels` (for links and work items most likely `Digital Channels\App and Features`, e.g. `Digital Channels\App and Features\Channels App - APP Development`, unless stated otherwise). Master test plan: "Release testing: mysdworx app master" (ID 1132029). Board lanes = release version (e.g. 4.27.0).
 
 ## Local files (folder -> purpose)
 - `Claims/`: Claim_APIdoc (API doc), Claim_APIrequests.json (OpenAPI 3.0.4, Expenses tag only), Claim_APIrequests.backup.json (full original), Claim_FunctionalDoc_Requester, Claim_FunctionalDoc_Approver, Claim_TestCases, Claim_ProposedTestCases_ADO.

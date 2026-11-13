@@ -1,0 +1,53 @@
+{
+  "result": {
+    "type": "Wizard",
+    "title": "formWizard_viewOnly",
+    "changesOnly": false,
+    "viewOnly": true,
+    "submitText": "Submit",
+    "steps": [
+      {
+        "step": "1. Step one",
+        "description": "Single step with two groups and one field each",
+        "visible": true,
+        "groups": [
+          {
+            "group": "Group one",
+            "description": "Contains one text field",
+            "items": [
+              {
+                "type": "Text",
+                "value": "Wizard value",
+                "id": "wiz-text",
+                "name": "Wizard text field",
+                "required": false,
+                "readOnly": true,
+                "visible": true
+              }
+            ],
+            "isExpanded": true,
+            "visible": true
+          },
+          {
+            "group": "Group two",
+            "description": "Contains one text field",
+            "items": [
+              {
+                "type": "Text",
+                "value": "Wizard value group two",
+                "id": "wiz-group2-text",
+                "name": "Wizard text field group two",
+                "required": false,
+                "readOnly": true,
+                "visible": true
+              }
+            ],
+            "isExpanded": true,
+            "visible": true
+          }
+        ]
+      }
+    ]
+  },
+  "state": "Success"
+}

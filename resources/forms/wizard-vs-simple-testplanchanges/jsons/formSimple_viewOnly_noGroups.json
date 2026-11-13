@@ -1,0 +1,51 @@
+{
+  "result": {
+    "type": "Simple",
+    "title": "formSimple_viewOnly_noGroups",
+    "changesOnly": false,
+    "viewOnly": true,
+    "submitText": "Submit",
+    "items": [
+      {
+        "type": "Text",
+        "value": "First value",
+        "id": "simple-text-1",
+        "name": "Text field one",
+        "required": false,
+        "readOnly": true,
+        "visible": true
+      },
+      {
+        "type": "Text",
+        "value": "Second value",
+        "id": "simple-text-2",
+        "name": "Text field two",
+        "required": false,
+        "readOnly": true,
+        "visible": true
+      },
+      {
+        "type": "Text",
+        "value": "Third value",
+        "id": "simple-text-3",
+        "name": "Text field three",
+        "required": false,
+        "readOnly": true,
+        "visible": true
+      },
+      {
+        "type": "Navigation",
+        "name": "Open time & attendance",
+        "deepLink": {
+          "type": "Functionality",
+          "functionality": "sd://time/1.0.0/clocking",
+          "id": "time-and-attendance",
+          "displayMode": "Default",
+          "icon": "Default"
+        },
+        "visible": true
+      }
+    ]
+  },
+  "state": "Success"
+}
