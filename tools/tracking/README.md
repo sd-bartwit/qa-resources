@@ -18,7 +18,7 @@ Requirements: `adb` on PATH (or in `%LOCALAPPDATA%\Android\Sdk\platform-tools`),
 ## What the scripts do
 
 **`start-analytics-capture.ps1`**
-Switches Firebase debug mode and verbose SDK logging on for the app, clears the device log so only new activity is recorded, and starts a background capture. Options: `-Package` (default `be.sdworx.sdwa.inhouse`), `-Serial`, `-RestartApp` (relaunches the app for you).
+Switches Firebase debug mode and verbose SDK logging on for the app, clears the device log so only new activity is recorded, and starts a background capture. Options: `-Package` (default `be.sdworx.sdwa.inhouse`), `-Serial`. The script never restarts or force-stops the app (force-stop clears the device's notifications); close and reopen the app yourself.
 
 **`stop-analytics-capture.ps1`**
 Stops the background capture, saves it to `output/tracking/logs_raw/` with a timestamp, switches all logging and debug mode off again, then analyses the log and prints a report. Option: `-LogFile <path>` analyses an existing raw log only (no device needed, nothing is stopped or disabled).

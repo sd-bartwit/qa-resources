@@ -75,7 +75,7 @@ Absences, Overtime, **Expenses**, **Expense Claims**, Pending Approvals (Absence
 |--|--|
 | Organization | `sdworx` — `https://dev.azure.com/sdworx` (legacy `sdworx.visualstudio.com`) |
 | Project | `Digital Channels` |
-| Area Path | `Digital Channels` |
+| Area Path | `Digital Channels`; for links and work items it is most likely `Digital Channels\App and Features` (e.g. `Digital Channels\App and Features\Channels App - APP Development`) unless stated otherwise |
 | Wiki | `Digital-Channels.wiki`, id `c18f6113-3cba-4571-998b-640f412cb281` |
 | Iterations root (APP dev) | `Digital Channels\Channels App\Development\APP Development\<year>\Q<q>\Sprint <n>` |
 | Iteration node for sprint dates | `Channels Front` (classification node queried for start/finish dates) |

@@ -1,0 +1,73 @@
+{
+  "result": {
+    "type": "Wizard",
+    "title": "formWizard_badges",
+    "badge": {
+      "type": "Information",
+      "title": "Missing data",
+      "visible": true
+    },
+    "changesOnly": false,
+    "viewOnly": false,
+    "submitText": "Submit",
+    "steps": [
+      {
+        "step": "1. Step one",
+        "description": "Single step with one group and one field",
+        "badge": {
+          "type": "Warning",
+          "title": "Pending",
+          "visible": true
+        },
+        "visible": true,
+        "groups": [
+          {
+            "group": "Group one",
+            "description": "Contains one text field",
+            "items": [
+              {
+                "type": "Text",
+                "value": "",
+                "id": "wiz-text",
+                "name": "Wizard text field",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              }
+            ],
+            "badge": {
+              "type": "Warning",
+              "title": "Update",
+              "visible": true
+            },
+            "isExpanded": true,
+            "visible": true
+          },
+          {
+            "group": "Group two",
+            "description": "Contains one text field",
+            "items": [
+              {
+                "type": "Text",
+                "value": "",
+                "id": "wiz-group2-text",
+                "name": "Wizard text field group two",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              }
+            ],
+            "badge": {
+              "type": "Success",
+              "title": "Ok",
+              "visible": true
+            },
+            "isExpanded": true,
+            "visible": true
+          }
+        ]
+      }
+    ]
+  },
+  "state": "Success"
+}

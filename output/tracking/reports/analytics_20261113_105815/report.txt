@@ -1,0 +1,126 @@
+﻿FIREBASE ANALYTICS CAPTURE REPORT
+============================================================
+Log file : analytics_20261113_105815.log
+Window   : 11-13 10:56:47.823 -> 11-13 10:58:02.902 (device time)
+App      : be.sdworx.sdwa.inhouse 5.5.0.1732811 | SM-A546B | Android 16
+Debug    : on (all events carry _dbg)
+
+RESULT
+------------------------------------------------------------
+Uploads  : 43 batch(es): 43 accepted, 0 FAILED, 0 without result
+Events   : 61 uploaded (26 app, 34 screen, 1 auto, 0 sdk-error)
+All good: every event was accepted by Firebase.
+
+EVENT SUMMARY
+------------------------------------------------------------
+Event                         Kind   Count Uploaded Failed Pending
+-----                         ----   ----- -------- ------ -------
+absence_appr_details_approve  App        1        1      0       0
+absence_appr_details_reject   App        1        1      0       0
+absence_appr_rejection_reject App        1        1      0       0
+auth_success                  App        4        4      0       0
+confirm_input                 App        4        4      0       0
+expense_appr_detail_approve   App        1        1      0       0
+landing_login                 App        4        4      0       0
+overtime_appr_details_reject  App        1        1      0       0
+overtime_appr_reject          App        1        1      0       0
+push_notification_tapped      App        4        4      0       0
+token_success                 App        4        4      0       0
+user_engagement               Auto       1        1      0       0
+screen_view                   Screen    34       34      0       0
+
+SCREENS (in order)
+------------------------------------------------------------
+Time         Screen                               Details                                                      Upload  
+----         ------                               -------                                                      ------  
+10:56:56.317 loading                              manual_tracking=1                                            OK (204)
+10:56:56.851 landing                              from=loading; manual_tracking=1                              OK (204)
+10:56:59.575 loading                              from=landing; manual_tracking=1                              OK (204)
+10:56:59.910 landing                              from=loading; manual_tracking=1                              OK (204)
+10:57:01.465 enter_pin                            from=landing; manual_tracking=1                              OK (204)
+10:57:03.977 landing                              from=enter_pin; manual_tracking=1                            OK (204)
+10:57:06.960 home                                 from=landing; manual_tracking=1                              OK (204)
+10:57:08.106 overtime_approvals_detail            from=home; manual_tracking=1                                 OK (204)
+10:57:09.846 reject_overtime_reason               from=overtime_approvals_detail; manual_tracking=1            OK (204)
+10:57:13.470 overtime_approvals_detail            from=reject_overtime_reason; manual_tracking=1               OK (204)
+10:57:13.486 home                                 from=overtime_approvals_detail; manual_tracking=1            OK (204)
+10:57:16.321 loading                              from=home; manual_tracking=1                                 OK (204)
+10:57:16.722 landing                              from=loading; manual_tracking=1                              OK (204)
+10:57:18.143 enter_pin                            from=landing; manual_tracking=1                              OK (204)
+10:57:20.962 landing                              from=enter_pin; manual_tracking=1                            OK (204)
+10:57:22.267 home                                 from=landing; manual_tracking=1                              OK (204)
+10:57:23.120 absence_approval_details_details_tab from=home; manual_tracking=1                                 OK (204)
+10:57:25.373 home                                 from=absence_approval_details_details_tab; manual_tracking=1 OK (204)
+10:57:29.552 loading                              from=home; manual_tracking=1                                 OK (204)
+10:57:29.927 landing                              from=loading; manual_tracking=1                              OK (204)
+10:57:34.482 enter_pin                            from=landing; manual_tracking=1                              OK (204)
+10:57:37.407 landing                              from=enter_pin; manual_tracking=1                            OK (204)
+10:57:38.801 home                                 from=landing; manual_tracking=1                              OK (204)
+10:57:40.002 absence_approval_details_details_tab from=home; manual_tracking=1                                 OK (204)
+10:57:42.197 reject_absence_reason                from=absence_approval_details_details_tab; manual_tracking=1 OK (204)
+10:57:44.502 absence_approval_details_details_tab from=reject_absence_reason; manual_tracking=1                OK (204)
+10:57:44.540 home                                 from=absence_approval_details_details_tab; manual_tracking=1 OK (204)
+10:57:46.714 loading                              from=home; manual_tracking=1                                 OK (204)
+10:57:47.081 landing                              from=loading; manual_tracking=1                              OK (204)
+10:57:49.582 enter_pin                            from=landing; manual_tracking=1                              OK (204)
+10:57:52.007 landing                              from=enter_pin; manual_tracking=1                            OK (204)
+10:57:53.472 home                                 from=landing; manual_tracking=1                              OK (204)
+10:57:54.345 expense_approvals_detail             from=home; manual_tracking=1                                 OK (204)
+10:57:56.662 home                                 from=expense_approvals_detail; manual_tracking=1             OK (204)
+
+APP EVENTS (in order; auto events omitted, see events.csv)
+------------------------------------------------------------
+Time         Event                         Screen                               Details                                                                             Upload  
+----         -----                         ------                               -------                                                                             ------  
+10:57:00.999 landing_login                 landing                              login_method=nextAuth                                                               OK (204)
+10:57:03.062 confirm_input                 enter_pin                                                                                                                OK (204)
+10:57:03.973 auth_success                  enter_pin                                                                                                                OK (204)
+10:57:05.006 token_success                 landing                                                                                                                  OK (204)
+10:57:07.974 push_notification_tapped      home                                 destination=pending_approvals/overtime/overview/details; category=overtime_approval OK (204)
+10:57:09.836 overtime_appr_details_reject  overtime_approvals_detail                                                                                                OK (204)
+10:57:10.878 overtime_appr_reject          reject_overtime_reason                                                                                                   OK (204)
+10:57:17.694 landing_login                 landing                              login_method=nextAuth                                                               OK (204)
+10:57:20.097 confirm_input                 enter_pin                                                                                                                OK (204)
+10:57:20.955 auth_success                  enter_pin                                                                                                                OK (204)
+10:57:21.569 token_success                 landing                                                                                                                  OK (204)
+10:57:22.883 push_notification_tapped      home                                 destination=pending_approvals/absences/overview/details; category=absence_approval  OK (204)
+10:57:24.303 absence_appr_details_approve  absence_approval_details_details_tab                                                                                     OK (204)
+10:57:34.019 landing_login                 landing                              login_method=nextAuth                                                               OK (204)
+10:57:36.513 confirm_input                 enter_pin                                                                                                                OK (204)
+10:57:37.397 auth_success                  enter_pin                                                                                                                OK (204)
+10:57:38.034 token_success                 landing                                                                                                                  OK (204)
+10:57:39.757 push_notification_tapped      home                                 destination=pending_approvals/absences/overview/details; category=absence_approval  OK (204)
+10:57:42.196 absence_appr_details_reject   absence_approval_details_details_tab                                                                                     OK (204)
+10:57:43.111 absence_appr_rejection_reject reject_absence_reason                                                                                                    OK (204)
+10:57:49.079 landing_login                 landing                              login_method=nextAuth                                                               OK (204)
+10:57:51.201 confirm_input                 enter_pin                                                                                                                OK (204)
+10:57:51.998 auth_success                  enter_pin                                                                                                                OK (204)
+10:57:52.632 token_success                 landing                                                                                                                  OK (204)
+10:57:54.185 push_notification_tapped      home                                 destination=pending_approvals/expenses/overview/details; category=expense_approval  OK (204)
+10:57:55.915 expense_appr_detail_approve   expense_approvals_detail                                                                                                 OK (204)
+
+REJECTED BY THE SDK
+------------------------------------------------------------
+  (none)
+
+OTHER SDK ERRORS / WARNINGS
+------------------------------------------------------------
+  (none)
+
+USER PROPERTIES SET BY THE APP
+------------------------------------------------------------
+Name                    Value                            Times
+----                    -----                            -----
+accessibility_specs     1:0,8:0,10:0,13:0                    5
+module_absences         false                               22
+module_approvals        true                                22
+module_expenses         none                                22
+module_newsfeed         false                               22
+module_overtime         ungrouped                           22
+module_salary           none                                22
+online                  true                                 5
+personalProfileObjectId 7AC653198A1548038BD6B3838A498166     9
+pixel_ratio             2.81                                 5
+text_scale_factor       1.0                                  5
+viewport_size           384 x 832                            5
+
