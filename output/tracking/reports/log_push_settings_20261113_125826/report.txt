@@ -1,0 +1,117 @@
+﻿FIREBASE ANALYTICS CAPTURE REPORT
+============================================================
+Log file : log_push_settings_20261113_125826.log
+Window   : 11-13 12:56:24.912 -> 11-13 12:58:19.411 (device time)
+App      : be.sdworx.sdwa.inhouse 5.5.0.1732811 | SM-A546B | Android 16
+Debug    : partial (43 of 56 events) - app was not restarted at the start
+
+RESULT
+------------------------------------------------------------
+Uploads  : 31 batch(es): 31 accepted, 0 FAILED, 0 without result
+Events   : 56 uploaded (22 app, 32 screen, 2 auto, 0 sdk-error)
+All good: every event was accepted by Firebase.
+
+EVENT SUMMARY
+------------------------------------------------------------
+Event                                  Kind   Count Uploaded Failed Pending
+-----                                  ----   ----- -------- ------ -------
+auth_success                           App        4        4      0       0
+confirm_input                          App        4        4      0       0
+home_open_settings                     App        1        1      0       0
+landing_login                          App        4        4      0       0
+push_notification_tapped               App        3        3      0       0
+settings_enabling_notifications_tapped App        2        2      0       0
+token_success                          App        4        4      0       0
+app_update                             Auto       1        1      0       0
+session_start                          Auto       1        1      0       0
+screen_view                            Screen    32       32      0       0
+
+SCREENS (in order)
+------------------------------------------------------------
+Time         Screen                                  Details                                                         Upload  
+----         ------                                  -------                                                         ------  
+12:54:41.698 components_library                      from=debug_menu; manual_tracking=1                              OK (204)
+12:55:19.858 debug_menu                              from=components_library; manual_tracking=1                      OK (204)
+12:55:20.457 generic_error_dialog                    from=debug_menu; manual_tracking=1                              OK (204)
+12:55:25.877 landing                                 from=generic_error_dialog; manual_tracking=1                    OK (204)
+12:55:27.127 enter_pin                               from=landing; manual_tracking=1                                 OK (204)
+12:55:32.213 landing                                 from=enter_pin; manual_tracking=1                               OK (204)
+12:55:37.679 home                                    from=landing; manual_tracking=1                                 OK (204)
+12:56:24.909 settings                                from=home; manual_tracking=1                                    OK (204)
+12:56:34.079 home                                    from=settings; manual_tracking=1                                OK (204)
+12:57:09.028 loading                                 manual_tracking=1                                               OK (204)
+12:57:09.815 landing                                 from=loading; manual_tracking=1                                 OK (204)
+12:57:11.292 enter_pin                               from=landing; manual_tracking=1                                 OK (204)
+12:57:13.984 landing                                 from=enter_pin; manual_tracking=1                               OK (204)
+12:57:16.819 home                                    from=landing; manual_tracking=1                                 OK (204)
+12:57:18.946 overtime_detail                         from=home; manual_tracking=1                                    OK (204)
+12:57:20.500 overtime_ungroup_overview_open_tab      from=overtime_detail; manual_tracking=1                         OK (204)
+12:57:21.844 overtime_ungroup_overview_open_tab      from=overtime_ungroup_overview_open_tab; manual_tracking=1      OK (204)
+12:57:22.809 home                                    from=overtime_ungroup_overview_open_tab; manual_tracking=1      OK (204)
+12:57:24.980 loading                                 from=home; manual_tracking=1                                    OK (204)
+12:57:25.558 landing                                 from=loading; manual_tracking=1                                 OK (204)
+12:57:30.194 enter_pin                               from=landing; manual_tracking=1                                 OK (204)
+12:57:32.768 landing                                 from=enter_pin; manual_tracking=1                               OK (204)
+12:57:34.692 home                                    from=landing; manual_tracking=1                                 OK (204)
+12:57:38.021 expenses_ungroup_overview_completed_tab from=home; manual_tracking=1                                    OK (204)
+12:57:42.830 home                                    from=expenses_ungroup_overview_completed_tab; manual_tracking=1 OK (204)
+12:57:44.298 loading                                 from=home; manual_tracking=1                                    OK (204)
+12:57:44.908 landing                                 from=loading; manual_tracking=1                                 OK (204)
+12:57:59.385 enter_pin                               from=landing; manual_tracking=1                                 OK (204)
+12:58:01.927 landing                                 from=enter_pin; manual_tracking=1                               OK (204)
+12:58:03.314 home                                    from=landing; manual_tracking=1                                 OK (204)
+12:58:04.470 absence_details                         from=home; manual_tracking=1                                    OK (204)
+12:58:12.297 home                                    from=absence_details; manual_tracking=1                         OK (204)
+
+APP EVENTS (in order; auto events omitted, see events.csv)
+------------------------------------------------------------
+Time         Event                                  Screen    Details                                                       Upload  
+----         -----                                  ------    -------                                                       ------  
+12:55:26.666 landing_login                          landing   login_method=nextAuth                                         OK (204)
+12:55:31.435 confirm_input                          enter_pin                                                               OK (204)
+12:55:32.204 auth_success                           enter_pin                                                               OK (204)
+12:55:35.351 token_success                          landing                                                                 OK (204)
+12:56:24.908 home_open_settings                     home                                                                    OK (204)
+12:56:25.896 settings_enabling_notifications_tapped settings                                                                OK (204)
+12:56:29.026 settings_enabling_notifications_tapped settings                                                                OK (204)
+12:57:10.817 landing_login                          landing   login_method=nextAuth                                         OK (204)
+12:57:13.164 confirm_input                          enter_pin                                                               OK (204)
+12:57:13.975 auth_success                           enter_pin                                                               OK (204)
+12:57:15.885 token_success                          landing                                                                 OK (204)
+12:57:18.772 push_notification_tapped               home      destination=overtime/overview/open/details; category=overtime OK (204)
+12:57:29.735 landing_login                          landing   login_method=nextAuth                                         OK (204)
+12:57:32.003 confirm_input                          enter_pin                                                               OK (204)
+12:57:32.765 auth_success                           enter_pin                                                               OK (204)
+12:57:33.435 token_success                          landing                                                                 OK (204)
+12:57:36.962 push_notification_tapped               home      destination=expenses/overview/approved; category=expense      OK (204)
+12:57:58.936 landing_login                          landing   login_method=nextAuth                                         OK (204)
+12:58:01.224 confirm_input                          enter_pin                                                               OK (204)
+12:58:01.923 auth_success                           enter_pin                                                               OK (204)
+12:58:02.643 token_success                          landing                                                                 OK (204)
+12:58:04.327 push_notification_tapped               home      destination=absences/details; category=absence                OK (204)
+
+REJECTED BY THE SDK
+------------------------------------------------------------
+  (none)
+
+OTHER SDK ERRORS / WARNINGS
+------------------------------------------------------------
+  (none)
+
+USER PROPERTIES SET BY THE APP
+------------------------------------------------------------
+Name                    Value                            Times
+----                    -----                            -----
+accessibility_specs     1:0,8:0,10:0,13:0                    3
+module_absences         false                               21
+module_approvals        true                                21
+module_expenses         ungrouped,ungrouped                 21
+module_newsfeed         false                               21
+module_overtime         ungrouped                           21
+module_salary           none                                21
+online                  true                                 3
+personalProfileObjectId 36C247C48136440CABCA3C1965ECB666     6
+pixel_ratio             2.81                                 3
+text_scale_factor       1.0                                  3
+viewport_size           384 x 832                            3
+

@@ -1,6 +1,6 @@
 ﻿FIREBASE ANALYTICS CAPTURE REPORT
 ============================================================
-Log file : analytics_20261113_105815.log
+Log file : log_push_approvals_20261113_105815.log
 Window   : 11-13 10:56:47.823 -> 11-13 10:58:02.902 (device time)
 App      : be.sdworx.sdwa.inhouse 5.5.0.1732811 | SM-A546B | Android 16
 Debug    : on (all events carry _dbg)

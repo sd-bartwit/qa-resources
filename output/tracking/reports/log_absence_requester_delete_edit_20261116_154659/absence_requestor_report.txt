@@ -1,0 +1,89 @@
+FIREBASE ANALYTICS CAPTURE REPORT
+============================================================
+Log file : log_absence_requester_delete_edit_20261116_154659.log
+Window   : 11-16 15:45:56.607 -> 11-16 15:46:59.296 (device time)
+App      : be.sdworx.sdwa.inhouse 5.5.0.1734904 | SM-A546B | Android 17
+Debug    : partial (35 of 37 events) - app was not restarted at the start
+
+RESULT
+------------------------------------------------------------
+Uploads  : 23 batch(es): 23 accepted, 0 FAILED, 0 without result
+Events   : 37 uploaded (19 app, 18 screen, 0 auto, 0 sdk-error)
+All good: every event was accepted by Firebase.
+
+EVENT SUMMARY
+------------------------------------------------------------
+Event                            Kind   Count Uploaded Failed Pending
+-----                            ----   ----- -------- ------ -------
+absence_balance_year_tab_tap     App        3        3      0       0
+absence_delete                   App        1        1      0       0
+absence_delete_tapped            App        2        2      0       0
+absence_detail_tapped            App        3        3      0       0
+absence_edit                     App        1        1      0       0
+absence_edit_tapped              App        1        1      0       0
+absence_total_current            App        1        1      0       0
+absence_total_future             App        1        1      0       0
+absence_total_future_banner_show App        4        4      0       0
+absence_total_past               App        1        1      0       0
+home_tile                        App        1        1      0       0
+screen_view                      Screen    18       18      0       0
+
+SCREENS (in order)
+------------------------------------------------------------
+Time         Screen                             Details                                                                                           Upload  
+----         ------                             -------                                                                                           ------  
+15:45:09.538 expenses_ungroup_overview_open_tab from=add_edit_expense; manual_tracking=1                                                          OK (204)
+15:45:40.533 home                               from=expenses_ungroup_overview_open_tab; manual_tracking=1                                        OK (204)
+15:45:57.316 absences_overview_my_calendar_tab  from=home; manual_tracking=1                                                                      OK (204)
+15:46:00.618 absence_details                    from=absences_overview_my_calendar_tab; manual_tracking=1                                         OK (204)
+15:46:06.415 edit_absence                       from=absence_details; manual_tracking=1                                                           OK (204)
+15:46:15.454 absence_details                    from=edit_absence; manual_tracking=1                                                              OK (204)
+15:46:20.308 absences_overview_my_calendar_tab  from=absence_details; manual_tracking=1                                                           OK (204)
+15:46:23.203 absence_details                    from=absences_overview_my_calendar_tab; manual_tracking=1                                         OK (204)
+15:46:26.731 absences_overview_my_calendar_tab  from=absence_details; manual_tracking=1                                                           OK (204)
+15:46:34.716 absence_details                    from=absences_overview_my_calendar_tab; manual_tracking=1                                         OK (204)
+15:46:37.604 delete_absence_dialog              from=absence_details; manual_tracking=1                                                           OK (204)
+15:46:39.964 absence_details                    from=delete_absence_dialog; manual_tracking=1                                                     OK (204)
+15:46:40.666 delete_absence_dialog              from=absence_details; manual_tracking=1                                                           OK (204)
+15:46:41.547 absence_details                    from=delete_absence_dialog; manual_tracking=1                                                     OK (204)
+15:46:42.082 absences_overview_my_calendar_tab  from=absence_details; manual_tracking=1                                                           OK (204)
+15:46:44.457 absences_balances_tabbed_detail    from=absences_overview_my_calendar_tab; manual_tracking=1                                         OK (204)
+15:46:53.626 absences_overview_my_calendar_tab  from=absences_balances_tabbed_detail; manual_tracking=1                                           OK (204)
+15:46:54.058 request_absence                    from=absences_overview_my_calendar_tab; initiated_from=absences_balance_detail; manual_tracking=1 OK (204)
+
+APP EVENTS (in order; auto events omitted, see events.csv)
+------------------------------------------------------------
+Time         Event                            Screen                            Details                                      Upload  
+----         -----                            ------                            -------                                      ------  
+15:45:56.565 home_tile                        home                              tile_type=absences; endpoint=sdwa://absences OK (204)
+15:46:00.619 absence_detail_tapped            absence_details                                                                OK (204)
+15:46:06.382 absence_edit_tapped              absence_details                                                                OK (204)
+15:46:15.450 absence_edit                     edit_absence                                                                   OK (204)
+15:46:23.203 absence_detail_tapped            absences_overview_my_calendar_tab                                              OK (204)
+15:46:34.654 absence_detail_tapped            absences_overview_my_calendar_tab                                              OK (204)
+15:46:37.603 absence_delete_tapped            absence_details                                                                OK (204)
+15:46:40.666 absence_delete_tapped            absence_details                                                                OK (204)
+15:46:42.082 absence_delete                   absence_details                                                                OK (204)
+15:46:44.942 absence_total_future_banner_show absences_balances_tabbed_detail                                                OK (204)
+15:46:45.021 absence_total_future_banner_show absences_balances_tabbed_detail                                                OK (204)
+15:46:45.489 absence_total_future_banner_show absences_balances_tabbed_detail                                                OK (204)
+15:46:45.490 absence_total_future_banner_show absences_balances_tabbed_detail                                                OK (204)
+15:46:50.058 absence_total_past               absences_balances_tabbed_detail                                                OK (204)
+15:46:50.062 absence_balance_year_tab_tap     absences_balances_tabbed_detail   tab=previous_year                            OK (204)
+15:46:51.394 absence_balance_year_tab_tap     absences_balances_tabbed_detail   tab=current_year                             OK (204)
+15:46:51.395 absence_total_current            absences_balances_tabbed_detail                                                OK (204)
+15:46:52.524 absence_total_future             absences_balances_tabbed_detail                                                OK (204)
+15:46:52.526 absence_balance_year_tab_tap     absences_balances_tabbed_detail   tab=next_year                                OK (204)
+
+REJECTED BY THE SDK
+------------------------------------------------------------
+  (none)
+
+OTHER SDK ERRORS / WARNINGS
+------------------------------------------------------------
+  (none)
+
+USER PROPERTIES SET BY THE APP
+------------------------------------------------------------
+  (none)
+

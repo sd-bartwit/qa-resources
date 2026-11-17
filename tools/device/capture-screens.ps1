@@ -17,19 +17,40 @@
   Safety cap on how many pages to capture (default 6).
 
 .PARAMETER SwipeCoords
-  "x1 y1 x2 y2 durationMs" passed to `adb shell input swipe` between captures (default
-  matches a 1080x2340 device: swipe up from near-bottom to near-top).
+  "x1 y1 x2 y2 durationMs" passed to `adb shell input swipe` between captures. Default: derived
+  from the device screen size (swipe up from ~77% to ~26% of the height, centred horizontally).
+
+.PARAMETER Serial
+  Device serial (adb devices). Defaults to $env:ANDROID_SERIAL, or the only connected device.
 #>
 param(
   [Parameter(Mandatory = $true)][string]$OutPrefix,
   [int]$MaxPages = 6,
-  [string]$SwipeCoords = "540 1800 540 600 300"
+  [string]$SwipeCoords,
+  [string]$Serial
 )
 
+if (-not $Serial) { $Serial = $env:ANDROID_SERIAL }
+if (-not $Serial) {
+  $serials = @(adb devices | Select-Object -Skip 1 | Where-Object { $_ -match '\sdevice$' } | ForEach-Object { ($_ -split '\s+')[0] })
+  if ($serials.Count -eq 0) { throw 'No authorised device connected.' }
+  if ($serials.Count -gt 1) { throw "Several devices connected ($($serials -join ', ')). Pass -Serial <id>." }
+  $Serial = $serials[0]
+}
+$a = @('-s', $Serial)
+
+if (-not $SwipeCoords) {
+  $size = @(adb @a shell wm size) | Where-Object { $_ -match '(\d+)x(\d+)' } | Select-Object -Last 1
+  if (-not $size) { throw 'Could not read the screen size; pass -SwipeCoords.' }
+  $null = $size -match '(\d+)x(\d+)'
+  $w = [int]$Matches[1]; $h = [int]$Matches[2]
+  $SwipeCoords = "{0} {1} {0} {2} 300" -f [int]($w / 2), [int]($h * 0.77), [int]($h * 0.26)
+}
+
 function Get-Screenshot([string]$destPath) {
-  adb shell screencap -p /sdcard/_sc.png | Out-Null
-  adb pull /sdcard/_sc.png $destPath | Out-Null
-  adb shell rm /sdcard/_sc.png | Out-Null
+  adb @a shell screencap -p /sdcard/_sc.png | Out-Null
+  adb @a pull /sdcard/_sc.png $destPath | Out-Null
+  adb @a shell rm /sdcard/_sc.png | Out-Null
 }
 
 $pages = @()
@@ -39,7 +60,7 @@ $pages += $tempFirst
 
 for ($i = 2; $i -le $MaxPages; $i++) {
   $prevPath = $pages[-1]
-  & adb shell input swipe $SwipeCoords.Split(" ") | Out-Null
+  & adb @a shell input swipe $SwipeCoords.Split(" ") | Out-Null
   $nextPath = "${OutPrefix}_p$i.png"
   Get-Screenshot $nextPath
 
