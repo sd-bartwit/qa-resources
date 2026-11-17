@@ -9,7 +9,6 @@ require('./tools/load-env');
 const capabilities = {
     platformName: 'Android',
     'appium:automationName': 'UiAutomator2',
-    'appium:platformVersion': '15',
     'appium:deviceName': 'Android Device',
     'appium:noReset': true,
     'appium:fullReset': false,

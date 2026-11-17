@@ -35,7 +35,7 @@ Manual + automated **QA of the mysdworx mobile app** (SD Worx). Work here includ
 - This repo is self-contained: root `package.json` holds all dependencies and the root `wdio.conf.js` holds the full WebdriverIO/Appium config; run `npm install` in this folder (`node_modules` is local).
 - Existing Appium project: `C:\Code files\Automation on device` (WebdriverIO + Appium, uiautomator2 driver).
 - Known transitive npm audit findings come from `appium-uiautomator2-driver` — pre-existing, not introduced here.
-- Start the Appium server: `npm run appium:start` (port 4723) from this folder. UiAutomator2 driver `5.0.3` is installed; caps target Android 15.
+- Start the Appium server: `npm run appium:start` (port 4723) from this folder. UiAutomator2 driver `5.0.3` is installed; the platform version is taken from the connected device.
 - **Flutter automation note (verified 2026-07-13):** the app is Flutter and exposes NO usable `text` or `resource-id` in the native tree, but **does expose accessibility labels via `content-desc`** (e.g. Claims overview shows `Claims overview`, `Open`, `Sent`, `Draft claims\n2`, `Add expense`). So automation is feasible with **accessibility-id / content-desc selectors using partial (`contains`) matching** (counts are embedded in labels). No Flutter driver is installed/needed for helper-level use.
 - **Claims Appium helper:** `QA Work/tools/device/claims-helper.js` — `dump [name]` (page source + label list → `output/device/`), `tap "<label part>"`, `shot <name>`. Manual-assisted aid for navigation/inspection/evidence; primary Claims testing stays manual-assisted.
 - **Screenshot scroll-capture script:** `tools/device/capture-screens.ps1`.
@@ -75,7 +75,7 @@ Absences, Overtime, **Expenses**, **Expense Claims**, Pending Approvals (Absence
 |--|--|
 | Organization | `sdworx` — `https://dev.azure.com/sdworx` (legacy `sdworx.visualstudio.com`) |
 | Project | `Digital Channels` |
-| Area Path | `Digital Channels` |
+| Area Path | `Digital Channels`; for links and work items it is most likely `Digital Channels\App and Features` (e.g. `Digital Channels\App and Features\Channels App - APP Development`) unless stated otherwise |
 | Wiki | `Digital-Channels.wiki`, id `c18f6113-3cba-4571-998b-640f412cb281` |
 | Iterations root (APP dev) | `Digital Channels\Channels App\Development\APP Development\<year>\Q<q>\Sprint <n>` |
 | Iteration node for sprint dates | `Channels Front` (classification node queried for start/finish dates) |

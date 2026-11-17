@@ -1,0 +1,159 @@
+FIREBASE ANALYTICS CAPTURE REPORT
+============================================================
+Log file : log_absence_approver_bulk_select_20261116_155951.log
+Window   : 11-16 15:59:02.186 -> 11-16 15:59:46.550 (device time)
+App      : be.sdworx.sdwa.inhouse 5.5.0.1734904 | SM-A546B | Android 17
+Debug    : partial (21 of 108 events) - app was not restarted at the start
+
+RESULT
+------------------------------------------------------------
+Uploads  : 19 batch(es): 19 accepted, 0 FAILED, 0 without result
+Events   : 108 uploaded (47 app, 53 screen, 8 auto, 0 sdk-error)
+All good: every event was accepted by Firebase.
+
+EVENT SUMMARY
+------------------------------------------------------------
+Event                                    Kind   Count Uploaded Failed Pending
+-----                                    ----   ----- -------- ------ -------
+absence_appr_overview_bulk_approve       App        1        1      0       0
+absence_appr_overview_bulk_reject        App        1        1      0       0
+absence_appr_overview_bulk_select        App       14       14      0       0
+absence_appr_rejection_reject            App        1        1      0       0
+activation_disabling_notifications_tap   App        2        2      0       0
+activation_enabling_notifications_tapped App        1        1      0       0
+generic_picker_item_selected_single      App        2        2      0       0
+home_tile                                App        3        3      0       0
+login_activate                           App        3        3      0       0
+login_activation_method                  App        3        3      0       0
+onboarding_new_finish_tapped             App        3        3      0       0
+onboarding_next_tapped                   App        3        3      0       0
+pending_approvals_absences_screen        App        2        2      0       0
+request_absence                          App        4        4      0       0
+request_absence_tapped                   App        4        4      0       0
+app_clear_data                           Auto       3        3      0       0
+session_start                            Auto       3        3      0       0
+user_engagement                          Auto       2        2      0       0
+screen_view                              Screen    53       53      0       0
+
+SCREENS (in order)
+------------------------------------------------------------
+Time         Screen                            Details                                                                                                      Upload  
+----         ------                            -------                                                                                                      ------  
+15:52:03.924 environment_picker                manual_tracking=1                                                                                            OK (204)
+15:52:04.278 loading                           from=environment_picker; manual_tracking=1                                                                   OK (204)
+15:52:04.967 onboarding                        from=loading; manual_tracking=1                                                                              OK (204)
+15:52:06.259 browser_login                     from=onboarding; manual_tracking=1                                                                           OK (204)
+15:52:17.755 add_pin                           from=browser_login; manual_tracking=1                                                                        OK (204)
+15:52:24.584 notification_permission           from=add_pin; manual_tracking=1                                                                              OK (204)
+15:52:24.829 activation_your_privacy           from=notification_permission; manual_tracking=1                                                              OK (204)
+15:52:25.574 home                              from=activation_your_privacy; manual_tracking=1                                                              OK (204)
+15:52:27.028 debug_menu                        from=home; manual_tracking=1                                                                                 OK (204)
+15:52:27.715 proxy                             from=debug_menu; manual_tracking=1                                                                           OK (204)
+15:52:29.519 debug_menu                        from=proxy; manual_tracking=1                                                                                OK (204)
+15:52:30.542 home                              from=debug_menu; manual_tracking=1                                                                           OK (204)
+15:53:27.379 approvals                         from=home; manual_tracking=1                                                                                 OK (204)
+15:53:29.673 absence_approvals                 from=approvals; manual_tracking=1                                                                            OK (204)
+15:54:29.160 environment_picker                manual_tracking=1                                                                                            OK (204)
+15:54:29.589 loading                           from=environment_picker; manual_tracking=1                                                                   OK (204)
+15:54:30.217 onboarding                        from=loading; manual_tracking=1                                                                              OK (204)
+15:54:31.505 browser_login                     from=onboarding; manual_tracking=1                                                                           OK (204)
+15:54:53.791 add_pin                           from=browser_login; manual_tracking=1                                                                        OK (204)
+15:55:01.872 notification_permission           from=add_pin; manual_tracking=1                                                                              OK (204)
+15:55:02.483 activation_your_privacy           from=notification_permission; manual_tracking=1                                                              OK (204)
+15:55:03.208 home                              from=activation_your_privacy; manual_tracking=1                                                              OK (204)
+15:55:04.701 debug_menu                        from=home; manual_tracking=1                                                                                 OK (204)
+15:55:05.408 proxy                             from=debug_menu; manual_tracking=1                                                                           OK (204)
+15:55:07.303 debug_menu                        from=proxy; manual_tracking=1                                                                                OK (204)
+15:55:07.904 home                              from=debug_menu; manual_tracking=1                                                                           OK (204)
+15:55:44.154 absences_overview_my_calendar_tab from=home; manual_tracking=1                                                                                 OK (204)
+15:56:00.090 request_absence                   from=absences_overview_my_calendar_tab; initiated_from=absences_calendar_empty_day_detail; manual_tracking=1 OK (204)
+15:56:05.551 absences_overview_my_calendar_tab from=request_absence; manual_tracking=1                                                                      OK (204)
+15:56:05.803 calendar_sync_info_modal          from=absences_overview_my_calendar_tab; manual_tracking=1                                                    OK (204)
+15:56:09.652 absences_overview_my_calendar_tab from=calendar_sync_info_modal; manual_tracking=1                                                             OK (204)
+15:56:26.509 request_absence                   from=absences_overview_my_calendar_tab; initiated_from=absences_calendar_empty_day_detail; manual_tracking=1 OK (204)
+15:56:29.314 select_category                   from=request_absence; manual_tracking=1                                                                      OK (204)
+15:56:30.822 request_absence                   from=select_category; initiated_from=absences_calendar_empty_day_detail; manual_tracking=1                   OK (204)
+15:56:32.747 absences_overview_my_calendar_tab from=request_absence; manual_tracking=1                                                                      OK (204)
+15:56:35.432 request_absence                   from=absences_overview_my_calendar_tab; initiated_from=absences_calendar_empty_day_detail; manual_tracking=1 OK (204)
+15:56:41.021 absences_overview_my_calendar_tab from=request_absence; manual_tracking=1                                                                      OK (204)
+15:56:44.248 request_absence                   from=absences_overview_my_calendar_tab; initiated_from=absences_calendar_empty_day_detail; manual_tracking=1 OK (204)
+15:56:47.052 select_category                   from=request_absence; manual_tracking=1                                                                      OK (204)
+15:56:49.276 request_absence                   from=select_category; initiated_from=absences_calendar_empty_day_detail; manual_tracking=1                   OK (204)
+15:56:52.893 absences_overview_my_calendar_tab from=request_absence; manual_tracking=1                                                                      OK (204)
+15:57:41.465 environment_picker                manual_tracking=1                                                                                            OK (204)
+15:57:41.787 loading                           from=environment_picker; manual_tracking=1                                                                   OK (204)
+15:57:42.504 onboarding                        from=loading; manual_tracking=1                                                                              OK (204)
+15:57:43.748 browser_login                     from=onboarding; manual_tracking=1                                                                           OK (204)
+15:58:27.422 add_pin                           from=browser_login; manual_tracking=1                                                                        OK (204)
+15:58:34.757 notification_permission           from=add_pin; manual_tracking=1                                                                              OK (204)
+15:58:40.899 activation_your_privacy           from=notification_permission; manual_tracking=1                                                              OK (204)
+15:58:42.231 home                              from=activation_your_privacy; manual_tracking=1                                                              OK (204)
+15:58:47.882 approvals                         from=home; manual_tracking=1                                                                                 OK (204)
+15:59:02.175 absence_approvals                 from=approvals; manual_tracking=1                                                                            OK (204)
+15:59:32.254 reject_absence_reason             from=absence_approvals; manual_tracking=1                                                                    OK (204)
+15:59:41.492 absence_approvals                 from=reject_absence_reason; manual_tracking=1                                                                OK (204)
+
+APP EVENTS (in order; auto events omitted, see events.csv)
+------------------------------------------------------------
+Time         Event                                    Screen                  Details                                                       Upload  
+----         -----                                    ------                  -------                                                       ------  
+15:52:05.510 onboarding_next_tapped                   onboarding                                                                            OK (204)
+15:52:06.197 onboarding_new_finish_tapped             onboarding                                                                            OK (204)
+15:52:06.550 login_activate                           browser_login                                                                         OK (204)
+15:52:16.692 login_activation_method                  browser_login           activation_method=nextAuth                                    OK (204)
+15:52:24.725 activation_disabling_notifications_tap   notification_permission                                                               OK (204)
+15:53:27.380 home_tile                                approvals               tile_type=pendingApprovals; endpoint=sdwa://pending_approvals OK (204)
+15:53:29.670 pending_approvals_absences_screen        approvals                                                                             OK (204)
+15:54:30.771 onboarding_next_tapped                   onboarding                                                                            OK (204)
+15:54:31.464 onboarding_new_finish_tapped             onboarding                                                                            OK (204)
+15:54:31.923 login_activate                           browser_login                                                                         OK (204)
+15:54:52.704 login_activation_method                  browser_login           activation_method=nextAuth                                    OK (204)
+15:55:02.388 activation_disabling_notifications_tap   notification_permission                                                               OK (204)
+15:55:43.650 home_tile                                home                    tile_type=absences; endpoint=sdwa://absences                  OK (204)
+15:56:04.411 request_absence_tapped                   request_absence         initiated_from=absences_calendar_empty_day_detail             OK (204)
+15:56:05.483 request_absence                          request_absence         initiated_from=absences_calendar_empty_day_detail             OK (204)
+15:56:30.279 generic_picker_item_selected_single      select_category         type=choose_category_absence                                  OK (204)
+15:56:32.165 request_absence_tapped                   request_absence         initiated_from=absences_calendar_empty_day_detail             OK (204)
+15:56:32.672 request_absence                          request_absence         initiated_from=absences_calendar_empty_day_detail             OK (204)
+15:56:40.426 request_absence_tapped                   request_absence         initiated_from=absences_calendar_empty_day_detail             OK (204)
+15:56:40.979 request_absence                          request_absence         initiated_from=absences_calendar_empty_day_detail             OK (204)
+15:56:48.778 generic_picker_item_selected_single      select_category         type=choose_category_absence                                  OK (204)
+15:56:52.202 request_absence_tapped                   request_absence         initiated_from=absences_calendar_empty_day_detail             OK (204)
+15:56:52.776 request_absence                          request_absence         initiated_from=absences_calendar_empty_day_detail             OK (204)
+15:57:43.010 onboarding_next_tapped                   onboarding                                                                            OK (204)
+15:57:43.700 onboarding_new_finish_tapped             onboarding                                                                            OK (204)
+15:57:44.072 login_activate                           browser_login                                                                         OK (204)
+15:58:25.195 login_activation_method                  browser_login           activation_method=nextAuth                                    OK (204)
+15:58:39.115 activation_enabling_notifications_tapped notification_permission                                                               OK (204)
+15:58:47.884 home_tile                                approvals               tile_type=pendingApprovals; endpoint=sdwa://pending_approvals OK (204)
+15:59:02.174 pending_approvals_absences_screen        approvals                                                                             OK (204)
+15:59:04.484 absence_appr_overview_bulk_select        absence_approvals       selection=select                                              OK (204)
+15:59:05.392 absence_appr_overview_bulk_select        absence_approvals       selection=select_all                                          OK (204)
+15:59:08.006 absence_appr_overview_bulk_select        absence_approvals       selection=select_all                                          OK (204)
+15:59:09.086 absence_appr_overview_bulk_select        absence_approvals       selection=deselect_all                                        OK (204)
+15:59:10.779 absence_appr_overview_bulk_select        absence_approvals       selection=select                                              OK (204)
+15:59:12.355 absence_appr_overview_bulk_select        absence_approvals       selection=select                                              OK (204)
+15:59:13.704 absence_appr_overview_bulk_select        absence_approvals       selection=select_all                                          OK (204)
+15:59:15.759 absence_appr_overview_bulk_select        absence_approvals       selection=deselect_all                                        OK (204)
+15:59:17.328 absence_appr_overview_bulk_select        absence_approvals       selection=select                                              OK (204)
+15:59:20.013 absence_appr_overview_bulk_select        absence_approvals       selection=select                                              OK (204)
+15:59:22.030 absence_appr_overview_bulk_select        absence_approvals       selection=select                                              OK (204)
+15:59:23.568 absence_appr_overview_bulk_select        absence_approvals       selection=select                                              OK (204)
+15:59:27.941 absence_appr_overview_bulk_approve       absence_approvals       count=3                                                       OK (204)
+15:59:29.946 absence_appr_overview_bulk_select        absence_approvals       selection=select                                              OK (204)
+15:59:30.679 absence_appr_overview_bulk_select        absence_approvals       selection=select                                              OK (204)
+15:59:39.841 absence_appr_rejection_reject            reject_absence_reason                                                                 OK (204)
+15:59:41.493 absence_appr_overview_bulk_reject        absence_approvals       count=2                                                       OK (204)
+
+REJECTED BY THE SDK
+------------------------------------------------------------
+  (none)
+
+OTHER SDK ERRORS / WARNINGS
+------------------------------------------------------------
+  (none)
+
+USER PROPERTIES SET BY THE APP
+------------------------------------------------------------
+  (none)
+

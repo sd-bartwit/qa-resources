@@ -1,0 +1,55 @@
+{
+  "result": {
+    "type": "Simple",
+    "title": "formSimple_viewOnly",
+    "changesOnly": false,
+    "viewOnly": true,
+    "submitText": "Submit",
+    "items": [
+      {
+        "type": "Grouping",
+        "group": "Group one",
+        "items": [
+          {
+            "type": "Text",
+            "value": "Value inside group",
+            "id": "simple-group-text",
+            "name": "Field inside group",
+            "required": false,
+            "readOnly": true,
+            "visible": true
+          }
+        ],
+        "isExpanded": true,
+        "visible": true
+      },
+      {
+        "type": "Text",
+        "value": "Value outside group",
+        "id": "simple-outside-text",
+        "name": "Field outside group",
+        "required": false,
+        "readOnly": true,
+        "visible": true
+      },
+      {
+        "type": "Grouping",
+        "group": "Group two",
+        "items": [
+          {
+            "type": "Text",
+            "value": "Value inside group two",
+            "id": "simple-group2-text",
+            "name": "Field inside group two",
+            "required": false,
+            "readOnly": true,
+            "visible": true
+          }
+        ],
+        "isExpanded": true,
+        "visible": true
+      }
+    ]
+  },
+  "state": "Success"
+}

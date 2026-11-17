@@ -1,0 +1,58 @@
+{
+  "result": {
+    "type": "Wizard",
+    "title": "",
+    "description": "Provide your personal information and submit for approval using the button below.",
+    "comment": {
+      "type": "Information",
+      "message": "Please change your personal details carefully."
+    },
+    "changesOnly": false,
+    "viewOnly": false,
+    "submitText": "Submit",
+    "steps": [
+      {
+        "step": "1. Step one",
+        "description": "Single step with one group and one field",
+        "visible": true,
+        "groups": [
+          {
+            "group": "Group one",
+            "description": "Contains one text field",
+            "items": [
+              {
+                "type": "Text",
+                "value": "",
+                "id": "wiz-text",
+                "name": "Wizard text field",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              }
+            ],
+            "isExpanded": true,
+            "visible": true
+          },
+          {
+            "group": "Group two",
+            "description": "Contains one text field",
+            "items": [
+              {
+                "type": "Text",
+                "value": "",
+                "id": "wiz-group2-text",
+                "name": "Wizard text field group two",
+                "required": false,
+                "readOnly": false,
+                "visible": true
+              }
+            ],
+            "isExpanded": true,
+            "visible": true
+          }
+        ]
+      }
+    ]
+  },
+  "state": "Success"
+}

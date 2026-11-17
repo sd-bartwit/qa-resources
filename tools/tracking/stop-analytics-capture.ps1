@@ -226,14 +226,22 @@ if ($LogFile) {
 $adbCmd = Get-Command adb -ErrorAction SilentlyContinue
 if ($adbCmd) { $adb = $adbCmd.Source }
 else {
-    $adb = Join-Path $env:LOCALAPPDATA 'Android\Sdk\platform-tools\adb.exe'
-    if (-not (Test-Path $adb)) { throw 'adb not found. Install Android platform-tools or add adb to PATH.' }
+    $sdkRoots = @($env:ANDROID_HOME, $env:ANDROID_SDK_ROOT, (Join-Path $env:LOCALAPPDATA 'Android\Sdk')) | Where-Object { $_ }
+    $adb = $sdkRoots | ForEach-Object { Join-Path $_ 'platform-tools\adb.exe' } | Where-Object { Test-Path $_ } | Select-Object -First 1
+    if (-not $adb) { throw 'adb not found. Install Android platform-tools or add adb to PATH.' }
 }
 
 $state = $null
 if (Test-Path $statePath) { $state = Get-Content $statePath -Raw | ConvertFrom-Json }
 if (-not $Serial -and $state -and $state.serial) { $Serial = $state.serial }
-$a = @(); if ($Serial) { $a = @('-s', $Serial) }
+if (-not $Serial) { $Serial = $env:ANDROID_SERIAL }
+if (-not $Serial) {
+    $serials = @(& $adb devices | Select-Object -Skip 1 | Where-Object { $_ -match '\sdevice$' } | ForEach-Object { ($_ -split '\s+')[0] })
+    if ($serials.Count -eq 0) { throw 'No authorised device connected.' }
+    if ($serials.Count -gt 1) { throw "Several devices connected ($($serials -join ', ')). Pass -Serial <id>." }
+    $Serial = $serials[0]
+}
+$a = @('-s', $Serial)
 
 # Stop the background logcat and save its output
 if ($state) {
@@ -241,7 +249,7 @@ if ($state) {
     Start-Sleep -Milliseconds 500
     if (Test-Path $tempLog) {
         New-Item -ItemType Directory -Force -Path $outDir | Out-Null
-        $dest = Join-Path $outDir ("analytics_{0}.log" -f (Get-Date -Format 'yyyyMMdd_HHmmss'))
+        $dest = Join-Path $outDir ("log_{0}.log" -f (Get-Date -Format 'yyyyMMdd_HHmmss'))
         Copy-Item $tempLog $dest
         Write-Host "Saved $dest"
     }

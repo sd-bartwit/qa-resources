@@ -11,14 +11,14 @@ cd "c:\Code files\QA Work\tools\tracking"
 .\stop-analytics-capture.ps1           # save log + disable everything
 ```
 
-The full raw log is saved to `output/tracking/logs_raw/analytics_<yyyyMMdd_HHmmss>.log` and a readable report to `output/tracking/reports/analytics_<yyyyMMdd_HHmmss>/` (see below). Paths in this document are relative to the `QA Work` folder unless they start with `.\`.
+The full raw log is saved to `output/tracking/logs_raw/log_<yyyyMMdd_HHmmss>.log` and a readable report to `output/tracking/reports/log_<yyyyMMdd_HHmmss>/` (see below). Paths in this document are relative to the `QA Work` folder unless they start with `.\`.
 
-Requirements: `adb` on PATH (or in `%LOCALAPPDATA%\Android\Sdk\platform-tools`), USB debugging on, one device connected (otherwise pass `-Serial <id>`).
+Requirements: `adb` on PATH (or under `ANDROID_HOME` / `ANDROID_SDK_ROOT` / `%LOCALAPPDATA%\Android\Sdk\platform-tools`), USB debugging on. With one device connected it is picked automatically; with several, pass `-Serial <id>` or set `ANDROID_SERIAL`. The device serial is saved at start, so stop targets the same device.
 
 ## What the scripts do
 
 **`start-analytics-capture.ps1`**
-Switches Firebase debug mode and verbose SDK logging on for the app, clears the device log so only new activity is recorded, and starts a background capture. Options: `-Package` (default `be.sdworx.sdwa.inhouse`), `-Serial`, `-RestartApp` (relaunches the app for you).
+Switches Firebase debug mode and verbose SDK logging on for the app, clears the device log so only new activity is recorded, and starts a background capture. Options: `-Package` (default `be.sdworx.sdwa.inhouse`), `-Serial`. The script never restarts or force-stops the app (force-stop clears the device's notifications); close and reopen the app yourself.
 
 **`stop-analytics-capture.ps1`**
 Stops the background capture, saves it to `output/tracking/logs_raw/` with a timestamp, switches all logging and debug mode off again, then analyses the log and prints a report. Option: `-LogFile <path>` analyses an existing raw log only (no device needed, nothing is stopped or disabled).
