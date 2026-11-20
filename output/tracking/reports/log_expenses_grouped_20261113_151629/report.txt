@@ -1,0 +1,147 @@
+﻿FIREBASE ANALYTICS CAPTURE REPORT
+============================================================
+Log file : log_expenses_grouped_20261113_151629.log
+Window   : 11-13 15:13:54.309 -> 11-13 15:16:19.813 (device time)
+App      : be.sdworx.sdwa.inhouse 5.5.0.1734904 | SM-G991B | Android 15
+Debug    : partial (46 of 79 events) - app was not restarted at the start
+
+RESULT
+------------------------------------------------------------
+Uploads  : 28 batch(es): 28 accepted, 0 FAILED, 0 without result
+Events   : 79 uploaded (33 app, 41 screen, 5 auto, 0 sdk-error)
+All good: every event was accepted by Firebase.
+
+EVENT SUMMARY
+------------------------------------------------------------
+Event                                Kind   Count Uploaded Failed Pending
+-----                                ----   ----- -------- ------ -------
+activate_biometric_auth_activate     App        1        1      0       0
+add_expense                          App        1        1      0       0
+auth_success                         App        3        3      0       0
+confirm_input                        App        3        3      0       0
+confirm_submit_confirmation_expenses App        1        1      0       0
+edit_expense                         App        1        1      0       0
+expense_detail_delete_tapped         App        2        2      0       0
+expense_detail_edit_tapped           App        1        1      0       0
+expense_detail_tapped                App        2        2      0       0
+expenses_overview_completed_tab_tap  App        5        5      0       0
+expenses_overview_open_tab_tap       App        1        1      0       0
+generic_picker_item_selected_single  App        1        1      0       0
+home_tile                            App        2        2      0       0
+landing_login                        App        3        3      0       0
+login_activate                       App        1        1      0       0
+login_activation_method              App        1        1      0       0
+submit_confirmation_expenses_tapped  App        1        1      0       0
+token_success                        App        3        3      0       0
+session_start                        Auto       1        1      0       0
+user_engagement                      Auto       4        4      0       0
+screen_view                          Screen    41       41      0       0
+
+SCREENS (in order)
+------------------------------------------------------------
+Time         Screen                                Details                                                                           Upload  
+----         ------                                -------                                                                           ------  
+14:50:24.260 landing                               from=approvals; manual_tracking=1                                                 OK (204)
+14:50:26.871 enter_pin                             from=landing; manual_tracking=1                                                   OK (204)
+14:50:29.009 landing                               from=enter_pin; manual_tracking=1                                                 OK (204)
+14:50:31.800 home                                  from=landing; manual_tracking=1                                                   OK (204)
+15:12:46.204 landing                               from=home; manual_tracking=1                                                      OK (204)
+15:12:51.267 enter_pin                             from=landing; manual_tracking=1                                                   OK (204)
+15:12:53.600 landing                               from=enter_pin; manual_tracking=1                                                 OK (204)
+15:12:56.194 home                                  from=landing; manual_tracking=1                                                   OK (204)
+15:12:57.460 debug_menu                            from=home; manual_tracking=1                                                      OK (204)
+15:12:59.635 authorization                         from=debug_menu; manual_tracking=1                                                OK (204)
+15:13:01.094 browser_login                         from=authorization; manual_tracking=1                                             OK (204)
+15:13:10.608 add_pin                               from=browser_login; manual_tracking=1                                             OK (204)
+15:13:20.548 activate_biometrics                   from=add_pin; manual_tracking=1                                                   OK (204)
+15:13:25.925 activation_your_privacy               from=activate_biometrics; manual_tracking=1                                       OK (204)
+15:13:27.190 home                                  from=activation_your_privacy; manual_tracking=1                                   OK (204)
+15:13:31.221 expenses_group_overview_open_tab      from=home; manual_tracking=1                                                      OK (204)
+15:13:57.310 loading                               manual_tracking=1                                                                 OK (204)
+15:13:58.070 landing                               from=loading; manual_tracking=1                                                   OK (204)
+15:13:59.867 enter_pin                             from=landing; manual_tracking=1                                                   OK (204)
+15:14:01.831 landing                               from=enter_pin; manual_tracking=1                                                 OK (204)
+15:14:04.121 home                                  from=landing; manual_tracking=1                                                   OK (204)
+15:14:06.410 expenses_group_overview_open_tab      from=home; manual_tracking=1                                                      OK (204)
+15:14:09.397 expense_detail                        from=expenses_group_overview_open_tab; manual_tracking=1; context=standalone      OK (204)
+15:14:14.299 init_add_edit_expense                 from=expense_detail; manual_tracking=1                                            OK (204)
+15:14:14.312 add_edit_expense                      from=init_add_edit_expense; manual_tracking=1                                     OK (204)
+15:14:24.618 expense_detail                        from=add_edit_expense; manual_tracking=1; context=standalone                      OK (204)
+15:14:33.097 delete_expense_dialog                 from=expense_detail; manual_tracking=1                                            OK (204)
+15:14:39.174 expense_detail                        from=delete_expense_dialog; manual_tracking=1; context=standalone                 OK (204)
+15:14:40.991 delete_expense_dialog                 from=expense_detail; manual_tracking=1                                            OK (204)
+15:14:46.340 expense_detail                        from=delete_expense_dialog; manual_tracking=1; context=standalone                 OK (204)
+15:14:46.925 expenses_group_overview_open_tab      from=expense_detail; manual_tracking=1                                            OK (204)
+15:15:06.100 expenses_group_overview_completed_tab from=expenses_group_overview_open_tab; manual_tracking=1                          OK (204)
+15:15:17.609 expense_detail                        from=expenses_group_overview_completed_tab; manual_tracking=1; context=standalone OK (204)
+15:15:25.193 expenses_group_overview_completed_tab from=expense_detail; manual_tracking=1                                            OK (204)
+15:15:29.229 init_add_edit_expense                 from=expenses_group_overview_completed_tab; manual_tracking=1                     OK (204)
+15:15:29.247 choose_category_expense_no_transition from=init_add_edit_expense; manual_tracking=1                                     OK (204)
+15:15:31.806 add_edit_expense                      from=choose_category_expense_no_transition; manual_tracking=1                     OK (204)
+15:15:46.407 expenses_group_overview_completed_tab from=add_edit_expense; manual_tracking=1                                          OK (204)
+15:15:59.611 expenses_group_overview_open_tab      from=expenses_group_overview_completed_tab; manual_tracking=1                     OK (204)
+15:16:06.720 expenses_confirm_submit               from=expenses_group_overview_open_tab; manual_tracking=1                          OK (204)
+15:16:14.689 expenses_group_overview_open_tab      from=expenses_confirm_submit; manual_tracking=1                                   OK (204)
+
+APP EVENTS (in order; auto events omitted, see events.csv)
+------------------------------------------------------------
+Time         Event                                Screen                                Details                                      Upload  
+----         -----                                ------                                -------                                      ------  
+14:50:25.612 landing_login                        landing                               login_method=nextAuth                        OK (204)
+14:50:27.172 confirm_input                        enter_pin                                                                          OK (204)
+14:50:29.008 auth_success                         enter_pin                                                                          OK (204)
+14:50:29.857 token_success                        landing                                                                            OK (204)
+15:12:50.800 landing_login                        landing                               login_method=nextAuth                        OK (204)
+15:12:51.547 confirm_input                        enter_pin                                                                          OK (204)
+15:12:53.600 auth_success                         enter_pin                                                                          OK (204)
+15:12:54.356 token_success                        landing                                                                            OK (204)
+15:13:01.960 login_activate                       browser_login                                                                      OK (204)
+15:13:09.530 login_activation_method              browser_login                         activation_method=nextAuth                   OK (204)
+15:13:21.515 activate_biometric_auth_activate     activate_biometrics                   authentication_method=biometrics             OK (204)
+15:13:30.582 home_tile                            home                                  tile_type=expenses; endpoint=sdwa://expenses OK (204)
+15:13:59.424 landing_login                        landing                               login_method=nextAuth                        OK (204)
+15:14:00.143 confirm_input                        enter_pin                                                                          OK (204)
+15:14:01.831 auth_success                         enter_pin                                                                          OK (204)
+15:14:02.808 token_success                        landing                                                                            OK (204)
+15:14:05.557 home_tile                            home                                  tile_type=expenses; endpoint=sdwa://expenses OK (204)
+15:14:09.392 expense_detail_tapped                expenses_group_overview_open_tab      context=standalone                           OK (204)
+15:14:14.283 expense_detail_edit_tapped           expense_detail                        context=standalone                           OK (204)
+15:14:24.604 edit_expense                         add_edit_expense                      context=standalone                           OK (204)
+15:14:33.096 expense_detail_delete_tapped         expense_detail                        context=standalone                           OK (204)
+15:14:40.989 expense_detail_delete_tapped         expense_detail                        context=standalone                           OK (204)
+15:15:06.091 expenses_overview_completed_tab_tap  expenses_group_overview_open_tab                                                   OK (204)
+15:15:06.105 expenses_overview_completed_tab_tap  expenses_group_overview_completed_tab                                              OK (204)
+15:15:17.585 expense_detail_tapped                expenses_group_overview_completed_tab context=standalone                           OK (204)
+15:15:25.211 expenses_overview_completed_tab_tap  expenses_group_overview_completed_tab                                              OK (204)
+15:15:31.292 generic_picker_item_selected_single  choose_category_expense_no_transition type=choose_category_expense                 OK (204)
+15:15:46.343 add_expense                          add_edit_expense                      context=standalone                           OK (204)
+15:15:46.406 expenses_overview_completed_tab_tap  add_edit_expense                                                                   OK (204)
+15:15:59.611 expenses_overview_open_tab_tap       expenses_group_overview_completed_tab                                              OK (204)
+15:16:06.703 submit_confirmation_expenses_tapped  expenses_group_overview_open_tab                                                   OK (204)
+15:16:14.682 confirm_submit_confirmation_expenses expenses_confirm_submit                                                            OK (204)
+15:16:14.711 expenses_overview_completed_tab_tap  expenses_group_overview_open_tab                                                   OK (204)
+
+REJECTED BY THE SDK
+------------------------------------------------------------
+  (none)
+
+OTHER SDK ERRORS / WARNINGS
+------------------------------------------------------------
+  (none)
+
+USER PROPERTIES SET BY THE APP
+------------------------------------------------------------
+Name                Value             Times
+----                -----             -----
+accessibility_specs 1:0,8:0,10:0,13:0     1
+module_absences     false                 3
+module_approvals    false                 3
+module_expenses     none                  3
+module_newsfeed     false                 3
+module_overtime     none                  3
+module_salary       none                  3
+online              true                  1
+pixel_ratio         3.00                  1
+text_scale_factor   1.0                   1
+viewport_size       360 x 800             1
+

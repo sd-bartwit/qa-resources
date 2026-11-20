@@ -1,0 +1,107 @@
+﻿FIREBASE ANALYTICS CAPTURE REPORT
+============================================================
+Log file : log_profile_settings_20261111_162442.log
+Window   : 11-11 16:24:04.663 -> 11-11 16:24:39.801 (device time)
+App      : be.sdworx.sdwa.inhouse 5.5.0.1729823 | SM-G991B | Android 15
+Debug    : partial (37 of 44 events) - app was not restarted at the start
+
+RESULT
+------------------------------------------------------------
+Uploads  : 18 batch(es): 18 accepted, 0 FAILED, 0 without result
+Events   : 44 uploaded (26 app, 17 screen, 1 auto, 0 sdk-error)
+All good: every event was accepted by Firebase.
+
+EVENT SUMMARY
+------------------------------------------------------------
+Event                            Kind   Count Uploaded Failed Pending
+-----                            ----   ----- -------- ------ -------
+activate_biometric_auth_activate App        1        1      0       0
+analytics_permission_confirm     App        1        1      0       0
+auth_success                     App        1        1      0       0
+confirm_input                    App        1        1      0       0
+home_open_settings               App        1        1      0       0
+landing_login                    App        1        1      0       0
+screenview                       App       16       16      0       0
+settings_account_tapped          App        1        1      0       0
+settings_my_profile_viewed       App        1        1      0       0
+settings_privacy_settings_opened App        1        1      0       0
+token_success                    App        1        1      0       0
+user_engagement                  Auto       1        1      0       0
+screen_view                      Screen    17       17      0       0
+
+SCREENS (in order)
+------------------------------------------------------------
+Time         Screen                  Details                      Upload  
+----         ------                  -------                      ------  
+16:23:32.791 activate_biometric_auth from=add_pin                 OK (204)
+16:23:35.852 activate_biometric_auth from=activate_biometric_auth OK (204)
+16:23:42.409 home                    from=activate_biometric_auth OK (204)
+16:24:07.783                                                      OK (204)
+16:24:08.162 loading                                              OK (204)
+16:24:08.979 landing                 from=loading                 OK (204)
+16:24:11.767 enter_pin               from=landing                 OK (204)
+16:24:13.069 enter_pin               from=enter_pin               OK (204)
+16:24:13.877 landing                 from=enter_pin               OK (204)
+16:24:15.670 home                    from=landing                 OK (204)
+16:24:17.885 settings_overview       from=home                    OK (204)
+16:24:19.183 settings_overview       from=settings_overview       OK (204)
+16:24:24.531 settings_overview       from=settings_overview       OK (204)
+16:24:26.362 privacy_settings        from=settings_overview       OK (204)
+16:24:30.791 settings_overview       from=privacy_settings        OK (204)
+16:24:32.916 settings_overview       from=settings_overview       OK (204)
+16:24:34.019 home                    from=settings_overview       OK (204)
+
+APP EVENTS (in order; auto events omitted, see events.csv)
+------------------------------------------------------------
+Time         Event                            Screen                  Details                            Upload  
+----         -----                            ------                  -------                            ------  
+16:23:32.796 screenview                       activate_biometric_auth screenname=activate_biometric_auth OK (204)
+16:23:33.823 activate_biometric_auth_activate activate_biometric_auth authentication_method=biometrics   OK (204)
+16:23:35.853 screenview                       activate_biometric_auth screenname=activate_biometric_auth OK (204)
+16:23:42.409 screenview                       activate_biometric_auth screenname=home                    OK (204)
+16:24:08.163 screenview                       loading                 screenname=loading                 OK (204)
+16:24:08.981 screenview                       landing                 screenname=landing                 OK (204)
+16:24:11.278 landing_login                    landing                 login_method=nextAuth              OK (204)
+16:24:11.768 screenview                       enter_pin               screenname=enter_pin               OK (204)
+16:24:12.056 confirm_input                    enter_pin                                                  OK (204)
+16:24:13.068 screenview                       enter_pin               screenname=enter_pin               OK (204)
+16:24:13.876 screenview                       enter_pin               screenname=landing                 OK (204)
+16:24:13.876 auth_success                     enter_pin                                                  OK (204)
+16:24:14.716 token_success                    landing                                                    OK (204)
+16:24:15.670 screenview                       home                    screenname=home                    OK (204)
+16:24:17.862 home_open_settings               home                                                       OK (204)
+16:24:17.884 screenview                       home                    screenname=settings_overview       OK (204)
+16:24:19.167 settings_account_tapped          settings_overview                                          OK (204)
+16:24:19.184 screenview                       settings_overview       screenname=settings_overview       OK (204)
+16:24:20.154 settings_my_profile_viewed       settings_overview                                          OK (204)
+16:24:24.531 screenview                       settings_overview       screenname=settings_overview       OK (204)
+16:24:26.337 settings_privacy_settings_opened settings_overview                                          OK (204)
+16:24:26.363 screenview                       privacy_settings        screenname=privacy_settings        OK (204)
+16:24:30.789 analytics_permission_confirm     privacy_settings        functional_data_enabled=false      OK (204)
+16:24:30.794 screenview                       settings_overview       screenname=settings_overview       OK (204)
+16:24:32.918 screenview                       settings_overview       screenname=settings_overview       OK (204)
+16:24:34.020 screenview                       home                    screenname=home                    OK (204)
+
+REJECTED BY THE SDK
+------------------------------------------------------------
+  (none)
+
+OTHER SDK ERRORS / WARNINGS
+------------------------------------------------------------
+  (none)
+
+USER PROPERTIES SET BY THE APP
+------------------------------------------------------------
+Name                Value             Times
+----                -----             -----
+accessibility_specs 1:0,8:0,10:0,13:0     1
+module_absences     false                 6
+module_approvals    false                 6
+module_expenses     none                  6
+module_newsfeed     false                 6
+module_salary       none                  6
+online              true                  1
+pixel_ratio         3.00                  1
+text_scale_factor   1.0                   1
+viewport_size       360 x 800             1
+

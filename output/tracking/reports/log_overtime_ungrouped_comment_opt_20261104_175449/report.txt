@@ -1,6 +1,6 @@
 ﻿FIREBASE ANALYTICS CAPTURE REPORT
 ============================================================
-Log file : analytics_20261104_175449.log
+Log file : log_overtime_ungrouped_comment_opt_20261104_175449.log
 Window   : 11-04 17:52:31.034 -> 11-04 17:54:36.949 (device time)
 App      : be.sdworx.sdwa.inhouse 5.5.0.1717494 | SM-G991B | Android 15
 Debug    : partial (50 of 337 events) - app was not restarted at the start
