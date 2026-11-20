@@ -12,15 +12,23 @@
  *   node tools/device/claims-helper.js tap "<label part>" # tap first element whose content-desc contains the text
  *   node tools/device/claims-helper.js shot <name>        # save a screenshot PNG (output/device/)
  *
- * Env: DEVICE_UDID (required; set in .env, see .env.example).
+ * Env: DEVICE_UDID (optional; set in .env). Without it the single device from `adb devices` is used.
  */
 const { remote } = require('webdriverio');
+const { execFileSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 require('../load-env');
 
-const UDID = process.env.DEVICE_UDID;
-if (!UDID) throw new Error('Set DEVICE_UDID in .env (see adb devices)');
+function resolveUdid() {
+  if (process.env.DEVICE_UDID) return process.env.DEVICE_UDID;
+  const out = execFileSync('adb', ['devices'], { encoding: 'utf8' });
+  const ids = out.split(/\r?\n/).slice(1).map(l => l.trim().split(/\s+/)).filter(p => p[1] === 'device').map(p => p[0]);
+  if (ids.length === 1) return ids[0];
+  throw new Error(ids.length ? `Several devices connected (${ids.join(', ')}); set DEVICE_UDID in .env` : 'No authorised device connected');
+}
+
+const UDID = resolveUdid();
 const OUT = path.join(__dirname, '..', '..', 'output', 'device');
 fs.mkdirSync(OUT, { recursive: true });
 

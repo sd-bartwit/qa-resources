@@ -1,0 +1,100 @@
+﻿11-16 15:59:02.233 V/FA-SVC  ( 3610): Logging event: origin=app,name=pending_approvals_absences_screen,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=approvals, ga_screen_id(_si)=6341364949491676955, ga_screen(_sn)=approvals}]
+11-16 15:59:02.255 V/FA-SVC  ( 3610): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=14310, ga_previous_class(_pc)=approvals, ga_previous_id(_pi)=6341364949491676955, ga_previous_screen(_pn)=approvals, ga_screen_class(_sc)=absence_approvals, ga_screen_id(_si)=6341364949491676956, ga_screen(_sn)=absence_approvals, manual_tracking(_mst)=1}]
+11-16 15:59:02.755 V/FA-SVC  ( 3610): Setting user property: non_personalized_ads(_npa), 1
+11-16 15:59:02.774 V/FA-SVC  ( 3610): Setting user property: non_personalized_ads(_npa), 1
+11-16 15:59:02.785 V/FA-SVC  ( 3610): Setting user property: non_personalized_ads(_npa), 1
+11-16 15:59:02.793 V/FA-SVC  ( 3610): Setting user property: non_personalized_ads(_npa), 1
+11-16 15:59:02.812 V/FA-SVC  ( 3610): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 38823, 
+11-16 15:59:02.933 V/FA-SVC  ( 3610): Network upload successful with code, uploadAttempted: 204, true
+11-16 15:59:02.935 V/FA-SVC  ( 3610): Successful upload. Got network response. code, size: 204, 0
+11-16 15:59:04.540 V/FA-SVC  ( 3610): Logging event: origin=app,name=absence_appr_overview_bulk_select,params=Bundle[{selection=select, ga_event_origin(_o)=app, ga_screen_class(_sc)=absence_approvals, ga_screen_id(_si)=6341364949491676956, ga_screen(_sn)=absence_approvals}]
+11-16 15:59:05.067 V/FA-SVC  ( 3610): Setting user property: non_personalized_ads(_npa), 1
+11-16 15:59:05.079 V/FA-SVC  ( 3610): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1166, 
+11-16 15:59:05.133 V/FA-SVC  ( 3610): Network upload successful with code, uploadAttempted: 204, true
+11-16 15:59:05.139 V/FA-SVC  ( 3610): Successful upload. Got network response. code, size: 204, 0
+11-16 15:59:05.415 V/FA-SVC  ( 3610): Logging event: origin=app,name=absence_appr_overview_bulk_select,params=Bundle[{selection=select_all, ga_event_origin(_o)=app, ga_screen_class(_sc)=absence_approvals, ga_screen_id(_si)=6341364949491676956, ga_screen(_sn)=absence_approvals}]
+11-16 15:59:06.145 V/FA-SVC  ( 3610): Setting user property: non_personalized_ads(_npa), 1
+11-16 15:59:06.166 V/FA-SVC  ( 3610): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1175, 
+11-16 15:59:06.232 V/FA-SVC  ( 3610): Network upload successful with code, uploadAttempted: 204, true
+11-16 15:59:06.238 V/FA-SVC  ( 3610): Successful upload. Got network response. code, size: 204, 0
+11-16 15:59:08.066 V/FA-SVC  ( 3610): Logging event: origin=app,name=absence_appr_overview_bulk_select,params=Bundle[{selection=select_all, ga_event_origin(_o)=app, ga_screen_class(_sc)=absence_approvals, ga_screen_id(_si)=6341364949491676956, ga_screen(_sn)=absence_approvals}]
+11-16 15:59:08.592 V/FA-SVC  ( 3610): Setting user property: non_personalized_ads(_npa), 1
+11-16 15:59:08.616 V/FA-SVC  ( 3610): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1175, 
+11-16 15:59:08.672 V/FA-SVC  ( 3610): Network upload successful with code, uploadAttempted: 204, true
+11-16 15:59:08.679 V/FA-SVC  ( 3610): Successful upload. Got network response. code, size: 204, 0
+11-16 15:59:09.128 V/FA-SVC  ( 3610): Logging event: origin=app,name=absence_appr_overview_bulk_select,params=Bundle[{selection=deselect_all, ga_event_origin(_o)=app, ga_screen_class(_sc)=absence_approvals, ga_screen_id(_si)=6341364949491676956, ga_screen(_sn)=absence_approvals}]
+11-16 15:59:09.686 V/FA-SVC  ( 3610): Setting user property: non_personalized_ads(_npa), 1
+11-16 15:59:09.705 V/FA-SVC  ( 3610): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1177, 
+11-16 15:59:09.757 V/FA-SVC  ( 3610): Network upload successful with code, uploadAttempted: 204, true
+11-16 15:59:09.764 V/FA-SVC  ( 3610): Successful upload. Got network response. code, size: 204, 0
+11-16 15:59:10.832 V/FA-SVC  ( 3610): Logging event: origin=app,name=absence_appr_overview_bulk_select,params=Bundle[{selection=select, ga_event_origin(_o)=app, ga_screen_class(_sc)=absence_approvals, ga_screen_id(_si)=6341364949491676956, ga_screen(_sn)=absence_approvals}]
+11-16 15:59:11.351 V/FA-SVC  ( 3610): Setting user property: non_personalized_ads(_npa), 1
+11-16 15:59:11.370 V/FA-SVC  ( 3610): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1171, 
+11-16 15:59:11.429 V/FA-SVC  ( 3610): Network upload successful with code, uploadAttempted: 204, true
+11-16 15:59:11.436 V/FA-SVC  ( 3610): Successful upload. Got network response. code, size: 204, 0
+11-16 15:59:12.408 V/FA-SVC  ( 3610): Logging event: origin=app,name=absence_appr_overview_bulk_select,params=Bundle[{selection=select, ga_event_origin(_o)=app, ga_screen_class(_sc)=absence_approvals, ga_screen_id(_si)=6341364949491676956, ga_screen(_sn)=absence_approvals}]
+11-16 15:59:12.443 V/FA-SVC  ( 3610): Setting user property: non_personalized_ads(_npa), 1
+11-16 15:59:12.454 V/FA-SVC  ( 3610): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1171, 
+11-16 15:59:12.511 V/FA-SVC  ( 3610): Network upload successful with code, uploadAttempted: 204, true
+11-16 15:59:12.513 V/FA-SVC  ( 3610): Successful upload. Got network response. code, size: 204, 0
+11-16 15:59:13.741 V/FA-SVC  ( 3610): Logging event: origin=app,name=absence_appr_overview_bulk_select,params=Bundle[{selection=select_all, ga_event_origin(_o)=app, ga_screen_class(_sc)=absence_approvals, ga_screen_id(_si)=6341364949491676956, ga_screen(_sn)=absence_approvals}]
+11-16 15:59:14.265 V/FA-SVC  ( 3610): Setting user property: non_personalized_ads(_npa), 1
+11-16 15:59:14.280 V/FA-SVC  ( 3610): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1175, 
+11-16 15:59:14.332 V/FA-SVC  ( 3610): Network upload successful with code, uploadAttempted: 204, true
+11-16 15:59:14.339 V/FA-SVC  ( 3610): Successful upload. Got network response. code, size: 204, 0
+11-16 15:59:15.787 V/FA-SVC  ( 3610): Logging event: origin=app,name=absence_appr_overview_bulk_select,params=Bundle[{selection=deselect_all, ga_event_origin(_o)=app, ga_screen_class(_sc)=absence_approvals, ga_screen_id(_si)=6341364949491676956, ga_screen(_sn)=absence_approvals}]
+11-16 15:59:16.308 V/FA-SVC  ( 3610): Setting user property: non_personalized_ads(_npa), 1
+11-16 15:59:16.330 V/FA-SVC  ( 3610): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1177, 
+11-16 15:59:16.405 V/FA-SVC  ( 3610): Network upload successful with code, uploadAttempted: 204, true
+11-16 15:59:16.409 V/FA-SVC  ( 3610): Successful upload. Got network response. code, size: 204, 0
+11-16 15:59:17.348 V/FA-SVC  ( 3610): Logging event: origin=app,name=absence_appr_overview_bulk_select,params=Bundle[{selection=select, ga_event_origin(_o)=app, ga_screen_class(_sc)=absence_approvals, ga_screen_id(_si)=6341364949491676956, ga_screen(_sn)=absence_approvals}]
+11-16 15:59:17.430 V/FA-SVC  ( 3610): Setting user property: non_personalized_ads(_npa), 1
+11-16 15:59:17.482 V/FA-SVC  ( 3610): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1171, 
+11-16 15:59:17.554 V/FA-SVC  ( 3610): Network upload successful with code, uploadAttempted: 204, true
+11-16 15:59:17.561 V/FA-SVC  ( 3610): Successful upload. Got network response. code, size: 204, 0
+11-16 15:59:20.046 V/FA-SVC  ( 3610): Logging event: origin=app,name=absence_appr_overview_bulk_select,params=Bundle[{selection=select, ga_event_origin(_o)=app, ga_screen_class(_sc)=absence_approvals, ga_screen_id(_si)=6341364949491676956, ga_screen(_sn)=absence_approvals}]
+11-16 15:59:20.561 V/FA-SVC  ( 3610): Setting user property: non_personalized_ads(_npa), 1
+11-16 15:59:20.575 V/FA-SVC  ( 3610): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1171, 
+11-16 15:59:20.638 V/FA-SVC  ( 3610): Network upload successful with code, uploadAttempted: 204, true
+11-16 15:59:20.643 V/FA-SVC  ( 3610): Successful upload. Got network response. code, size: 204, 0
+11-16 15:59:22.059 V/FA-SVC  ( 3610): Logging event: origin=app,name=absence_appr_overview_bulk_select,params=Bundle[{selection=select, ga_event_origin(_o)=app, ga_screen_class(_sc)=absence_approvals, ga_screen_id(_si)=6341364949491676956, ga_screen(_sn)=absence_approvals}]
+11-16 15:59:22.574 V/FA-SVC  ( 3610): Setting user property: non_personalized_ads(_npa), 1
+11-16 15:59:22.586 V/FA-SVC  ( 3610): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1171, 
+11-16 15:59:22.640 V/FA-SVC  ( 3610): Network upload successful with code, uploadAttempted: 204, true
+11-16 15:59:22.645 V/FA-SVC  ( 3610): Successful upload. Got network response. code, size: 204, 0
+11-16 15:59:23.602 V/FA-SVC  ( 3610): Logging event: origin=app,name=absence_appr_overview_bulk_select,params=Bundle[{selection=select, ga_event_origin(_o)=app, ga_screen_class(_sc)=absence_approvals, ga_screen_id(_si)=6341364949491676956, ga_screen(_sn)=absence_approvals}]
+11-16 15:59:23.702 V/FA-SVC  ( 3610): Setting user property: non_personalized_ads(_npa), 1
+11-16 15:59:23.729 V/FA-SVC  ( 3610): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1171, 
+11-16 15:59:23.784 V/FA-SVC  ( 3610): Network upload successful with code, uploadAttempted: 204, true
+11-16 15:59:23.787 V/FA-SVC  ( 3610): Successful upload. Got network response. code, size: 204, 0
+11-16 15:59:27.979 V/FA-SVC  ( 3610): Logging event: origin=app,name=absence_appr_overview_bulk_approve,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=absence_approvals, ga_screen_id(_si)=6341364949491676956, ga_screen(_sn)=absence_approvals, count=3}]
+11-16 15:59:28.501 V/FA-SVC  ( 3610): Setting user property: non_personalized_ads(_npa), 1
+11-16 15:59:28.513 V/FA-SVC  ( 3610): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1158, 
+11-16 15:59:28.569 V/FA-SVC  ( 3610): Network upload successful with code, uploadAttempted: 204, true
+11-16 15:59:28.573 V/FA-SVC  ( 3610): Successful upload. Got network response. code, size: 204, 0
+11-16 15:59:29.972 V/FA-SVC  ( 3610): Logging event: origin=app,name=absence_appr_overview_bulk_select,params=Bundle[{selection=select, ga_event_origin(_o)=app, ga_screen_class(_sc)=absence_approvals, ga_screen_id(_si)=6341364949491676956, ga_screen(_sn)=absence_approvals}]
+11-16 15:59:30.488 V/FA-SVC  ( 3610): Setting user property: non_personalized_ads(_npa), 1
+11-16 15:59:30.504 V/FA-SVC  ( 3610): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1171, 
+11-16 15:59:30.567 V/FA-SVC  ( 3610): Network upload successful with code, uploadAttempted: 204, true
+11-16 15:59:30.571 V/FA-SVC  ( 3610): Successful upload. Got network response. code, size: 204, 0
+11-16 15:59:30.706 V/FA-SVC  ( 3610): Logging event: origin=app,name=absence_appr_overview_bulk_select,params=Bundle[{selection=select, ga_event_origin(_o)=app, ga_screen_class(_sc)=absence_approvals, ga_screen_id(_si)=6341364949491676956, ga_screen(_sn)=absence_approvals}]
+11-16 15:59:31.586 V/FA-SVC  ( 3610): Setting user property: non_personalized_ads(_npa), 1
+11-16 15:59:31.607 V/FA-SVC  ( 3610): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1171, 
+11-16 15:59:31.653 V/FA-SVC  ( 3610): Network upload successful with code, uploadAttempted: 204, true
+11-16 15:59:31.660 V/FA-SVC  ( 3610): Successful upload. Got network response. code, size: 204, 0
+11-16 15:59:32.282 V/FA-SVC  ( 3610): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=30061, ga_previous_class(_pc)=absence_approvals, ga_previous_id(_pi)=6341364949491676956, ga_previous_screen(_pn)=absence_approvals, ga_screen_class(_sc)=reject_absence_reason, ga_screen_id(_si)=6341364949491676957, ga_screen(_sn)=reject_absence_reason, manual_tracking(_mst)=1}]
+11-16 15:59:32.670 V/FA-SVC  ( 3610): Setting user property: non_personalized_ads(_npa), 1
+11-16 15:59:32.686 V/FA-SVC  ( 3610): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1225, 
+11-16 15:59:32.725 V/FA-SVC  ( 3610): Network upload successful with code, uploadAttempted: 204, true
+11-16 15:59:32.729 V/FA-SVC  ( 3610): Successful upload. Got network response. code, size: 204, 0
+11-16 15:59:39.929 V/FA-SVC  ( 3610): Logging event: origin=app,name=absence_appr_rejection_reject,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=reject_absence_reason, ga_screen_id(_si)=6341364949491676957, ga_screen(_sn)=reject_absence_reason}]
+11-16 15:59:40.482 V/FA-SVC  ( 3610): Setting user property: non_personalized_ads(_npa), 1
+11-16 15:59:40.521 V/FA-SVC  ( 3610): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1149, 
+11-16 15:59:40.581 V/FA-SVC  ( 3610): Network upload successful with code, uploadAttempted: 204, true
+11-16 15:59:40.590 V/FA-SVC  ( 3610): Successful upload. Got network response. code, size: 204, 0
+11-16 15:59:41.526 V/FA-SVC  ( 3610): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=9237, ga_previous_class(_pc)=reject_absence_reason, ga_previous_id(_pi)=6341364949491676957, ga_previous_screen(_pn)=reject_absence_reason, ga_screen_class(_sc)=absence_approvals, ga_screen_id(_si)=6341364949491676958, ga_screen(_sn)=absence_approvals, manual_tracking(_mst)=1}]
+11-16 15:59:41.554 V/FA-SVC  ( 3610): Logging event: origin=app,name=absence_appr_overview_bulk_reject,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=absence_approvals, ga_screen_id(_si)=6341364949491676958, ga_screen(_sn)=absence_approvals, count=2}]
+11-16 15:59:41.605 V/FA-SVC  ( 3610): Setting user property: non_personalized_ads(_npa), 1
+11-16 15:59:41.632 V/FA-SVC  ( 3610): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1383, 
+11-16 15:59:41.682 V/FA-SVC  ( 3610): Network upload successful with code, uploadAttempted: 204, true
+11-16 15:59:41.685 V/FA-SVC  ( 3610): Successful upload. Got network response. code, size: 204, 0

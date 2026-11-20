@@ -4,15 +4,13 @@
 .PARAMETER Package
     App id to put into Firebase debug mode.
 .PARAMETER Serial
-    Device serial (adb devices). Required only when several devices are connected.
-.PARAMETER RestartApp
-    Force-stops and relaunches the app so debug mode applies immediately.
+    Device serial (adb devices). Defaults to $env:ANDROID_SERIAL, or the only connected device.
+    Required only when several devices are connected.
 #>
 [CmdletBinding()]
 param(
     [string]$Package = 'be.sdworx.sdwa.inhouse',
-    [string]$Serial,
-    [switch]$RestartApp
+    [string]$Serial
 )
 
 $ErrorActionPreference = 'Stop'
@@ -25,14 +23,21 @@ $errLog    = Join-Path $stateDir 'logcat.err'
 $adbCmd = Get-Command adb -ErrorAction SilentlyContinue
 if ($adbCmd) { $adb = $adbCmd.Source }
 else {
-    $adb = Join-Path $env:LOCALAPPDATA 'Android\Sdk\platform-tools\adb.exe'
-    if (-not (Test-Path $adb)) { throw 'adb not found. Install Android platform-tools or add adb to PATH.' }
+    $sdkRoots = @($env:ANDROID_HOME, $env:ANDROID_SDK_ROOT, (Join-Path $env:LOCALAPPDATA 'Android\Sdk')) | Where-Object { $_ }
+    $adb = $sdkRoots | ForEach-Object { Join-Path $_ 'platform-tools\adb.exe' } | Where-Object { Test-Path $_ } | Select-Object -First 1
+    if (-not $adb) { throw 'adb not found. Install Android platform-tools or add adb to PATH.' }
 }
 
 $devices = @(& $adb devices | Select-Object -Skip 1 | Where-Object { $_ -match '\sdevice$' })
 if ($devices.Count -eq 0) { throw 'No authorised device connected.' }
-if (-not $Serial -and $devices.Count -gt 1) { throw 'Several devices connected. Pass -Serial <id>.' }
-$a = @(); if ($Serial) { $a = @('-s', $Serial) }
+$serials = @($devices | ForEach-Object { ($_ -split '\s+')[0] })
+if (-not $Serial) { $Serial = $env:ANDROID_SERIAL }
+if (-not $Serial) {
+    if ($serials.Count -gt 1) { throw "Several devices connected ($($serials -join ', ')). Pass -Serial <id>." }
+    $Serial = $serials[0]
+}
+elseif ($serials -notcontains $Serial) { throw "Device '$Serial' is not connected or not authorised (connected: $($serials -join ', '))." }
+$a = @('-s', $Serial)
 
 New-Item -ItemType Directory -Force -Path $stateDir | Out-Null
 
@@ -60,13 +65,6 @@ $proc = Start-Process -FilePath $adb `
     startedAt = (Get-Date).ToString('s')
 } | ConvertTo-Json | Set-Content $statePath
 
-if ($RestartApp) {
-    & $adb @a shell am force-stop $Package
-    & $adb @a shell monkey -p $Package -c android.intent.category.LAUNCHER 1 | Out-Null
-}
-
 Write-Host "Capture started for $Package (logcat pid $($proc.Id))."
-if (-not $RestartApp) {
-    Write-Host 'Fully close and reopen the app now - debug mode is only read at app start.'
-}
+Write-Host 'Close the app from the recents screen and reopen it now - debug mode is only read at app start.'
 Write-Host 'When finished run: .\stop-analytics-capture.ps1'
