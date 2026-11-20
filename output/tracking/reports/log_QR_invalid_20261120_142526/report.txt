@@ -1,0 +1,85 @@
+﻿FIREBASE ANALYTICS CAPTURE REPORT
+============================================================
+Log file : log_QR_invalid_20261120_142526.log
+Window   : 11-20 14:25:12.190 -> 11-20 14:25:21.161 (device time)
+App      : be.sdworx.sdwa.inhouse 5.5.0.1746822 | SM-G991B | Android 15
+Debug    : partial (7 of 36 events) - app was not restarted at the start
+
+RESULT
+------------------------------------------------------------
+Uploads  : 3 batch(es): 3 accepted, 0 FAILED, 0 without result
+Events   : 36 uploaded (13 app, 22 screen, 1 auto, 0 sdk-error)
+All good: every event was accepted by Firebase.
+
+EVENT SUMMARY
+------------------------------------------------------------
+Event                                    Kind   Count Uploaded Failed Pending
+-----                                    ----   ----- -------- ------ -------
+activate_biometric_auth_activate         App        1        1      0       0
+activation_enabling_notifications_tapped App        1        1      0       0
+home_weblogin                            App        1        1      0       0
+login_activate                           App        1        1      0       0
+login_activation_method                  App        1        1      0       0
+onboarding_new_finish_tapped             App        1        1      0       0
+onboarding_next_tapped                   App        1        1      0       0
+qr_scan_invalid_code                     App        6        6      0       0
+user_engagement                          Auto       1        1      0       0
+screen_view                              Screen    22       22      0       0
+
+SCREENS (in order)
+------------------------------------------------------------
+Time         Screen                  Details                                         Upload  
+----         ------                  -------                                         ------  
+14:23:43.969 environment_picker      manual_tracking=1                               OK (204)
+14:23:51.917 loading                 from=environment_picker; manual_tracking=1      OK (204)
+14:23:52.632 onboarding              from=loading; manual_tracking=1                 OK (204)
+14:23:54.792 browser_login           from=onboarding; manual_tracking=1              OK (204)
+14:24:12.049 add_pin                 from=browser_login; manual_tracking=1           OK (204)
+14:24:17.167 activate_biometrics     from=add_pin; manual_tracking=1                 OK (204)
+14:24:22.052 notification_permission from=activate_biometrics; manual_tracking=1     OK (204)
+14:24:26.088 activation_your_privacy from=notification_permission; manual_tracking=1 OK (204)
+14:24:27.158 home                    from=activation_your_privacy; manual_tracking=1 OK (204)
+14:24:34.793 qr_scanner              from=home; manual_tracking=1                    OK (204)
+14:24:40.309 dialog                  from=qr_scanner; manual_tracking=1              OK (204)
+14:24:47.474 qr_scanner              from=dialog; manual_tracking=1                  OK (204)
+14:24:47.578 dialog                  from=qr_scanner; manual_tracking=1              OK (204)
+14:24:50.001 qr_scanner              from=dialog; manual_tracking=1                  OK (204)
+14:24:51.295 dialog                  from=qr_scanner; manual_tracking=1              OK (204)
+14:24:52.222 qr_scanner              from=dialog; manual_tracking=1                  OK (204)
+14:24:52.341 dialog                  from=qr_scanner; manual_tracking=1              OK (204)
+14:25:12.188 qr_scanner              from=dialog; manual_tracking=1                  OK (204)
+14:25:12.423 dialog                  from=qr_scanner; manual_tracking=1              OK (204)
+14:25:14.346 qr_scanner              from=dialog; manual_tracking=1                  OK (204)
+14:25:14.545 dialog                  from=qr_scanner; manual_tracking=1              OK (204)
+14:25:16.131 qr_scanner              from=dialog; manual_tracking=1                  OK (204)
+
+APP EVENTS (in order; auto events omitted, see events.csv)
+------------------------------------------------------------
+Time         Event                                    Screen                  Details                          Upload  
+----         -----                                    ------                  -------                          ------  
+14:23:53.732 onboarding_next_tapped                   onboarding                                               OK (204)
+14:23:54.746 onboarding_new_finish_tapped             onboarding                                               OK (204)
+14:23:55.908 login_activate                           browser_login                                            OK (204)
+14:24:11.057 login_activation_method                  browser_login           activation_method=nextAuth       OK (204)
+14:24:18.037 activate_biometric_auth_activate         activate_biometrics     authentication_method=biometrics OK (204)
+14:24:24.655 activation_enabling_notifications_tapped notification_permission                                  OK (204)
+14:24:34.781 home_weblogin                            home                                                     OK (204)
+14:24:40.309 qr_scan_invalid_code                     dialog                                                   OK (204)
+14:24:47.577 qr_scan_invalid_code                     qr_scanner                                               OK (204)
+14:24:51.296 qr_scan_invalid_code                     dialog                                                   OK (204)
+14:24:52.339 qr_scan_invalid_code                     qr_scanner                                               OK (204)
+14:25:12.423 qr_scan_invalid_code                     qr_scanner                                               OK (204)
+14:25:14.545 qr_scan_invalid_code                     qr_scanner                                               OK (204)
+
+REJECTED BY THE SDK
+------------------------------------------------------------
+  (none)
+
+OTHER SDK ERRORS / WARNINGS
+------------------------------------------------------------
+  (none)
+
+USER PROPERTIES SET BY THE APP
+------------------------------------------------------------
+  (none)
+

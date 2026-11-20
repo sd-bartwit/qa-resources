@@ -1,0 +1,111 @@
+﻿FIREBASE ANALYTICS CAPTURE REPORT
+============================================================
+Log file : log_expenses_ungrouped_20261113_153515.log
+Window   : 11-13 15:32:50.360 -> 11-13 15:34:38.012 (device time)
+App      : be.sdworx.sdwa.inhouse 5.5.0.1734904 | SM-G991B | Android 15
+Debug    : partial (43 of 45 events) - app was not restarted at the start
+
+RESULT
+------------------------------------------------------------
+Uploads  : 28 batch(es): 28 accepted, 0 FAILED, 0 without result
+Events   : 45 uploaded (16 app, 28 screen, 1 auto, 0 sdk-error)
+All good: every event was accepted by Firebase.
+
+EVENT SUMMARY
+------------------------------------------------------------
+Event                                   Kind   Count Uploaded Failed Pending
+-----                                   ----   ----- -------- ------ -------
+add_expense                             App        1        1      0       0
+auth_success                            App        1        1      0       0
+confirm_input                           App        1        1      0       0
+edit_expense                            App        1        1      0       0
+expense_detail_delete_tapped            App        2        2      0       0
+expense_detail_edit_tapped              App        1        1      0       0
+expense_detail_tapped                   App        3        3      0       0
+expenses_ungroup_overview_completed_tap App        1        1      0       0
+expenses_ungroup_overview_open_tab_tap  App        1        1      0       0
+generic_picker_item_selected_single     App        1        1      0       0
+home_tile                               App        1        1      0       0
+landing_login                           App        1        1      0       0
+token_success                           App        1        1      0       0
+user_engagement                         Auto       1        1      0       0
+screen_view                             Screen    28       28      0       0
+
+SCREENS (in order)
+------------------------------------------------------------
+Time         Screen                                  Details                                                                             Upload  
+----         ------                                  -------                                                                             ------  
+15:29:06.067 landing                                 from=expenses_group_overview_open_tab; manual_tracking=1                            OK (204)
+15:32:50.936 loading                                 manual_tracking=1                                                                   OK (204)
+15:32:51.774 landing                                 from=loading; manual_tracking=1                                                     OK (204)
+15:32:53.217 enter_pin                               from=landing; manual_tracking=1                                                     OK (204)
+15:32:55.239 landing                                 from=enter_pin; manual_tracking=1                                                   OK (204)
+15:32:57.983 home                                    from=landing; manual_tracking=1                                                     OK (204)
+15:33:00.895 expenses_ungroup_overview_open_tab      from=home; manual_tracking=1                                                        OK (204)
+15:33:11.052 expense_detail                          from=expenses_ungroup_overview_open_tab; manual_tracking=1; context=standalone      OK (204)
+15:33:19.261 expenses_ungroup_overview_open_tab      from=expense_detail; manual_tracking=1                                              OK (204)
+15:33:21.077 expenses_ungroup_overview_completed_tab from=expenses_ungroup_overview_open_tab; manual_tracking=1                          OK (204)
+15:33:23.126 expense_detail                          from=expenses_ungroup_overview_completed_tab; manual_tracking=1; context=standalone OK (204)
+15:33:31.643 expenses_ungroup_overview_completed_tab from=expense_detail; manual_tracking=1                                              OK (204)
+15:33:32.481 expenses_ungroup_overview_open_tab      from=expenses_ungroup_overview_completed_tab; manual_tracking=1                     OK (204)
+15:33:36.241 expenses_ungroup_rejected               from=expenses_ungroup_overview_open_tab; manual_tracking=1                          OK (204)
+15:33:40.016 expense_detail                          from=expenses_ungroup_rejected; manual_tracking=1; context=standalone               OK (204)
+15:33:50.426 init_add_edit_expense                   from=expense_detail; manual_tracking=1                                              OK (204)
+15:33:50.451 add_edit_expense                        from=init_add_edit_expense; manual_tracking=1                                       OK (204)
+15:34:02.304 expense_detail                          from=add_edit_expense; manual_tracking=1; context=standalone                        OK (204)
+15:34:10.283 delete_expense_dialog                   from=expense_detail; manual_tracking=1                                              OK (204)
+15:34:11.933 expense_detail                          from=delete_expense_dialog; manual_tracking=1; context=standalone                   OK (204)
+15:34:13.075 delete_expense_dialog                   from=expense_detail; manual_tracking=1                                              OK (204)
+15:34:14.027 expense_detail                          from=delete_expense_dialog; manual_tracking=1; context=standalone                   OK (204)
+15:34:14.845 expenses_ungroup_overview_open_tab      from=expense_detail; manual_tracking=1                                              OK (204)
+15:34:14.853 expenses_ungroup_rejected               from=expenses_ungroup_overview_open_tab; manual_tracking=1                          OK (204)
+15:34:25.288 init_add_edit_expense                   from=expenses_ungroup_rejected; manual_tracking=1                                   OK (204)
+15:34:25.309 choose_category_expense_no_transition   from=init_add_edit_expense; manual_tracking=1                                       OK (204)
+15:34:27.418 add_edit_expense                        from=choose_category_expense_no_transition; manual_tracking=1                       OK (204)
+15:34:32.953 expenses_ungroup_overview_open_tab      from=add_edit_expense; manual_tracking=1                                            OK (204)
+
+APP EVENTS (in order; auto events omitted, see events.csv)
+------------------------------------------------------------
+Time         Event                                   Screen                                  Details                                      Upload  
+----         -----                                   ------                                  -------                                      ------  
+15:32:52.817 landing_login                           landing                                 login_method=nextAuth                        OK (204)
+15:32:53.511 confirm_input                           enter_pin                                                                            OK (204)
+15:32:55.239 auth_success                            enter_pin                                                                            OK (204)
+15:32:56.075 token_success                           landing                                                                              OK (204)
+15:32:59.821 home_tile                               home                                    tile_type=expenses; endpoint=sdwa://expenses OK (204)
+15:33:11.039 expense_detail_tapped                   expenses_ungroup_overview_open_tab      context=standalone                           OK (204)
+15:33:21.071 expenses_ungroup_overview_completed_tap expenses_ungroup_overview_open_tab                                                   OK (204)
+15:33:23.120 expense_detail_tapped                   expenses_ungroup_overview_completed_tab context=standalone                           OK (204)
+15:33:32.482 expenses_ungroup_overview_open_tab_tap  expenses_ungroup_overview_open_tab                                                   OK (204)
+15:33:39.979 expense_detail_tapped                   expenses_ungroup_rejected               context=standalone                           OK (204)
+15:33:50.404 expense_detail_edit_tapped              expense_detail                          context=standalone                           OK (204)
+15:34:02.266 edit_expense                            add_edit_expense                        context=standalone                           OK (204)
+15:34:10.285 expense_detail_delete_tapped            delete_expense_dialog                   context=standalone                           OK (204)
+15:34:13.075 expense_detail_delete_tapped            expense_detail                          context=standalone                           OK (204)
+15:34:26.909 generic_picker_item_selected_single     choose_category_expense_no_transition   type=choose_category_expense                 OK (204)
+15:34:32.907 add_expense                             add_edit_expense                        context=standalone                           OK (204)
+
+REJECTED BY THE SDK
+------------------------------------------------------------
+  (none)
+
+OTHER SDK ERRORS / WARNINGS
+------------------------------------------------------------
+  (none)
+
+USER PROPERTIES SET BY THE APP
+------------------------------------------------------------
+Name                Value             Times
+----                -----             -----
+accessibility_specs 1:0,8:0,10:0,13:0     1
+module_absences     false                 3
+module_approvals    false                 3
+module_expenses     none                  3
+module_newsfeed     false                 3
+module_overtime     none                  3
+module_salary       none                  3
+online              true                  1
+pixel_ratio         3.00                  1
+text_scale_factor   1.0                   1
+viewport_size       360 x 800             1
+

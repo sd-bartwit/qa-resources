@@ -1,0 +1,184 @@
+﻿11-13 15:13:57.357 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=loading, ga_screen_id(_si)=-6804662522881592022, ga_screen(_sn)=loading, manual_tracking(_mst)=1}]
+11-13 15:13:57.526 V/FA-SVC  (28740): Setting user property: online, true
+11-13 15:13:57.634 V/FA-SVC  (28740): Setting user property: viewport_size, 360 x 800
+11-13 15:13:57.650 V/FA-SVC  (28740): Setting user property: text_scale_factor, 1.0
+11-13 15:13:57.658 V/FA-SVC  (28740): Setting user property: pixel_ratio, 3.00
+11-13 15:13:57.667 V/FA-SVC  (28740): Setting user property: accessibility_specs, 1:0,8:0,10:0,13:0
+11-13 15:13:57.872 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:13:57.880 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:13:57.888 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 11866, 
+11-13 15:13:57.991 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:13:57.992 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:13:58.096 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:13:58.103 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:13:58.108 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:13:58.111 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: dev.firebase.appdistribution, 1898, 
+11-13 15:13:58.115 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=1126, ga_previous_class(_pc)=loading, ga_previous_id(_pi)=-6804662522881592022, ga_previous_screen(_pn)=loading, ga_screen_class(_sc)=landing, ga_screen_id(_si)=-6804662522881592021, ga_screen(_sn)=landing, manual_tracking(_mst)=1}]
+11-13 15:13:58.208 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:13:58.211 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:13:58.218 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:13:58.227 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1054, 
+11-13 15:13:58.269 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:13:58.272 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:13:59.452 V/FA-SVC  (28740): Logging event: origin=app,name=landing_login,params=Bundle[{login_method=nextAuth, ga_event_origin(_o)=app, ga_screen_class(_sc)=landing, ga_screen_id(_si)=-6804662522881592021, ga_screen(_sn)=landing}]
+11-13 15:13:59.917 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=1797, ga_previous_class(_pc)=landing, ga_previous_id(_pi)=-6804662522881592021, ga_previous_screen(_pn)=landing, ga_screen_class(_sc)=enter_pin, ga_screen_id(_si)=-6804662522881592020, ga_screen(_sn)=enter_pin, manual_tracking(_mst)=1}]
+11-13 15:13:59.958 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:13:59.964 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1197, 
+11-13 15:14:00.008 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:14:00.012 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:14:00.167 V/FA-SVC  (28740): Logging event: origin=app,name=confirm_input,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=enter_pin, ga_screen_id(_si)=-6804662522881592020, ga_screen(_sn)=enter_pin}]
+11-13 15:14:01.041 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:14:01.055 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 990, 
+11-13 15:14:01.096 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:14:01.101 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:14:01.907 V/FA-SVC  (28740): Logging event: origin=app,name=auth_success,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=enter_pin, ga_screen_id(_si)=-6804662522881592020, ga_screen(_sn)=enter_pin}]
+11-13 15:14:01.945 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=1967, ga_previous_class(_pc)=enter_pin, ga_previous_id(_pi)=-6804662522881592020, ga_previous_screen(_pn)=enter_pin, ga_screen_class(_sc)=landing, ga_screen_id(_si)=-6804662522881592019, ga_screen(_sn)=landing, manual_tracking(_mst)=1}]
+11-13 15:14:01.970 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:14:01.976 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1173, 
+11-13 15:14:02.028 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:14:02.029 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:14:02.852 V/FA-SVC  (28740): Logging event: origin=app,name=token_success,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=landing, ga_screen_id(_si)=-6804662522881592019, ga_screen(_sn)=landing}]
+11-13 15:14:03.040 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:14:03.049 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 986, 
+11-13 15:14:03.108 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:14:03.112 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:14:04.185 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=2288, ga_previous_class(_pc)=landing, ga_previous_id(_pi)=-6804662522881592019, ga_previous_screen(_pn)=landing, ga_screen_class(_sc)=home, ga_screen_id(_si)=-6804662522881592018, ga_screen(_sn)=home, manual_tracking(_mst)=1}]
+11-13 15:14:04.338 V/FA-SVC  (28740): Setting user property: module_absences, false
+11-13 15:14:04.353 V/FA-SVC  (28740): Setting user property: module_approvals, false
+11-13 15:14:04.364 V/FA-SVC  (28740): Setting user property: module_expenses, none
+11-13 15:14:04.375 V/FA-SVC  (28740): Setting user property: module_newsfeed, false
+11-13 15:14:04.388 V/FA-SVC  (28740): Setting user property: module_overtime, none
+11-13 15:14:04.398 V/FA-SVC  (28740): Setting user property: module_salary, none
+11-13 15:14:04.499 V/FA-SVC  (28740): Setting user property: module_expenses, none
+11-13 15:14:04.508 V/FA-SVC  (28740): Setting user property: module_salary, none
+11-13 15:14:04.518 V/FA-SVC  (28740): Setting user property: module_overtime, none
+11-13 15:14:04.529 V/FA-SVC  (28740): Setting user property: module_newsfeed, false
+11-13 15:14:04.537 V/FA-SVC  (28740): Setting user property: module_absences, false
+11-13 15:14:04.547 V/FA-SVC  (28740): Setting user property: module_approvals, false
+11-13 15:14:04.706 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:14:04.726 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1048, 
+11-13 15:14:04.789 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:14:04.795 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:14:04.917 V/FA-SVC  (28740): Setting user property: module_approvals, false
+11-13 15:14:04.926 V/FA-SVC  (28740): Setting user property: module_absences, false
+11-13 15:14:04.938 V/FA-SVC  (28740): Setting user property: module_expenses, none
+11-13 15:14:04.945 V/FA-SVC  (28740): Setting user property: module_newsfeed, false
+11-13 15:14:04.956 V/FA-SVC  (28740): Setting user property: module_overtime, none
+11-13 15:14:04.965 V/FA-SVC  (28740): Setting user property: module_salary, none
+11-13 15:14:05.582 V/FA-SVC  (28740): Logging event: origin=app,name=home_tile,params=Bundle[{tile_type=expenses, ga_event_origin(_o)=app, ga_screen_class(_sc)=home, ga_screen_id(_si)=-6804662522881592018, ga_screen(_sn)=home, endpoint=sdwa://expenses}]
+11-13 15:14:05.800 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:14:05.817 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1029, 
+11-13 15:14:05.871 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:14:05.874 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:14:06.480 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=2288, ga_previous_class(_pc)=home, ga_previous_id(_pi)=-6804662522881592018, ga_previous_screen(_pn)=home, ga_screen_class(_sc)=expenses_group_overview_open_tab, ga_screen_id(_si)=-6804662522881592017, ga_screen(_sn)=expenses_group_overview_open_tab, manual_tracking(_mst)=1}]
+11-13 15:14:06.877 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:14:06.889 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1098, 
+11-13 15:14:06.940 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:14:06.942 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:14:09.455 V/FA-SVC  (28740): Logging event: origin=app,name=expense_detail_tapped,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=expenses_group_overview_open_tab, ga_screen_id(_si)=-6804662522881592017, ga_screen(_sn)=expenses_group_overview_open_tab, context=standalone}]
+11-13 15:14:09.474 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=2988, ga_previous_class(_pc)=expenses_group_overview_open_tab, ga_previous_id(_pi)=-6804662522881592017, ga_previous_screen(_pn)=expenses_group_overview_open_tab, ga_screen_class(_sc)=expense_detail, ga_screen_id(_si)=-6804662522881592016, ga_screen(_sn)=expense_detail, manual_tracking(_mst)=1, context=standalone}]
+11-13 15:14:09.972 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:14:09.987 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1330, 
+11-13 15:14:10.046 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:14:10.053 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:14:14.341 V/FA-SVC  (28740): Logging event: origin=app,name=expense_detail_edit_tapped,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=expense_detail, ga_screen_id(_si)=-6804662522881592016, ga_screen(_sn)=expense_detail, context=standalone}]
+11-13 15:14:14.420 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=4902, ga_previous_class(_pc)=expense_detail, ga_previous_id(_pi)=-6804662522881592016, ga_previous_screen(_pn)=expense_detail, ga_screen_class(_sc)=init_add_edit_expense, ga_screen_id(_si)=-6804662522881592015, ga_screen(_sn)=init_add_edit_expense, manual_tracking(_mst)=1}]
+11-13 15:14:14.433 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=15, ga_previous_class(_pc)=init_add_edit_expense, ga_previous_id(_pi)=-6804662522881592015, ga_previous_screen(_pn)=init_add_edit_expense, ga_screen_class(_sc)=add_edit_expense, ga_screen_id(_si)=-6804662522881592014, ga_screen(_sn)=add_edit_expense, manual_tracking(_mst)=1}]
+11-13 15:14:14.856 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:14:14.869 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1484, 
+11-13 15:14:14.974 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:14:14.979 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:14:24.692 V/FA-SVC  (28740): Logging event: origin=app,name=edit_expense,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=add_edit_expense, ga_screen_id(_si)=-6804662522881592014, ga_screen(_sn)=add_edit_expense, context=standalone}]
+11-13 15:14:24.700 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=10303, ga_previous_class(_pc)=add_edit_expense, ga_previous_id(_pi)=-6804662522881592014, ga_previous_screen(_pn)=add_edit_expense, ga_screen_class(_sc)=expense_detail, ga_screen_id(_si)=-6804662522881592013, ga_screen(_sn)=expense_detail, manual_tracking(_mst)=1, context=standalone}]
+11-13 15:14:25.210 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:14:25.222 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1262, 
+11-13 15:14:25.325 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:14:25.328 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:14:33.145 V/FA-SVC  (28740): Logging event: origin=app,name=expense_detail_delete_tapped,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=expense_detail, ga_screen_id(_si)=-6804662522881592013, ga_screen(_sn)=expense_detail, context=standalone}]
+11-13 15:14:33.150 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=8480, ga_previous_class(_pc)=expense_detail, ga_previous_id(_pi)=-6804662522881592013, ga_previous_screen(_pn)=expense_detail, ga_screen_class(_sc)=delete_expense_dialog, ga_screen_id(_si)=-6804662522881592012, ga_screen(_sn)=delete_expense_dialog, manual_tracking(_mst)=1}]
+11-13 15:14:33.662 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:14:33.676 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1261, 
+11-13 15:14:33.731 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:14:33.734 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:14:39.215 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=6078, ga_previous_class(_pc)=delete_expense_dialog, ga_previous_id(_pi)=-6804662522881592012, ga_previous_screen(_pn)=delete_expense_dialog, ga_screen_class(_sc)=expense_detail, ga_screen_id(_si)=-6804662522881592011, ga_screen(_sn)=expense_detail, manual_tracking(_mst)=1, context=standalone}]
+11-13 15:14:39.737 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:14:39.757 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1119, 
+11-13 15:14:39.816 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:14:39.821 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:14:41.017 V/FA-SVC  (28740): Logging event: origin=app,name=expense_detail_delete_tapped,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=expense_detail, ga_screen_id(_si)=-6804662522881592011, ga_screen(_sn)=expense_detail, context=standalone}]
+11-13 15:14:41.031 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=1816, ga_previous_class(_pc)=expense_detail, ga_previous_id(_pi)=-6804662522881592011, ga_previous_screen(_pn)=expense_detail, ga_screen_class(_sc)=delete_expense_dialog, ga_screen_id(_si)=-6804662522881592010, ga_screen(_sn)=delete_expense_dialog, manual_tracking(_mst)=1}]
+11-13 15:14:41.539 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:14:41.555 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1261, 
+11-13 15:14:41.612 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:14:41.618 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:14:46.397 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=5349, ga_previous_class(_pc)=delete_expense_dialog, ga_previous_id(_pi)=-6804662522881592010, ga_previous_screen(_pn)=delete_expense_dialog, ga_screen_class(_sc)=expense_detail, ga_screen_id(_si)=-6804662522881592009, ga_screen(_sn)=expense_detail, manual_tracking(_mst)=1, context=standalone}]
+11-13 15:14:46.920 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:14:46.940 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1119, 
+11-13 15:14:46.991 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=587, ga_previous_class(_pc)=expense_detail, ga_previous_id(_pi)=-6804662522881592009, ga_previous_screen(_pn)=expense_detail, ga_screen_class(_sc)=expenses_group_overview_open_tab, ga_screen_id(_si)=-6804662522881592008, ga_screen(_sn)=expenses_group_overview_open_tab, manual_tracking(_mst)=1}]
+11-13 15:14:47.022 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:14:47.025 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:14:47.032 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:14:47.038 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1118, 
+11-13 15:14:47.091 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:14:47.093 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:15:06.215 V/FA-SVC  (28740): Logging event: origin=app,name=expenses_overview_completed_tab_tap,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=expenses_group_overview_open_tab, ga_screen_id(_si)=-6804662522881592008, ga_screen(_sn)=expenses_group_overview_open_tab}]
+11-13 15:15:06.226 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=19173, ga_previous_class(_pc)=expenses_group_overview_open_tab, ga_previous_id(_pi)=-6804662522881592008, ga_previous_screen(_pn)=expenses_group_overview_open_tab, ga_screen_class(_sc)=expenses_group_overview_completed_tab, ga_screen_id(_si)=-6804662522881592007, ga_screen(_sn)=expenses_group_overview_completed_tab, manual_tracking(_mst)=1}]
+11-13 15:15:06.233 V/FA-SVC  (28740): Logging event: origin=app,name=expenses_overview_completed_tab_tap,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=expenses_group_overview_completed_tab, ga_screen_id(_si)=-6804662522881592007, ga_screen(_sn)=expenses_group_overview_completed_tab}]
+11-13 15:15:06.737 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:15:06.757 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1540, 
+11-13 15:15:06.845 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:15:06.848 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:15:17.689 V/FA-SVC  (28740): Logging event: origin=app,name=expense_detail_tapped,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=expenses_group_overview_completed_tab, ga_screen_id(_si)=-6804662522881592007, ga_screen(_sn)=expenses_group_overview_completed_tab, context=standalone}]
+11-13 15:15:17.706 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=11509, ga_previous_class(_pc)=expenses_group_overview_completed_tab, ga_previous_id(_pi)=-6804662522881592007, ga_previous_screen(_pn)=expenses_group_overview_completed_tab, ga_screen_class(_sc)=expense_detail, ga_screen_id(_si)=-6804662522881592006, ga_screen(_sn)=expense_detail, manual_tracking(_mst)=1, context=standalone}]
+11-13 15:15:18.211 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:15:18.230 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1355, 
+11-13 15:15:18.280 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:15:18.282 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:15:25.261 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=7584, ga_previous_class(_pc)=expense_detail, ga_previous_id(_pi)=-6804662522881592006, ga_previous_screen(_pn)=expense_detail, ga_screen_class(_sc)=expenses_group_overview_completed_tab, ga_screen_id(_si)=-6804662522881592005, ga_screen(_sn)=expenses_group_overview_completed_tab, manual_tracking(_mst)=1}]
+11-13 15:15:25.272 V/FA-SVC  (28740): Logging event: origin=app,name=expenses_overview_completed_tab_tap,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=expenses_group_overview_completed_tab, ga_screen_id(_si)=-6804662522881592005, ga_screen(_sn)=expenses_group_overview_completed_tab}]
+11-13 15:15:25.780 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:15:25.801 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1323, 
+11-13 15:15:25.853 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:15:25.856 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:15:29.281 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=4036, ga_previous_class(_pc)=expenses_group_overview_completed_tab, ga_previous_id(_pi)=-6804662522881592005, ga_previous_screen(_pn)=expenses_group_overview_completed_tab, ga_screen_class(_sc)=init_add_edit_expense, ga_screen_id(_si)=-6804662522881592004, ga_screen(_sn)=init_add_edit_expense, manual_tracking(_mst)=1}]
+11-13 15:15:29.336 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=19, ga_previous_class(_pc)=init_add_edit_expense, ga_previous_id(_pi)=-6804662522881592004, ga_previous_screen(_pn)=init_add_edit_expense, ga_screen_class(_sc)=choose_category_expense_no_transition, ga_screen_id(_si)=-6804662522881592003, ga_screen(_sn)=choose_category_expense_no_transition, manual_tracking(_mst)=1}]
+11-13 15:15:29.791 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:15:29.800 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1409, 
+11-13 15:15:29.848 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:15:29.852 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:15:31.313 V/FA-SVC  (28740): Logging event: origin=app,name=generic_picker_item_selected_single,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=choose_category_expense_no_transition, ga_screen_id(_si)=-6804662522881592003, ga_screen(_sn)=choose_category_expense_no_transition, type=choose_category_expense}]
+11-13 15:15:31.828 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:15:31.847 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1102, 
+11-13 15:15:31.860 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=2559, ga_previous_class(_pc)=choose_category_expense_no_transition, ga_previous_id(_pi)=-6804662522881592003, ga_previous_screen(_pn)=choose_category_expense_no_transition, ga_screen_class(_sc)=add_edit_expense, ga_screen_id(_si)=-6804662522881592002, ga_screen(_sn)=add_edit_expense, manual_tracking(_mst)=1}]
+11-13 15:15:31.951 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:15:31.953 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:15:31.957 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:15:31.964 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1132, 
+11-13 15:15:32.012 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:15:32.015 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:15:46.521 V/FA-SVC  (28740): Logging event: origin=app,name=add_expense,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=add_edit_expense, ga_screen_id(_si)=-6804662522881592002, ga_screen(_sn)=add_edit_expense, context=standalone}]
+11-13 15:15:46.532 V/FA-SVC  (28740): Logging event: origin=app,name=expenses_overview_completed_tab_tap,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=add_edit_expense, ga_screen_id(_si)=-6804662522881592002, ga_screen(_sn)=add_edit_expense}]
+11-13 15:15:46.536 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=14601, ga_previous_class(_pc)=add_edit_expense, ga_previous_id(_pi)=-6804662522881592002, ga_previous_screen(_pn)=add_edit_expense, ga_screen_class(_sc)=expenses_group_overview_completed_tab, ga_screen_id(_si)=-6804662522881592001, ga_screen(_sn)=expenses_group_overview_completed_tab, manual_tracking(_mst)=1}]
+11-13 15:15:47.040 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:15:47.052 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1437, 
+11-13 15:15:47.104 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:15:47.106 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:15:59.665 V/FA-SVC  (28740): Logging event: origin=app,name=expenses_overview_open_tab_tap,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=expenses_group_overview_completed_tab, ga_screen_id(_si)=-6804662522881592001, ga_screen(_sn)=expenses_group_overview_completed_tab}]
+11-13 15:15:59.683 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=13204, ga_previous_class(_pc)=expenses_group_overview_completed_tab, ga_previous_id(_pi)=-6804662522881592001, ga_previous_screen(_pn)=expenses_group_overview_completed_tab, ga_screen_class(_sc)=expenses_group_overview_open_tab, ga_screen_id(_si)=-6804662522881592000, ga_screen(_sn)=expenses_group_overview_open_tab, manual_tracking(_mst)=1}]
+11-13 15:16:00.188 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:16:00.200 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1349, 
+11-13 15:16:00.250 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:16:00.252 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:16:06.751 V/FA-SVC  (28740): Logging event: origin=app,name=submit_confirmation_expenses_tapped,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=expenses_group_overview_open_tab, ga_screen_id(_si)=-6804662522881592000, ga_screen(_sn)=expenses_group_overview_open_tab}]
+11-13 15:16:06.762 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=7107, ga_previous_class(_pc)=expenses_group_overview_open_tab, ga_previous_id(_pi)=-6804662522881592000, ga_previous_screen(_pn)=expenses_group_overview_open_tab, ga_screen_class(_sc)=expenses_confirm_submit, ga_screen_id(_si)=-6804662522881591999, ga_screen(_sn)=expenses_confirm_submit, manual_tracking(_mst)=1}]
+11-13 15:16:07.269 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:16:07.288 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1316, 
+11-13 15:16:07.345 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:16:07.352 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0
+11-13 15:16:14.812 V/FA-SVC  (28740): Logging event: origin=app,name=confirm_submit_confirmation_expenses,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=expenses_confirm_submit, ga_screen_id(_si)=-6804662522881591999, ga_screen(_sn)=expenses_confirm_submit}]
+11-13 15:16:14.827 V/FA-SVC  (28740): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=7970, ga_previous_class(_pc)=expenses_confirm_submit, ga_previous_id(_pi)=-6804662522881591999, ga_previous_screen(_pn)=expenses_confirm_submit, ga_screen_class(_sc)=expenses_group_overview_open_tab, ga_screen_id(_si)=-6804662522881591998, ga_screen(_sn)=expenses_group_overview_open_tab, manual_tracking(_mst)=1}]
+11-13 15:16:14.838 V/FA-SVC  (28740): Logging event: origin=app,name=expenses_overview_completed_tab_tap,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=expenses_group_overview_open_tab, ga_screen_id(_si)=-6804662522881591998, ga_screen(_sn)=expenses_group_overview_open_tab}]
+11-13 15:16:15.331 V/FA-SVC  (28740): Setting user property: non_personalized_ads(_npa), 1
+11-13 15:16:15.346 V/FA-SVC  (28740): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1484, 
+11-13 15:16:15.398 V/FA-SVC  (28740): Network upload successful with code, uploadAttempted: 204, true
+11-13 15:16:15.401 V/FA-SVC  (28740): Successful upload. Got network response. code, size: 204, 0

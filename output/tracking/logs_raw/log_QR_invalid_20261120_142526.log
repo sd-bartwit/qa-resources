@@ -1,0 +1,2208 @@
+--------- beginning of main
+11-20 14:25:12.190 V/FA      (29469): Logging screen view with name, class: qr_scanner, qr_scanner
+11-20 14:25:12.212 V/FA      (29469): Connecting to remote service
+11-20 14:25:12.219 V/FA      (29469): Recording user engagement, ms: 19849
+11-20 14:25:12.220 V/FA      (29469): Connection attempt already in progress
+11-20 14:25:12.242 D/FA      (29469): Connected to remote service
+11-20 14:25:12.242 V/FA      (29469): Processing queued up service tasks: 2
+11-20 14:25:12.251 V/FA      (29469): Logging telemetry for logEvent from database
+11-20 14:25:12.251 V/FA-SVC  (14474): EES not loaded for: be.sdworx.sdwa.inhouse
+11-20 14:25:12.253 V/FA-SVC  (14474): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=19849, ga_previous_class(_pc)=dialog, ga_previous_id(_pi)=-3405477808954366047, ga_previous_screen(_pn)=dialog, ga_screen_class(_sc)=qr_scanner, ga_screen_id(_si)=-3405477808954366046, ga_screen(_sn)=qr_scanner, manual_tracking(_mst)=1}]
+11-20 14:25:12.259 V/FA-SVC  (14474): Upload scheduled in approximately ms: 500
+11-20 14:25:12.259 V/FA-SVC  (14474): Scheduling upload, millis: 500
+11-20 14:25:12.260 V/FA-SVC  (14474): Background event processing time, ms: 8
+11-20 14:25:12.428 V/FA      (29469): Logging screen view with name, class: dialog, dialog
+11-20 14:25:12.480 V/FA      (29469): Logging telemetry for logEvent from database
+11-20 14:25:12.480 V/FA-SVC  (14474): EES not loaded for: be.sdworx.sdwa.inhouse
+11-20 14:25:12.482 V/FA-SVC  (14474): Logging event: origin=app,name=qr_scan_invalid_code,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=qr_scanner, ga_screen_id(_si)=-3405477808954366046, ga_screen(_sn)=qr_scanner}]
+11-20 14:25:12.489 V/FA-SVC  (14474): Upload scheduled in approximately ms: 770
+11-20 14:25:12.490 V/FA-SVC  (14474): Scheduling upload, millis: 770
+11-20 14:25:12.490 V/FA-SVC  (14474): Background event processing time, ms: 8
+11-20 14:25:12.493 V/FA      (29469): Logging telemetry for logEvent from database
+11-20 14:25:12.494 V/FA-SVC  (14474): EES not loaded for: be.sdworx.sdwa.inhouse
+11-20 14:25:12.494 V/FA      (29469): Recording user engagement, ms: 238
+11-20 14:25:12.494 V/FA-SVC  (14474): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=238, ga_previous_class(_pc)=qr_scanner, ga_previous_id(_pi)=-3405477808954366046, ga_previous_screen(_pn)=qr_scanner, ga_screen_class(_sc)=dialog, ga_screen_id(_si)=-3405477808954366045, ga_screen(_sn)=dialog, manual_tracking(_mst)=1}]
+11-20 14:25:12.498 V/FA-SVC  (14474): Upload scheduled in approximately ms: 761
+11-20 14:25:12.498 V/FA-SVC  (14474): Scheduling upload, millis: 761
+11-20 14:25:12.498 V/FA-SVC  (14474): Background event processing time, ms: 4
+11-20 14:25:12.761 V/FA-SVC  (14474): Unscheduling upload
+11-20 14:25:12.779 V/FA-SVC  (14474): Starting upload from DelayedRunnable
+11-20 14:25:12.799 V/FA-SVC  (14474): Updated engagement user property. scope, value: lifetime, 79845
+11-20 14:25:12.799 V/FA-SVC  (14474): Updated engagement user property. scope, value: session-scoped, 79844
+11-20 14:25:12.801 V/FA-SVC  (14474): Setting user property: non_personalized_ads(_npa), 1
+11-20 14:25:12.809 V/FA-SVC  (14474): Bundling raw events. appId, hasRealtimeData, totalEvents: be.sdworx.sdwa.inhouse, false, 14
+11-20 14:25:12.811 V/FA-SVC  (14474): Saving bundle, size: 1136
+11-20 14:25:12.817 D/FA-SVC  (14474): Uploading events. Elapsed time since last upload attempt (ms): 525
+11-20 14:25:12.821 V/FA-SVC  (14474): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 8470, 
+11-20 14:25:12.821 V/FA-SVC  (14474): batch {
+11-20 14:25:12.821 V/FA-SVC  (14474):   bundle {
+11-20 14:25:12.821 V/FA-SVC  (14474):     protocol_version: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):     platform: android
+11-20 14:25:12.821 V/FA-SVC  (14474):     gmp_version: 196007
+11-20 14:25:12.821 V/FA-SVC  (14474):     uploading_gmp_version: 264531
+11-20 14:25:12.821 V/FA-SVC  (14474):     dynamite_version: 220
+11-20 14:25:12.821 V/FA-SVC  (14474):     config_version: 1791003620271571
+11-20 14:25:12.821 V/FA-SVC  (14474):     gmp_app_id: 1:282262785390:android:37683f0bb3a020765a457f
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_id: be.sdworx.sdwa.inhouse
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_version: 5.5.0.1746822
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_version_major: 1795094515
+11-20 14:25:12.821 V/FA-SVC  (14474):     firebase_instance_id: forsmY2ARzy80XviYYlOdC
+11-20 14:25:12.821 V/FA-SVC  (14474):     dev_cert_hash: -7410338321869132145
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_store: com.google.android.packageinstaller
+11-20 14:25:12.821 V/FA-SVC  (14474):     upload_timestamp_millis: 1795181112784
+11-20 14:25:12.821 V/FA-SVC  (14474):     start_timestamp_millis: 1795181023969
+11-20 14:25:12.821 V/FA-SVC  (14474):     end_timestamp_millis: 1795181031917
+11-20 14:25:12.821 V/FA-SVC  (14474):     previous_bundle_start_timestamp_millis: 1795180955868
+11-20 14:25:12.821 V/FA-SVC  (14474):     previous_bundle_end_timestamp_millis: 1795180955868
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_instance_id: 87f398dcec888c89c8750afac58a36c9
+11-20 14:25:12.821 V/FA-SVC  (14474):     resettable_device_id: 
+11-20 14:25:12.821 V/FA-SVC  (14474):     ds_id: 
+11-20 14:25:12.821 V/FA-SVC  (14474):     os_version: 15
+11-20 14:25:12.821 V/FA-SVC  (14474):     device_model: SM-G991B
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_default_language: en-us
+11-20 14:25:12.821 V/FA-SVC  (14474):     time_zone_offset_minutes: 60
+11-20 14:25:12.821 V/FA-SVC  (14474):     bundle_sequential_index: 5
+11-20 14:25:12.821 V/FA-SVC  (14474):     delivery_index: 4
+11-20 14:25:12.821 V/FA-SVC  (14474):     service_upload: true
+11-20 14:25:12.821 V/FA-SVC  (14474):     health_monitor: 
+11-20 14:25:12.821 V/FA-SVC  (14474):     consent_signals: G1--
+11-20 14:25:12.821 V/FA-SVC  (14474):     is_dma_region: true
+11-20 14:25:12.821 V/FA-SVC  (14474):     core_platform_services: a
+11-20 14:25:12.821 V/FA-SVC  (14474):     consent_diagnostics: 19911
+11-20 14:25:12.821 V/FA-SVC  (14474):     target_os_version: 36
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943352
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: first_open_time(_fot)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1795183200000
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943352
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: first_open_after_install(_fi)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943613
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: ga_session_number(_sno)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943613
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: ga_session_id(_sid)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1795180943
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181038314
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: lifetime_user_engagement(_lte)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 18237
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181038315
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: session_user_engagement(_se)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 18236
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181038316
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: non_personalized_ads(_npa)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: screen_view(_vs)
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181023969
+11-20 14:25:12.821 V/FA-SVC  (14474):       corrected_timestamp_millis: 1795181023605
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 0
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: environment_picker
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366063
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: environment_picker
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: manual_tracking(_mst)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: screen_view(_vs)
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181031917
+11-20 14:25:12.821 V/FA-SVC  (14474):       corrected_timestamp_millis: 1795181031552
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181023969
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: engagement_time_msec(_et)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 8325
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_class(_pc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: environment_picker
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_id(_pi)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366063
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_screen(_pn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: environment_picker
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: loading
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366062
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: loading
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: manual_tracking(_mst)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):   }
+11-20 14:25:12.821 V/FA-SVC  (14474):   bundle {
+11-20 14:25:12.821 V/FA-SVC  (14474):     protocol_version: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):     platform: android
+11-20 14:25:12.821 V/FA-SVC  (14474):     gmp_version: 196007
+11-20 14:25:12.821 V/FA-SVC  (14474):     uploading_gmp_version: 264531
+11-20 14:25:12.821 V/FA-SVC  (14474):     dynamite_version: 220
+11-20 14:25:12.821 V/FA-SVC  (14474):     config_version: 1791003620271571
+11-20 14:25:12.821 V/FA-SVC  (14474):     gmp_app_id: 1:282262785390:android:37683f0bb3a020765a457f
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_id: be.sdworx.sdwa.inhouse
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_version: 5.5.0.1746822
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_version_major: 1795094515
+11-20 14:25:12.821 V/FA-SVC  (14474):     firebase_instance_id: forsmY2ARzy80XviYYlOdC
+11-20 14:25:12.821 V/FA-SVC  (14474):     dev_cert_hash: -7410338321869132145
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_store: com.google.android.packageinstaller
+11-20 14:25:12.821 V/FA-SVC  (14474):     upload_timestamp_millis: 1795181112784
+11-20 14:25:12.821 V/FA-SVC  (14474):     start_timestamp_millis: 1795181032632
+11-20 14:25:12.821 V/FA-SVC  (14474):     end_timestamp_millis: 1795181038258
+11-20 14:25:12.821 V/FA-SVC  (14474):     previous_bundle_start_timestamp_millis: 1795181023969
+11-20 14:25:12.821 V/FA-SVC  (14474):     previous_bundle_end_timestamp_millis: 1795181031917
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_instance_id: 87f398dcec888c89c8750afac58a36c9
+11-20 14:25:12.821 V/FA-SVC  (14474):     resettable_device_id: 
+11-20 14:25:12.821 V/FA-SVC  (14474):     ds_id: 
+11-20 14:25:12.821 V/FA-SVC  (14474):     os_version: 15
+11-20 14:25:12.821 V/FA-SVC  (14474):     device_model: SM-G991B
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_default_language: en-us
+11-20 14:25:12.821 V/FA-SVC  (14474):     time_zone_offset_minutes: 60
+11-20 14:25:12.821 V/FA-SVC  (14474):     bundle_sequential_index: 11
+11-20 14:25:12.821 V/FA-SVC  (14474):     delivery_index: 5
+11-20 14:25:12.821 V/FA-SVC  (14474):     service_upload: true
+11-20 14:25:12.821 V/FA-SVC  (14474):     health_monitor: 
+11-20 14:25:12.821 V/FA-SVC  (14474):     consent_signals: G1--
+11-20 14:25:12.821 V/FA-SVC  (14474):     is_dma_region: true
+11-20 14:25:12.821 V/FA-SVC  (14474):     core_platform_services: a
+11-20 14:25:12.821 V/FA-SVC  (14474):     consent_diagnostics: 19911
+11-20 14:25:12.821 V/FA-SVC  (14474):     target_os_version: 36
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943352
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: first_open_time(_fot)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1795183200000
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943352
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: first_open_after_install(_fi)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943613
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: ga_session_number(_sno)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943613
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: ga_session_id(_sid)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1795180943
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181038323
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: lifetime_user_engagement(_lte)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 22573
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181038323
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: session_user_engagement(_se)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 22572
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032029
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: online
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: true
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032038
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: accessibility_specs
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 1:0,8:0,10:0,13:0
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032038
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: text_scale_factor
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 1.0
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032039
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: viewport_size
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 360 x 800
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032039
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: pixel_ratio
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 3.00
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181038324
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: non_personalized_ads(_npa)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: screen_view(_vs)
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181032632
+11-20 14:25:12.821 V/FA-SVC  (14474):       corrected_timestamp_millis: 1795181032269
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181031917
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: engagement_time_msec(_et)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 717
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_class(_pc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: loading
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_id(_pi)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366062
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_screen(_pn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: loading
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: onboarding
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366061
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: onboarding
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: manual_tracking(_mst)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: onboarding_next_tapped
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181033732
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 0
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: onboarding
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366061
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: onboarding
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: onboarding_new_finish_tapped
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181034746
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 0
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: onboarding
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366061
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: onboarding
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: screen_view(_vs)
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181034792
+11-20 14:25:12.821 V/FA-SVC  (14474):       corrected_timestamp_millis: 1795181034433
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181032632
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: engagement_time_msec(_et)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 2159
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_class(_pc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: onboarding
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_id(_pi)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366061
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_screen(_pn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: onboarding
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: browser_login
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366060
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: browser_login
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: manual_tracking(_mst)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: login_activate
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181035908
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 0
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: browser_login
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366060
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: browser_login
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: user_engagement(_e)
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181038258
+11-20 14:25:12.821 V/FA-SVC  (14474):       corrected_timestamp_millis: 1795181037892
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 1795180955868
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: auto
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: engagement_time_msec(_et)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1460
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: browser_login
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366060
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: browser_login
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):   }
+11-20 14:25:12.821 V/FA-SVC  (14474):   bundle {
+11-20 14:25:12.821 V/FA-SVC  (14474):     protocol_version: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):     platform: android
+11-20 14:25:12.821 V/FA-SVC  (14474):     gmp_version: 196007
+11-20 14:25:12.821 V/FA-SVC  (14474):     uploading_gmp_version: 264531
+11-20 14:25:12.821 V/FA-SVC  (14474):     dynamite_version: 220
+11-20 14:25:12.821 V/FA-SVC  (14474):     config_version: 1791003620271571
+11-20 14:25:12.821 V/FA-SVC  (14474):     gmp_app_id: 1:282262785390:android:37683f0bb3a020765a457f
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_id: be.sdworx.sdwa.inhouse
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_version: 5.5.0.1746822
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_version_major: 1795094515
+11-20 14:25:12.821 V/FA-SVC  (14474):     firebase_instance_id: forsmY2ARzy80XviYYlOdC
+11-20 14:25:12.821 V/FA-SVC  (14474):     dev_cert_hash: -7410338321869132145
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_store: com.google.android.packageinstaller
+11-20 14:25:12.821 V/FA-SVC  (14474):     upload_timestamp_millis: 1795181112784
+11-20 14:25:12.821 V/FA-SVC  (14474):     start_timestamp_millis: 1795181051057
+11-20 14:25:12.821 V/FA-SVC  (14474):     end_timestamp_millis: 1795181067158
+11-20 14:25:12.821 V/FA-SVC  (14474):     previous_bundle_start_timestamp_millis: 1795181032632
+11-20 14:25:12.821 V/FA-SVC  (14474):     previous_bundle_end_timestamp_millis: 1795181038258
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_instance_id: 87f398dcec888c89c8750afac58a36c9
+11-20 14:25:12.821 V/FA-SVC  (14474):     resettable_device_id: 
+11-20 14:25:12.821 V/FA-SVC  (14474):     ds_id: 
+11-20 14:25:12.821 V/FA-SVC  (14474):     os_version: 15
+11-20 14:25:12.821 V/FA-SVC  (14474):     device_model: SM-G991B
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_default_language: en-us
+11-20 14:25:12.821 V/FA-SVC  (14474):     time_zone_offset_minutes: 60
+11-20 14:25:12.821 V/FA-SVC  (14474):     bundle_sequential_index: 19
+11-20 14:25:12.821 V/FA-SVC  (14474):     delivery_index: 6
+11-20 14:25:12.821 V/FA-SVC  (14474):     service_upload: true
+11-20 14:25:12.821 V/FA-SVC  (14474):     health_monitor: 
+11-20 14:25:12.821 V/FA-SVC  (14474):     consent_signals: G1--
+11-20 14:25:12.821 V/FA-SVC  (14474):     is_dma_region: true
+11-20 14:25:12.821 V/FA-SVC  (14474):     core_platform_services: a
+11-20 14:25:12.821 V/FA-SVC  (14474):     consent_diagnostics: 19911
+11-20 14:25:12.821 V/FA-SVC  (14474):     target_os_version: 36
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943352
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: first_open_time(_fot)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1795183200000
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943352
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: first_open_after_install(_fi)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943613
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: ga_session_number(_sno)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943613
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: ga_session_id(_sid)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1795180943
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032029
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: online
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: true
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032038
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: accessibility_specs
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 1:0,8:0,10:0,13:0
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032038
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: text_scale_factor
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 1.0
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032039
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: viewport_size
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 360 x 800
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032039
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: pixel_ratio
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 3.00
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181076958
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: lifetime_user_engagement(_lte)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 38987
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181076959
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: session_user_engagement(_se)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 38986
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181076960
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: non_personalized_ads(_npa)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: login_activation_method
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181051057
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 0
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: activation_method
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: nextAuth
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: browser_login
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366060
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: browser_login
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: screen_view(_vs)
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181052049
+11-20 14:25:12.821 V/FA-SVC  (14474):       corrected_timestamp_millis: 1795181051685
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181034792
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: engagement_time_msec(_et)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1305
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_class(_pc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: browser_login
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_id(_pi)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366060
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_screen(_pn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: browser_login
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: add_pin
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366059
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: add_pin
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: manual_tracking(_mst)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: screen_view(_vs)
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181057167
+11-20 14:25:12.821 V/FA-SVC  (14474):       corrected_timestamp_millis: 1795181056804
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181052049
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: engagement_time_msec(_et)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 5119
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_class(_pc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: add_pin
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_id(_pi)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366059
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_screen(_pn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: add_pin
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: activate_biometrics
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366058
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: activate_biometrics
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: manual_tracking(_mst)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: activate_biometric_auth_activate
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181058037
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 0
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: authentication_method
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: biometrics
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: activate_biometrics
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366058
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: activate_biometrics
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: screen_view(_vs)
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181062052
+11-20 14:25:12.821 V/FA-SVC  (14474):       corrected_timestamp_millis: 1795181061688
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181057167
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: engagement_time_msec(_et)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 4883
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_class(_pc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: activate_biometrics
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_id(_pi)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366058
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_screen(_pn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: activate_biometrics
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: notification_permission
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366057
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: notification_permission
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: manual_tracking(_mst)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: activation_enabling_notifications_tapped
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181064655
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 0
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: notification_permission
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366057
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: notification_permission
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: screen_view(_vs)
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181066088
+11-20 14:25:12.821 V/FA-SVC  (14474):       corrected_timestamp_millis: 1795181065725
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181062052
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: engagement_time_msec(_et)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 4037
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_class(_pc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: notification_permission
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_id(_pi)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366057
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_screen(_pn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: notification_permission
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: activation_your_privacy
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366056
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: activation_your_privacy
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: manual_tracking(_mst)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: screen_view(_vs)
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181067158
+11-20 14:25:12.821 V/FA-SVC  (14474):       corrected_timestamp_millis: 1795181066875
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181066088
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: engagement_time_msec(_et)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1070
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_class(_pc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: activation_your_privacy
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_id(_pi)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366056
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_screen(_pn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: activation_your_privacy
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: home
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366055
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: home
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: manual_tracking(_mst)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):   }
+11-20 14:25:12.821 V/FA-SVC  (14474):   bundle {
+11-20 14:25:12.821 V/FA-SVC  (14474):     protocol_version: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):     platform: android
+11-20 14:25:12.821 V/FA-SVC  (14474):     gmp_version: 196007
+11-20 14:25:12.821 V/FA-SVC  (14474):     uploading_gmp_version: 264531
+11-20 14:25:12.821 V/FA-SVC  (14474):     dynamite_version: 220
+11-20 14:25:12.821 V/FA-SVC  (14474):     config_version: 1791003620271571
+11-20 14:25:12.821 V/FA-SVC  (14474):     gmp_app_id: 1:282262785390:android:37683f0bb3a020765a457f
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_id: be.sdworx.sdwa.inhouse
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_version: 5.5.0.1746822
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_version_major: 1795094515
+11-20 14:25:12.821 V/FA-SVC  (14474):     firebase_instance_id: forsmY2ARzy80XviYYlOdC
+11-20 14:25:12.821 V/FA-SVC  (14474):     dev_cert_hash: -7410338321869132145
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_store: com.google.android.packageinstaller
+11-20 14:25:12.821 V/FA-SVC  (14474):     upload_timestamp_millis: 1795181112784
+11-20 14:25:12.821 V/FA-SVC  (14474):     start_timestamp_millis: 1795181074781
+11-20 14:25:12.821 V/FA-SVC  (14474):     end_timestamp_millis: 1795181074793
+11-20 14:25:12.821 V/FA-SVC  (14474):     previous_bundle_start_timestamp_millis: 1795181051057
+11-20 14:25:12.821 V/FA-SVC  (14474):     previous_bundle_end_timestamp_millis: 1795181067158
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_instance_id: 87f398dcec888c89c8750afac58a36c9
+11-20 14:25:12.821 V/FA-SVC  (14474):     resettable_device_id: 
+11-20 14:25:12.821 V/FA-SVC  (14474):     ds_id: 
+11-20 14:25:12.821 V/FA-SVC  (14474):     os_version: 15
+11-20 14:25:12.821 V/FA-SVC  (14474):     device_model: SM-G991B
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_default_language: en-us
+11-20 14:25:12.821 V/FA-SVC  (14474):     time_zone_offset_minutes: 60
+11-20 14:25:12.821 V/FA-SVC  (14474):     bundle_sequential_index: 21
+11-20 14:25:12.821 V/FA-SVC  (14474):     delivery_index: 7
+11-20 14:25:12.821 V/FA-SVC  (14474):     service_upload: true
+11-20 14:25:12.821 V/FA-SVC  (14474):     health_monitor: 
+11-20 14:25:12.821 V/FA-SVC  (14474):     consent_signals: G1--
+11-20 14:25:12.821 V/FA-SVC  (14474):     is_dma_region: true
+11-20 14:25:12.821 V/FA-SVC  (14474):     core_platform_services: a
+11-20 14:25:12.821 V/FA-SVC  (14474):     consent_diagnostics: 19911
+11-20 14:25:12.821 V/FA-SVC  (14474):     target_os_version: 36
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943352
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: first_open_time(_fot)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1795183200000
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943352
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: first_open_after_install(_fi)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943613
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: ga_session_number(_sno)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943613
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: ga_session_id(_sid)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1795180943
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032029
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: online
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: true
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032038
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: accessibility_specs
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 1:0,8:0,10:0,13:0
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032038
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: text_scale_factor
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 1.0
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032039
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: viewport_size
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 360 x 800
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032039
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: pixel_ratio
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 3.00
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181076969
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: lifetime_user_engagement(_lte)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 46621
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181076970
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: session_user_engagement(_se)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 46620
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069824
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: module_absences
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: false
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069824
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: module_approvals
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: false
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069915
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: module_expenses
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: grouped
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069916
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: module_salary
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: none
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069917
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: module_newsfeed
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: false
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069917
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: module_overtime
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: none
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181076970
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: non_personalized_ads(_npa)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: home_weblogin
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181074781
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 0
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: home
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366055
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: home
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: screen_view(_vs)
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181074793
+11-20 14:25:12.821 V/FA-SVC  (14474):       corrected_timestamp_millis: 1795181074444
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181067158
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: engagement_time_msec(_et)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 7634
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_class(_pc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: home
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_id(_pi)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366055
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_screen(_pn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: home
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366054
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: manual_tracking(_mst)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):   }
+11-20 14:25:12.821 V/FA-SVC  (14474):   bundle {
+11-20 14:25:12.821 V/FA-SVC  (14474):     protocol_version: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):     platform: android
+11-20 14:25:12.821 V/FA-SVC  (14474):     gmp_version: 196007
+11-20 14:25:12.821 V/FA-SVC  (14474):     uploading_gmp_version: 264531
+11-20 14:25:12.821 V/FA-SVC  (14474):     dynamite_version: 220
+11-20 14:25:12.821 V/FA-SVC  (14474):     config_version: 1791003620271571
+11-20 14:25:12.821 V/FA-SVC  (14474):     gmp_app_id: 1:282262785390:android:37683f0bb3a020765a457f
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_id: be.sdworx.sdwa.inhouse
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_version: 5.5.0.1746822
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_version_major: 1795094515
+11-20 14:25:12.821 V/FA-SVC  (14474):     firebase_instance_id: forsmY2ARzy80XviYYlOdC
+11-20 14:25:12.821 V/FA-SVC  (14474):     dev_cert_hash: -7410338321869132145
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_store: com.google.android.packageinstaller
+11-20 14:25:12.821 V/FA-SVC  (14474):     upload_timestamp_millis: 1795181112784
+11-20 14:25:12.821 V/FA-SVC  (14474):     start_timestamp_millis: 1795181080309
+11-20 14:25:12.821 V/FA-SVC  (14474):     end_timestamp_millis: 1795181112423
+11-20 14:25:12.821 V/FA-SVC  (14474):     previous_bundle_start_timestamp_millis: 1795181074781
+11-20 14:25:12.821 V/FA-SVC  (14474):     previous_bundle_end_timestamp_millis: 1795181074793
+11-20 14:25:12.821 V/FA-SVC  (14474):     app_instance_id: 87f398dcec888c89c8750afac58a36c9
+11-20 14:25:12.821 V/FA-SVC  (14474):     resettable_device_id: 
+11-20 14:25:12.821 V/FA-SVC  (14474):     ds_id: 
+11-20 14:25:12.821 V/FA-SVC  (14474):     os_version: 15
+11-20 14:25:12.821 V/FA-SVC  (14474):     device_model: SM-G991B
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_default_language: en-us
+11-20 14:25:12.821 V/FA-SVC  (14474):     time_zone_offset_minutes: 60
+11-20 14:25:12.821 V/FA-SVC  (14474):     bundle_sequential_index: 35
+11-20 14:25:12.821 V/FA-SVC  (14474):     delivery_index: 8
+11-20 14:25:12.821 V/FA-SVC  (14474):     service_upload: true
+11-20 14:25:12.821 V/FA-SVC  (14474):     health_monitor: 
+11-20 14:25:12.821 V/FA-SVC  (14474):     consent_signals: G1--
+11-20 14:25:12.821 V/FA-SVC  (14474):     is_dma_region: true
+11-20 14:25:12.821 V/FA-SVC  (14474):     core_platform_services: a
+11-20 14:25:12.821 V/FA-SVC  (14474):     consent_diagnostics: 19911
+11-20 14:25:12.821 V/FA-SVC  (14474):     target_os_version: 36
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943352
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: first_open_time(_fot)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1795183200000
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943352
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: first_open_after_install(_fi)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943613
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: ga_session_number(_sno)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943613
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: ga_session_id(_sid)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1795180943
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032029
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: online
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: true
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032038
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: accessibility_specs
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 1:0,8:0,10:0,13:0
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032038
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: text_scale_factor
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 1.0
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032039
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: viewport_size
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 360 x 800
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032039
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: pixel_ratio
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 3.00
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069824
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: module_absences
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: false
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069824
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: module_approvals
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: false
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069915
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: module_expenses
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: grouped
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069916
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: module_salary
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: none
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069917
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: module_newsfeed
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: false
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069917
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: module_overtime
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: none
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181112798
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: lifetime_user_engagement(_lte)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 79845
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181112799
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: session_user_engagement(_se)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 79844
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     user_property {
+11-20 14:25:12.821 V/FA-SVC  (14474):       set_timestamp_millis: 1795181112801
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: non_personalized_ads(_npa)
+11-20 14:25:12.821 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:12.821 V/FA-SVC  (14474):       int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: screen_view(_vs)
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181080309
+11-20 14:25:12.821 V/FA-SVC  (14474):       corrected_timestamp_millis: 1795181079949
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181074793
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: engagement_time_msec(_et)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1107
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_class(_pc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_id(_pi)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366054
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_screen(_pn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366053
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: manual_tracking(_mst)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: qr_scan_invalid_code
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181080309
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 0
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366053
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: screen_view(_vs)
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181087474
+11-20 14:25:12.821 V/FA-SVC  (14474):       corrected_timestamp_millis: 1795181087109
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181080309
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: engagement_time_msec(_et)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 7164
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_class(_pc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_id(_pi)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366053
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_screen(_pn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366052
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: manual_tracking(_mst)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: qr_scan_invalid_code
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181087577
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181080309
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366052
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: screen_view(_vs)
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181087578
+11-20 14:25:12.821 V/FA-SVC  (14474):       corrected_timestamp_millis: 1795181087257
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181087474
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: engagement_time_msec(_et)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 111
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_class(_pc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_id(_pi)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366052
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_screen(_pn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366051
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: manual_tracking(_mst)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: screen_view(_vs)
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181090001
+11-20 14:25:12.821 V/FA-SVC  (14474):       corrected_timestamp_millis: 1795181089636
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181087578
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: engagement_time_msec(_et)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 2416
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_class(_pc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_id(_pi)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366051
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_screen(_pn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366050
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: manual_tracking(_mst)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: screen_view(_vs)
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181091295
+11-20 14:25:12.821 V/FA-SVC  (14474):       corrected_timestamp_millis: 1795181090930
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181090001
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: engagement_time_msec(_et)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1294
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_class(_pc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_id(_pi)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366050
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_screen(_pn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366049
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: manual_tracking(_mst)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: qr_scan_invalid_code
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181091296
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181087577
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366049
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: screen_view(_vs)
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181092222
+11-20 14:25:12.821 V/FA-SVC  (14474):       corrected_timestamp_millis: 1795181091863
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181091295
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: engagement_time_msec(_et)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 930
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_class(_pc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_id(_pi)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366049
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_screen(_pn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366048
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: manual_tracking(_mst)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: qr_scan_invalid_code
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181092339
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181091296
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366048
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: screen_view(_vs)
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181092341
+11-20 14:25:12.821 V/FA-SVC  (14474):       corrected_timestamp_millis: 1795181092008
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181092222
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: engagement_time_msec(_et)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 115
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_class(_pc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_id(_pi)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366048
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_screen(_pn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366047
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: manual_tracking(_mst)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: screen_view(_vs)
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181112188
+11-20 14:25:12.821 V/FA-SVC  (14474):       corrected_timestamp_millis: 1795181111825
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181092341
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: _r
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: engagement_time_msec(_et)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 19849
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_class(_pc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_id(_pi)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366047
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_screen(_pn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366046
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: _dbg
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: manual_tracking(_mst)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: qr_scan_invalid_code
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181112423
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181092339
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: _r
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366046
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: _dbg
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):     event {
+11-20 14:25:12.821 V/FA-SVC  (14474):       name: screen_view(_vs)
+11-20 14:25:12.821 V/FA-SVC  (14474):       timestamp_millis: 1795181112423
+11-20 14:25:12.821 V/FA-SVC  (14474):       corrected_timestamp_millis: 1795181112115
+11-20 14:25:12.821 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181112188
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: _r
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: engagement_time_msec(_et)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 238
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_class(_pc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_id(_pi)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366046
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_previous_screen(_pn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: -3405477808954366045
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:12.821 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: _dbg
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):       param {
+11-20 14:25:12.821 V/FA-SVC  (14474):         name: manual_tracking(_mst)
+11-20 14:25:12.821 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:12.821 V/FA-SVC  (14474):       }
+11-20 14:25:12.821 V/FA-SVC  (14474):     }
+11-20 14:25:12.821 V/FA-SVC  (14474):   }
+11-20 14:25:12.821 V/FA-SVC  (14474): } // End-of-batch
+11-20 14:25:12.821 V/FA-SVC  (14474): Uploading bundle with GmsCore network library. app: be.sdworx.sdwa.inhouse
+11-20 14:25:12.823 V/FA-SVC  (14474): Not stopping services. fetch, network, upload: false, true, false
+11-20 14:25:12.932 V/FA-SVC  (14474): Gms url request successful. app: be.sdworx.sdwa.inhouse, GOOGLE_ANALYTICS
+11-20 14:25:12.933 V/FA-SVC  (14474): Network upload successful with code, uploadAttempted: 204, true
+11-20 14:25:12.935 V/FA-SVC  (14474): Upload scheduled in approximately ms: 3599998
+11-20 14:25:12.935 V/FA-SVC  (14474): Scheduling upload, millis: 3599998
+11-20 14:25:12.935 V/FA-SVC  (14474): Successful upload. Got network response. code, size: 204, 0
+11-20 14:25:12.951 V/FA-SVC  (14474): Nothing to upload or uploading impossible
+11-20 14:25:12.951 V/FA-SVC  (14474): Unscheduling upload
+11-20 14:25:12.952 V/FA-SVC  (14474): Stopping uploading service(s)
+11-20 14:25:14.346 V/FA      (29469): Logging screen view with name, class: qr_scanner, qr_scanner
+11-20 14:25:14.377 V/FA      (29469): Logging telemetry for logEvent from database
+11-20 14:25:14.377 V/FA-SVC  (14474): EES not loaded for: be.sdworx.sdwa.inhouse
+11-20 14:25:14.378 V/FA-SVC  (14474): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=1918, ga_previous_class(_pc)=dialog, ga_previous_id(_pi)=-3405477808954366045, ga_previous_screen(_pn)=dialog, ga_screen_class(_sc)=qr_scanner, ga_screen_id(_si)=-3405477808954366044, ga_screen(_sn)=qr_scanner, manual_tracking(_mst)=1}]
+11-20 14:25:14.379 V/FA      (29469): Recording user engagement, ms: 1918
+11-20 14:25:14.387 V/FA-SVC  (14474): Upload scheduled in approximately ms: 500
+11-20 14:25:14.387 V/FA-SVC  (14474): Scheduling upload, millis: 500
+11-20 14:25:14.387 V/FA-SVC  (14474): Background event processing time, ms: 9
+11-20 14:25:14.557 V/FA      (29469): Logging screen view with name, class: dialog, dialog
+11-20 14:25:14.617 V/FA      (29469): Logging telemetry for logEvent from database
+11-20 14:25:14.617 V/FA-SVC  (14474): EES not loaded for: be.sdworx.sdwa.inhouse
+11-20 14:25:14.621 V/FA-SVC  (14474): Logging event: origin=app,name=qr_scan_invalid_code,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=qr_scanner, ga_screen_id(_si)=-3405477808954366044, ga_screen(_sn)=qr_scanner}]
+11-20 14:25:14.624 V/FA-SVC  (14474): Upload scheduled in approximately ms: 757
+11-20 14:25:14.624 V/FA-SVC  (14474): Scheduling upload, millis: 757
+11-20 14:25:14.624 V/FA-SVC  (14474): Background event processing time, ms: 3
+11-20 14:25:14.637 V/FA      (29469): Logging telemetry for logEvent from database
+11-20 14:25:14.638 V/FA-SVC  (14474): EES not loaded for: be.sdworx.sdwa.inhouse
+11-20 14:25:14.639 V/FA      (29469): Recording user engagement, ms: 211
+11-20 14:25:14.639 V/FA-SVC  (14474): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=211, ga_previous_class(_pc)=qr_scanner, ga_previous_id(_pi)=-3405477808954366044, ga_previous_screen(_pn)=qr_scanner, ga_screen_class(_sc)=dialog, ga_screen_id(_si)=-3405477808954366043, ga_screen(_sn)=dialog, manual_tracking(_mst)=1}]
+11-20 14:25:14.642 V/FA-SVC  (14474): Upload scheduled in approximately ms: 739
+11-20 14:25:14.642 V/FA-SVC  (14474): Scheduling upload, millis: 739
+11-20 14:25:14.642 V/FA-SVC  (14474): Background event processing time, ms: 3
+11-20 14:25:14.888 V/FA-SVC  (14474): Unscheduling upload
+11-20 14:25:14.892 V/FA-SVC  (14474): Starting upload from DelayedRunnable
+11-20 14:25:14.896 V/FA-SVC  (14474): Updated engagement user property. scope, value: lifetime, 81974
+11-20 14:25:14.896 V/FA-SVC  (14474): Updated engagement user property. scope, value: session-scoped, 81973
+11-20 14:25:14.897 V/FA-SVC  (14474): Setting user property: non_personalized_ads(_npa), 1
+11-20 14:25:14.899 V/FA-SVC  (14474): Bundling raw events. appId, hasRealtimeData, totalEvents: be.sdworx.sdwa.inhouse, false, 3
+11-20 14:25:14.900 V/FA-SVC  (14474): Saving bundle, size: 878
+11-20 14:25:14.910 D/FA-SVC  (14474): Uploading events. Elapsed time since last upload attempt (ms): 512
+11-20 14:25:14.913 V/FA-SVC  (14474): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1371, 
+11-20 14:25:14.913 V/FA-SVC  (14474): batch {
+11-20 14:25:14.913 V/FA-SVC  (14474):   bundle {
+11-20 14:25:14.913 V/FA-SVC  (14474):     protocol_version: 1
+11-20 14:25:14.913 V/FA-SVC  (14474):     platform: android
+11-20 14:25:14.913 V/FA-SVC  (14474):     gmp_version: 196007
+11-20 14:25:14.913 V/FA-SVC  (14474):     uploading_gmp_version: 264531
+11-20 14:25:14.913 V/FA-SVC  (14474):     dynamite_version: 220
+11-20 14:25:14.913 V/FA-SVC  (14474):     config_version: 1791003620271571
+11-20 14:25:14.913 V/FA-SVC  (14474):     gmp_app_id: 1:282262785390:android:37683f0bb3a020765a457f
+11-20 14:25:14.913 V/FA-SVC  (14474):     app_id: be.sdworx.sdwa.inhouse
+11-20 14:25:14.913 V/FA-SVC  (14474):     app_version: 5.5.0.1746822
+11-20 14:25:14.913 V/FA-SVC  (14474):     app_version_major: 1795094515
+11-20 14:25:14.913 V/FA-SVC  (14474):     firebase_instance_id: forsmY2ARzy80XviYYlOdC
+11-20 14:25:14.913 V/FA-SVC  (14474):     dev_cert_hash: -7410338321869132145
+11-20 14:25:14.913 V/FA-SVC  (14474):     app_store: com.google.android.packageinstaller
+11-20 14:25:14.913 V/FA-SVC  (14474):     upload_timestamp_millis: 1795181114893
+11-20 14:25:14.913 V/FA-SVC  (14474):     start_timestamp_millis: 1795181114346
+11-20 14:25:14.913 V/FA-SVC  (14474):     end_timestamp_millis: 1795181114545
+11-20 14:25:14.913 V/FA-SVC  (14474):     previous_bundle_start_timestamp_millis: 1795181080309
+11-20 14:25:14.913 V/FA-SVC  (14474):     previous_bundle_end_timestamp_millis: 1795181112423
+11-20 14:25:14.913 V/FA-SVC  (14474):     app_instance_id: 87f398dcec888c89c8750afac58a36c9
+11-20 14:25:14.913 V/FA-SVC  (14474):     resettable_device_id: 
+11-20 14:25:14.913 V/FA-SVC  (14474):     ds_id: 
+11-20 14:25:14.913 V/FA-SVC  (14474):     os_version: 15
+11-20 14:25:14.913 V/FA-SVC  (14474):     device_model: SM-G991B
+11-20 14:25:14.913 V/FA-SVC  (14474):     user_default_language: en-us
+11-20 14:25:14.913 V/FA-SVC  (14474):     time_zone_offset_minutes: 60
+11-20 14:25:14.913 V/FA-SVC  (14474):     bundle_sequential_index: 38
+11-20 14:25:14.913 V/FA-SVC  (14474):     delivery_index: 9
+11-20 14:25:14.913 V/FA-SVC  (14474):     service_upload: true
+11-20 14:25:14.913 V/FA-SVC  (14474):     health_monitor: 
+11-20 14:25:14.913 V/FA-SVC  (14474):     consent_signals: G1--
+11-20 14:25:14.913 V/FA-SVC  (14474):     is_dma_region: true
+11-20 14:25:14.913 V/FA-SVC  (14474):     core_platform_services: a
+11-20 14:25:14.913 V/FA-SVC  (14474):     consent_diagnostics: 19911
+11-20 14:25:14.913 V/FA-SVC  (14474):     target_os_version: 36
+11-20 14:25:14.913 V/FA-SVC  (14474):     user_property {
+11-20 14:25:14.913 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943352
+11-20 14:25:14.913 V/FA-SVC  (14474):       name: first_open_time(_fot)
+11-20 14:25:14.913 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:14.913 V/FA-SVC  (14474):       int_value: 1795183200000
+11-20 14:25:14.913 V/FA-SVC  (14474):     }
+11-20 14:25:14.913 V/FA-SVC  (14474):     user_property {
+11-20 14:25:14.913 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943352
+11-20 14:25:14.913 V/FA-SVC  (14474):       name: first_open_after_install(_fi)
+11-20 14:25:14.913 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:14.913 V/FA-SVC  (14474):       int_value: 1
+11-20 14:25:14.913 V/FA-SVC  (14474):     }
+11-20 14:25:14.913 V/FA-SVC  (14474):     user_property {
+11-20 14:25:14.913 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943613
+11-20 14:25:14.913 V/FA-SVC  (14474):       name: ga_session_number(_sno)
+11-20 14:25:14.913 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:14.913 V/FA-SVC  (14474):       int_value: 1
+11-20 14:25:14.913 V/FA-SVC  (14474):     }
+11-20 14:25:14.913 V/FA-SVC  (14474):     user_property {
+11-20 14:25:14.913 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943613
+11-20 14:25:14.913 V/FA-SVC  (14474):       name: ga_session_id(_sid)
+11-20 14:25:14.913 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:14.913 V/FA-SVC  (14474):       int_value: 1795180943
+11-20 14:25:14.913 V/FA-SVC  (14474):     }
+11-20 14:25:14.913 V/FA-SVC  (14474):     user_property {
+11-20 14:25:14.913 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032029
+11-20 14:25:14.913 V/FA-SVC  (14474):       name: online
+11-20 14:25:14.913 V/FA-SVC  (14474):       string_value: true
+11-20 14:25:14.913 V/FA-SVC  (14474):     }
+11-20 14:25:14.913 V/FA-SVC  (14474):     user_property {
+11-20 14:25:14.913 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032038
+11-20 14:25:14.913 V/FA-SVC  (14474):       name: accessibility_specs
+11-20 14:25:14.913 V/FA-SVC  (14474):       string_value: 1:0,8:0,10:0,13:0
+11-20 14:25:14.913 V/FA-SVC  (14474):     }
+11-20 14:25:14.913 V/FA-SVC  (14474):     user_property {
+11-20 14:25:14.913 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032038
+11-20 14:25:14.913 V/FA-SVC  (14474):       name: text_scale_factor
+11-20 14:25:14.913 V/FA-SVC  (14474):       string_value: 1.0
+11-20 14:25:14.913 V/FA-SVC  (14474):     }
+11-20 14:25:14.913 V/FA-SVC  (14474):     user_property {
+11-20 14:25:14.913 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032039
+11-20 14:25:14.913 V/FA-SVC  (14474):       name: viewport_size
+11-20 14:25:14.913 V/FA-SVC  (14474):       string_value: 360 x 800
+11-20 14:25:14.913 V/FA-SVC  (14474):     }
+11-20 14:25:14.913 V/FA-SVC  (14474):     user_property {
+11-20 14:25:14.913 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032039
+11-20 14:25:14.913 V/FA-SVC  (14474):       name: pixel_ratio
+11-20 14:25:14.913 V/FA-SVC  (14474):       string_value: 3.00
+11-20 14:25:14.913 V/FA-SVC  (14474):     }
+11-20 14:25:14.913 V/FA-SVC  (14474):     user_property {
+11-20 14:25:14.913 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069824
+11-20 14:25:14.913 V/FA-SVC  (14474):       name: module_absences
+11-20 14:25:14.913 V/FA-SVC  (14474):       string_value: false
+11-20 14:25:14.913 V/FA-SVC  (14474):     }
+11-20 14:25:14.913 V/FA-SVC  (14474):     user_property {
+11-20 14:25:14.913 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069824
+11-20 14:25:14.913 V/FA-SVC  (14474):       name: module_approvals
+11-20 14:25:14.913 V/FA-SVC  (14474):       string_value: false
+11-20 14:25:14.913 V/FA-SVC  (14474):     }
+11-20 14:25:14.913 V/FA-SVC  (14474):     user_property {
+11-20 14:25:14.913 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069915
+11-20 14:25:14.913 V/FA-SVC  (14474):       name: module_expenses
+11-20 14:25:14.913 V/FA-SVC  (14474):       string_value: grouped
+11-20 14:25:14.913 V/FA-SVC  (14474):     }
+11-20 14:25:14.913 V/FA-SVC  (14474):     user_property {
+11-20 14:25:14.913 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069916
+11-20 14:25:14.913 V/FA-SVC  (14474):       name: module_salary
+11-20 14:25:14.913 V/FA-SVC  (14474):       string_value: none
+11-20 14:25:14.913 V/FA-SVC  (14474):     }
+11-20 14:25:14.913 V/FA-SVC  (14474):     user_property {
+11-20 14:25:14.913 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069917
+11-20 14:25:14.913 V/FA-SVC  (14474):       name: module_newsfeed
+11-20 14:25:14.913 V/FA-SVC  (14474):       string_value: false
+11-20 14:25:14.913 V/FA-SVC  (14474):     }
+11-20 14:25:14.913 V/FA-SVC  (14474):     user_property {
+11-20 14:25:14.913 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069917
+11-20 14:25:14.913 V/FA-SVC  (14474):       name: module_overtime
+11-20 14:25:14.913 V/FA-SVC  (14474):       string_value: none
+11-20 14:25:14.913 V/FA-SVC  (14474):     }
+11-20 14:25:14.913 V/FA-SVC  (14474):     user_property {
+11-20 14:25:14.913 V/FA-SVC  (14474):       set_timestamp_millis: 1795181114895
+11-20 14:25:14.913 V/FA-SVC  (14474):       name: lifetime_user_engagement(_lte)
+11-20 14:25:14.913 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:14.913 V/FA-SVC  (14474):       int_value: 81974
+11-20 14:25:14.913 V/FA-SVC  (14474):     }
+11-20 14:25:14.913 V/FA-SVC  (14474):     user_property {
+11-20 14:25:14.913 V/FA-SVC  (14474):       set_timestamp_millis: 1795181114896
+11-20 14:25:14.913 V/FA-SVC  (14474):       name: session_user_engagement(_se)
+11-20 14:25:14.913 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:14.913 V/FA-SVC  (14474):       int_value: 81973
+11-20 14:25:14.913 V/FA-SVC  (14474):     }
+11-20 14:25:14.913 V/FA-SVC  (14474):     user_property {
+11-20 14:25:14.913 V/FA-SVC  (14474):       set_timestamp_millis: 1795181114897
+11-20 14:25:14.913 V/FA-SVC  (14474):       name: non_personalized_ads(_npa)
+11-20 14:25:14.913 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:14.913 V/FA-SVC  (14474):       int_value: 1
+11-20 14:25:14.913 V/FA-SVC  (14474):     }
+11-20 14:25:14.913 V/FA-SVC  (14474):     event {
+11-20 14:25:14.913 V/FA-SVC  (14474):       name: screen_view(_vs)
+11-20 14:25:14.913 V/FA-SVC  (14474):       timestamp_millis: 1795181114346
+11-20 14:25:14.913 V/FA-SVC  (14474):       corrected_timestamp_millis: 1795181113982
+11-20 14:25:14.913 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181112423
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:14.913 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: _r
+11-20 14:25:14.913 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: engagement_time_msec(_et)
+11-20 14:25:14.913 V/FA-SVC  (14474):         int_value: 1918
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: ga_previous_class(_pc)
+11-20 14:25:14.913 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: ga_previous_id(_pi)
+11-20 14:25:14.913 V/FA-SVC  (14474):         int_value: -3405477808954366045
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: ga_previous_screen(_pn)
+11-20 14:25:14.913 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:14.913 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:14.913 V/FA-SVC  (14474):         int_value: -3405477808954366044
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:14.913 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: _dbg
+11-20 14:25:14.913 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: manual_tracking(_mst)
+11-20 14:25:14.913 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):     }
+11-20 14:25:14.913 V/FA-SVC  (14474):     event {
+11-20 14:25:14.913 V/FA-SVC  (14474):       name: qr_scan_invalid_code
+11-20 14:25:14.913 V/FA-SVC  (14474):       timestamp_millis: 1795181114545
+11-20 14:25:14.913 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181112423
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:14.913 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: _r
+11-20 14:25:14.913 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:14.913 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:14.913 V/FA-SVC  (14474):         int_value: -3405477808954366044
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:14.913 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: _dbg
+11-20 14:25:14.913 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):     }
+11-20 14:25:14.913 V/FA-SVC  (14474):     event {
+11-20 14:25:14.913 V/FA-SVC  (14474):       name: screen_view(_vs)
+11-20 14:25:14.913 V/FA-SVC  (14474):       timestamp_millis: 1795181114545
+11-20 14:25:14.913 V/FA-SVC  (14474):       corrected_timestamp_millis: 1795181114252
+11-20 14:25:14.913 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181114346
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:14.913 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: _r
+11-20 14:25:14.913 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: engagement_time_msec(_et)
+11-20 14:25:14.913 V/FA-SVC  (14474):         int_value: 211
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: ga_previous_class(_pc)
+11-20 14:25:14.913 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: ga_previous_id(_pi)
+11-20 14:25:14.913 V/FA-SVC  (14474):         int_value: -3405477808954366044
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: ga_previous_screen(_pn)
+11-20 14:25:14.913 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:14.913 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:14.913 V/FA-SVC  (14474):         int_value: -3405477808954366043
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:14.913 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: _dbg
+11-20 14:25:14.913 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):       param {
+11-20 14:25:14.913 V/FA-SVC  (14474):         name: manual_tracking(_mst)
+11-20 14:25:14.913 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:14.913 V/FA-SVC  (14474):       }
+11-20 14:25:14.913 V/FA-SVC  (14474):     }
+11-20 14:25:14.913 V/FA-SVC  (14474):   }
+11-20 14:25:14.913 V/FA-SVC  (14474): } // End-of-batch
+11-20 14:25:14.913 V/FA-SVC  (14474): Uploading bundle with GmsCore network library. app: be.sdworx.sdwa.inhouse
+11-20 14:25:14.914 V/FA-SVC  (14474): Not stopping services. fetch, network, upload: false, true, false
+11-20 14:25:14.959 V/FA-SVC  (14474): Gms url request successful. app: be.sdworx.sdwa.inhouse, GOOGLE_ANALYTICS
+11-20 14:25:14.961 V/FA-SVC  (14474): Network upload successful with code, uploadAttempted: 204, true
+11-20 14:25:14.965 V/FA-SVC  (14474): Upload scheduled in approximately ms: 3599996
+11-20 14:25:14.965 V/FA-SVC  (14474): Scheduling upload, millis: 3599996
+11-20 14:25:14.966 V/FA-SVC  (14474): Successful upload. Got network response. code, size: 204, 0
+11-20 14:25:14.977 V/FA-SVC  (14474): Nothing to upload or uploading impossible
+11-20 14:25:14.977 V/FA-SVC  (14474): Unscheduling upload
+11-20 14:25:14.978 V/FA-SVC  (14474): Stopping uploading service(s)
+11-20 14:25:16.131 V/FA      (29469): Logging screen view with name, class: qr_scanner, qr_scanner
+11-20 14:25:16.157 V/FA      (29469): Logging telemetry for logEvent from database
+11-20 14:25:16.159 V/FA-SVC  (14474): EES not loaded for: be.sdworx.sdwa.inhouse
+11-20 14:25:16.159 V/FA      (29469): Recording user engagement, ms: 1574
+11-20 14:25:16.164 V/FA-SVC  (14474): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=1574, ga_previous_class(_pc)=dialog, ga_previous_id(_pi)=-3405477808954366043, ga_previous_screen(_pn)=dialog, ga_screen_class(_sc)=qr_scanner, ga_screen_id(_si)=-3405477808954366042, ga_screen(_sn)=qr_scanner, manual_tracking(_mst)=1}]
+11-20 14:25:16.181 V/FA-SVC  (14474): Upload scheduled in approximately ms: 500
+11-20 14:25:16.181 V/FA-SVC  (14474): Scheduling upload, millis: 500
+11-20 14:25:16.182 V/FA-SVC  (14474): Background event processing time, ms: 19
+11-20 14:25:16.683 V/FA-SVC  (14474): Unscheduling upload
+11-20 14:25:16.686 V/FA-SVC  (14474): Starting upload from DelayedRunnable
+11-20 14:25:16.694 V/FA-SVC  (14474): Updated engagement user property. scope, value: lifetime, 83548
+11-20 14:25:16.695 V/FA-SVC  (14474): Updated engagement user property. scope, value: session-scoped, 83547
+11-20 14:25:16.698 V/FA-SVC  (14474): Setting user property: non_personalized_ads(_npa), 1
+11-20 14:25:16.703 V/FA-SVC  (14474): Bundling raw events. appId, hasRealtimeData, totalEvents: be.sdworx.sdwa.inhouse, false, 1
+11-20 14:25:16.705 V/FA-SVC  (14474): Saving bundle, size: 803
+11-20 14:25:16.712 D/FA-SVC  (14474): Uploading events. Elapsed time since last upload attempt (ms): 507
+11-20 14:25:16.715 V/FA-SVC  (14474): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1062, 
+11-20 14:25:16.715 V/FA-SVC  (14474): batch {
+11-20 14:25:16.715 V/FA-SVC  (14474):   bundle {
+11-20 14:25:16.715 V/FA-SVC  (14474):     protocol_version: 1
+11-20 14:25:16.715 V/FA-SVC  (14474):     platform: android
+11-20 14:25:16.715 V/FA-SVC  (14474):     gmp_version: 196007
+11-20 14:25:16.715 V/FA-SVC  (14474):     uploading_gmp_version: 264531
+11-20 14:25:16.715 V/FA-SVC  (14474):     dynamite_version: 220
+11-20 14:25:16.715 V/FA-SVC  (14474):     config_version: 1791003620271571
+11-20 14:25:16.715 V/FA-SVC  (14474):     gmp_app_id: 1:282262785390:android:37683f0bb3a020765a457f
+11-20 14:25:16.715 V/FA-SVC  (14474):     app_id: be.sdworx.sdwa.inhouse
+11-20 14:25:16.715 V/FA-SVC  (14474):     app_version: 5.5.0.1746822
+11-20 14:25:16.715 V/FA-SVC  (14474):     app_version_major: 1795094515
+11-20 14:25:16.715 V/FA-SVC  (14474):     firebase_instance_id: forsmY2ARzy80XviYYlOdC
+11-20 14:25:16.715 V/FA-SVC  (14474):     dev_cert_hash: -7410338321869132145
+11-20 14:25:16.715 V/FA-SVC  (14474):     app_store: com.google.android.packageinstaller
+11-20 14:25:16.715 V/FA-SVC  (14474):     upload_timestamp_millis: 1795181116688
+11-20 14:25:16.715 V/FA-SVC  (14474):     start_timestamp_millis: 1795181116131
+11-20 14:25:16.715 V/FA-SVC  (14474):     end_timestamp_millis: 1795181116131
+11-20 14:25:16.715 V/FA-SVC  (14474):     previous_bundle_start_timestamp_millis: 1795181114346
+11-20 14:25:16.715 V/FA-SVC  (14474):     previous_bundle_end_timestamp_millis: 1795181114545
+11-20 14:25:16.715 V/FA-SVC  (14474):     app_instance_id: 87f398dcec888c89c8750afac58a36c9
+11-20 14:25:16.715 V/FA-SVC  (14474):     resettable_device_id: 
+11-20 14:25:16.715 V/FA-SVC  (14474):     ds_id: 
+11-20 14:25:16.715 V/FA-SVC  (14474):     os_version: 15
+11-20 14:25:16.715 V/FA-SVC  (14474):     device_model: SM-G991B
+11-20 14:25:16.715 V/FA-SVC  (14474):     user_default_language: en-us
+11-20 14:25:16.715 V/FA-SVC  (14474):     time_zone_offset_minutes: 60
+11-20 14:25:16.715 V/FA-SVC  (14474):     bundle_sequential_index: 39
+11-20 14:25:16.715 V/FA-SVC  (14474):     delivery_index: 10
+11-20 14:25:16.715 V/FA-SVC  (14474):     service_upload: true
+11-20 14:25:16.715 V/FA-SVC  (14474):     health_monitor: 
+11-20 14:25:16.715 V/FA-SVC  (14474):     consent_signals: G1--
+11-20 14:25:16.715 V/FA-SVC  (14474):     is_dma_region: true
+11-20 14:25:16.715 V/FA-SVC  (14474):     core_platform_services: a
+11-20 14:25:16.715 V/FA-SVC  (14474):     consent_diagnostics: 19911
+11-20 14:25:16.715 V/FA-SVC  (14474):     target_os_version: 36
+11-20 14:25:16.715 V/FA-SVC  (14474):     user_property {
+11-20 14:25:16.715 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943352
+11-20 14:25:16.715 V/FA-SVC  (14474):       name: first_open_time(_fot)
+11-20 14:25:16.715 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:16.715 V/FA-SVC  (14474):       int_value: 1795183200000
+11-20 14:25:16.715 V/FA-SVC  (14474):     }
+11-20 14:25:16.715 V/FA-SVC  (14474):     user_property {
+11-20 14:25:16.715 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943352
+11-20 14:25:16.715 V/FA-SVC  (14474):       name: first_open_after_install(_fi)
+11-20 14:25:16.715 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:16.715 V/FA-SVC  (14474):       int_value: 1
+11-20 14:25:16.715 V/FA-SVC  (14474):     }
+11-20 14:25:16.715 V/FA-SVC  (14474):     user_property {
+11-20 14:25:16.715 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943613
+11-20 14:25:16.715 V/FA-SVC  (14474):       name: ga_session_number(_sno)
+11-20 14:25:16.715 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:16.715 V/FA-SVC  (14474):       int_value: 1
+11-20 14:25:16.715 V/FA-SVC  (14474):     }
+11-20 14:25:16.715 V/FA-SVC  (14474):     user_property {
+11-20 14:25:16.715 V/FA-SVC  (14474):       set_timestamp_millis: 1795180943613
+11-20 14:25:16.715 V/FA-SVC  (14474):       name: ga_session_id(_sid)
+11-20 14:25:16.715 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:16.715 V/FA-SVC  (14474):       int_value: 1795180943
+11-20 14:25:16.715 V/FA-SVC  (14474):     }
+11-20 14:25:16.715 V/FA-SVC  (14474):     user_property {
+11-20 14:25:16.715 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032029
+11-20 14:25:16.715 V/FA-SVC  (14474):       name: online
+11-20 14:25:16.715 V/FA-SVC  (14474):       string_value: true
+11-20 14:25:16.715 V/FA-SVC  (14474):     }
+11-20 14:25:16.715 V/FA-SVC  (14474):     user_property {
+11-20 14:25:16.715 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032038
+11-20 14:25:16.715 V/FA-SVC  (14474):       name: accessibility_specs
+11-20 14:25:16.715 V/FA-SVC  (14474):       string_value: 1:0,8:0,10:0,13:0
+11-20 14:25:16.715 V/FA-SVC  (14474):     }
+11-20 14:25:16.715 V/FA-SVC  (14474):     user_property {
+11-20 14:25:16.715 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032038
+11-20 14:25:16.715 V/FA-SVC  (14474):       name: text_scale_factor
+11-20 14:25:16.715 V/FA-SVC  (14474):       string_value: 1.0
+11-20 14:25:16.715 V/FA-SVC  (14474):     }
+11-20 14:25:16.715 V/FA-SVC  (14474):     user_property {
+11-20 14:25:16.715 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032039
+11-20 14:25:16.715 V/FA-SVC  (14474):       name: viewport_size
+11-20 14:25:16.715 V/FA-SVC  (14474):       string_value: 360 x 800
+11-20 14:25:16.715 V/FA-SVC  (14474):     }
+11-20 14:25:16.715 V/FA-SVC  (14474):     user_property {
+11-20 14:25:16.715 V/FA-SVC  (14474):       set_timestamp_millis: 1795181032039
+11-20 14:25:16.715 V/FA-SVC  (14474):       name: pixel_ratio
+11-20 14:25:16.715 V/FA-SVC  (14474):       string_value: 3.00
+11-20 14:25:16.715 V/FA-SVC  (14474):     }
+11-20 14:25:16.715 V/FA-SVC  (14474):     user_property {
+11-20 14:25:16.715 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069824
+11-20 14:25:16.715 V/FA-SVC  (14474):       name: module_absences
+11-20 14:25:16.715 V/FA-SVC  (14474):       string_value: false
+11-20 14:25:16.715 V/FA-SVC  (14474):     }
+11-20 14:25:16.715 V/FA-SVC  (14474):     user_property {
+11-20 14:25:16.715 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069824
+11-20 14:25:16.715 V/FA-SVC  (14474):       name: module_approvals
+11-20 14:25:16.715 V/FA-SVC  (14474):       string_value: false
+11-20 14:25:16.715 V/FA-SVC  (14474):     }
+11-20 14:25:16.715 V/FA-SVC  (14474):     user_property {
+11-20 14:25:16.715 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069915
+11-20 14:25:16.715 V/FA-SVC  (14474):       name: module_expenses
+11-20 14:25:16.715 V/FA-SVC  (14474):       string_value: grouped
+11-20 14:25:16.715 V/FA-SVC  (14474):     }
+11-20 14:25:16.715 V/FA-SVC  (14474):     user_property {
+11-20 14:25:16.715 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069916
+11-20 14:25:16.715 V/FA-SVC  (14474):       name: module_salary
+11-20 14:25:16.715 V/FA-SVC  (14474):       string_value: none
+11-20 14:25:16.715 V/FA-SVC  (14474):     }
+11-20 14:25:16.715 V/FA-SVC  (14474):     user_property {
+11-20 14:25:16.715 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069917
+11-20 14:25:16.715 V/FA-SVC  (14474):       name: module_newsfeed
+11-20 14:25:16.715 V/FA-SVC  (14474):       string_value: false
+11-20 14:25:16.715 V/FA-SVC  (14474):     }
+11-20 14:25:16.715 V/FA-SVC  (14474):     user_property {
+11-20 14:25:16.715 V/FA-SVC  (14474):       set_timestamp_millis: 1795181069917
+11-20 14:25:16.715 V/FA-SVC  (14474):       name: module_overtime
+11-20 14:25:16.715 V/FA-SVC  (14474):       string_value: none
+11-20 14:25:16.715 V/FA-SVC  (14474):     }
+11-20 14:25:16.715 V/FA-SVC  (14474):     user_property {
+11-20 14:25:16.715 V/FA-SVC  (14474):       set_timestamp_millis: 1795181116693
+11-20 14:25:16.715 V/FA-SVC  (14474):       name: lifetime_user_engagement(_lte)
+11-20 14:25:16.715 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:16.715 V/FA-SVC  (14474):       int_value: 83548
+11-20 14:25:16.715 V/FA-SVC  (14474):     }
+11-20 14:25:16.715 V/FA-SVC  (14474):     user_property {
+11-20 14:25:16.715 V/FA-SVC  (14474):       set_timestamp_millis: 1795181116694
+11-20 14:25:16.715 V/FA-SVC  (14474):       name: session_user_engagement(_se)
+11-20 14:25:16.715 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:16.715 V/FA-SVC  (14474):       int_value: 83547
+11-20 14:25:16.715 V/FA-SVC  (14474):     }
+11-20 14:25:16.715 V/FA-SVC  (14474):     user_property {
+11-20 14:25:16.715 V/FA-SVC  (14474):       set_timestamp_millis: 1795181116698
+11-20 14:25:16.715 V/FA-SVC  (14474):       name: non_personalized_ads(_npa)
+11-20 14:25:16.715 V/FA-SVC  (14474):       string_value: 
+11-20 14:25:16.715 V/FA-SVC  (14474):       int_value: 1
+11-20 14:25:16.715 V/FA-SVC  (14474):     }
+11-20 14:25:16.715 V/FA-SVC  (14474):     event {
+11-20 14:25:16.715 V/FA-SVC  (14474):       name: screen_view(_vs)
+11-20 14:25:16.715 V/FA-SVC  (14474):       timestamp_millis: 1795181116131
+11-20 14:25:16.715 V/FA-SVC  (14474):       corrected_timestamp_millis: 1795181115766
+11-20 14:25:16.715 V/FA-SVC  (14474):       previous_timestamp_millis: 1795181114545
+11-20 14:25:16.715 V/FA-SVC  (14474):       param {
+11-20 14:25:16.715 V/FA-SVC  (14474):         name: ga_event_origin(_o)
+11-20 14:25:16.715 V/FA-SVC  (14474):         string_value: app
+11-20 14:25:16.715 V/FA-SVC  (14474):       }
+11-20 14:25:16.715 V/FA-SVC  (14474):       param {
+11-20 14:25:16.715 V/FA-SVC  (14474):         name: _r
+11-20 14:25:16.715 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:16.715 V/FA-SVC  (14474):       }
+11-20 14:25:16.715 V/FA-SVC  (14474):       param {
+11-20 14:25:16.715 V/FA-SVC  (14474):         name: engagement_time_msec(_et)
+11-20 14:25:16.715 V/FA-SVC  (14474):         int_value: 1574
+11-20 14:25:16.715 V/FA-SVC  (14474):       }
+11-20 14:25:16.715 V/FA-SVC  (14474):       param {
+11-20 14:25:16.715 V/FA-SVC  (14474):         name: ga_previous_class(_pc)
+11-20 14:25:16.715 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:16.715 V/FA-SVC  (14474):       }
+11-20 14:25:16.715 V/FA-SVC  (14474):       param {
+11-20 14:25:16.715 V/FA-SVC  (14474):         name: ga_previous_id(_pi)
+11-20 14:25:16.715 V/FA-SVC  (14474):         int_value: -3405477808954366043
+11-20 14:25:16.715 V/FA-SVC  (14474):       }
+11-20 14:25:16.715 V/FA-SVC  (14474):       param {
+11-20 14:25:16.715 V/FA-SVC  (14474):         name: ga_previous_screen(_pn)
+11-20 14:25:16.715 V/FA-SVC  (14474):         string_value: dialog
+11-20 14:25:16.715 V/FA-SVC  (14474):       }
+11-20 14:25:16.715 V/FA-SVC  (14474):       param {
+11-20 14:25:16.715 V/FA-SVC  (14474):         name: ga_screen_class(_sc)
+11-20 14:25:16.715 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:16.715 V/FA-SVC  (14474):       }
+11-20 14:25:16.715 V/FA-SVC  (14474):       param {
+11-20 14:25:16.715 V/FA-SVC  (14474):         name: ga_screen_id(_si)
+11-20 14:25:16.715 V/FA-SVC  (14474):         int_value: -3405477808954366042
+11-20 14:25:16.715 V/FA-SVC  (14474):       }
+11-20 14:25:16.715 V/FA-SVC  (14474):       param {
+11-20 14:25:16.715 V/FA-SVC  (14474):         name: ga_screen(_sn)
+11-20 14:25:16.715 V/FA-SVC  (14474):         string_value: qr_scanner
+11-20 14:25:16.715 V/FA-SVC  (14474):       }
+11-20 14:25:16.715 V/FA-SVC  (14474):       param {
+11-20 14:25:16.715 V/FA-SVC  (14474):         name: _dbg
+11-20 14:25:16.715 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:16.715 V/FA-SVC  (14474):       }
+11-20 14:25:16.715 V/FA-SVC  (14474):       param {
+11-20 14:25:16.715 V/FA-SVC  (14474):         name: manual_tracking(_mst)
+11-20 14:25:16.715 V/FA-SVC  (14474):         int_value: 1
+11-20 14:25:16.715 V/FA-SVC  (14474):       }
+11-20 14:25:16.715 V/FA-SVC  (14474):     }
+11-20 14:25:16.715 V/FA-SVC  (14474):   }
+11-20 14:25:16.715 V/FA-SVC  (14474): } // End-of-batch
+11-20 14:25:16.715 V/FA-SVC  (14474): Uploading bundle with GmsCore network library. app: be.sdworx.sdwa.inhouse
+11-20 14:25:16.716 V/FA-SVC  (14474): Not stopping services. fetch, network, upload: false, true, false
+11-20 14:25:16.767 V/FA-SVC  (14474): Gms url request successful. app: be.sdworx.sdwa.inhouse, GOOGLE_ANALYTICS
+11-20 14:25:16.770 V/FA-SVC  (14474): Network upload successful with code, uploadAttempted: 204, true
+11-20 14:25:16.773 V/FA-SVC  (14474): Upload scheduled in approximately ms: 3599997
+11-20 14:25:16.773 V/FA-SVC  (14474): Scheduling upload, millis: 3599997
+11-20 14:25:16.774 V/FA-SVC  (14474): Successful upload. Got network response. code, size: 204, 0
+11-20 14:25:16.784 V/FA-SVC  (14474): Nothing to upload or uploading impossible
+11-20 14:25:16.785 V/FA-SVC  (14474): Unscheduling upload
+11-20 14:25:16.789 V/FA-SVC  (14474): Stopping uploading service(s)
+11-20 14:25:21.161 V/FA      (29469): Inactivity, disconnecting from the service

@@ -1,0 +1,185 @@
+﻿FIREBASE ANALYTICS CAPTURE REPORT
+============================================================
+Log file : log_expense_errors_routing_vat_currency_20261113_181100.log
+Window   : 11-13 18:07:22.793 -> 11-13 18:10:56.732 (device time)
+App      : be.sdworx.sdwa.inhouse 5.5.0.1734904 | SM-G991B | Android 15
+Debug    : partial (75 of 115 events) - app was not restarted at the start
+
+RESULT
+------------------------------------------------------------
+Uploads  : 51 batch(es): 51 accepted, 0 FAILED, 0 without result
+Events   : 115 uploaded (40 app, 73 screen, 2 auto, 0 sdk-error)
+All good: every event was accepted by Firebase.
+
+EVENT SUMMARY
+------------------------------------------------------------
+Event                                Kind   Count Uploaded Failed Pending
+-----                                ----   ----- -------- ------ -------
+auth_success                         App        2        2      0       0
+confirm_input                        App        2        2      0       0
+edit_expense                         App        1        1      0       0
+exp_route_calc_destination_tapped    App        1        1      0       0
+exp_route_calc_select_destination    App        1        1      0       0
+exp_route_calc_select_starting_point App        3        3      0       0
+exp_route_calc_starting_point_tapped App        3        3      0       0
+expense_currency_converted           App        1        1      0       0
+expense_currency_tapped              App        2        2      0       0
+expense_detail_edit_tapped           App        1        1      0       0
+expense_detail_tapped                App        2        2      0       0
+expense_parsing_failure              App        2        2      0       0
+expense_parsing_triggered            App        2        2      0       0
+expense_vat_percentage_tapped        App        2        2      0       0
+generic_picker_item_selected_single  App        9        9      0       0
+home_tile                            App        2        2      0       0
+landing_login                        App        2        2      0       0
+token_success                        App        2        2      0       0
+user_engagement                      Auto       2        2      0       0
+screen_view                          Screen    73       73      0       0
+
+SCREENS (in order)
+------------------------------------------------------------
+Time         Screen                                Details                                                                        Upload  
+----         ------                                -------                                                                        ------  
+18:05:41.696 enter_pin                             from=landing; manual_tracking=1                                                OK (204)
+18:05:43.722 landing                               from=enter_pin; manual_tracking=1                                              OK (204)
+18:05:46.283 home                                  from=landing; manual_tracking=1                                                OK (204)
+18:05:50.170 expenses_ungroup_overview_open_tab    from=home; manual_tracking=1                                                   OK (204)
+18:05:51.460 init_add_edit_expense                 from=expenses_ungroup_overview_open_tab; manual_tracking=1                     OK (204)
+18:05:51.478 choose_category_expense_no_transition from=init_add_edit_expense; manual_tracking=1                                  OK (204)
+18:05:53.802 add_edit_expense                      from=choose_category_expense_no_transition; manual_tracking=1                  OK (204)
+18:06:04.365 choose_vat_rate_expense               from=add_edit_expense; manual_tracking=1                                       OK (204)
+18:06:05.554 add_edit_expense                      from=choose_vat_rate_expense; manual_tracking=1                                OK (204)
+18:06:08.205 generic_error_dialog                  from=add_edit_expense; manual_tracking=1                                       OK (204)
+18:06:09.013 add_edit_expense                      from=generic_error_dialog; manual_tracking=1                                   OK (204)
+18:06:09.924 add_edit_expense_close_dialog         from=add_edit_expense; manual_tracking=1                                       OK (204)
+18:06:10.898 expenses_ungroup_overview_open_tab    from=add_edit_expense_close_dialog; manual_tracking=1                          OK (204)
+18:06:10.899 add_edit_expense                      from=expenses_ungroup_overview_open_tab; manual_tracking=1                     OK (204)
+18:06:11.817 init_add_edit_expense                 from=add_edit_expense; manual_tracking=1                                       OK (204)
+18:06:11.832 choose_category_expense_no_transition from=init_add_edit_expense; manual_tracking=1                                  OK (204)
+18:06:14.525 add_edit_expense                      from=choose_category_expense_no_transition; manual_tracking=1                  OK (204)
+18:06:18.212 choose_currency_expense               from=add_edit_expense; manual_tracking=1                                       OK (204)
+18:06:19.468 add_edit_expense                      from=choose_currency_expense; manual_tracking=1                                OK (204)
+18:06:36.242 generic_error_dialog                  from=add_edit_expense; manual_tracking=1                                       OK (204)
+18:06:37.473 add_edit_expense                      from=generic_error_dialog; manual_tracking=1                                   OK (204)
+18:06:38.340 add_edit_expense_close_dialog         from=add_edit_expense; manual_tracking=1                                       OK (204)
+18:06:39.182 add_edit_expense                      from=add_edit_expense_close_dialog; manual_tracking=1                          OK (204)
+18:06:39.184 expenses_ungroup_overview_open_tab    from=add_edit_expense; manual_tracking=1                                       OK (204)
+18:06:40.096 home                                  from=expenses_ungroup_overview_open_tab; manual_tracking=1                     OK (204)
+18:07:23.513 loading                               manual_tracking=1                                                              OK (204)
+18:07:24.332 landing                               from=loading; manual_tracking=1                                                OK (204)
+18:07:29.999 enter_pin                             from=landing; manual_tracking=1                                                OK (204)
+18:07:32.658 landing                               from=enter_pin; manual_tracking=1                                              OK (204)
+18:07:34.473 home                                  from=landing; manual_tracking=1                                                OK (204)
+18:07:43.679 expenses_ungroup_overview_open_tab    from=home; manual_tracking=1                                                   OK (204)
+18:07:44.954 init_add_edit_expense                 from=expenses_ungroup_overview_open_tab; manual_tracking=1                     OK (204)
+18:07:44.971 choose_category_expense_no_transition from=init_add_edit_expense; manual_tracking=1                                  OK (204)
+18:07:46.559 add_edit_expense                      from=choose_category_expense_no_transition; manual_tracking=1                  OK (204)
+18:07:53.464 point_selection                       from=add_edit_expense; manual_tracking=1                                       OK (204)
+18:07:56.420 add_edit_expense                      from=point_selection; manual_tracking=1                                        OK (204)
+18:08:00.901 point_selection                       from=add_edit_expense; manual_tracking=1                                       OK (204)
+18:08:02.847 add_edit_expense                      from=point_selection; manual_tracking=1                                        OK (204)
+18:08:05.209 point_selection                       from=add_edit_expense; manual_tracking=1                                       OK (204)
+18:08:06.829 add_edit_expense                      from=point_selection; manual_tracking=1                                        OK (204)
+18:08:10.395 point_selection                       from=add_edit_expense; manual_tracking=1                                       OK (204)
+18:08:12.597 add_edit_expense                      from=point_selection; manual_tracking=1                                        OK (204)
+18:08:17.388 generic_error_dialog                  from=add_edit_expense; manual_tracking=1                                       OK (204)
+18:08:19.270 add_edit_expense                      from=generic_error_dialog; manual_tracking=1                                   OK (204)
+18:08:22.676 add_edit_expense_close_dialog         from=add_edit_expense; manual_tracking=1                                       OK (204)
+18:08:23.597 add_edit_expense                      from=add_edit_expense_close_dialog; manual_tracking=1                          OK (204)
+18:08:23.598 expenses_ungroup_overview_open_tab    from=add_edit_expense; manual_tracking=1                                       OK (204)
+18:08:38.050 init_add_edit_expense                 from=expenses_ungroup_overview_open_tab; manual_tracking=1                     OK (204)
+18:08:38.066 choose_category_expense_no_transition from=init_add_edit_expense; manual_tracking=1                                  OK (204)
+18:08:39.808 add_edit_expense                      from=choose_category_expense_no_transition; manual_tracking=1                  OK (204)
+18:08:53.337 choose_vat_rate_expense               from=add_edit_expense; manual_tracking=1                                       OK (204)
+18:08:54.705 add_edit_expense                      from=choose_vat_rate_expense; manual_tracking=1                                OK (204)
+18:09:06.524 generic_error_dialog                  from=add_edit_expense; manual_tracking=1                                       OK (204)
+18:09:08.434 add_edit_expense                      from=generic_error_dialog; manual_tracking=1                                   OK (204)
+18:09:09.440 add_edit_expense_close_dialog         from=add_edit_expense; manual_tracking=1                                       OK (204)
+18:09:10.492 add_edit_expense                      from=add_edit_expense_close_dialog; manual_tracking=1                          OK (204)
+18:09:10.496 expenses_ungroup_overview_open_tab    from=add_edit_expense; manual_tracking=1                                       OK (204)
+18:09:12.650 init_add_edit_expense                 from=expenses_ungroup_overview_open_tab; manual_tracking=1                     OK (204)
+18:09:12.665 choose_category_expense_no_transition from=init_add_edit_expense; manual_tracking=1                                  OK (204)
+18:09:15.226 add_edit_expense                      from=choose_category_expense_no_transition; manual_tracking=1                  OK (204)
+18:09:29.571 choose_currency_expense               from=add_edit_expense; manual_tracking=1                                       OK (204)
+18:09:31.534 add_edit_expense                      from=choose_currency_expense; manual_tracking=1                                OK (204)
+18:09:39.225 generic_error_dialog                  from=add_edit_expense; manual_tracking=1                                       OK (204)
+18:09:41.201 add_edit_expense                      from=generic_error_dialog; manual_tracking=1                                   OK (204)
+18:09:53.760 add_edit_expense_close_dialog         from=add_edit_expense; manual_tracking=1                                       OK (204)
+18:09:54.622 expenses_ungroup_overview_open_tab    from=add_edit_expense_close_dialog; manual_tracking=1                          OK (204)
+18:10:03.626 expense_detail                        from=add_edit_expense; manual_tracking=1; context=standalone                   OK (204)
+18:10:07.587 expenses_ungroup_overview_open_tab    from=expense_detail; manual_tracking=1                                         OK (204)
+18:10:15.366 expense_detail                        from=expenses_ungroup_overview_open_tab; manual_tracking=1; context=standalone OK (204)
+18:10:17.309 init_add_edit_expense                 from=expense_detail; manual_tracking=1                                         OK (204)
+18:10:17.323 add_edit_expense                      from=init_add_edit_expense; manual_tracking=1                                  OK (204)
+18:10:42.170 expense_detail                        from=add_edit_expense; manual_tracking=1; context=standalone                   OK (204)
+18:10:51.713 expenses_ungroup_overview_open_tab    from=expense_detail; manual_tracking=1                                         OK (204)
+
+APP EVENTS (in order; auto events omitted, see events.csv)
+------------------------------------------------------------
+Time         Event                                Screen                                Details                                      Upload  
+----         -----                                ------                                -------                                      ------  
+18:05:40.072 landing_login                        landing                               login_method=nextAuth                        OK (204)
+18:05:41.990 confirm_input                        enter_pin                                                                          OK (204)
+18:05:43.721 auth_success                         enter_pin                                                                          OK (204)
+18:05:44.594 token_success                        landing                                                                            OK (204)
+18:05:49.951 home_tile                            home                                  tile_type=expenses; endpoint=sdwa://expenses OK (204)
+18:05:53.289 generic_picker_item_selected_single  choose_category_expense_no_transition type=choose_category_expense                 OK (204)
+18:06:04.364 expense_vat_percentage_tapped        add_edit_expense                                                                   OK (204)
+18:06:05.038 generic_picker_item_selected_single  choose_vat_rate_expense               type=expenses_choose_vat_rate                OK (204)
+18:06:14.009 generic_picker_item_selected_single  choose_category_expense_no_transition type=choose_category_expense                 OK (204)
+18:06:18.212 expense_currency_tapped              add_edit_expense                                                                   OK (204)
+18:06:18.953 generic_picker_item_selected_single  choose_currency_expense               type=choose_currency_expense                 OK (204)
+18:06:27.422 expense_parsing_triggered            add_edit_expense                      expense_parsing_is_new_expense=true          OK (204)
+18:06:34.127 expense_parsing_failure              add_edit_expense                      expense_parsing_is_new_expense=true          OK (204)
+18:07:29.515 landing_login                        landing                               login_method=nextAuth                        OK (204)
+18:07:30.288 confirm_input                        enter_pin                                                                          OK (204)
+18:07:32.658 auth_success                         enter_pin                                                                          OK (204)
+18:07:33.446 token_success                        landing                                                                            OK (204)
+18:07:42.967 home_tile                            home                                  tile_type=expenses; endpoint=sdwa://expenses OK (204)
+18:07:46.045 generic_picker_item_selected_single  choose_category_expense_no_transition type=choose_category_expense                 OK (204)
+18:07:53.459 exp_route_calc_starting_point_tapped add_edit_expense                                                                   OK (204)
+18:07:56.420 exp_route_calc_select_starting_point add_edit_expense                                                                   OK (204)
+18:08:00.882 exp_route_calc_starting_point_tapped add_edit_expense                                                                   OK (204)
+18:08:02.848 exp_route_calc_select_starting_point add_edit_expense                                                                   OK (204)
+18:08:05.203 exp_route_calc_starting_point_tapped add_edit_expense                                                                   OK (204)
+18:08:06.830 exp_route_calc_select_starting_point add_edit_expense                                                                   OK (204)
+18:08:10.392 exp_route_calc_destination_tapped    add_edit_expense                                                                   OK (204)
+18:08:12.602 exp_route_calc_select_destination    add_edit_expense                                                                   OK (204)
+18:08:39.305 generic_picker_item_selected_single  choose_category_expense_no_transition type=choose_category_expense                 OK (204)
+18:08:53.336 expense_vat_percentage_tapped        add_edit_expense                                                                   OK (204)
+18:08:54.207 generic_picker_item_selected_single  choose_vat_rate_expense               type=expenses_choose_vat_rate                OK (204)
+18:09:14.690 generic_picker_item_selected_single  choose_category_expense_no_transition type=choose_category_expense                 OK (204)
+18:09:18.991 expense_parsing_triggered            add_edit_expense                      expense_parsing_is_new_expense=true          OK (204)
+18:09:25.154 expense_parsing_failure              add_edit_expense                      expense_parsing_is_new_expense=true          OK (204)
+18:09:29.551 expense_currency_tapped              add_edit_expense                                                                   OK (204)
+18:09:31.029 generic_picker_item_selected_single  choose_currency_expense               type=choose_currency_expense                 OK (204)
+18:10:03.603 expense_detail_tapped                add_edit_expense                      context=standalone                           OK (204)
+18:10:15.361 expense_detail_tapped                expenses_ungroup_overview_open_tab    context=standalone                           OK (204)
+18:10:17.274 expense_detail_edit_tapped           expense_detail                        context=standalone                           OK (204)
+18:10:42.136 edit_expense                         add_edit_expense                      context=standalone                           OK (204)
+18:10:42.147 expense_currency_converted           add_edit_expense                                                                   OK (204)
+
+REJECTED BY THE SDK
+------------------------------------------------------------
+  (none)
+
+OTHER SDK ERRORS / WARNINGS
+------------------------------------------------------------
+  (none)
+
+USER PROPERTIES SET BY THE APP
+------------------------------------------------------------
+Name                Value             Times
+----                -----             -----
+accessibility_specs 1:0,8:0,10:0,13:0     1
+module_absences     false                 3
+module_approvals    false                 3
+module_expenses     none                  3
+module_newsfeed     false                 3
+module_overtime     none                  3
+module_salary       none                  3
+online              true                  1
+pixel_ratio         3.00                  1
+text_scale_factor   1.0                   1
+viewport_size       360 x 800             1
+

@@ -1,0 +1,156 @@
+﻿FIREBASE ANALYTICS CAPTURE REPORT
+============================================================
+Log file : log_overtime_grouped_comment_req_20261104_201838.log
+Window   : 11-04 20:17:27.485 -> 11-04 20:18:32.592 (device time)
+App      : be.sdworx.sdwa.inhouse 5.5.0.1717494 | SM-G991B | Android 15
+Debug    : partial (37 of 96 events) - app was not restarted at the start
+
+RESULT
+------------------------------------------------------------
+Uploads  : 21 batch(es): 21 accepted, 0 FAILED, 0 without result
+Events   : 96 uploaded (65 app, 28 screen, 3 auto, 0 sdk-error)
+All good: every event was accepted by Firebase.
+
+EVENT SUMMARY
+------------------------------------------------------------
+Event                              Kind   Count Uploaded Failed Pending
+-----                              ----   ----- -------- ------ -------
+auth_success                       App        3        3      0       0
+confirm_input                      App        3        3      0       0
+home_tile                          App        4        4      0       0
+landing_login                      App        3        3      0       0
+overtime_appr_group_approve        App        2        2      0       0
+overtime_appr_overview_approve     App        1        1      0       0
+pending_approvals_overtime_content App       20       20      0       0
+pending_approvals_overtime_tap     App        1        1      0       0
+screenview                         App       25       25      0       0
+token_success                      App        3        3      0       0
+user_engagement                    Auto       3        3      0       0
+screen_view                        Screen    28       28      0       0
+
+SCREENS (in order)
+------------------------------------------------------------
+Time         Screen            Details                Upload  
+----         ------            -------                ------  
+20:16:05.178                                          OK (204)
+20:16:05.523 loading                                  OK (204)
+20:16:06.573 landing           from=loading           OK (204)
+20:16:09.416 enter_pin         from=landing           OK (204)
+20:16:11.320 enter_pin         from=enter_pin         OK (204)
+20:16:12.157 landing           from=enter_pin         OK (204)
+20:16:15.041 home              from=landing           OK (204)
+20:16:16.540 pending_approvals from=home              OK (204)
+20:16:18.806 home              from=pending_approvals OK (204)
+20:16:20.406 pending_approvals from=home              OK (204)
+20:17:02.658                                          OK (204)
+20:17:03.047 loading                                  OK (204)
+20:17:03.758 landing           from=loading           OK (204)
+20:17:05.304 enter_pin         from=landing           OK (204)
+20:17:06.611 enter_pin         from=enter_pin         OK (204)
+20:17:07.449 landing           from=enter_pin         OK (204)
+20:17:10.018 home              from=landing           OK (204)
+20:17:11.088 pending_approvals from=home              OK (204)
+20:17:30.003                                          OK (204)
+20:17:30.371 loading                                  OK (204)
+20:17:30.772 landing           from=loading           OK (204)
+20:17:34.079 enter_pin         from=landing           OK (204)
+20:17:35.195 enter_pin         from=enter_pin         OK (204)
+20:17:35.989 landing           from=enter_pin         OK (204)
+20:17:37.630 home              from=landing           OK (204)
+20:17:42.071 pending_approvals from=home              OK (204)
+20:18:13.637 pending_approvals from=pending_approvals OK (204)
+20:18:26.841 pending_approvals from=pending_approvals OK (204)
+
+APP EVENTS (in order; auto events omitted, see events.csv)
+------------------------------------------------------------
+Time         Event                              Screen            Details                                                       Upload  
+----         -----                              ------            -------                                                       ------  
+20:16:05.523 screenview                         loading           screenname=loading                                            OK (204)
+20:16:06.570 screenview                         loading           screenname=landing                                            OK (204)
+20:16:08.943 landing_login                      landing           login_method=nextAuth                                         OK (204)
+20:16:09.416 screenview                         enter_pin         screenname=enter_pin                                          OK (204)
+20:16:09.697 confirm_input                      enter_pin                                                                       OK (204)
+20:16:11.320 screenview                         enter_pin         screenname=enter_pin                                          OK (204)
+20:16:12.156 auth_success                       enter_pin                                                                       OK (204)
+20:16:12.158 screenview                         landing           screenname=landing                                            OK (204)
+20:16:13.010 token_success                      landing                                                                         OK (204)
+20:16:15.041 screenview                         home              screenname=home                                               OK (204)
+20:16:16.539 home_tile                          home              tile_type=pendingApprovals; endpoint=sdwa://pending_approvals OK (204)
+20:16:16.541 screenview                         pending_approvals screenname=pending_approvals                                  OK (204)
+20:16:16.591 pending_approvals_overtime_content pending_approvals                                                               OK (204)
+20:16:16.619 pending_approvals_overtime_content pending_approvals                                                               OK (204)
+20:16:17.306 pending_approvals_overtime_content pending_approvals                                                               OK (204)
+20:16:17.307 pending_approvals_overtime_content pending_approvals                                                               OK (204)
+20:16:18.807 screenview                         home              screenname=home                                               OK (204)
+20:16:20.385 home_tile                          home              tile_type=pendingApprovals; endpoint=sdwa://pending_approvals OK (204)
+20:16:20.404 screenview                         home              screenname=pending_approvals                                  OK (204)
+20:16:20.453 pending_approvals_overtime_content pending_approvals                                                               OK (204)
+20:16:20.488 pending_approvals_overtime_content pending_approvals                                                               OK (204)
+20:16:20.838 pending_approvals_overtime_content pending_approvals                                                               OK (204)
+20:16:21.025 pending_approvals_overtime_content pending_approvals                                                               OK (204)
+20:17:03.047 screenview                         loading           screenname=loading                                            OK (204)
+20:17:03.758 screenview                         landing           screenname=landing                                            OK (204)
+20:17:04.871 landing_login                      landing           login_method=nextAuth                                         OK (204)
+20:17:05.304 screenview                         landing           screenname=enter_pin                                          OK (204)
+20:17:05.589 confirm_input                      enter_pin                                                                       OK (204)
+20:17:06.611 screenview                         enter_pin         screenname=enter_pin                                          OK (204)
+20:17:07.449 auth_success                       enter_pin                                                                       OK (204)
+20:17:07.449 screenview                         landing           screenname=landing                                            OK (204)
+20:17:08.333 token_success                      landing                                                                         OK (204)
+20:17:10.017 screenview                         landing           screenname=home                                               OK (204)
+20:17:11.087 home_tile                          home              tile_type=pendingApprovals; endpoint=sdwa://pending_approvals OK (204)
+20:17:11.088 screenview                         pending_approvals screenname=pending_approvals                                  OK (204)
+20:17:11.115 pending_approvals_overtime_content pending_approvals                                                               OK (204)
+20:17:11.145 pending_approvals_overtime_content pending_approvals                                                               OK (204)
+20:17:11.714 pending_approvals_overtime_content pending_approvals                                                               OK (204)
+20:17:11.715 pending_approvals_overtime_content pending_approvals                                                               OK (204)
+20:17:30.377 screenview                         loading           screenname=loading                                            OK (204)
+20:17:30.772 screenview                         landing           screenname=landing                                            OK (204)
+20:17:33.581 landing_login                      landing           login_method=nextAuth                                         OK (204)
+20:17:34.079 screenview                         enter_pin         screenname=enter_pin                                          OK (204)
+20:17:34.362 confirm_input                      enter_pin                                                                       OK (204)
+20:17:35.195 screenview                         enter_pin         screenname=enter_pin                                          OK (204)
+20:17:35.989 auth_success                       enter_pin                                                                       OK (204)
+20:17:35.989 screenview                         landing           screenname=landing                                            OK (204)
+20:17:36.709 token_success                      landing                                                                         OK (204)
+20:17:37.629 screenview                         landing           screenname=home                                               OK (204)
+20:17:42.068 home_tile                          home              tile_type=pendingApprovals; endpoint=sdwa://pending_approvals OK (204)
+20:17:42.071 screenview                         pending_approvals screenname=pending_approvals                                  OK (204)
+20:17:42.102 pending_approvals_overtime_content pending_approvals                                                               OK (204)
+20:17:42.128 pending_approvals_overtime_content pending_approvals                                                               OK (204)
+20:17:42.636 pending_approvals_overtime_content pending_approvals                                                               OK (204)
+20:17:42.661 pending_approvals_overtime_content pending_approvals                                                               OK (204)
+20:17:57.117 pending_approvals_overtime_tap     pending_approvals                                                               OK (204)
+20:18:13.082 overtime_appr_group_approve        pending_approvals                                                               OK (204)
+20:18:13.648 screenview                         pending_approvals screenname=pending_approvals                                  OK (204)
+20:18:13.665 pending_approvals_overtime_content pending_approvals                                                               OK (204)
+20:18:13.958 pending_approvals_overtime_content pending_approvals                                                               OK (204)
+20:18:22.473 overtime_appr_overview_approve     pending_approvals                                                               OK (204)
+20:18:26.304 overtime_appr_group_approve        pending_approvals                                                               OK (204)
+20:18:26.842 screenview                         pending_approvals screenname=pending_approvals                                  OK (204)
+20:18:26.869 pending_approvals_overtime_content pending_approvals                                                               OK (204)
+20:18:27.568 pending_approvals_overtime_content pending_approvals                                                               OK (204)
+
+REJECTED BY THE SDK
+------------------------------------------------------------
+  (none)
+
+OTHER SDK ERRORS / WARNINGS
+------------------------------------------------------------
+  (none)
+
+USER PROPERTIES SET BY THE APP
+------------------------------------------------------------
+Name                Value             Times
+----                -----             -----
+accessibility_specs 1:0,8:0,10:0,13:0     1
+module_absences     false                 3
+module_approvals    true                  3
+module_expenses     none                  3
+module_newsfeed     false                 3
+module_salary       none                  3
+online              true                  1
+pixel_ratio         3.00                  1
+text_scale_factor   1.0                   1
+viewport_size       360 x 800             1
+

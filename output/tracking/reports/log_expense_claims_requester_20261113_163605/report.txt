@@ -1,0 +1,264 @@
+﻿FIREBASE ANALYTICS CAPTURE REPORT
+============================================================
+Log file : log_expense_claims_requester_20261113_163605.log
+Window   : 11-13 16:29:20.135 -> 11-13 16:35:50.800 (device time)
+App      : be.sdworx.sdwa.inhouse 5.5.0.1734904 | SM-G991B | Android 15
+Debug    : partial (166 of 181 events) - app was not restarted at the start
+
+RESULT
+------------------------------------------------------------
+Uploads  : 112 batch(es): 112 accepted, 0 FAILED, 0 without result
+Events   : 181 uploaded (49 app, 131 screen, 1 auto, 0 sdk-error)
+All good: every event was accepted by Firebase.
+
+EVENT SUMMARY
+------------------------------------------------------------
+Event                                    Kind   Count Uploaded Failed Pending
+-----                                    ----   ----- -------- ------ -------
+activate_biometric_auth_activate         App        1        1      0       0
+activation_enabling_notifications_tapped App        1        1      0       0
+add_expense                              App        1        1      0       0
+auth_success                             App        1        1      0       0
+claim_create                             App        1        1      0       0
+claim_details_delete                     App        1        1      0       0
+claim_details_edit                       App        1        1      0       0
+claim_details_expense_tapped             App        3        3      0       0
+claim_details_link_expense               App        2        2      0       0
+claim_details_submit                     App        1        1      0       0
+claims_incompatible_items_shown          App        2        2      0       0
+confirm_input                            App        1        1      0       0
+deeplink_entry_point_selected            App        4        4      0       0
+edit_expense                             App        2        2      0       0
+expense_add_to_claim                     App        5        5      0       0
+expense_detail_delete_tapped             App        1        1      0       0
+expense_detail_edit_tapped               App        2        2      0       0
+expense_remove_from_claim                App        1        1      0       0
+expenses_incompatible_items_shown        App        1        1      0       0
+form_edit                                App        2        2      0       0
+form_submit                              App        2        2      0       0
+form_view                                App        3        3      0       0
+generic_picker_item_selected_single      App        2        2      0       0
+home_tile                                App        2        2      0       0
+landing_login                            App        1        1      0       0
+login_activate                           App        1        1      0       0
+login_activation_method                  App        1        1      0       0
+onboarding_new_finish_tapped             App        1        1      0       0
+onboarding_next_tapped                   App        1        1      0       0
+token_success                            App        1        1      0       0
+user_engagement                          Auto       1        1      0       0
+screen_view                              Screen   131      131      0       0
+
+SCREENS (in order)
+------------------------------------------------------------
+Time         Screen                                Details                                                             Upload  
+----         ------                                -------                                                             ------  
+16:28:30.013 environment_picker                    manual_tracking=1                                                   OK (204)
+16:28:31.096 loading                               from=environment_picker; manual_tracking=1                          OK (204)
+16:28:31.744 onboarding                            from=loading; manual_tracking=1                                     OK (204)
+16:28:33.341 browser_login                         from=onboarding; manual_tracking=1                                  OK (204)
+16:28:42.391 add_pin                               from=browser_login; manual_tracking=1                               OK (204)
+16:28:48.936 activate_biometrics                   from=add_pin; manual_tracking=1                                     OK (204)
+16:28:53.147 notification_permission               from=activate_biometrics; manual_tracking=1                         OK (204)
+16:28:55.487 activation_your_privacy               from=notification_permission; manual_tracking=1                     OK (204)
+16:28:56.227 home                                  from=activation_your_privacy; manual_tracking=1                     OK (204)
+16:29:23.417 loading                               manual_tracking=1                                                   OK (204)
+16:29:23.880 landing                               from=loading; manual_tracking=1                                     OK (204)
+16:29:27.811 enter_pin                             from=landing; manual_tracking=1                                     OK (204)
+16:29:30.174 landing                               from=enter_pin; manual_tracking=1                                   OK (204)
+16:29:31.567 home                                  from=landing; manual_tracking=1                                     OK (204)
+16:29:38.109 expenses_claims_overview_open_tab     from=home; manual_tracking=1                                        OK (204)
+16:29:39.190 quick_action_modal                    from=expenses_claims_overview_open_tab; manual_tracking=1           OK (204)
+16:29:40.444 expenses_claims_overview_open_tab     from=quick_action_modal; manual_tracking=1                          OK (204)
+16:29:58.067 expenses_claims_overview_open_tab     from=form_overview; manual_tracking=1                               OK (204)
+16:29:58.076 expenses_claims_details               from=expenses_claims_overview_open_tab; manual_tracking=1           OK (204)
+16:30:11.823 expenses_claims_overview_open_tab     from=expenses_claims_details; manual_tracking=1                     OK (204)
+16:30:12.900 quick_action_modal                    from=expenses_claims_overview_open_tab; manual_tracking=1           OK (204)
+16:30:14.219 expenses_claims_overview_open_tab     from=quick_action_modal; manual_tracking=1                          OK (204)
+16:30:14.223 form_overview                         from=expenses_claims_overview_open_tab; manual_tracking=1           OK (204)
+16:30:17.356 expenses_claims_overview_open_tab     from=form_overview; manual_tracking=1                               OK (204)
+16:30:18.036 home                                  from=expenses_claims_overview_open_tab; manual_tracking=1           OK (204)
+16:30:21.537 expenses_claims_overview_open_tab     from=home; manual_tracking=1                                        OK (204)
+16:30:23.242 quick_action_modal                    from=expenses_claims_overview_open_tab; manual_tracking=1           OK (204)
+16:30:24.170 expenses_claims_overview_open_tab     from=quick_action_modal; manual_tracking=1                          OK (204)
+16:30:24.186 init_add_edit_expense                 from=expenses_claims_overview_open_tab; manual_tracking=1           OK (204)
+16:30:25.719 add_edit_expense                      from=choose_category_expense_no_transition; manual_tracking=1       OK (204)
+16:30:34.037 unassigned_expenses_claims            from=add_edit_expense; manual_tracking=1                            OK (204)
+16:30:38.912 expenses_claims_overview_open_tab     from=unassigned_expenses_claims; manual_tracking=1                  OK (204)
+16:30:39.903 quick_action_modal                    from=expenses_claims_overview_open_tab; manual_tracking=1           OK (204)
+16:30:40.889 expenses_claims_overview_open_tab     from=quick_action_modal; manual_tracking=1                          OK (204)
+16:30:40.907 init_add_edit_expense                 from=expenses_claims_overview_open_tab; manual_tracking=1           OK (204)
+16:30:40.917 choose_category_expense_no_transition from=init_add_edit_expense; manual_tracking=1                       OK (204)
+16:30:42.323 add_edit_expense                      from=choose_category_expense_no_transition; manual_tracking=1       OK (204)
+16:30:45.373 expenses_claims_overview_open_tab     from=add_edit_expense; manual_tracking=1                            OK (204)
+16:30:48.955 unassigned_expenses_claims            from=expenses_claims_overview_open_tab; manual_tracking=1           OK (204)
+16:30:52.425 expense_detail                        from=unassigned_expenses_claims; manual_tracking=1; context=claim   OK (204)
+16:30:57.632 init_add_edit_expense                 from=expense_detail; manual_tracking=1                              OK (204)
+16:30:57.652 add_edit_expense                      from=init_add_edit_expense; manual_tracking=1                       OK (204)
+16:31:05.964 expense_detail                        from=add_edit_expense; manual_tracking=1; context=claim             OK (204)
+16:31:10.722 expenses_detail_action_modal          from=expense_detail; manual_tracking=1                              OK (204)
+16:31:12.009 expense_detail                        from=expenses_detail_action_modal; manual_tracking=1; context=claim OK (204)
+16:31:12.028 add_to_claim                          from=expense_detail; manual_tracking=1                              OK (204)
+16:31:30.318 expense_detail                        from=add_to_claim; manual_tracking=1; context=claim                 OK (204)
+16:31:30.331 unassigned_expenses_claims            from=expense_detail; manual_tracking=1                              OK (204)
+16:31:30.333 expenses_claims_details               from=unassigned_expenses_claims; manual_tracking=1                  OK (204)
+16:31:39.899 unassigned_expenses_claims            from=expenses_claims_details; manual_tracking=1                     OK (204)
+16:31:46.734 add_to_claim                          from=unassigned_expenses_claims; manual_tracking=1                  OK (204)
+16:31:52.311 unassigned_expenses_claims            from=add_to_claim; manual_tracking=1                                OK (204)
+16:31:52.317 expenses_claims_details               from=unassigned_expenses_claims; manual_tracking=1                  OK (204)
+16:32:06.959 unassigned_expenses_claims            from=expenses_claims_details; manual_tracking=1                     OK (204)
+16:32:30.080 expenses_claims_details               from=unassigned_expenses_claims; manual_tracking=1                  OK (204)
+16:32:36.933 expense_detail                        from=expenses_claims_details; manual_tracking=1; context=claim      OK (204)
+16:32:41.091 expenses_detail_action_modal          from=expense_detail; manual_tracking=1                              OK (204)
+16:32:42.182 expense_detail                        from=expenses_detail_action_modal; manual_tracking=1; context=claim OK (204)
+16:32:42.500 expenses_claims_details               from=expense_detail; manual_tracking=1                              OK (204)
+16:32:50.568 expense_detail                        from=expenses_claims_details; manual_tracking=1; context=claim      OK (204)
+16:32:51.584 init_add_edit_expense                 from=expense_detail; manual_tracking=1                              OK (204)
+16:32:51.586 add_edit_expense                      from=init_add_edit_expense; manual_tracking=1                       OK (204)
+16:32:57.687 expense_detail                        from=add_edit_expense; manual_tracking=1; context=claim             OK (204)
+16:33:04.150 expenses_detail_action_modal          from=expense_detail; manual_tracking=1                              OK (204)
+16:33:06.514 expense_detail                        from=expenses_detail_action_modal; manual_tracking=1; context=claim OK (204)
+16:33:10.821 expense_detail                        from=delete_expense_dialog; manual_tracking=1; context=claim        OK (204)
+16:33:11.365 expenses_claims_details               from=expense_detail; manual_tracking=1                              OK (204)
+16:33:15.146 expenses_claims_detail_action_modal   from=expenses_claims_details; manual_tracking=1                     OK (204)
+16:33:16.184 expenses_claims_details               from=expenses_claims_detail_action_modal; manual_tracking=1         OK (204)
+16:33:16.185 form_overview                         from=expenses_claims_details; manual_tracking=1                     OK (204)
+16:33:22.689 expenses_claims_details               from=form_overview; manual_tracking=1                               OK (204)
+16:33:31.144 unassigned_expenses_claims            from=expenses_claims_details; manual_tracking=1                     OK (204)
+16:33:37.322 expenses_claims_overview_open_tab     from=unassigned_expenses_claims; manual_tracking=1                  OK (204)
+16:33:38.285 expenses_claims_list                  from=expenses_claims_overview_open_tab; manual_tracking=1           OK (204)
+16:33:40.306 expenses_claims_details               from=expenses_claims_list; manual_tracking=1                        OK (204)
+16:33:41.662 expenses_claims_detail_action_modal   from=expenses_claims_details; manual_tracking=1                     OK (204)
+16:33:42.855 expenses_claims_details               from=expenses_claims_detail_action_modal; manual_tracking=1         OK (204)
+16:33:42.856 delete_expense_claim_dialog           from=expenses_claims_details; manual_tracking=1                     OK (204)
+16:33:43.765 expenses_claims_details               from=delete_expense_claim_dialog; manual_tracking=1                 OK (204)
+16:33:44.087 expenses_claims_list                  from=expenses_claims_details; manual_tracking=1                     OK (204)
+16:33:49.613 expenses_claims_overview_open_tab     from=expenses_claims_list; manual_tracking=1                        OK (204)
+16:33:51.091 expenses_claims_list                  from=expenses_claims_overview_open_tab; manual_tracking=1           OK (204)
+16:33:53.830 expenses_claims_details               from=expenses_claims_list; manual_tracking=1                        OK (204)
+16:33:55.246 expenses_claims_detail_action_modal   from=expenses_claims_details; manual_tracking=1                     OK (204)
+16:33:57.102 expenses_claims_details               from=expenses_claims_detail_action_modal; manual_tracking=1         OK (204)
+16:33:57.686 unassigned_expenses_claims            from=expenses_claims_details; manual_tracking=1                     OK (204)
+16:34:01.156 expense_detail                        from=unassigned_expenses_claims; manual_tracking=1; context=claim   OK (204)
+16:34:02.674 unassigned_expenses_claims            from=expense_detail; manual_tracking=1                              OK (204)
+16:34:05.547 expenses_claims_details               from=unassigned_expenses_claims; manual_tracking=1                  OK (204)
+16:34:19.916 expenses_claims_list                  from=expenses_claims_details; manual_tracking=1                     OK (204)
+16:34:20.659 expenses_claims_overview_open_tab     from=expenses_claims_list; manual_tracking=1                        OK (204)
+16:34:22.075 unassigned_expenses_claims            from=expenses_claims_overview_open_tab; manual_tracking=1           OK (204)
+16:34:23.171 expense_detail                        from=unassigned_expenses_claims; manual_tracking=1; context=claim   OK (204)
+16:34:24.165 expenses_detail_action_modal          from=expense_detail; manual_tracking=1                              OK (204)
+16:34:25.312 expense_detail                        from=expenses_detail_action_modal; manual_tracking=1; context=claim OK (204)
+16:34:25.337 add_to_claim                          from=expense_detail; manual_tracking=1                              OK (204)
+16:34:28.669 expense_detail                        from=add_to_claim; manual_tracking=1; context=claim                 OK (204)
+16:34:29.673 unassigned_expenses_claims            from=expense_detail; manual_tracking=1                              OK (204)
+16:34:37.009 expense_detail                        from=unassigned_expenses_claims; manual_tracking=1; context=claim   OK (204)
+16:34:38.273 expenses_detail_action_modal          from=expense_detail; manual_tracking=1                              OK (204)
+16:34:39.474 expense_detail                        from=expenses_detail_action_modal; manual_tracking=1; context=claim OK (204)
+16:34:39.493 add_to_claim                          from=expense_detail; manual_tracking=1                              OK (204)
+16:34:42.285 expense_detail                        from=add_to_claim; manual_tracking=1; context=claim                 OK (204)
+16:34:42.290 unassigned_expenses_claims            from=expense_detail; manual_tracking=1                              OK (204)
+16:34:42.312 expenses_claims_details               from=unassigned_expenses_claims; manual_tracking=1                  OK (204)
+16:35:06.938 debug_menu                            from=expenses_claims_details; manual_tracking=1                     OK (204)
+16:35:07.761 proxy                                 from=debug_menu; manual_tracking=1                                  OK (204)
+16:35:17.747 debug_menu                            from=proxy; manual_tracking=1                                       OK (204)
+16:35:18.364 expenses_claims_details               from=debug_menu; manual_tracking=1                                  OK (204)
+16:35:19.945 unassigned_expenses_claims            from=expenses_claims_details; manual_tracking=1                     OK (204)
+16:35:20.975 expenses_claims_overview_open_tab     from=unassigned_expenses_claims; manual_tracking=1                  OK (204)
+16:35:22.843 expenses_claims_list                  from=expenses_claims_overview_open_tab; manual_tracking=1           OK (204)
+16:35:23.560 expenses_claims_details               from=expenses_claims_list; manual_tracking=1                        OK (204)
+16:35:28.599 expense_detail                        from=expenses_claims_details; manual_tracking=1; context=claim      OK (204)
+16:35:29.377 expenses_detail_action_modal          from=expense_detail; manual_tracking=1                              OK (204)
+16:35:30.468 expense_detail                        from=expenses_detail_action_modal; manual_tracking=1; context=claim OK (204)
+16:35:30.883 generic_error_dialog                  from=expense_detail; manual_tracking=1                              OK (204)
+16:35:32.105 expense_detail                        from=generic_error_dialog; manual_tracking=1; context=claim         OK (204)
+16:35:32.393 generic_error_dialog                  from=expense_detail; manual_tracking=1                              OK (204)
+16:35:33.071 expense_detail                        from=generic_error_dialog; manual_tracking=1; context=claim         OK (204)
+16:35:33.916 expenses_claims_details               from=expense_detail; manual_tracking=1                              OK (204)
+16:35:34.548 expenses_claims_list                  from=expenses_claims_details; manual_tracking=1                     OK (204)
+16:35:35.493 expenses_claims_overview_open_tab     from=expenses_claims_list; manual_tracking=1                        OK (204)
+16:35:36.169 unassigned_expenses_claims            from=expenses_claims_overview_open_tab; manual_tracking=1           OK (204)
+16:35:38.520 expense_detail                        from=unassigned_expenses_claims; manual_tracking=1; context=claim   OK (204)
+16:35:39.822 expenses_detail_action_modal          from=expense_detail; manual_tracking=1                              OK (204)
+16:35:40.931 expense_detail                        from=expenses_detail_action_modal; manual_tracking=1; context=claim OK (204)
+16:35:40.933 add_to_claim                          from=expense_detail; manual_tracking=1                              OK (204)
+16:35:42.921 generic_error_dialog                  from=add_to_claim; manual_tracking=1                                OK (204)
+16:35:43.712 add_to_claim                          from=generic_error_dialog; manual_tracking=1                        OK (204)
+16:35:45.780 expense_detail                        from=add_to_claim; manual_tracking=1; context=claim                 OK (204)
+
+APP EVENTS (in order; auto events omitted, see events.csv)
+------------------------------------------------------------
+Time         Event                                    Screen                                Details                                                              Upload  
+----         -----                                    ------                                -------                                                              ------  
+16:28:32.603 onboarding_next_tapped                   onboarding                                                                                                 OK (204)
+16:28:33.306 onboarding_new_finish_tapped             onboarding                                                                                                 OK (204)
+16:28:33.945 login_activate                           browser_login                                                                                              OK (204)
+16:28:41.473 login_activation_method                  browser_login                         activation_method=nextAuth                                           OK (204)
+16:28:49.816 activate_biometric_auth_activate         activate_biometrics                   authentication_method=biometrics                                     OK (204)
+16:28:54.021 activation_enabling_notifications_tapped notification_permission                                                                                    OK (204)
+16:29:27.372 landing_login                            landing                               login_method=nextAuth                                                OK (204)
+16:29:28.102 confirm_input                            enter_pin                                                                                                  OK (204)
+16:29:30.173 auth_success                             enter_pin                                                                                                  OK (204)
+16:29:30.909 token_success                            landing                                                                                                    OK (204)
+16:29:37.623 home_tile                                home                                  tile_type=expenses; endpoint=sdwa://expenses                         OK (204)
+16:29:40.445 deeplink_entry_point_selected            form_overview                         deeplink_type=FunctionalityDeeplink                                  OK (204)
+16:29:41.047 form_view                                form_overview                         view_mode=editable                                                   OK (204)
+16:29:42.783 form_edit                                form_overview                                                                                              OK (204)
+16:29:58.045 form_submit                              form_overview                                                                                              OK (204)
+16:29:58.070 claim_create                             expenses_claims_overview_open_tab                                                                          OK (204)
+16:30:14.222 deeplink_entry_point_selected            expenses_claims_overview_open_tab     deeplink_type=FunctionalityDeeplink                                  OK (204)
+16:30:14.617 form_view                                form_overview                         view_mode=editable                                                   OK (204)
+16:30:21.006 home_tile                                home                                  tile_type=expenses; endpoint=sdwa://expenses                         OK (204)
+16:30:24.170 deeplink_entry_point_selected            expenses_claims_overview_open_tab     destination=sdwa://expenses/add; deeplink_type=FunctionalityDeeplink OK (204)
+16:30:25.197 generic_picker_item_selected_single      choose_category_expense_no_transition type=choose_category_expense                                         OK (204)
+16:30:33.993 add_expense                              add_edit_expense                      context=claim                                                        OK (204)
+16:30:40.889 deeplink_entry_point_selected            expenses_claims_overview_open_tab     destination=sdwa://expenses/add; deeplink_type=FunctionalityDeeplink OK (204)
+16:30:41.841 generic_picker_item_selected_single      choose_category_expense_no_transition type=choose_category_expense                                         OK (204)
+16:30:57.604 expense_detail_edit_tapped               expense_detail                        context=claim                                                        OK (204)
+16:31:05.957 edit_expense                             add_edit_expense                      context=claim                                                        OK (204)
+16:31:13.285 claims_incompatible_items_shown          add_to_claim                                                                                               OK (204)
+16:31:30.314 expense_add_to_claim                     add_to_claim                                                                                               OK (204)
+16:31:52.308 expense_add_to_claim                     add_to_claim                                                                                               OK (204)
+16:32:06.957 claim_details_link_expense               expenses_claims_details                                                                                    OK (204)
+16:32:30.075 expense_add_to_claim                     unassigned_expenses_claims                                                                                 OK (204)
+16:32:36.910 claim_details_expense_tapped             expenses_claims_details                                                                                    OK (204)
+16:32:42.496 expense_remove_from_claim                expense_detail                                                                                             OK (204)
+16:32:50.546 claim_details_expense_tapped             expenses_claims_details                                                                                    OK (204)
+16:32:51.555 expense_detail_edit_tapped               expense_detail                        context=claim                                                        OK (204)
+16:32:57.661 edit_expense                             add_edit_expense                      context=claim                                                        OK (204)
+16:33:06.519 expense_detail_delete_tapped             delete_expense_dialog                 context=claim                                                        OK (204)
+16:33:16.185 claim_details_edit                       expenses_claims_details                                                                                    OK (204)
+16:33:16.796 form_view                                form_overview                         view_mode=editable                                                   OK (204)
+16:33:18.959 form_edit                                form_overview                                                                                              OK (204)
+16:33:22.680 form_submit                              form_overview                                                                                              OK (204)
+16:33:31.141 claim_details_submit                     expenses_claims_details                                                                                    OK (204)
+16:33:44.084 claim_details_delete                     expenses_claims_details                                                                                    OK (204)
+16:33:57.654 claim_details_link_expense               expenses_claims_details                                                                                    OK (204)
+16:33:57.691 expenses_incompatible_items_shown        unassigned_expenses_claims                                                                                 OK (204)
+16:34:05.543 expense_add_to_claim                     unassigned_expenses_claims                                                                                 OK (204)
+16:34:25.353 claims_incompatible_items_shown          add_to_claim                                                                                               OK (204)
+16:34:42.281 expense_add_to_claim                     add_to_claim                                                                                               OK (204)
+16:35:28.576 claim_details_expense_tapped             expenses_claims_details                                                                                    OK (204)
+
+REJECTED BY THE SDK
+------------------------------------------------------------
+  (none)
+
+OTHER SDK ERRORS / WARNINGS
+------------------------------------------------------------
+  (none)
+
+USER PROPERTIES SET BY THE APP
+------------------------------------------------------------
+Name                Value             Times
+----                -----             -----
+accessibility_specs 1:0,8:0,10:0,13:0     1
+module_absences     false                 6
+module_approvals    false                 6
+module_expenses     none                  6
+module_newsfeed     false                 6
+module_overtime     none                  6
+module_salary       none                  6
+online              true                  1
+pixel_ratio         3.00                  1
+text_scale_factor   1.0                   1
+viewport_size       360 x 800             1
+
