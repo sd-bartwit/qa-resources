@@ -1,0 +1,223 @@
+{
+  "tools": [],
+  "quickActions": [],
+  "widgets": [],
+  "tiles": [
+    {
+      "title": "Absences",
+      "description": "View your absences",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/Tiles/Absences-v2.svg",
+      "iconStyle": "Salary",
+      "endpointLinkType": "InternalNativeLink",
+      "endpointUri": "sdwa://absences",
+      "healthInformation": {
+        "healthState": "Healthy"
+      },
+      "accessRightIds": [
+        3723500
+      ],
+      "tileType": "Absences",
+      "profileType": "Unknown",
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/3723500",
+      "integrationState": "Linked"
+    },
+    {
+      "title": "Pending approvals",
+      "description": "View pending approval requests",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/Tiles/Approvals-v2.svg",
+      "iconStyle": "Salary",
+      "endpointLinkType": "InternalNativeLink",
+      "endpointUri": "sdwa://pending_approvals",
+      "healthInformation": {
+        "healthState": "Unknown"
+      },
+      "accessRightIds": [
+        3723500
+      ],
+      "tileType": "PendingApprovals",
+      "profileType": "Personal",
+      "integrationState": "Linked",
+      "newState": {
+        "newStateEntities": [
+          {
+            "owner": "3723500",
+            "resource": "Tile:AbsencesPendingApprovals"
+          },
+          {
+            "owner": "3723500",
+            "resource": "Tile:ExpensesPendingApprovals"
+          },
+          {
+            "owner": "3723500",
+            "resource": "Tile:OvertimePendingApprovals"
+          },
+          {
+            "owner": "3723500",
+            "resource": "Tile:GenericPendingApprovals"
+          }
+        ],
+        "isBrandNew": true,
+        "title": "New tile: Pending approvals",
+        "subtitle": "You can now manage your approvals for:\nAbsences\nExpenses\nOvertime\nRequests",
+        "showCoachmark": true
+      }
+    },
+    {
+      "title": "General approvals",
+      "description": "View pending approval requests",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/Tiles/Approvals-v2.svg",
+      "iconStyle": "Salary",
+      "endpointLinkType": "InternalNativeLink",
+      "endpointUri": "sdwa://generic_approvals",
+      "healthInformation": {
+        "healthState": "Healthy"
+      },
+      "accessRightIds": [
+        3723500
+      ],
+      "tileType": "GenericApprovals",
+      "profileType": "Unknown",
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/3723500",
+      "integrationState": "Linked",
+      "newState": {
+        "newStateEntities": [
+          {
+            "owner": "3723500",
+            "resource": "Tile:GenericPendingApprovals"
+          }
+        ],
+        "isBrandNew": true,
+        "title": "New tile: General approvals",
+        "subtitle": "You can now manage your Requests approvals.",
+        "showCoachmark": true
+      }
+    },
+    {
+      "title": "Webportal",
+      "description": "Open the webportal",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/Tiles/Default-v2.svg",
+      "iconStyle": "Salary",
+      "endpointLinkType": "InternalBrowserLink",
+      "endpointUri": "https://auth.acc.sdworx.com/idhub/api/loginfromapp?language=en&page=%2Fportal%2Fpersonal",
+      "healthInformation": {
+        "healthState": "Unknown"
+      },
+      "tileType": "Webportal",
+      "profileType": "Personal",
+      "integrationState": "Linked"
+    }
+  ],
+  "features": [
+    {
+      "name": "ExpenseParsing",
+      "accessRightIds": [
+        3723500
+      ]
+    }
+  ],
+  "functionalities": [
+    {
+      "id": 3723500,
+      "userIdForApplication": "E6B487AD-B2E8-4E5E-B8B6-92748759F4F3",
+      "applicationCode": "SDA_TE_mock",
+      "healthState": "Healthy",
+      "functionalitiesAccepted": [
+        "sd://payslip/2.0.0/overview",
+        "sd://payslip/3.0.0/overview",
+        "sd://payslip/2.0.0/collapsable",
+        "sd://absences/1.0.0/overview",
+        "sd://absences/2.0.0/overview",
+        "sd://absences/1.0.0/manage",
+        "sd://absences/1.0.0/team",
+        "sd://absences/1.0.0/counters",
+        "sd://absences/2.0.0/counters",
+        "sd://absences/1.0.0/deeplinks",
+        "sd://widgets/1.0.0/overview",
+        "sd://overtime/1.0.0/manage",
+        "sd://overtime/1.0.0/overview",
+        "sd://documents/1.0.0/overview",
+        "sd://documents/1.0.0/detail",
+        "sd://expenses/2.0.0/manage",
+        "sd://expenses/1.0.0/overview",
+        "sd://expenses/1.0.0/deeplinks",
+        "sd://time/2.0.0/clocking",
+        "sd://forms/1.0.0/manage",
+        "sd://forms/1.0.0/overview",
+        "sd://absences/2.0.0/approval",
+        "sd://expenses/2.0.0/approval",
+        "sd://overtime/1.0.0/approval",
+        "sd://deeplinks/1.0.0/overview",
+        "sd://routing/1.0.0/overview",
+        "sd://currencyconversion/1.0.0/overview",
+        "sd://absences/2.0.0/bulkapproval",
+        "sd://expenses/2.0.0/bulkapproval",
+        "sd://expenses/1.0.0/claimapproval",
+        "sd://overtime/1.0.0/bulkapproval",
+        "sd://genericapprovals/1.0.0/approval",
+        "sd://genericapprovals/1.0.0/bulkapproval"
+      ]
+    }
+  ],
+  "operationalEmployerGroups": [
+    {
+      "name": "SKF",
+      "code": "CNC_1022",
+      "officialAccounts": [
+        {
+          "name": "Skf Logistics Services Belgium",
+          "number": "BE0416051608"
+        }
+      ]
+    }
+  ],
+  "thirdPartyIntegrations": [
+    {
+      "id": "IrmrT-hSJLxFVU30hWNH-Q",
+      "accessRightId": 0,
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/Personal/personal/GoogleApi/e6b487ad-b2e8-4e5e-b8b6-92748759f4f3",
+      "applicationCode": "GoogleApi",
+      "applicationName": "Google Api",
+      "description": "Link your account.",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/ThirdParty/Bullets.svg",
+      "integrationState": "Linkable"
+    },
+    {
+      "id": "t6xqlnmBHjEBTlq59KvjRg",
+      "accessRightId": 0,
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/Personal/personal/monizze/e6b487ad-b2e8-4e5e-b8b6-92748759f4f3",
+      "applicationCode": "monizze",
+      "applicationName": "Monizze",
+      "description": "Link your Monizze account to view your electronic meal voucher balance here.",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/ThirdParty/Monizze.svg",
+      "integrationState": "Linkable"
+    },
+    {
+      "id": "pEJAy2nslw7O13u__dLW0g",
+      "accessRightId": 0,
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/Personal/personal/MSGraph/e6b487ad-b2e8-4e5e-b8b6-92748759f4f3",
+      "applicationCode": "MSGraph",
+      "applicationName": "Outlook",
+      "description": "Link your Outlook calendar to manage your vacation days, meetings & appointments in one place.",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/ThirdParty/Outlook.svg",
+      "integrationState": "Linkable"
+    },
+    {
+      "id": "LQmqEpjNEbUEBz9NDCt1VQ",
+      "accessRightId": 0,
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/Personal/personal/SDA_mock_vouchers/e6b487ad-b2e8-4e5e-b8b6-92748759f4f3",
+      "applicationCode": "SDA_mock_vouchers",
+      "applicationName": "SDAssistant - mock vouchers",
+      "description": "Link your account.",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/ThirdParty/Bullets.svg",
+      "integrationState": "Linkable"
+    }
+  ],
+  "timeZoneForAccessRights": [
+    {
+      "accessRightId": 3723500,
+      "timeZoneId": "Europe/Brussels"
+    }
+  ],
+  "banners": [],
+  "applicationStatusMessagesCount": 0
+}

@@ -1,0 +1,299 @@
+{
+  "tools": [],
+  "quickActions": [
+    {
+      "type": "AddExpense",
+      "accessRightId": 3693839,
+      "title": "Add expense",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/QuickActions/AddExpense-v2.svg",
+      "category": "Expenses",
+      "placements": [
+        "Home",
+        "AddExpense"
+      ],
+      "healthInformation": {
+        "healthState": "Healthy",
+        "information": ""
+      },
+      "endpointLinkType": "InternalNativeLink",
+      "endpointUri": "sdwa://expenses/add",
+      "newState": {
+        "newStateEntities": [
+          {
+            "owner": "3693839",
+            "resource": "QuickAction:AddExpense"
+          }
+        ],
+        "isBrandNew": true,
+        "title": "New quick action: Add expense",
+        "subtitle": "You now have quick access to Expenses.",
+        "showCoachmark": true
+      }
+    },
+    {
+      "type": "ViewLatestPayslip",
+      "accessRightId": 3693839,
+      "title": "View latest document",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/QuickActions/ViewLatestPayslip-v2.svg",
+      "category": "Salary",
+      "placements": [
+        "Home"
+      ],
+      "healthInformation": {
+        "healthState": "Healthy",
+        "information": ""
+      },
+      "endpointLinkType": "InternalNativeLink",
+      "endpointUri": "sdwa://payslips/latest",
+      "newState": {
+        "newStateEntities": [
+          {
+            "owner": "3693839",
+            "resource": "QuickAction:ViewLatestPayslip"
+          }
+        ],
+        "isBrandNew": true,
+        "title": "New quick action: View latest document",
+        "subtitle": "You now have quick access to Salary.",
+        "showCoachmark": true
+      }
+    }
+  ],
+  "widgets": [
+    {
+      "accessRightId": 3693839,
+      "healthInformation": {
+        "healthState": "Healthy",
+        "information": ""
+      },
+      "newState": {
+        "newStateEntities": [
+          {
+            "owner": "3693839",
+            "resource": "Widget:mobilityWidgetId"
+          }
+        ],
+        "isBrandNew": true,
+        "title": "New widget: New mobility budget widget",
+        "subtitle": "View information directly from your homescreen.",
+        "showCoachmark": true
+      },
+      "contextId": "mobilityWidgetId",
+      "title": "New mobility budget widget",
+      "primaryWidgetHint": "Gauge",
+      "category": "Salary",
+      "containsSensitiveData": true
+    },
+    {
+      "accessRightId": 3693839,
+      "healthInformation": {
+        "healthState": "Healthy",
+        "information": ""
+      },
+      "newState": {
+        "newStateEntities": [
+          {
+            "owner": "3693839",
+            "resource": "Widget:payslipListWidgetId"
+          }
+        ],
+        "isBrandNew": true,
+        "title": "New widget: New list payslips widget",
+        "subtitle": "View information directly from your homescreen.",
+        "showCoachmark": true
+      },
+      "contextId": "payslipListWidgetId",
+      "title": "New list payslips widget",
+      "primaryWidgetHint": "List",
+      "category": "Salary",
+      "containsSensitiveData": true
+    }
+  ],
+  "tiles": [
+    {
+      "title": "Expenses",
+      "description": "Manage your expenses",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/Tiles/Expenses-v2.svg",
+      "iconStyle": "Salary",
+      "endpointLinkType": "InternalNativeLink",
+      "endpointUri": "sdwa://expenses",
+      "healthInformation": {
+        "healthState": "Healthy"
+      },
+      "accessRightIds": [
+        3693839
+      ],
+      "tileType": "Expenses",
+      "profileType": "Unknown",
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/3693839",
+      "integrationState": "Linked",
+      "newState": {
+        "newStateEntities": [
+          {
+            "owner": "3693839",
+            "resource": "Tile:Expenses"
+          }
+        ],
+        "isBrandNew": true,
+        "title": "New tile: Expenses",
+        "subtitle": "From now on you have access to this tile.",
+        "showCoachmark": true
+      }
+    },
+    {
+      "title": "Pay",
+      "description": "View your payslips",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/Tiles/Salary-v2.svg",
+      "iconStyle": "Salary",
+      "endpointLinkType": "InternalNativeLink",
+      "endpointUri": "sdwa://payslips",
+      "healthInformation": {
+        "healthState": "Healthy"
+      },
+      "accessRightIds": [
+        3693839
+      ],
+      "tileType": "Salary",
+      "profileType": "Unknown",
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/3693839",
+      "integrationState": "Linked",
+      "newState": {
+        "newStateEntities": [
+          {
+            "owner": "3693839",
+            "resource": "Tile:Salary"
+          }
+        ],
+        "isBrandNew": true,
+        "title": "New tile: Pay",
+        "subtitle": "From now on you have access to this tile.",
+        "showCoachmark": true
+      }
+    },
+    {
+      "title": "Deeplink test forms overview [en]",
+      "description": "Edit your personal data using forms [en]",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/Tiles/PersonalData-v2.svg",
+      "iconStyle": "Salary",
+      "endpointLinkType": "InternalNativeLink",
+      "endpointUri": "sdwa://forms?deeplink_id=deeplink-1&functionality_uri=sd%3A%2F%2Fforms%2F1.0.0%2Foverview%3Fid%3DSOME_FORM_ID",
+      "healthInformation": {
+        "healthState": "Healthy",
+        "information": ""
+      },
+      "accessRightIds": [
+        3693839
+      ],
+      "tileType": "PersonalData",
+      "profileType": "Employee",
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/3693839",
+      "integrationState": "Linked"
+    },
+    {
+      "title": "Webportal",
+      "description": "Open the webportal",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/Tiles/Default-v2.svg",
+      "iconStyle": "Salary",
+      "endpointLinkType": "InternalBrowserLink",
+      "endpointUri": "https://auth.acc.sdworx.com/idhub/api/loginfromapp?language=en&page=%2Fportal%2Fpersonal",
+      "healthInformation": {
+        "healthState": "Unknown"
+      },
+      "tileType": "Webportal",
+      "profileType": "Personal",
+      "integrationState": "Linked"
+    }
+  ],
+  "features": [
+    {
+      "name": "ExpenseParsing",
+      "accessRightIds": [
+        3693839
+      ]
+    }
+  ],
+  "functionalities": [
+    {
+      "id": 3693839,
+      "userIdForApplication": "A77CEA57-C6B4-436F-88B7-A4A6D4955062",
+      "applicationCode": "SDA_TE_mock",
+      "healthState": "Healthy",
+      "functionalitiesAccepted": [
+        "sd://forms/1.0.0/manage",
+        "sd://forms/1.0.0/overview",
+        "sd://expenses/2.0.0/manage",
+        "sd://expenses/1.0.0/overview",
+        "sd://expenses/1.0.0/deeplinks",
+        "sd://deeplinks/1.0.0/overview",
+        "sd://routing/1.0.0/overview",
+        "sd://currencyconversion/1.0.0/overview",
+        "sd://widgets/1.0.0/overview",
+        "sd://payslip/2.0.0/overview",
+        "sd://payslip/3.0.0/overview",
+        "sd://payslip/2.0.0/collapsable"
+      ]
+    }
+  ],
+  "operationalEmployerGroups": [
+    {
+      "name": "SKF",
+      "code": "CNC_1022",
+      "officialAccounts": [
+        {
+          "name": "Skf Logistics Services Belgium",
+          "number": "BE0416051608"
+        }
+      ]
+    }
+  ],
+  "thirdPartyIntegrations": [
+    {
+      "id": "KdjekbBkQ-hYLUtL2Dm_zg",
+      "accessRightId": 0,
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/Personal/personal/GoogleApi/a77cea57-c6b4-436f-88b7-a4a6d4955062",
+      "applicationCode": "GoogleApi",
+      "applicationName": "Google Api",
+      "description": "Link your account.",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/ThirdParty/Bullets.svg",
+      "integrationState": "Linkable"
+    },
+    {
+      "id": "qjxHiDNvBVcumpIPdQauSA",
+      "accessRightId": 0,
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/Personal/personal/monizze/a77cea57-c6b4-436f-88b7-a4a6d4955062",
+      "applicationCode": "monizze",
+      "applicationName": "Monizze",
+      "description": "Link your Monizze account to view your electronic meal voucher balance here.",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/ThirdParty/Monizze.svg",
+      "integrationState": "Linkable"
+    },
+    {
+      "id": "bfbkcDBXCz9B7RCCgF40Lg",
+      "accessRightId": 0,
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/Personal/personal/MSGraph/a77cea57-c6b4-436f-88b7-a4a6d4955062",
+      "applicationCode": "MSGraph",
+      "applicationName": "Outlook",
+      "description": "Link your Outlook calendar to manage your vacation days, meetings & appointments in one place.",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/ThirdParty/Outlook.svg",
+      "integrationState": "Linkable"
+    },
+    {
+      "id": "ispDGdOfp8qIu8jSIi1ZVw",
+      "accessRightId": 0,
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/Personal/personal/SDA_mock_vouchers/a77cea57-c6b4-436f-88b7-a4a6d4955062",
+      "applicationCode": "SDA_mock_vouchers",
+      "applicationName": "SDAssistant - mock vouchers",
+      "description": "Link your account.",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/ThirdParty/Bullets.svg",
+      "integrationState": "Linkable"
+    }
+  ],
+  "timeZoneForAccessRights": [
+    {
+      "accessRightId": 3693839,
+      "timeZoneId": "Europe/Brussels"
+    }
+  ],
+  "banners": [],
+  "applicationStatusMessagesCount": 0
+}

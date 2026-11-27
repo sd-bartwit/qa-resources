@@ -3,6 +3,14 @@
     "http-toolkit": {
       "type": "stdio",
       "command": "${env:LOCALAPPDATA}\\Programs\\HTTP Toolkit\\resources\\httptoolkit-mcp.cmd"
+    },
+  
+    "ado": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@azure-devops/mcp", "sdworx", "--authentication", "azcli",
+               "-d", "core", "work", "work-items", "test-plans", "wiki", "repositories", "pipelines", "search"],
+      "env": { "ado_mcp_project": "Digital Channels" }
     }
   }
 }

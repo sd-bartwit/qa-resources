@@ -1,0 +1,63 @@
+﻿FIREBASE ANALYTICS CAPTURE REPORT
+============================================================
+Log file : log_20261118_073016.log
+Window   : 11-18 07:30:00.652 -> 11-18 07:30:13.892 (device time)
+App      : be.sdworx.sdwa.inhouse 5.5.0.1742232 | SM-A546B | Android 17
+Debug    : on (all events carry _dbg)
+
+RESULT
+------------------------------------------------------------
+Uploads  : 8 batch(es): 8 accepted, 0 FAILED, 0 without result
+Events   : 12 uploaded (3 app, 9 screen, 0 auto, 0 sdk-error)
+All good: every event was accepted by Firebase.
+
+EVENT SUMMARY
+------------------------------------------------------------
+Event            Kind   Count Uploaded Failed Pending
+-----            ----   ----- -------- ------ -------
+auth_success     App        1        1      0       0
+confirm_input    App        1        1      0       0
+landing_weblogin App        1        1      0       0
+screen_view      Screen     9        9      0       0
+
+SCREENS (in order)
+------------------------------------------------------------
+Time         Screen                       Details                                              Upload  
+----         ------                       -------                                              ------  
+07:30:03.532 loading                      manual_tracking=1                                    OK (204)
+07:30:04.396 landing                      from=loading; manual_tracking=1                      OK (204)
+07:30:05.133 qr_scanner                   from=landing; manual_tracking=1                      OK (204)
+07:30:06.616 landing                      from=qr_scanner; manual_tracking=1                   OK (204)
+07:30:07.203 enter_pin                    from=landing; manual_tracking=1                      OK (204)
+07:30:10.136 landing                      from=enter_pin; manual_tracking=1                    OK (204)
+07:30:11.019 two_factor_validation        from=landing; manual_tracking=1                      OK (204)
+07:30:11.496 two_factor_validation_result from=two_factor_validation; manual_tracking=1        OK (204)
+07:30:13.074 landing                      from=two_factor_validation_result; manual_tracking=1 OK (204)
+
+APP EVENTS (in order; auto events omitted, see events.csv)
+------------------------------------------------------------
+Time         Event            Screen    Details Upload  
+----         -----            ------    ------- ------  
+07:30:05.119 landing_weblogin landing           OK (204)
+07:30:09.096 confirm_input    enter_pin         OK (204)
+07:30:10.131 auth_success     enter_pin         OK (204)
+
+REJECTED BY THE SDK
+------------------------------------------------------------
+  (none)
+
+OTHER SDK ERRORS / WARNINGS
+------------------------------------------------------------
+  (none)
+
+USER PROPERTIES SET BY THE APP
+------------------------------------------------------------
+Name                    Value                            Times
+----                    -----                            -----
+accessibility_specs     1:0,8:1,10:0,13:0                    1
+online                  true                                 1
+personalProfileObjectId 67835BC3BEBD43AEB43F752A0E50F706     1
+pixel_ratio             2.81                                 1
+text_scale_factor       1.0                                  1
+viewport_size           384 x 832                            1
+
