@@ -22,7 +22,7 @@
 
 Send these authenticated `GET` requests with the same account and other filters, close together while the inbox is unchanged. Defaults are `page=1`, `pageSize=10`, and `isVisibleOnHomeScreen=false`; these examples specify them explicitly.
 
-Save each response body in its corresponding file. Each file starts as an empty JSON array: paste each complete page response as an object inside the array, separated by commas. If `result.hasMore` is `true`, increment `page` and save the next response in the same file until all pages are captured. Do this separately for each group. The empty arrays are placeholders, not actual responses. Do not save tokens or sensitive message contents in version control.
+Save each response body in its corresponding file. The linked files hold captured acceptance responses for QA test messages; overwrite them when re-running. If a group fits on one page (`result.hasMore` is `false`), save the response object as-is. Otherwise increment `page` until all pages are captured, and save them as a JSON array of complete page responses in the same file. Do this separately for each group. Never save bearer tokens or real employee data in version control.
 
 ### Group A: all messages
 
@@ -55,7 +55,7 @@ The app-facing filter parameters are passed to CAPI's `api/v2/messages/me/newsfe
 
 ## What to check
 
-0. **Prepare test data:** Attempt to create and publish a message tagged `todo` for the acceptance test account, as no such messages are available yet. Record its ID and confirm it is available to the account before testing. If this is not possible, the To-do filtering results are inconclusive; arrange suitable test data.
+0. **Prepare test data:** Make sure the acceptance test account has at least one published message tagged `todo` and one without it. Record their IDs and confirm they are available to the account before testing. Without such data, the To-do filtering results are inconclusive.
 1. **Group A:** Call without `includeTag` or `excludeTag` and save all messages.
 2. **Include To-do (group C):** Call with `includeTag=todo`. Check all returned `newsfeedId` values also appear in A.
 3. **Exclude To-do (group B):** Call with `excludeTag=todo`. Check all returned IDs also appear in A, none appear in C, and B and C together contain all IDs in A. The BFF removes `todo` from `tags` in all three responses.
@@ -69,4 +69,4 @@ If the sets differ, first check pagination, access, profile, other filters and w
 
 To test the separate app story before the API contract is aligned, a manually configured HTTP Toolkit Modify rule can supply a BFF **response** containing both `tags: ["todo"]` and an item without that tag. This tests UI behavior only, not whether the real BFF exposes the tag. The AI's HTTP Toolkit integration cannot create the rule; configure it in the UI and reset the mock afterward.
 
-No live API call or deployment verification was performed for this document.
+The group files contain live acceptance responses captured for QA test messages published on 2026-11-26. Deployment of the merge commit was not separately verified.
