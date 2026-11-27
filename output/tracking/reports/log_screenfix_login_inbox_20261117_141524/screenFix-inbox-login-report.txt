@@ -1,0 +1,233 @@
+﻿FIREBASE ANALYTICS CAPTURE REPORT
+============================================================
+Log file : log_20261117_141524.log
+Window   : 11-17 14:10:15.624 -> 11-17 14:15:11.188 (device time)
+App      : be.sdworx.sdwa.inhouse 5.5.0.1739528 | SM-A546B | Android 17
+Debug    : partial (122 of 148 events) - app was not restarted at the start
+
+RESULT
+------------------------------------------------------------
+Uploads  : 95 batch(es): 95 accepted, 0 FAILED, 0 without result
+Events   : 148 uploaded (48 app, 94 screen, 6 auto, 0 sdk-error)
+All good: every event was accepted by Firebase.
+
+EVENT SUMMARY
+------------------------------------------------------------
+Event                                  Kind   Count Uploaded Failed Pending
+-----                                  ----   ----- -------- ------ -------
+activation_disabling_notifications_tap App        1        1      0       0
+add_expense                            App        1        1      0       0
+attachment_downloaded                  App        2        2      0       0
+auth_success                           App        1        1      0       0
+coachmark_open                         App        1        1      0       0
+confirm_input                          App        4        4      0       0
+Download_Success                       App        1        1      0       0
+expenses_overview_completed_tab_tap    App        2        2      0       0
+expenses_overview_open_tab_tap         App        1        1      0       0
+form_view                              App        2        2      0       0
+generic_picker_item_selected_multi     App        1        1      0       0
+generic_picker_item_selected_single    App        3        3      0       0
+home_menu_logout_tapped                App        1        1      0       0
+home_notifications_center              App        1        1      0       0
+home_open_settings                     App        1        1      0       0
+home_passwordless_login_tapped         App        2        2      0       0
+home_send_feedback                     App        1        1      0       0
+home_tile                              App        7        7      0       0
+landing_login                          App        2        2      0       0
+login_account_locked                   App        1        1      0       0
+login_activate                         App        1        1      0       0
+login_activation_method                App        1        1      0       0
+newsfeed_filter_applied                App        1        1      0       0
+newsfeed_mark_as_read_tapped           App        1        1      0       0
+newsfeed_tapcard                       App        1        1      0       0
+onboarding_new_finish_tapped           App        1        1      0       0
+onboarding_next_tapped                 App        1        1      0       0
+pin_blocked_reactivate                 App        1        1      0       0
+qr_scan_unsupported_url                App        1        1      0       0
+team_calendar_selected                 App        1        1      0       0
+token_success                          App        1        1      0       0
+weblogin_success_redirect              App        1        1      0       0
+app_clear_data                         Auto       1        1      0       0
+session_start                          Auto       2        2      0       0
+user_engagement                        Auto       3        3      0       0
+screen_view                            Screen    94       94      0       0
+
+SCREENS (in order)
+------------------------------------------------------------
+Time         Screen                                Details                                                                                  Upload  
+----         ------                                -------                                                                                  ------  
+13:52:48.148 environment_picker                    manual_tracking=1                                                                        OK (204)
+13:52:48.435 loading                               from=environment_picker; manual_tracking=1                                               OK (204)
+13:52:49.214 onboarding                            from=loading; manual_tracking=1                                                          OK (204)
+13:52:50.401 browser_login                         from=onboarding; manual_tracking=1                                                       OK (204)
+13:52:56.667 add_pin                               from=browser_login; manual_tracking=1                                                    OK (204)
+13:53:02.872 notification_permission               from=add_pin; manual_tracking=1                                                          OK (204)
+13:53:03.224 activation_your_privacy               from=notification_permission; manual_tracking=1                                          OK (204)
+13:53:03.899 home                                  from=activation_your_privacy; manual_tracking=1                                          OK (204)
+13:53:04.807 debug_menu                            from=home; manual_tracking=1                                                             OK (204)
+13:53:05.458 proxy                                 from=debug_menu; manual_tracking=1                                                       OK (204)
+13:53:06.874 debug_menu                            from=proxy; manual_tracking=1                                                            OK (204)
+13:53:07.662 home                                  from=debug_menu; manual_tracking=1                                                       OK (204)
+13:53:07.795 network_error_dialog                  from=home; manual_tracking=1                                                             OK (204)
+13:54:03.841 home                                  from=network_error_dialog; manual_tracking=1                                             OK (204)
+14:08:02.175 landing                               from=home; manual_tracking=1                                                             OK (204)
+14:10:29.953 loading                               manual_tracking=1                                                                        OK (204)
+14:10:30.869 landing                               from=loading; manual_tracking=1                                                          OK (204)
+14:10:35.763 enter_pin                             from=landing; manual_tracking=1                                                          OK (204)
+14:10:38.887 landing                               from=enter_pin; manual_tracking=1                                                        OK (204)
+14:10:43.326 home                                  from=landing; manual_tracking=1                                                          OK (204)
+14:10:46.797 notifications_center_overview         from=home; manual_tracking=1                                                             OK (204)
+14:10:50.698 picker_modal                          from=notifications_center_overview; manual_tracking=1; type=notification_center_overview OK (204)
+14:10:54.014 notifications_center_overview         from=picker_modal; manual_tracking=1                                                     OK (204)
+14:10:54.775 picker_modal                          from=notifications_center_overview; manual_tracking=1; type=notification_center_overview OK (204)
+14:10:59.950 notifications_center_overview         from=picker_modal; manual_tracking=1                                                     OK (204)
+14:11:04.057 newsfeed_detail                       from=notifications_center_overview; manual_tracking=1                                    OK (204)
+14:11:07.489 dialog                                from=newsfeed_detail; manual_tracking=1                                                  OK (204)
+14:11:09.457 newsfeed_detail                       from=dialog; manual_tracking=1                                                           OK (204)
+14:11:16.246 dialog                                from=newsfeed_detail; manual_tracking=1                                                  OK (204)
+14:11:17.146 newsfeed_detail                       from=dialog; manual_tracking=1                                                           OK (204)
+14:11:24.521 attachment_details                    from=newsfeed_detail; manual_tracking=1                                                  OK (204)
+14:11:31.412 newsfeed_detail                       from=attachment_details; manual_tracking=1                                               OK (204)
+14:11:35.127 notifications_center_overview         from=newsfeed_detail; manual_tracking=1                                                  OK (204)
+14:11:36.048 home                                  from=notifications_center_overview; manual_tracking=1                                    OK (204)
+14:11:43.206 absences_overview_my_calendar_tab     from=home; manual_tracking=1                                                             OK (204)
+14:11:45.975 request_absence                       from=absences_overview_my_calendar_tab; initiated_from=app_link; manual_tracking=1       OK (204)
+14:11:49.472 absences_overview_my_calendar_tab     from=request_absence; manual_tracking=1                                                  OK (204)
+14:11:50.947 request_absence                       from=absences_overview_my_calendar_tab; initiated_from=app_link; manual_tracking=1       OK (204)
+14:11:54.289 select_category                       from=request_absence; manual_tracking=1                                                  OK (204)
+14:11:55.590 request_absence                       from=select_category; initiated_from=app_link; manual_tracking=1                         OK (204)
+14:11:57.857 absences_overview_my_calendar_tab     from=request_absence; manual_tracking=1                                                  OK (204)
+14:11:59.298 request_absence                       from=absences_overview_my_calendar_tab; initiated_from=app_link; manual_tracking=1       OK (204)
+14:12:03.933 request_absence_close_dialog          from=request_absence; manual_tracking=1                                                  OK (204)
+14:12:09.081 request_absence                       from=request_absence_close_dialog; initiated_from=app_link; manual_tracking=1            OK (204)
+14:12:10.079 request_absence_close_dialog          from=request_absence; manual_tracking=1                                                  OK (204)
+14:12:10.950 request_absence                       from=request_absence_close_dialog; initiated_from=app_link; manual_tracking=1            OK (204)
+14:12:10.952 absences_overview_my_calendar_tab     from=request_absence; manual_tracking=1                                                  OK (204)
+14:12:14.561 absences_overview_team_calendar_tab   from=absences_overview_my_calendar_tab; manual_tracking=1                                OK (204)
+14:12:17.547 home                                  from=absences_overview_team_calendar_tab; manual_tracking=1                              OK (204)
+14:12:21.381 expenses_group_overview_open_tab      from=home; manual_tracking=1                                                             OK (204)
+14:12:23.774 init_add_edit_expense                 from=expenses_group_overview_open_tab; manual_tracking=1                                 OK (204)
+14:12:23.790 choose_category_expense_no_transition from=init_add_edit_expense; manual_tracking=1                                            OK (204)
+14:12:26.861 add_edit_expense                      from=choose_category_expense_no_transition; manual_tracking=1                            OK (204)
+14:12:37.775 add_edit_expense_close_dialog         from=add_edit_expense; manual_tracking=1                                                 OK (204)
+14:12:40.709 add_edit_expense                      from=add_edit_expense_close_dialog; manual_tracking=1                                    OK (204)
+14:12:45.218 expenses_group_overview_open_tab      from=add_edit_expense; manual_tracking=1                                                 OK (204)
+14:12:58.052 home                                  from=expenses_group_overview_open_tab; manual_tracking=1                                 OK (204)
+14:13:02.182 salary_overview                       from=home; manual_tracking=1                                                             OK (204)
+14:13:04.578 salary_detail                         from=salary_overview; manual_tracking=1                                                  OK (204)
+14:13:07.724 salary_overview                       from=salary_detail; manual_tracking=1                                                    OK (204)
+14:13:08.335 home                                  from=salary_overview; manual_tracking=1                                                  OK (204)
+14:13:10.414 absences_overview_team_calendar_tab   from=home; manual_tracking=1                                                             OK (204)
+14:13:12.602 home                                  from=absences_overview_team_calendar_tab; manual_tracking=1                              OK (204)
+14:13:14.087 expenses_group_overview_open_tab      from=home; manual_tracking=1                                                             OK (204)
+14:13:15.220 expenses_group_overview_completed_tab from=expenses_group_overview_open_tab; manual_tracking=1                                 OK (204)
+14:13:18.304 expenses_group_overview_open_tab      from=expenses_group_overview_completed_tab; manual_tracking=1                            OK (204)
+14:13:19.726 home                                  from=expenses_group_overview_open_tab; manual_tracking=1                                 OK (204)
+14:13:30.493 form_overview                         from=home; manual_tracking=1                                                             OK (204)
+14:13:34.422 form_overview                         from=form_overview; manual_tracking=1                                                    OK (204)
+14:13:38.216 form_overview                         from=form_overview; manual_tracking=1                                                    OK (204)
+14:13:39.125 home                                  from=form_overview; manual_tracking=1                                                    OK (204)
+14:13:40.713 webview                               from=home; manual_tracking=1                                                             OK (204)
+14:13:49.489 home                                  from=webview; manual_tracking=1                                                          OK (204)
+14:13:50.482 settings                              from=home; manual_tracking=1                                                             OK (204)
+14:13:51.889 logout_dialog                         from=settings; manual_tracking=1                                                         OK (204)
+14:13:55.096 settings                              from=logout_dialog; manual_tracking=1                                                    OK (204)
+14:13:57.495 feedback                              from=settings; manual_tracking=1                                                         OK (204)
+14:14:00.255 picker_modal                          from=feedback; manual_tracking=1; type=feedback_subject                                  OK (204)
+14:14:01.951 feedback                              from=picker_modal; manual_tracking=1                                                     OK (204)
+14:14:06.887 settings                              from=feedback; manual_tracking=1                                                         OK (204)
+14:14:09.489 qr_scanner                            from=settings; manual_tracking=1                                                         OK (204)
+14:14:18.865 confirm_authentication                from=qr_scanner; manual_tracking=1                                                       OK (204)
+14:14:21.286 authentication_result                 from=confirm_authentication; manual_tracking=1                                           OK (204)
+14:14:22.405 settings                              from=authentication_result; manual_tracking=1                                            OK (204)
+14:14:25.415 qr_scanner                            from=settings; manual_tracking=1                                                         OK (204)
+14:14:29.072 dialog                                from=qr_scanner; manual_tracking=1                                                       OK (204)
+14:14:30.352 qr_scanner                            from=dialog; manual_tracking=1                                                           OK (204)
+14:14:36.112 settings                              from=qr_scanner; manual_tracking=1                                                       OK (204)
+14:14:47.912 loading                               manual_tracking=1                                                                        OK (204)
+14:14:48.937 landing                               from=loading; manual_tracking=1                                                          OK (204)
+14:14:52.376 enter_pin                             from=landing; manual_tracking=1                                                          OK (204)
+14:15:01.080 landing                               from=enter_pin; manual_tracking=1                                                        OK (204)
+14:15:01.336 pin_blocked                           from=landing; manual_tracking=1                                                          OK (204)
+14:15:05.846 browser_login                         from=pin_blocked; manual_tracking=1                                                      OK (204)
+
+APP EVENTS (in order; auto events omitted, see events.csv)
+------------------------------------------------------------
+Time         Event                                  Screen                                Details                                      Upload  
+----         -----                                  ------                                -------                                      ------  
+13:52:49.680 onboarding_next_tapped                 onboarding                                                                         OK (204)
+13:52:50.360 onboarding_new_finish_tapped           onboarding                                                                         OK (204)
+13:52:51.106 login_activate                         browser_login                                                                      OK (204)
+13:52:55.708 login_activation_method                browser_login                         activation_method=nextAuth                   OK (204)
+13:53:03.144 activation_disabling_notifications_tap notification_permission                                                            OK (204)
+14:10:34.906 landing_login                          landing                               login_method=nextAuth                        OK (204)
+14:10:38.008 confirm_input                          enter_pin                                                                          OK (204)
+14:10:38.879 auth_success                           enter_pin                                                                          OK (204)
+14:10:40.870 token_success                          landing                                                                            OK (204)
+14:10:46.601 Download_Success                                                                                                          OK (204)
+14:10:46.764 home_notifications_center              home                                                                               OK (204)
+14:10:59.943 generic_picker_item_selected_multi     picker_modal                          type=notification_center_overview            OK (204)
+14:10:59.953 newsfeed_filter_applied                notifications_center_overview                                                      OK (204)
+14:11:04.030 newsfeed_tapcard                       notifications_center_overview                                                      OK (204)
+14:11:04.056 newsfeed_mark_as_read_tapped           notifications_center_overview                                                      OK (204)
+14:11:14.881 attachment_downloaded                  newsfeed_detail                                                                    OK (204)
+14:11:20.849 attachment_downloaded                  newsfeed_detail                                                                    OK (204)
+14:11:42.825 home_tile                              home                                  tile_type=absences; endpoint=sdwa://absences OK (204)
+14:11:55.090 generic_picker_item_selected_single    select_category                       type=choose_category_absence                 OK (204)
+14:12:14.552 team_calendar_selected                 absences_overview_my_calendar_tab                                                  OK (204)
+14:12:18.563 home_tile                              home                                  tile_type=expenses; endpoint=sdwa://expenses OK (204)
+14:12:26.328 generic_picker_item_selected_single    choose_category_expense_no_transition type=choose_category_expense                 OK (204)
+14:12:45.199 add_expense                            add_edit_expense                      context=standalone                           OK (204)
+14:13:02.170 home_tile                              home                                  tile_type=salary; endpoint=sdwa://payslips   OK (204)
+14:13:05.061 coachmark_open                         salary_detail                         topic=salary_details_pdf_coachmark           OK (204)
+14:13:09.421 home_tile                              home                                  tile_type=absences; endpoint=sdwa://absences OK (204)
+14:13:13.635 home_tile                              home                                  tile_type=expenses; endpoint=sdwa://expenses OK (204)
+14:13:15.199 expenses_overview_completed_tab_tap    expenses_group_overview_open_tab                                                   OK (204)
+14:13:15.245 expenses_overview_completed_tab_tap    expenses_group_overview_completed_tab                                              OK (204)
+14:13:18.302 expenses_overview_open_tab_tap         expenses_group_overview_completed_tab                                              OK (204)
+14:13:30.488 home_tile                              home                                  tile_type=personalData                       OK (204)
+14:13:31.500 form_view                              form_overview                         view_mode=editable; form_name=My data        OK (204)
+14:13:36.323 form_view                              form_overview                         view_mode=view_only                          OK (204)
+14:13:40.466 home_tile                              home                                  tile_type=voucher                            OK (204)
+14:13:50.481 home_open_settings                     home                                                                               OK (204)
+14:13:51.889 home_menu_logout_tapped                settings                                                                           OK (204)
+14:13:57.494 home_send_feedback                     settings                                                                           OK (204)
+14:14:01.447 generic_picker_item_selected_single    picker_modal                          type=feedback_subject                        OK (204)
+14:14:09.484 home_passwordless_login_tapped         settings                                                                           OK (204)
+14:14:22.405 weblogin_success_redirect              settings                                                                           OK (204)
+14:14:25.414 home_passwordless_login_tapped         settings                                                                           OK (204)
+14:14:29.071 qr_scan_unsupported_url                qr_scanner                                                                         OK (204)
+14:14:51.816 landing_login                          landing                               login_method=nextAuth                        OK (204)
+14:14:54.304 confirm_input                          enter_pin                                                                          OK (204)
+14:14:58.612 confirm_input                          enter_pin                                                                          OK (204)
+14:15:00.700 confirm_input                          enter_pin                                                                          OK (204)
+14:15:01.313 login_account_locked                   landing                                                                            OK (204)
+14:15:04.046 pin_blocked_reactivate                 pin_blocked                                                                        OK (204)
+
+REJECTED BY THE SDK
+------------------------------------------------------------
+  (none)
+
+OTHER SDK ERRORS / WARNINGS
+------------------------------------------------------------
+Times Message                                                   
+----- -------                                                   
+    3 setCurrentScreen cannot be called while no activity active
+
+USER PROPERTIES SET BY THE APP
+------------------------------------------------------------
+Name                    Value                            Times
+----                    -----                            -----
+accessibility_specs     1:0,8:1,10:0,13:0                    2
+module_absences         false                               26
+module_approvals        false                               26
+module_expenses         grouped                             26
+module_newsfeed         false                               26
+module_overtime         none                                26
+module_salary           advanced                            26
+online                  true                                 2
+personalProfileObjectId 67835BC3BEBD43AEB43F752A0E50F706     3
+pixel_ratio             2.81                                 2
+text_scale_factor       1.0                                  2
+viewport_size           384 x 832                            2
+

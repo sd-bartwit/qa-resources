@@ -1,0 +1,112 @@
+﻿11-18 07:31:27.910 V/FA-SVC  (26945): Logging event: origin=app,name=landing_login,params=Bundle[{login_method=nextAuth, ga_event_origin(_o)=app, ga_screen_class(_sc)=landing, ga_screen_id(_si)=-6631445765072861217, ga_screen(_sn)=landing}]
+11-18 07:31:28.403 V/FA-SVC  (26945): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=75243, ga_previous_class(_pc)=landing, ga_previous_id(_pi)=-6631445765072861217, ga_previous_screen(_pn)=landing, ga_screen_class(_sc)=enter_pin, ga_screen_id(_si)=-6631445765072861216, ga_screen(_sn)=enter_pin, manual_tracking(_mst)=1}]
+11-18 07:31:28.471 V/FA-SVC  (26945): Setting user property: non_personalized_ads(_npa), 1
+11-18 07:31:28.490 V/FA-SVC  (26945): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1321, 
+11-18 07:31:28.644 V/FA-SVC  (26945): Network upload successful with code, uploadAttempted: 204, true
+11-18 07:31:28.647 V/FA-SVC  (26945): Successful upload. Got network response. code, size: 204, 0
+11-18 07:31:30.103 V/FA-SVC  (26945): Logging event: origin=app,name=confirm_input,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=enter_pin, ga_screen_id(_si)=-6631445765072861216, ga_screen(_sn)=enter_pin}]
+11-18 07:31:30.625 V/FA-SVC  (26945): Setting user property: non_personalized_ads(_npa), 1
+11-18 07:31:30.662 V/FA-SVC  (26945): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1113, 
+11-18 07:31:30.723 V/FA-SVC  (26945): Network upload successful with code, uploadAttempted: 204, true
+11-18 07:31:30.731 V/FA-SVC  (26945): Successful upload. Got network response. code, size: 204, 0
+11-18 07:31:31.138 V/FA-SVC  (26945): Logging event: origin=app,name=auth_success,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=enter_pin, ga_screen_id(_si)=-6631445765072861216, ga_screen(_sn)=enter_pin}]
+11-18 07:31:31.202 V/FA-SVC  (26945): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=2639, ga_previous_class(_pc)=enter_pin, ga_previous_id(_pi)=-6631445765072861216, ga_previous_screen(_pn)=enter_pin, ga_screen_class(_sc)=landing, ga_screen_id(_si)=-6631445765072861215, ga_screen(_sn)=landing, manual_tracking(_mst)=1}]
+11-18 07:31:31.739 V/FA-SVC  (26945): Logging event: origin=app,name=token_success,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=landing, ga_screen_id(_si)=-6631445765072861215, ga_screen(_sn)=landing}]
+11-18 07:31:31.764 V/FA-SVC  (26945): Setting user property: non_personalized_ads(_npa), 1
+11-18 07:31:31.785 V/FA-SVC  (26945): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1408, 
+11-18 07:31:31.792 V/FA-SVC  (26945): Setting user property: user_id(_id), 67835BC3-BEBD-43AE-B43F-752A0E50F706
+11-18 07:31:31.824 V/FA-SVC  (26945): Setting user property: personalProfileObjectId, 67835BC3BEBD43AEB43F752A0E50F706
+11-18 07:31:31.855 V/FA-SVC  (26945): Network upload successful with code, uploadAttempted: 204, true
+11-18 07:31:31.858 V/FA-SVC  (26945): Successful upload. Got network response. code, size: 204, 0
+11-18 07:31:34.478 V/FA-SVC  (26945): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=3289, ga_previous_class(_pc)=landing, ga_previous_id(_pi)=-6631445765072861215, ga_previous_screen(_pn)=landing, ga_screen_class(_sc)=home, ga_screen_id(_si)=-6631445765072861214, ga_screen(_sn)=home, manual_tracking(_mst)=1}]
+11-18 07:31:34.808 V/FA-SVC  (26945): Setting user property: module_absences, false
+11-18 07:31:34.947 V/FA-SVC  (26945): Setting user property: module_approvals, false
+11-18 07:31:34.990 V/FA-SVC  (26945): Setting user property: non_personalized_ads(_npa), 1
+11-18 07:31:35.007 V/FA-SVC  (26945): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1171, 
+11-18 07:31:35.056 V/FA-SVC  (26945): Network upload successful with code, uploadAttempted: 204, true
+11-18 07:31:35.059 V/FA-SVC  (26945): Successful upload. Got network response. code, size: 204, 0
+11-18 07:31:35.067 V/FA-SVC  (26945): Setting user property: module_expenses, grouped
+11-18 07:31:35.086 V/FA-SVC  (26945): Setting user property: module_newsfeed, false
+11-18 07:31:35.099 V/FA-SVC  (26945): Setting user property: module_salary, none
+11-18 07:31:35.114 V/FA-SVC  (26945): Setting user property: module_overtime, none
+11-18 07:31:35.125 V/FA-SVC  (26945): Setting user property: module_absences, false
+11-18 07:31:35.136 V/FA-SVC  (26945): Setting user property: module_approvals, false
+11-18 07:31:35.148 V/FA-SVC  (26945): Setting user property: module_expenses, grouped
+11-18 07:31:35.160 V/FA-SVC  (26945): Setting user property: module_newsfeed, false
+11-18 07:31:35.171 V/FA-SVC  (26945): Setting user property: module_overtime, none
+11-18 07:31:35.184 V/FA-SVC  (26945): Setting user property: module_salary, none
+11-18 07:31:35.341 V/FA-SVC  (26945): Logging event: origin=app,name=home_weblogin,params=Bundle[{ga_event_origin(_o)=app, ga_screen_class(_sc)=home, ga_screen_id(_si)=-6631445765072861214, ga_screen(_sn)=home}]
+11-18 07:31:35.507 V/FA-SVC  (26945): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=1058, ga_previous_class(_pc)=home, ga_previous_id(_pi)=-6631445765072861214, ga_previous_screen(_pn)=home, ga_screen_class(_sc)=qr_scanner, ga_screen_id(_si)=-6631445765072861213, ga_screen(_sn)=qr_scanner, manual_tracking(_mst)=1}]
+11-18 07:31:35.897 V/FA-SVC  (26945): Setting user property: module_absences, false
+11-18 07:31:35.971 V/FA-SVC  (26945): Setting user property: module_approvals, false
+11-18 07:31:36.002 V/FA-SVC  (26945): Setting user property: module_expenses, grouped
+11-18 07:31:36.011 V/FA-SVC  (26945): Setting user property: module_overtime, none
+11-18 07:31:36.021 V/FA-SVC  (26945): Setting user property: module_salary, none
+11-18 07:31:36.031 V/FA-SVC  (26945): Setting user property: module_newsfeed, false
+11-18 07:31:36.066 V/FA-SVC  (26945): Setting user property: non_personalized_ads(_npa), 1
+11-18 07:31:36.085 V/FA-SVC  (26945): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1278, 
+11-18 07:31:36.127 V/FA-SVC  (26945): Network upload successful with code, uploadAttempted: 204, true
+11-18 07:31:36.131 V/FA-SVC  (26945): Successful upload. Got network response. code, size: 204, 0
+11-18 07:31:36.742 V/FA-SVC  (26945): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=1397, ga_previous_class(_pc)=qr_scanner, ga_previous_id(_pi)=-6631445765072861213, ga_previous_screen(_pn)=qr_scanner, ga_screen_class(_sc)=home, ga_screen_id(_si)=-6631445765072861212, ga_screen(_sn)=home, manual_tracking(_mst)=1}]
+11-18 07:31:36.931 V/FA-SVC  (26945): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=101, ga_previous_class(_pc)=home, ga_previous_id(_pi)=-6631445765072861212, ga_previous_screen(_pn)=home, ga_screen_class(_sc)=two_factor_auth_activation, ga_screen_id(_si)=-6631445765072861211, ga_screen(_sn)=two_factor_auth_activation, manual_tracking(_mst)=1}]
+11-18 07:31:37.151 V/FA-SVC  (26945): Setting user property: non_personalized_ads(_npa), 1
+11-18 07:31:37.191 V/FA-SVC  (26945): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1388, 
+11-18 07:31:37.215 V/FA-SVC  (26945): Setting user property: module_absences, false
+11-18 07:31:37.246 V/FA-SVC  (26945): Network upload successful with code, uploadAttempted: 204, true
+11-18 07:31:37.250 V/FA-SVC  (26945): Successful upload. Got network response. code, size: 204, 0
+11-18 07:31:37.392 V/FA-SVC  (26945): Setting user property: module_approvals, false
+11-18 07:31:37.496 V/FA-SVC  (26945): Setting user property: module_absences, false
+11-18 07:31:37.518 V/FA-SVC  (26945): Setting user property: module_approvals, false
+11-18 07:31:37.537 V/FA-SVC  (26945): Setting user property: module_expenses, grouped
+11-18 07:31:37.563 V/FA-SVC  (26945): Setting user property: module_newsfeed, false
+11-18 07:31:37.584 V/FA-SVC  (26945): Setting user property: module_overtime, none
+11-18 07:31:37.603 V/FA-SVC  (26945): Setting user property: module_salary, none
+11-18 07:31:37.622 V/FA-SVC  (26945): Setting user property: module_expenses, grouped
+11-18 07:31:37.641 V/FA-SVC  (26945): Setting user property: module_newsfeed, false
+11-18 07:31:37.661 V/FA-SVC  (26945): Setting user property: module_salary, none
+11-18 07:31:37.679 V/FA-SVC  (26945): Setting user property: module_overtime, none
+11-18 07:31:38.375 V/FA-SVC  (26945): Setting user property: module_absences, false
+11-18 07:31:38.503 V/FA-SVC  (26945): Setting user property: module_approvals, false
+11-18 07:31:38.639 V/FA-SVC  (26945): Setting user property: module_expenses, grouped
+11-18 07:31:38.655 V/FA-SVC  (26945): Setting user property: module_newsfeed, false
+11-18 07:31:38.673 V/FA-SVC  (26945): Setting user property: module_overtime, none
+11-18 07:31:38.689 V/FA-SVC  (26945): Setting user property: module_salary, none
+11-18 07:31:40.003 V/FA-SVC  (26945): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=3153, ga_previous_class(_pc)=two_factor_auth_activation, ga_previous_id(_pi)=-6631445765072861211, ga_previous_screen(_pn)=two_factor_auth_activation, ga_screen_class(_sc)=generic_error_dialog, ga_screen_id(_si)=-6631445765072861210, ga_screen(_sn)=generic_error_dialog, manual_tracking(_mst)=1}]
+11-18 07:31:40.519 V/FA-SVC  (26945): Setting user property: non_personalized_ads(_npa), 1
+11-18 07:31:40.531 V/FA-SVC  (26945): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1241, 
+11-18 07:31:40.576 V/FA-SVC  (26945): Network upload successful with code, uploadAttempted: 204, true
+11-18 07:31:40.580 V/FA-SVC  (26945): Successful upload. Got network response. code, size: 204, 0
+11-18 07:31:41.809 V/FA-SVC  (26945): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=1781, ga_previous_class(_pc)=generic_error_dialog, ga_previous_id(_pi)=-6631445765072861210, ga_previous_screen(_pn)=generic_error_dialog, ga_screen_class(_sc)=two_factor_auth_activation, ga_screen_id(_si)=-6631445765072861209, ga_screen(_sn)=two_factor_auth_activation, manual_tracking(_mst)=1}]
+11-18 07:31:42.336 V/FA-SVC  (26945): Setting user property: non_personalized_ads(_npa), 1
+11-18 07:31:42.366 V/FA-SVC  (26945): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1241, 
+11-18 07:31:42.386 V/FA-SVC  (26945): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=593, ga_previous_class(_pc)=two_factor_auth_activation, ga_previous_id(_pi)=-6631445765072861209, ga_previous_screen(_pn)=two_factor_auth_activation, ga_screen_class(_sc)=generic_error_dialog, ga_screen_id(_si)=-6631445765072861208, ga_screen(_sn)=generic_error_dialog, manual_tracking(_mst)=1}]
+11-18 07:31:42.417 V/FA-SVC  (26945): Network upload successful with code, uploadAttempted: 204, true
+11-18 07:31:42.420 V/FA-SVC  (26945): Successful upload. Got network response. code, size: 204, 0
+11-18 07:31:42.440 V/FA-SVC  (26945): Setting user property: non_personalized_ads(_npa), 1
+11-18 07:31:42.457 V/FA-SVC  (26945): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1241, 
+11-18 07:31:42.511 V/FA-SVC  (26945): Network upload successful with code, uploadAttempted: 204, true
+11-18 07:31:42.513 V/FA-SVC  (26945): Successful upload. Got network response. code, size: 204, 0
+11-18 07:31:43.105 V/FA-SVC  (26945): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=629, ga_previous_class(_pc)=generic_error_dialog, ga_previous_id(_pi)=-6631445765072861208, ga_previous_screen(_pn)=generic_error_dialog, ga_screen_class(_sc)=two_factor_auth_activation, ga_screen_id(_si)=-6631445765072861207, ga_screen(_sn)=two_factor_auth_activation, manual_tracking(_mst)=1}]
+11-18 07:31:43.389 V/FA-SVC  (26945): Logging event: origin=app,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=app, engagement_time_msec(_et)=34, ga_previous_class(_pc)=two_factor_auth_activation, ga_previous_id(_pi)=-6631445765072861207, ga_previous_screen(_pn)=two_factor_auth_activation, ga_screen_class(_sc)=home, ga_screen_id(_si)=-6631445765072861206, ga_screen(_sn)=home, manual_tracking(_mst)=1}]
+11-18 07:31:43.517 V/FA-SVC  (26945): Setting user property: non_personalized_ads(_npa), 1
+11-18 07:31:43.529 V/FA-SVC  (26945): Uploading data. app, uncompressed size, data: be.sdworx.sdwa.inhouse, 1452, 
+11-18 07:31:43.569 V/FA-SVC  (26945): Network upload successful with code, uploadAttempted: 204, true
+11-18 07:31:43.571 V/FA-SVC  (26945): Successful upload. Got network response. code, size: 204, 0
+11-18 07:31:43.602 V/FA-SVC  (26945): Setting user property: module_absences, false
+11-18 07:31:43.695 V/FA-SVC  (26945): Setting user property: module_approvals, false
+11-18 07:31:43.709 V/FA-SVC  (26945): Setting user property: module_absences, false
+11-18 07:31:43.720 V/FA-SVC  (26945): Setting user property: module_approvals, false
+11-18 07:31:43.737 V/FA-SVC  (26945): Setting user property: module_expenses, grouped
+11-18 07:31:43.749 V/FA-SVC  (26945): Setting user property: module_newsfeed, false
+11-18 07:31:43.761 V/FA-SVC  (26945): Setting user property: module_overtime, none
+11-18 07:31:43.773 V/FA-SVC  (26945): Setting user property: module_salary, none
+11-18 07:31:43.784 V/FA-SVC  (26945): Setting user property: module_expenses, grouped
+11-18 07:31:43.795 V/FA-SVC  (26945): Setting user property: module_newsfeed, false
+11-18 07:31:43.805 V/FA-SVC  (26945): Setting user property: module_overtime, none
+11-18 07:31:43.816 V/FA-SVC  (26945): Setting user property: module_salary, none
+11-18 07:31:44.094 V/FA-SVC  (26945): Setting user property: module_absences, false
+11-18 07:31:44.163 V/FA-SVC  (26945): Setting user property: module_approvals, false
+11-18 07:31:44.234 V/FA-SVC  (26945): Setting user property: module_newsfeed, false
+11-18 07:31:44.253 V/FA-SVC  (26945): Setting user property: module_expenses, grouped
+11-18 07:31:44.265 V/FA-SVC  (26945): Setting user property: module_overtime, none
+11-18 07:31:44.282 V/FA-SVC  (26945): Setting user property: module_salary, none

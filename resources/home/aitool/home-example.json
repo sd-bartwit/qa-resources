@@ -1,0 +1,230 @@
+{
+  "tools": [
+    {
+      "type": "aiHrAssistant",
+      "title": "Tap to ask Assist",
+      "description": "Ask Assist",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/Tools/AiHrAssistant.svg",
+      "endpointLinkType": "InternalWebView",
+      "endpointUri": "https://auth.acc.sdworx.com/idhub/api/loginfromapp?page=%2Fportal%2Fredirect%3FdeeplinkId%3DAiHrAssistant%26accessrightid%3D3827990%26applicationCode%3DConversational%2520employee%26channel%3DMobileApp%26url%3Dhttps%253A%252F%252Fmyworkandme.com.acc.sd.dika.be%252Fportal%252Fstartapplication%252Fstart%253Freturnurl%253Dhttps%25253a%25252f%25252fapp.acc.sdworx.com%25252fconversationalemployee%25252f%2526accessrightid%253D3827990%2526appcode%253DConversational%252Bemployee%26entryPoint%3DDeeplink%26language%3Den%26profileType%3DEmployee&language=en"
+    }
+  ],
+  "quickActions": [
+    {
+      "type": "AddAbsence",
+      "accessRightId": 3780716,
+      "title": "Add absence",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/QuickActions/AddAbsence-v2.svg",
+      "category": "Absences",
+      "placements": [
+        "Home",
+        "AddAbsence"
+      ],
+      "healthInformation": {
+        "healthState": "Healthy",
+        "information": ""
+      },
+      "endpointLinkType": "InternalNativeLink",
+      "endpointUri": "sdwa://absences/add"
+    },
+    {
+      "type": "AddExpense",
+      "accessRightId": 3780716,
+      "title": "Add expense",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/QuickActions/AddExpense-v2.svg",
+      "category": "Expenses",
+      "placements": [
+        "Home",
+        "AddExpense"
+      ],
+      "healthInformation": {
+        "healthState": "Healthy",
+        "information": ""
+      },
+      "endpointLinkType": "InternalNativeLink",
+      "endpointUri": "sdwa://expenses/add"
+    },
+    {
+      "type": "AddOvertime",
+      "accessRightId": 3780716,
+      "title": "Add overtime",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/QuickActions/AddOvertime-v2.svg",
+      "category": "Overtime",
+      "placements": [
+        "Home",
+        "AddOvertime"
+      ],
+      "healthInformation": {
+        "healthState": "Healthy",
+        "information": ""
+      },
+      "endpointLinkType": "InternalNativeLink",
+      "endpointUri": "sdwa://overtime/add"
+    }
+  ],
+  "widgets": [],
+  "tiles": [
+    {
+      "title": "Absences",
+      "description": "View your absences",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/Tiles/Absences-v2.svg",
+      "iconStyle": "Salary",
+      "endpointLinkType": "InternalNativeLink",
+      "endpointUri": "sdwa://absences",
+      "healthInformation": {
+        "healthState": "Healthy"
+      },
+      "accessRightIds": [
+        3780716
+      ],
+      "tileType": "Absences",
+      "profileType": "Unknown",
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/3780716",
+      "integrationState": "Linked"
+    },
+    {
+      "title": "Overtime",
+      "description": "View and register overtime",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/Tiles/Overtime-v2.svg",
+      "iconStyle": "Salary",
+      "endpointLinkType": "InternalNativeLink",
+      "endpointUri": "sdwa://overtime",
+      "healthInformation": {
+        "healthState": "Healthy"
+      },
+      "accessRightIds": [
+        3780716
+      ],
+      "tileType": "Overtime",
+      "profileType": "Unknown",
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/3780716",
+      "integrationState": "Linked"
+    },
+    {
+      "title": "Expenses",
+      "description": "Manage your expenses",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/Tiles/Expenses-v2.svg",
+      "iconStyle": "Salary",
+      "endpointLinkType": "InternalNativeLink",
+      "endpointUri": "sdwa://expenses",
+      "healthInformation": {
+        "healthState": "Healthy"
+      },
+      "accessRightIds": [
+        3780716
+      ],
+      "tileType": "Expenses",
+      "profileType": "Unknown",
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/3780716",
+      "integrationState": "Linked"
+    },
+    {
+      "title": "Pending approvals",
+      "description": "View pending approval requests",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/Tiles/Approvals-v2.svg",
+      "iconStyle": "Salary",
+      "endpointLinkType": "InternalNativeLink",
+      "endpointUri": "sdwa://pending_approvals",
+      "healthInformation": {
+        "healthState": "Unknown"
+      },
+      "accessRightIds": [
+        3780716
+      ],
+      "tileType": "PendingApprovals",
+      "profileType": "Personal",
+      "integrationState": "Linked"
+    },
+    {
+      "title": "Webportal",
+      "description": "Open the webportal",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/Tiles/Default-v2.svg",
+      "iconStyle": "Salary",
+      "endpointLinkType": "InternalBrowserLink",
+      "endpointUri": "https://auth.acc.sdworx.com/idhub/api/loginfromapp?language=en&page=%2Fportal%2Fpersonal",
+      "healthInformation": {
+        "healthState": "Unknown"
+      },
+      "tileType": "Webportal",
+      "profileType": "Personal",
+      "integrationState": "Linked"
+    }
+  ],
+  "features": [
+    {
+      "name": "ExpenseParsing",
+      "accessRightIds": [
+        -1282,
+        3780716,
+        3827990
+      ]
+    }
+  ],
+  "functionalities": [
+    {
+      "id": 3780716,
+      "userIdForApplication": "192451",
+      "applicationCode": "Mijnafwezigheden",
+      "healthState": "Healthy",
+      "functionalitiesAccepted": [
+        "sd://deeplinks/1.0.0/overview",
+        "sd://overtime/1.0.0/overview",
+        "sd://overtime/1.0.0/manage",
+        "sd://absences/2.0.0/approval",
+        "sd://absences/1.0.0/overview",
+        "sd://absences/2.0.0/counters",
+        "sd://absences/1.0.0/manage",
+        "sd://expenses/2.0.0/approval",
+        "sd://expenses/1.0.0/overview",
+        "sd://expenses/2.0.0/manage"
+      ]
+    }
+  ],
+  "operationalEmployerGroups": [
+    {
+      "name": "SD WORX (obs)",
+      "code": "HMUM6YGW",
+      "officialAccounts": [
+        {
+          "name": "SD Worx VZW",
+          "number": "BE0000000001"
+        }
+      ]
+    }
+  ],
+  "thirdPartyIntegrations": [
+    {
+      "id": "Y2K3ptm5eVCTSHd9np637Q",
+      "accessRightId": 0,
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/Personal/personal/GoogleApi/36c247c4-8136-440c-abca-3c1965ecb666",
+      "applicationCode": "GoogleApi",
+      "applicationName": "Google Api",
+      "description": "Link your account.",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/ThirdParty/Bullets.svg",
+      "integrationState": "Linkable"
+    },
+    {
+      "id": "zCVldhWYoGNlmIzWrr43zA",
+      "accessRightId": -1282,
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/Personal/personal/MSGraph/36c247c4-8136-440c-abca-3c1965ecb666",
+      "applicationCode": "MSGraph",
+      "applicationName": "Outlook",
+      "description": "Link your Outlook calendar to manage your vacation days, meetings & appointments in one place.",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/ThirdParty/Outlook.svg",
+      "integrationState": "Disconnected"
+    },
+    {
+      "id": "9l3eOTWGmOyt7GH6WcRMWg",
+      "accessRightId": 0,
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/Personal/personal/SDA_mock_vouchers/36c247c4-8136-440c-abca-3c1965ecb666",
+      "applicationCode": "SDA_mock_vouchers",
+      "applicationName": "SDAssistant - mock vouchers",
+      "description": "Link your account.",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/ThirdParty/Bullets.svg",
+      "integrationState": "Linkable"
+    }
+  ],
+  "timeZoneForAccessRights": [],
+  "banners": [],
+  "applicationStatusMessagesCount": 0
+}

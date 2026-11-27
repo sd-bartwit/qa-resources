@@ -1,0 +1,69 @@
+{
+  "result": {
+    "hasMore": false,
+    "items": [
+      {
+        "newsfeedId": "bb63b4cd-c7c7-4ff6-a393-b3a3abd1d2e7",
+        "companyId": "Bart",
+        "companyType": "Account",
+        "title": "APP QA - Simple message",
+        "label": "bart",
+        "sublabel": "Test",
+        "text": "TEST tag message",
+        "contentType": "PlainText",
+        "iconUrl": "https://www.sdworx.be/assets/corporate/img/sdworx_logo.svg",
+        "isRead": false,
+        "isHomeScreenVisible": true,
+        "applicationPageUrl": "",
+        "tags": [
+          "test"
+        ],
+        "actions": [],
+        "publishDateUtc": "2026-11-26T13:23:36.9591062Z",
+        "attachments": []
+      },
+      {
+        "newsfeedId": "86b67f6f-218f-4205-909f-f791b65b7b29",
+        "companyId": "Bart",
+        "companyType": "Account",
+        "title": "APP QA - Simple message",
+        "label": "bart",
+        "sublabel": "Test",
+        "text": "TEST tag message",
+        "contentType": "PlainText",
+        "iconUrl": "https://www.sdworx.be/assets/corporate/img/sdworx_logo.svg",
+        "isRead": false,
+        "isHomeScreenVisible": true,
+        "applicationPageUrl": "",
+        "tags": [
+          "test"
+        ],
+        "actions": [],
+        "publishDateUtc": "2026-11-26T13:23:35.8770108Z",
+        "attachments": []
+      },
+      {
+        "newsfeedId": "43daf502-71e3-424a-bc8e-7445e31ea76d",
+        "companyId": "Bart",
+        "companyType": "Account",
+        "title": "APP QA - Simple message",
+        "label": "bart",
+        "sublabel": "Test",
+        "text": "TODO message #2",
+        "contentType": "PlainText",
+        "iconUrl": "https://www.sdworx.be/assets/corporate/img/sdworx_logo.svg",
+        "isRead": false,
+        "isHomeScreenVisible": true,
+        "applicationPageUrl": "",
+        "tags": [
+          "test"
+        ],
+        "actions": [],
+        "publishDateUtc": "2026-11-26T13:23:08.4289479Z",
+        "attachments": []
+      }
+    ]
+  },
+  "state": "Success",
+  "error": {}
+}

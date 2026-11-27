@@ -1,0 +1,316 @@
+{
+  "tools": [
+    {
+      "type": "clocking",
+      "accessRightId": 3723500,
+      "discriminator": "SDAssistant - Token Exchange - mock",
+      "newState": {
+        "newStateEntities": [
+          {
+            "owner": "3723500",
+            "resource": "Tool:ClockingV2"
+          }
+        ],
+        "isBrandNew": true,
+        "title": "New tool: Clocking",
+        "subtitle": "You now have access to your new tool.",
+        "showCoachmark": true
+      },
+      "healthInformation": {
+        "healthState": "Healthy",
+        "information": ""
+      }
+    }
+  ],
+  "quickActions": [
+    {
+      "type": "AddExpense",
+      "accessRightId": 3723500,
+      "title": "Add expense",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/QuickActions/AddExpense-v2.svg",
+      "category": "Expenses",
+      "placements": [
+        "Home",
+        "AddExpense"
+      ],
+      "healthInformation": {
+        "healthState": "Healthy",
+        "information": ""
+      },
+      "endpointLinkType": "InternalNativeLink",
+      "endpointUri": "sdwa://expenses/add",
+      "newState": {
+        "newStateEntities": [
+          {
+            "owner": "3723500",
+            "resource": "QuickAction:AddExpense"
+          }
+        ],
+        "isBrandNew": true,
+        "title": "New quick action: Add expense",
+        "subtitle": "You now have quick access to Expenses.",
+        "showCoachmark": true
+      }
+    },
+    {
+      "type": "AddOvertime",
+      "accessRightId": 3723500,
+      "title": "Add overtime",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/QuickActions/AddOvertime-v2.svg",
+      "category": "Overtime",
+      "placements": [
+        "Home",
+        "AddOvertime"
+      ],
+      "healthInformation": {
+        "healthState": "Healthy",
+        "information": ""
+      },
+      "endpointLinkType": "InternalNativeLink",
+      "endpointUri": "sdwa://overtime/add",
+      "newState": {
+        "newStateEntities": [
+          {
+            "owner": "3723500",
+            "resource": "QuickAction:AddOvertime"
+          }
+        ],
+        "isBrandNew": true,
+        "title": "New quick action: Add overtime",
+        "subtitle": "You now have quick access to Overtime.",
+        "showCoachmark": true
+      }
+    }
+  ],
+  "widgets": [
+    {
+      "accessRightId": 3723500,
+      "healthInformation": {
+        "healthState": "Healthy",
+        "information": ""
+      },
+      "newState": {
+        "newStateEntities": [
+          {
+            "owner": "3723500",
+            "resource": "Widget:mobilityWidgetId"
+          }
+        ],
+        "isBrandNew": true,
+        "title": "New widget: New mobility budget widget",
+        "subtitle": "View information directly from your homescreen.",
+        "showCoachmark": true
+      },
+      "contextId": "mobilityWidgetId",
+      "title": "New mobility budget widget",
+      "primaryWidgetHint": "Gauge",
+      "category": "Salary",
+      "containsSensitiveData": true
+    }
+  ],
+  "tiles": [
+    {
+      "title": "Expenses",
+      "description": "Manage your expenses",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/Tiles/Expenses-v2.svg",
+      "iconStyle": "Salary",
+      "endpointLinkType": "InternalNativeLink",
+      "endpointUri": "sdwa://expenses",
+      "healthInformation": {
+        "healthState": "Healthy"
+      },
+      "accessRightIds": [
+        3723500
+      ],
+      "tileType": "Expenses",
+      "profileType": "Unknown",
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/3723500",
+      "integrationState": "Linked"
+    },
+    {
+      "title": "Absences",
+      "description": "View your absences",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/Tiles/Absences-v2.svg",
+      "iconStyle": "Salary",
+      "endpointLinkType": "InternalNativeLink",
+      "endpointUri": "sdwa://absences",
+      "healthInformation": {
+        "healthState": "Healthy"
+      },
+      "accessRightIds": [
+        3723500
+      ],
+      "tileType": "Absences",
+      "profileType": "Unknown",
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/3723500",
+      "integrationState": "Linked",
+      "newState": {
+        "newStateEntities": [
+          {
+            "owner": "3723500",
+            "resource": "Tile:Absences"
+          }
+        ],
+        "isBrandNew": true,
+        "title": "New tile: Absences",
+        "subtitle": "From now on you have access to this tile.",
+        "showCoachmark": true
+      }
+    },
+    {
+      "title": "Pay",
+      "description": "View your payslips",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/Tiles/Salary-v2.svg",
+      "iconStyle": "Salary",
+      "endpointLinkType": "InternalNativeLink",
+      "endpointUri": "sdwa://payslips",
+      "healthInformation": {
+        "healthState": "Healthy"
+      },
+      "accessRightIds": [
+        3723500
+      ],
+      "tileType": "Salary",
+      "profileType": "Unknown",
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/3723500",
+      "integrationState": "Linked",
+      "newState": {
+        "newStateEntities": [
+          {
+            "owner": "3723500",
+            "resource": "Tile:Salary"
+          }
+        ],
+        "isBrandNew": true,
+        "title": "New tile: Pay",
+        "subtitle": "From now on you have access to this tile.",
+        "showCoachmark": true
+      }
+    },
+    {
+      "title": "Webportal",
+      "description": "Open the webportal",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/Tiles/Default-v2.svg",
+      "iconStyle": "Salary",
+      "endpointLinkType": "InternalBrowserLink",
+      "endpointUri": "https://auth.acc.sdworx.com/idhub/api/loginfromapp?language=en&page=%2Fportal%2Fpersonal",
+      "healthInformation": {
+        "healthState": "Unknown"
+      },
+      "tileType": "Webportal",
+      "profileType": "Personal",
+      "integrationState": "Linked",
+      "newState": {
+        "newStateEntities": [
+          {
+            "owner": "3723500",
+            "resource": "Tile:Webportal"
+          }
+        ],
+        "isBrandNew": true,
+        "title": "New tile: Webportal",
+        "subtitle": "From now on you have access to this tile.",
+        "showCoachmark": true
+      }
+    }
+  ],
+  "features": [
+    {
+      "name": "ExpenseParsing",
+      "accessRightIds": [
+        3723500
+      ]
+    }
+  ],
+  "functionalities": [
+    {
+      "id": 3723500,
+      "userIdForApplication": "E6B487AD-B2E8-4E5E-B8B6-92748759F4F3",
+      "applicationCode": "SDA_TE_mock",
+      "healthState": "Healthy",
+      "functionalitiesAccepted": [
+        "sd://absences/1.0.0/manage",
+        "sd://absences/1.0.0/team",
+        "sd://absences/1.0.0/counters",
+        "sd://absences/2.0.0/counters",
+        "sd://absences/1.0.0/deeplinks",
+        "sd://overtime/1.0.0/overview",
+        "sd://documents/1.0.0/overview",
+        "sd://documents/1.0.0/detail",
+        "sd://expenses/2.0.0/manage",
+        "sd://expenses/1.0.0/overview",
+        "sd://expenses/1.0.0/deeplinks",
+        "sd://forms/1.0.0/manage",
+        "sd://forms/1.0.0/overview",
+        "sd://absences/2.0.0/approval",
+        "sd://expenses/2.0.0/approval",
+        "sd://overtime/1.0.0/approval",
+        "sd://deeplinks/1.0.0/overview",
+        "sd://routing/1.0.0/overview",
+        "sd://currencyconversion/1.0.0/overview"
+      ]
+    }
+  ],
+  "operationalEmployerGroups": [
+    {
+      "name": "SKF",
+      "code": "CNC_1022",
+      "officialAccounts": [
+        {
+          "name": "Skf Logistics Services Belgium",
+          "number": "BE0416051608"
+        }
+      ]
+    }
+  ],
+  "thirdPartyIntegrations": [
+    {
+      "id": "IrmrT-hSJLxFVU30hWNH-Q",
+      "accessRightId": 0,
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/Personal/personal/GoogleApi/e6b487ad-b2e8-4e5e-b8b6-92748759f4f3",
+      "applicationCode": "GoogleApi",
+      "applicationName": "Google Api",
+      "description": "Link your account.",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/ThirdParty/Bullets.svg",
+      "integrationState": "Linkable"
+    },
+    {
+      "id": "t6xqlnmBHjEBTlq59KvjRg",
+      "accessRightId": 0,
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/Personal/personal/monizze/e6b487ad-b2e8-4e5e-b8b6-92748759f4f3",
+      "applicationCode": "monizze",
+      "applicationName": "Monizze",
+      "description": "Link your Monizze account to view your electronic meal voucher balance here.",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/ThirdParty/Monizze.svg",
+      "integrationState": "Linkable"
+    },
+    {
+      "id": "pEJAy2nslw7O13u__dLW0g",
+      "accessRightId": 0,
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/Personal/personal/MSGraph/e6b487ad-b2e8-4e5e-b8b6-92748759f4f3",
+      "applicationCode": "MSGraph",
+      "applicationName": "Outlook",
+      "description": "Link your Outlook calendar to manage your vacation days, meetings & appointments in one place.",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/ThirdParty/Outlook.svg",
+      "integrationState": "Linkable"
+    },
+    {
+      "id": "LQmqEpjNEbUEBz9NDCt1VQ",
+      "accessRightId": 0,
+      "loginUri": "https://api.acc.sdworx.com/functionalities/api/1.0/me/login/Personal/personal/SDA_mock_vouchers/e6b487ad-b2e8-4e5e-b8b6-92748759f4f3",
+      "applicationCode": "SDA_mock_vouchers",
+      "applicationName": "SDAssistant - mock vouchers",
+      "description": "Link your account.",
+      "iconUrl": "https://cdn.sdworx.com/mysdworxapp/img/Flutter/ThirdParty/Bullets.svg",
+      "integrationState": "Linkable"
+    }
+  ],
+  "timeZoneForAccessRights": [
+    {
+      "accessRightId": 3723500,
+      "timeZoneId": "Europe/Brussels"
+    }
+  ],
+  "banners": [],
+  "applicationStatusMessagesCount": 0
+}

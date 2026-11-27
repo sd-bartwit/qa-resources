@@ -1,0 +1,105 @@
+{
+  "result": {
+    "hasMore": false,
+    "items": [
+      {
+        "newsfeedId": "1210b376-bd98-4b3e-b4dc-85eff2215243",
+        "companyId": "Bart",
+        "companyType": "Account",
+        "title": "APP QA - Simple message",
+        "label": "bart",
+        "sublabel": "Test",
+        "text": "TODO message #2",
+        "contentType": "PlainText",
+        "iconUrl": "https://www.sdworx.be/assets/corporate/img/sdworx_logo.svg",
+        "isRead": false,
+        "isHomeScreenVisible": true,
+        "applicationPageUrl": "",
+        "tags": [],
+        "actions": [],
+        "publishDateUtc": "2026-11-26T13:08:54.870324Z",
+        "attachments": []
+      },
+      {
+        "newsfeedId": "b57b91e0-f715-4264-af8b-3e99018fd584",
+        "companyId": "Bart",
+        "companyType": "Account",
+        "title": "APP QA - Simple message",
+        "label": "bart",
+        "sublabel": "Test",
+        "text": "TODO message #1",
+        "contentType": "PlainText",
+        "iconUrl": "https://www.sdworx.be/assets/corporate/img/sdworx_logo.svg",
+        "isRead": false,
+        "isHomeScreenVisible": true,
+        "applicationPageUrl": "",
+        "tags": [],
+        "actions": [],
+        "publishDateUtc": "2026-11-26T13:06:56.3587727Z",
+        "attachments": []
+      },
+      {
+        "newsfeedId": "ab63b202-4cb0-4ac0-bd86-1b31d56c6d05",
+        "companyId": "Bart",
+        "companyType": "Account",
+        "title": "APP QA - Simple message",
+        "label": "bart",
+        "sublabel": "Test",
+        "text": "Not TODO message #2",
+        "contentType": "PlainText",
+        "iconUrl": "https://www.sdworx.be/assets/corporate/img/sdworx_logo.svg",
+        "isRead": false,
+        "isHomeScreenVisible": true,
+        "applicationPageUrl": "",
+        "tags": [
+          "nottodo"
+        ],
+        "actions": [],
+        "publishDateUtc": "2026-11-26T13:04:56.3259149Z",
+        "attachments": []
+      },
+      {
+        "newsfeedId": "4f4798a5-938f-4125-9da8-fb38995d6644",
+        "companyId": "Bart",
+        "companyType": "Account",
+        "title": "APP QA - Simple message",
+        "label": "bart",
+        "sublabel": "Test",
+        "text": "Not TODO message #2",
+        "contentType": "PlainText",
+        "iconUrl": "https://www.sdworx.be/assets/corporate/img/sdworx_logo.svg",
+        "isRead": false,
+        "isHomeScreenVisible": true,
+        "applicationPageUrl": "",
+        "tags": [
+          "nottodo"
+        ],
+        "actions": [],
+        "publishDateUtc": "2026-11-26T13:04:35.6265856Z",
+        "attachments": []
+      },
+      {
+        "newsfeedId": "91ce7ba8-47c2-4a71-a903-64307d0a23e1",
+        "companyId": "Bart",
+        "companyType": "Account",
+        "title": "APP QA - Simple message",
+        "label": "bart",
+        "sublabel": "Test",
+        "text": "Not TODO message #1",
+        "contentType": "PlainText",
+        "iconUrl": "https://www.sdworx.be/assets/corporate/img/sdworx_logo.svg",
+        "isRead": true,
+        "isHomeScreenVisible": false,
+        "applicationPageUrl": "",
+        "tags": [
+          "nottodo"
+        ],
+        "actions": [],
+        "publishDateUtc": "2026-11-26T13:03:18.2938402Z",
+        "attachments": []
+      }
+    ]
+  },
+  "state": "Success",
+  "error": {}
+}

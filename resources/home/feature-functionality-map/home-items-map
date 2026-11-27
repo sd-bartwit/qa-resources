@@ -1,0 +1,105 @@
+# Home: item → functionality / feature map (+ newState resource ids)
+
+How each tool, quick action, widget and tile on `/home` links to `functionalitiesAccepted`, backend features and the newState ("What's New") resource id.
+Sources: Channels.ApiGateway `Services/HomeBuilder/**` (incl. `*NewStateIndicator.cs`, `ExtensionMethods.cs`, `NewStateIndicatorDescriptionService.cs`, `Resources/Translations.resx`) and mysdworx-app `sd_feature_user/lib/src/constants.dart`, `sd_feature_home/.../get_home_data_usecase.dart`.
+Related work items: US 1376859 (POC), US 1396315 (descriptions), US 1403124 (markasread), Task 1411432 (BE test).
+
+Legend: **ALL** = every listed functionality is required. **ANY** = one is enough. BE = the backend only builds the item when this condition is met.
+
+---
+
+## 1. Tools (`tools[]`)
+
+| Tool `type` | BE condition | newState resource | newState owner | Title / subtitle (EN) |
+|--|--|--|--|--|
+| `clocking` (ClockingTool) | feature `ClockingV2` enabled **AND** `sd://time/2.0.0/clocking` | `Tool:ClockingV2` | access right id | `New tool: Clocking` / `You now have access to your new tool.` |
+| `aiHrAssistant` | access right with application code `Conversational employee` (AIAssistant). No functionality needed. | `Tool:AiHrAssistant` | **profile id** (GUID, `N` format, no dashes), not the access right | `New tool: Ai Hr Assistant` / same subtitle |
+
+- Clocking **v1** is a different thing: the app shows the clocking component when `features[]` contains `Clocking` **and** a functionality has `sd://time/1.0.0/clocking`. When clocking v1 is present, the first tile is **not** moved into the "over animation" slot.
+
+## 2. Quick actions (`quickActions[]`)
+
+| `type` | `category` | BE condition (functionalities) | BE feature | Placements | newState resource | Subtitle category word |
+|--|--|--|--|--|--|--|
+| `AddAbsence` | Absences | **ALL** `sd://absences/1.0.0/manage` | Absences | `Home`, `AddAbsence` | `QuickAction:AddAbsence` | Absences |
+| `AddExpense` | Expenses | **ANY** `sd://expenses/1.0.0/manage`, `sd://expenses/2.0.0/manage`, `sd://expenses/2.0.0/groupmanage`, `sd://expenses/1.0.0/claimmanage` | Expenses | `Home`, `AddExpense` | `QuickAction:AddExpense` | Expenses |
+| `AddOvertime` | Overtime | **ANY** `sd://overtime/1.0.0/manage`, `sd://overtime/1.0.0/groupmanage` | Overtime | `Home`, `AddOvertime` | `QuickAction:AddOvertime` | Overtime |
+| `ViewLatestPayslip` | Salary | **ANY** `sd://payslip/1.0.0/overview`, `sd://payslip/1.0.0/saml`, `sd://payslip/2.0.0/overview`, `sd://payslip/2.0.0/collapsable`, `sd://payslip/3.0.0/overview` | Salary | `Home` | `QuickAction:ViewLatestPayslip` | Salary |
+| `AddClaim` | Expenses | built by DeepLinksEmbedded (forms deeplink) | n/a | `AddClaim` only (claims FAB) | n/a | Can't be tested on Home |
+
+- BE adds the `Home` placement only when **exactly one** access right qualifies. With two access rights for the same quick action, it isn't shown on Home.
+- App: Home only shows quick actions where `placements` contains `Home` **and** `category` isn't `Unknown`.
+- Text: `New quick action: <title>` / `You now have quick access to <category>.` (with a company name when there are multiple official accounts: `... to <category> for <company>.`).
+
+## 3. Widgets (`widgets[]`)
+
+| BE condition | newState resource | Text |
+|--|--|--|
+| Built from the access right's `AvailableWidgets` (provider side). In practice the access right also has `sd://widgets/1.0.0/overview` (all samples). | `Widget:<contextId>` | `New widget: <title>` / `View information directly from your homescreen.` |
+
+Known widget contextIds used in mocks (all on SDA_TE_mock, category `Salary`):
+
+| contextId | primaryWidgetHint | containsSensitiveData |
+|--|--|--|
+| `Onboarding` | Link | false |
+| `mobilityWidgetId` | Gauge | true |
+| `payslipListWidgetId` | List | true |
+
+- Widget content is fetched per `accessRightId` + `contextId`. An unknown contextId will render but won't load data.
+
+## 4. Tiles (`tiles[]`)
+
+### 4a. Native tiles (multi-provider)
+The BE builds the tile when **ANY** related functionality is accepted and the related feature is enabled. newState gets one entity per accepted functionality that maps to a resource. Duplicates are merged, so most tiles have 1 entity.
+
+| `tileType` | endpointUri | Related functionalities (ANY) | BE feature | newState resource(s) |
+|--|--|--|--|--|
+| `Absences` | `sdwa://absences` | `sd://absences/1.0.0/overview`, `sd://absences/2.0.0/overview` | Absences | `Tile:Absences` |
+| `Expenses` | `sdwa://expenses` | `sd://expenses/1.0.0/overview`, `sd://expenses/2.0.0/groupoverview`, `sd://expenses/1.0.0/claimoverview` | Expenses | `Tile:Expenses` |
+| `Salary` ("Pay") | `sdwa://payslips` | `sd://payslip/1.0.0/overview`, `sd://payslip/1.0.0/saml`, `sd://payslip/2.0.0/overview`, `sd://payslip/2.0.0/collapsable`, `sd://payslip/3.0.0/overview` | Salary | `Tile:Salary` |
+| `Overtime` | `sdwa://overtime` | `sd://overtime/1.0.0/overview`, `sd://overtime/1.0.0/groupoverview` | Overtime | `Tile:Overtime` |
+| `PendingApprovals` | `sdwa://pending_approvals` | absences `2.0.0/approval`, `2.0.0/bulkapproval`; expenses `2.0.0/approval`, `2.0.0/bulkapproval`, `2.0.0/groupapproval`, `1.0.0/claimapproval`; overtime `1.0.0/approval`, `1.0.0/bulkapproval`, `1.0.0/groupapproval`. From app 5.2 (SingleTiles) also genericapprovals `1.0.0/approval`, `1.0.0/bulkapproval`. | *PendingApprovals features per domain | **one per domain**: `Tile:AbsencesPendingApprovals`, `Tile:ExpensesPendingApprovals`, `Tile:OvertimePendingApprovals`, `Tile:GenericPendingApprovals` |
+| `GenericApprovals` | `sdwa://generic_approvals` | `sd://genericapprovals/1.0.0/approval`, `sd://genericapprovals/1.0.0/bulkapproval` | GenericPendingApprovals | `Tile:GenericPendingApprovals` |
+| `Webportal` | browser link | none | none | **none**. The app also skips the Webportal tile for coachmarks. |
+
+### 4b. Generic / webview / deeplink tiles
+
+| `tileType` | BE condition | newState resource |
+|--|--|--|
+| `PersonalData` (forms deeplink, native `sdwa://forms?...`) | functionality deeplink on the access right **AND ANY** `sd://forms/1.0.0/overview`, `sd://forms/1.0.0/manage` (feature Forms) | `FunctionalityDeepLink:<deeplinkId>` |
+| `PersonalData` (webview `/portal/personaldataform`) | feature `PersonalData` **AND** `sd://personaldata/1.0.0/overview` | `Tile:PersonalData` |
+| `Documents` (webview `/portal/personal/documents`) | feature `ShowMyDocumentsView` **AND** `sd://documents/1.0.0/overview` | `Tile:Documents` |
+| `Voucher` (webview `/portal/vouchers`) | feature `Vouchers` **AND** `sd://vouchers/1.0.0/overview` | `Tile:Vouchers` |
+| `Deeplink` (web deeplink) | web deeplink configured on the access right | `WebDeepLink:<deeplinkId>` |
+| `AppScope` | access right with a URI and **0** accepted functionalities | `Tile:AppScope` |
+
+- ⚠ **The app's `TileType` enum has no `Documents`** (it has Unknown, Absences, Expenses, Overtime, Salary, Newsfeed, PendingApprovals, GenericApprovals, Webportal, Deeplink, DigiFaq, Voucher, PersonalData, AppScope). The BE does send `Documents`, so check how the app renders it (test-02).
+- Tile texts: `New tile: <title>` / `From now on you have access to this tile.`
+- Pending approvals text: one domain gives `You can now manage your <Absences|Expenses|Overtime|Requests> approvals.` More than one domain gives `You can now manage your approvals for:` followed by one line per domain (newline-separated).
+- `isBrandNew=false` changes the titles to `<title> updated` (tile), `Updated quick action: …`, `Updated widget: …`, `Updated tool: …`.
+
+## 5. newState mechanics (BE + app)
+
+- The whole feature is gated by the pilot feature `PilotNewStateIndicator` on an access right, the `NewStateIndicator` config flag, and app version **≥ 5.5.0**.
+- The very first home call for a profile marks the profile active. Everything existing at that moment is treated as already seen, so only items added afterwards are "new".
+- Items stay new for at most 90 days (`NewStateVisibleForDays`).
+- `isBrandNew` is true when **all** of the item's rows are unseen. `showCoachmark` is true when **any** unseen row hasn't been read yet.
+- `markasseen` removes the indicator. `markasread` (US 1403124: "Ok, got it", Skip all, banner dismiss) removes the coachmark/banner but keeps the indicator.
+- App coachmark order: **tools → quick actions → widgets → tiles**. The Webportal tile is always excluded. Coachmarks are only built from live API data, not from cache.
+- App: if clocking v1 isn't active, the **first tile** in `tiles[]` is moved to the "over animation" slot. The Webportal tile is moved to its own web portal card.
+
+## 6. Mock files in `../new-indicator/` (all on access right 3723500 / SDA_TE_mock)
+
+| File | Purpose | What to check |
+|--|--|--|
+| `home-new-01.json` | Original sample: 1 tool, 1 quick action, 1 tile new | baseline |
+| `home-new-02-overkill.json` | **Everything new**: 2 tools, 4 quick actions, 3 widgets, 6 tiles (Webportal has no newState, as in the BE). Pending approvals has 3 entities (multi-line subtitle). | indicators on all items, coachmark sequence order, multi-line subtitle, Skip all / Ok got it → markasread payload has all entities |
+| `home-new-03-mostly-new.json` | Almost all new, with **one item per section not new**: aiHrAssistant tool, AddAbsence, Onboarding widget, Overtime tile (plus Webportal) | indicator and coachmark only on new items, ordering/indices skip the non-new ones |
+| `home-new-test-01-approval-tiles.json` | PendingApprovals (4 entities incl. Generic) + GenericApprovals tile. Adds approval/bulk/claim/generic functionalities. | Do both render with an indicator? Does tapping open approvals for SDA_TE_mock, or does it fail because the provider lacks approvals? |
+| `home-new-test-02-generic-tiles.json` | Documents (`Documents` tileType, unknown to the app), Voucher, PersonalData webview, AppScope, web Deeplink: all new | Which tile types render and show the indicator? Does `Documents` fall back to Unknown, or does it break parsing? |
+| `home-new-test-03-functionality-gaps.json` | Items with newState where the required functionality was **removed**: clocking tool (no `time/2.0.0/clocking`), AddOvertime (no overtime manage), widget (no `widgets/1.0.0/overview`), Absences + Pay tiles (no absences/payslip overview). Webportal **with** newState. | Does the app gate on `functionalitiesAccepted` itself (hide / error on tap), or render whatever the BE sends? Is Webportal correctly ignored for the coachmark? |
+
+Caveats:
+- The aiHrAssistant `endpointUri` comes from another account (access right 3827990). It's a webview link, so a tap may not open for this user.
+- The owner/resource values are mocked. markasseen/markasread calls go to the real BE, so check the request payloads in HTTP Toolkit rather than expecting a persistent effect.
+- The profile id used for `Tool:AiHrAssistant` (`e6b487adb2e84e5eb8b692748759f4f3`) is derived from `userIdForApplication`. Check it against a real response.
